@@ -1,0 +1,2782 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,600,400');
+
+
+.bp3-landing-temporalmobile {
+  width               : 100%;
+  min-width           : 320px;
+  height              : 100%;
+  min-height          : 3384px;
+  position            : relative;
+  overflow            : hidden;
+  margin              : 0px;
+  background          : rgba(255, 255, 255, 1.0);
+}
+a {
+  text-decoration     : none;
+}
+div {
+  -webkit-text-size-adjust: none;
+}
+.bp3-landing-temporalmobile .bp3-rectangle2 {
+  background          : rgba(244, 246, 247, 1.0);
+  top                 : 0px;
+  height              : 768px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp3-landing-temporalmobile .bp3-view1 {
+  background          : rgba(244, 246, 247, 1.0);
+  bottom              : 0px;
+  height              : 96px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp3-landing-temporalmobile .bp3-i-nfantil {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 840px;
+  height              : auto;
+  width               : 186px;
+  position            : absolute;
+  margin              : 0;
+  left                : 8.00%;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 700;
+  font-style          : normal;
+  font-size           : 18.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.bp3-landing-temporalmobile .bp3-p-rimaria {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 1969px;
+  height              : auto;
+  width               : 186px;
+  position            : absolute;
+  margin              : 0;
+  left                : 8.00%;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 700;
+  font-style          : normal;
+  font-size           : 18.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.bp3-landing-temporalmobile .bp3-rectangle {
+  background          : rgba(244, 246, 247, 1.0);
+  top                 : 885px;
+  height              : 3px;
+  width               : 84.00%;
+  position            : absolute;
+  margin              : 0;
+  left                : 8.00%;
+}
+.bp3-landing-temporalmobile .bp3-view2 {
+  background          : rgba(80, 226, 193, 1.0);
+  width               : 96px;
+  margin-right        : 8px;
+  height              : 100%;
+  pointer-events      : auto;
+  margin-left         : -8px;
+  position            : relative;
+}
+.bp3-landing-temporalmobile .bp3-view2-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 215px;
+  align-items         : center;
+  height              : 3px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp3-landing-temporalmobile .bp3-view3 {
+  background          : rgba(244, 246, 247, 1.0);
+  top                 : 2012px;
+  height              : 3px;
+  width               : 84.00%;
+  position            : absolute;
+  margin              : 0;
+  left                : 8.00%;
+}
+.bp3-landing-temporalmobile .bp3-links {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 935px;
+  height              : 2247px;
+  width               : 660px;
+  position            : absolute;
+  margin              : 0;
+  left                : 8.00%;
+}
+.bp3-landing-temporalmobile .bp3-links .bp3-group2 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 865px;
+  width               : 207px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp3-landing-temporalmobile .bp3-links .bp3-group2 .bp3-juegos {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 134px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 600;
+  font-style          : normal;
+  font-size           : 18.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.bp3-landing-temporalmobile .bp3-links .bp3-group2 .bp3-educacin-emocional {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 193px;
+  height              : auto;
+  width               : 189px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 600;
+  font-style          : normal;
+  font-size           : 18.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.bp3-landing-temporalmobile .bp3-links .bp3-group2 .bp3-el-mundo-que-nos-rod {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 841px;
+  height              : auto;
+  width               : 207px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 600;
+  font-style          : normal;
+  font-size           : 18.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.bp3-landing-temporalmobile .bp3-links .bp3-group2 .bp3-en-familia {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 529px;
+  height              : auto;
+  width               : 207px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 600;
+  font-style          : normal;
+  font-size           : 18.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.bp3-landing-temporalmobile .bp3-links .bp3-group3 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 1129px;
+  height              : 1032px;
+  width               : 231px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp3-landing-temporalmobile .bp3-links .bp3-group3 .bp3-label1 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 66px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 600;
+  font-style          : normal;
+  font-size           : 18.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.bp3-landing-temporalmobile .bp3-links .bp3-group3 .bp3-label2 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 193px;
+  height              : auto;
+  width               : 183px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 600;
+  font-style          : normal;
+  font-size           : 18.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.bp3-landing-temporalmobile .bp3-links .bp3-group3 .bp3-label3 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 1008px;
+  height              : auto;
+  width               : 231px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 600;
+  font-style          : normal;
+  font-size           : 18.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.bp3-landing-temporalmobile .bp3-links .bp3-group3 .bp3-label4 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 697px;
+  height              : auto;
+  width               : 183px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 600;
+  font-style          : normal;
+  font-size           : 18.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.bp3-landing-temporalmobile .bp3-links .bp3-busca-y-encuentra-ot {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 48px;
+  height              : auto;
+  width               : 301px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 400;
+  font-style          : normal;
+  font-size           : 13.0px;
+  color               : rgba(52, 77, 249, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+  text-decoration     : underline;
+}
+.bp3-landing-temporalmobile .bp3-links .bp3-label5 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 1166px;
+  height              : auto;
+  width               : 288px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 400;
+  font-style          : normal;
+  font-size           : 13.0px;
+  color               : rgba(52, 77, 249, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+  text-decoration     : underline;
+}
+.bp3-landing-temporalmobile .bp3-links .bp3-meditacin-body-sc {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 232px;
+  height              : auto;
+  width               : 271px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 400;
+  font-style          : normal;
+  font-size           : 13.0px;
+  color               : rgba(52, 77, 249, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+  text-decoration     : underline;
+}
+.bp3-landing-temporalmobile .bp3-links .bp3-label6 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 1372px;
+  height              : auto;
+  width               : 271px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 400;
+  font-style          : normal;
+  font-size           : 13.0px;
+  color               : rgba(52, 77, 249, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+  text-decoration     : underline;
+}
+.bp3-landing-temporalmobile .bp3-links .bp3-cancin-otoo-audio {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 576px;
+  height              : auto;
+  width               : 271px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 400;
+  font-style          : normal;
+  font-size           : 13.0px;
+  color               : rgba(52, 77, 249, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+  text-decoration     : underline;
+}
+.bp3-landing-temporalmobile .bp3-links .bp3-label7 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 1873px;
+  height              : auto;
+  width               : 396px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 400;
+  font-style          : normal;
+  font-size           : 13.0px;
+  color               : rgba(52, 77, 249, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+  text-decoration     : underline;
+}
+.bp3-landing-temporalmobile .bp3-links .bp3-actividades-cultural {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 889px;
+  height              : auto;
+  width               : 301px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 400;
+  font-style          : normal;
+  font-size           : 13.0px;
+  color               : rgba(52, 77, 249, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+  text-decoration     : underline;
+}
+.bp3-landing-temporalmobile .bp3-links .bp3-label8 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 2187px;
+  height              : auto;
+  width               : 300px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 400;
+  font-style          : normal;
+  font-size           : 13.0px;
+  color               : rgba(52, 77, 249, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+  text-decoration     : underline;
+}
+.bp3-landing-temporalmobile .bp3-logosinglesencasa {
+  background          : rgba(255, 255, 255, 0.0);
+  width               : 266px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.bp3-landing-temporalmobile .bp3-logosinglesencasa-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 112px;
+  align-items         : center;
+  height              : 60px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp3-landing-temporalmobile .bp3-imagesshapesright {
+  background          : rgba(255, 255, 255, 0.0);
+  right               : 10.07%;
+  top                 : 325px;
+  height              : 208px;
+  width               : 170px;
+  position            : absolute;
+  margin              : 0;
+}
+.bp3-landing-temporalmobile .bp3-imagesshapesright .bp3-oval {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 77px;
+  height              : 22px;
+  width               : 22px;
+  position            : absolute;
+  margin              : 0;
+  left                : 148px;
+}
+.bp3-landing-temporalmobile .bp3-imagesshapesright .bp3-triangle {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 22px;
+  width               : 22px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp3-landing-temporalmobile .bp3-imagesshapesright .bp3-image1 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 164px;
+  height              : 44px;
+  width               : 44px;
+  position            : absolute;
+  margin              : 0;
+  left                : 108px;
+  -ms-transform       : rotate(-180deg); /* IE 9 */
+  -webkit-transform   : rotate(-180deg); /* Chrome, Safari, Opera */
+  transform           : rotate(-180deg);
+}
+.bp3-landing-temporalmobile .bp3-rectangle3 {
+  background          : rgba(255, 255, 255, 0.0);
+  width               : 14px;
+  margin-right        : 240px;
+  height              : 100%;
+  pointer-events      : auto;
+  margin-left         : -240px;
+  position            : relative;
+  border-style        : solid;
+  border-width        : 3;
+  border-color        : rgba(245, 165, 35, 1.0);
+  -ms-transform       : rotate(-315deg); /* IE 9 */
+  -webkit-transform   : rotate(-315deg); /* Chrome, Safari, Opera */
+  transform           : rotate(-315deg);
+}
+.bp3-landing-temporalmobile .bp3-rectangle3-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 615px;
+  align-items         : center;
+  height              : 14px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp3-landing-temporalmobile .bp3-imagesshapesleft {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 390px;
+  height              : 219px;
+  width               : 154px;
+  position            : absolute;
+  margin              : 0;
+  left                : 9.00%;
+}
+.bp3-landing-temporalmobile .bp3-imagesshapesleft .bp3-image2 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 195px;
+  height              : 24px;
+  width               : 24px;
+  position            : absolute;
+  margin              : 0;
+  left                : 70px;
+}
+.bp3-landing-temporalmobile .bp3-imagesshapesleft .bp3-view4 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 29px;
+  width               : 29px;
+  position            : absolute;
+  margin              : 0;
+  left                : 125px;
+  border-style        : solid;
+  border-width        : 3;
+  border-color        : rgba(183, 232, 134, 1.0);
+}
+.bp3-landing-temporalmobile .bp3-imagesshapesleft .bp3-rectangle4 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 87px;
+  height              : 68px;
+  width               : 28px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  border-radius       : 12px;
+  border-style        : solid;
+  border-width        : 3;
+  border-color        : rgba(247, 231, 27, 1.0);
+}
+.bp3-landing-temporalmobile .bp3-logoscambridgeheader {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 48px;
+  width               : 164px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp3-landing-temporalmobile .bp3-logo-cu-pcolor {
+  background          : rgba(255, 255, 255, 0.0);
+  width               : 178px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.bp3-landing-temporalmobile .bp3-logo-cu-pcolor-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 3319px;
+  align-items         : center;
+  height              : 38px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp3-landing-temporalmobile .bp3-logo-cu-pcolor .bp3-shape {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 33px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp3-landing-temporalmobile .bp3-logo-cu-pcolor .bp3-image3 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 32px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp3-landing-temporalmobile .bp3-logo-cu-pcolor .bp3-image4 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 36px;
+  width               : 32px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp3-landing-temporalmobile .bp3-logo-cu-pcolor .bp3-image5 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 34px;
+  width               : 32px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp3-landing-temporalmobile .bp3-logo-cu-pcolor .bp3-image6 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 1px;
+  height              : 11px;
+  width               : 11px;
+  position            : absolute;
+  margin              : 0;
+  left                : 1px;
+}
+.bp3-landing-temporalmobile .bp3-logo-cu-pcolor .bp3-image7 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 1px;
+  height              : 10px;
+  width               : 8px;
+  position            : absolute;
+  margin              : 0;
+  left                : 1px;
+}
+.bp3-landing-temporalmobile .bp3-logo-cu-pcolor .bp3-image8 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 1px;
+  height              : 11px;
+  width               : 27px;
+  position            : absolute;
+  margin              : 0;
+  left                : 5px;
+}
+.bp3-landing-temporalmobile .bp3-logo-cu-pcolor .bp3-image9 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 1px;
+  height              : 10px;
+  width               : 9px;
+  position            : absolute;
+  margin              : 0;
+  left                : 20px;
+}
+.bp3-landing-temporalmobile .bp3-logo-cu-pcolor .bp3-image10 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 9px;
+  height              : 24px;
+  width               : 27px;
+  position            : absolute;
+  margin              : 0;
+  left                : 3px;
+}
+.bp3-landing-temporalmobile .bp3-logo-cu-pcolor .bp3-image11 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 21px;
+  height              : 11px;
+  width               : 9px;
+  position            : absolute;
+  margin              : 0;
+  left                : 1px;
+}
+.bp3-landing-temporalmobile .bp3-logo-cu-pcolor .bp3-image12 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 20px;
+  height              : 12px;
+  width               : 29px;
+  position            : absolute;
+  margin              : 0;
+  left                : 2px;
+}
+.bp3-landing-temporalmobile .bp3-logo-cu-pcolor .bp3-image13 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 21px;
+  height              : 12px;
+  width               : 7px;
+  position            : absolute;
+  margin              : 0;
+  left                : 20px;
+}
+.bp3-landing-temporalmobile .bp3-logo-cu-pcolor .bp3-image14 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 23px;
+  height              : 9px;
+  width               : 7px;
+  position            : absolute;
+  margin              : 0;
+  left                : 21px;
+}
+.bp3-landing-temporalmobile .bp3-logo-cu-pcolor .bp3-image15 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 1px;
+  height              : 34px;
+  width               : 30px;
+  position            : absolute;
+  margin              : 0;
+  left                : 1px;
+}
+.bp3-landing-temporalmobile .bp3-logo-cu-pcolor .bp3-image16 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 13px;
+  height              : 9px;
+  width               : 8px;
+  position            : absolute;
+  margin              : 0;
+  left                : 12px;
+}
+.bp3-landing-temporalmobile .bp3-logo-cu-pcolor .bp3-clipped {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 178px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp3-landing-temporalmobile .bp3-logo-cu-pcolor .bp3-image17 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 178px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp3-landing-temporalmobile .bp3-logo-cu-pcolor .bp3-image18 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 178px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp3-landing-temporalmobile .bp3-logo-cu-pcolor .bp3-image19 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 178px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp3-landing-temporalmobile .bp3-logo-cu-pcolor .bp3-image20 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 178px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp3-landing-temporalmobile .bp3-logo-cu-pcolor .bp3-image21 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 178px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp3-landing-temporalmobile .bp3-logo-cu-pcolor .bp3-image22 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 178px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp3-landing-temporalmobile .bp3-logo-cu-pcolor .bp3-image23 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 178px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp3-landing-temporalmobile .bp3-logo-cu-pcolor .bp3-image24 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 178px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp3-landing-temporalmobile .bp3-a-continuacin-ten {
+  background          : rgba(255, 255, 255, 0.0);
+  pointer-events      : auto;
+  height              : auto;
+  width               : 90.00%;
+  max-width           : 1024px;
+  position            : relative;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 400;
+  font-style          : normal;
+  font-size           : 16.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : center;
+  line-height         : 26.0px;
+}
+.bp3-landing-temporalmobile .bp3-a-continuacin-ten-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 614px;
+  align-items         : center;
+  height              : auto;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp3-landing-temporalmobile .bp3-en-cambridge-univers {
+  background          : rgba(255, 255, 255, 0.0);
+  width               : 90.00%;
+  height              : auto;
+  pointer-events      : auto;
+  position            : relative;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 400;
+  font-style          : normal;
+  font-size           : 20.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : center;
+  line-height         : 32.0px;
+}
+.bp3-landing-temporalmobile .bp3-en-cambridge-univers-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 271px;
+  align-items         : center;
+  height              : auto;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+/* .anima-animate-appear prefix for appear animations */
+.anima-animate-appear {
+  opacity             : 0;
+  display             : block;
+  -webkit-animation   : anima-reveal 0.3s ease-in-out 1 normal forwards;
+  -moz-animation      : anima-reveal 0.3s ease-in 1 normal forwards;
+  -o-animation        : anima-reveal 0.3s ease-in-out 1 normal forwards;
+  animation           : anima-reveal 0.3s ease-in-out 1 normal forwards;
+}
+.anima-animate-disappear {
+  opacity             : 1;
+  display             : block;
+  -webkit-animation   : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+  -moz-animation      : anima-reveal 0.3s ease-in 1 normal forwards;
+  -o-animation        : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+  animation           : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+}
+.anima-animate-nodelay {
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay  : 0;
+  animation-delay     : 0;
+}
+@-webkit-keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@-moz-keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@-o-keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+.bp2-landing-temporaltablet {
+  width               : 100%;
+  min-width           : 768px;
+  height              : 100%;
+  min-height          : 2376px;
+  position            : relative;
+  overflow            : hidden;
+  margin              : 0px;
+  background          : rgba(255, 255, 255, 1.0);
+}
+a {
+  text-decoration     : none;
+}
+div {
+  -webkit-text-size-adjust: none;
+}
+.bp2-landing-temporaltablet .bp2-rectangle2 {
+  background          : rgba(244, 246, 247, 1.0);
+  top                 : 0px;
+  height              : 696px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-landing-temporaltablet .bp2-view1 {
+  background          : rgba(244, 246, 247, 1.0);
+  bottom              : 0px;
+  height              : 96px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-landing-temporaltablet .bp2-i-nfantil {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 768px;
+  height              : auto;
+  width               : 186px;
+  position            : absolute;
+  margin              : 0;
+  left                : 8.00%;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 700;
+  font-style          : normal;
+  font-size           : 18.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.bp2-landing-temporaltablet .bp2-p-rimaria {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 1490px;
+  height              : auto;
+  width               : 186px;
+  position            : absolute;
+  margin              : 0;
+  left                : 8.00%;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 700;
+  font-style          : normal;
+  font-size           : 18.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.bp2-landing-temporaltablet .bp2-rectangle {
+  background          : rgba(244, 246, 247, 1.0);
+  top                 : 813px;
+  height              : 3px;
+  width               : 84.00%;
+  position            : absolute;
+  margin              : 0;
+  left                : 8.00%;
+}
+.bp2-landing-temporaltablet .bp2-view2 {
+  background          : rgba(80, 226, 193, 1.0);
+  width               : 96px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.bp2-landing-temporaltablet .bp2-view2-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 282px;
+  align-items         : center;
+  height              : 3px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp2-landing-temporaltablet .bp2-view3 {
+  background          : rgba(244, 246, 247, 1.0);
+  top                 : 1533px;
+  height              : 3px;
+  width               : 84.00%;
+  position            : absolute;
+  margin              : 0;
+  left                : 8.00%;
+}
+.bp2-landing-temporaltablet .bp2-links {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 888px;
+  height              : 1381px;
+  width               : 645px;
+  position            : absolute;
+  margin              : 0;
+  left                : 8.00%;
+}
+.bp2-landing-temporaltablet .bp2-links .bp2-group2 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 457px;
+  width               : 207px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-landing-temporaltablet .bp2-links .bp2-group2 .bp2-juegos {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 75px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 600;
+  font-style          : normal;
+  font-size           : 18.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.bp2-landing-temporaltablet .bp2-links .bp2-group2 .bp2-educacin-emocional {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 97px;
+  height              : auto;
+  width               : 150px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 600;
+  font-style          : normal;
+  font-size           : 18.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.bp2-landing-temporaltablet .bp2-links .bp2-group2 .bp2-el-mundo-que-nos-rod {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 433px;
+  height              : auto;
+  width               : 207px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 600;
+  font-style          : normal;
+  font-size           : 18.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.bp2-landing-temporaltablet .bp2-links .bp2-group2 .bp2-en-familia {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 265px;
+  height              : auto;
+  width               : 207px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 600;
+  font-style          : normal;
+  font-size           : 18.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.bp2-landing-temporaltablet .bp2-links .bp2-group3 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 722px;
+  height              : 546px;
+  width               : 183px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-landing-temporaltablet .bp2-links .bp2-group3 .bp2-label1 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 66px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 600;
+  font-style          : normal;
+  font-size           : 18.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.bp2-landing-temporaltablet .bp2-links .bp2-group3 .bp2-label2 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 93px;
+  height              : auto;
+  width               : 160px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 600;
+  font-style          : normal;
+  font-size           : 18.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.bp2-landing-temporaltablet .bp2-links .bp2-group3 .bp2-label3 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 503px;
+  height              : auto;
+  width               : 183px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 600;
+  font-style          : normal;
+  font-size           : 18.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.bp2-landing-temporaltablet .bp2-links .bp2-group3 .bp2-label4 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 333px;
+  height              : auto;
+  width               : 183px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 600;
+  font-style          : normal;
+  font-size           : 18.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.bp2-landing-temporaltablet .bp2-links .bp2-busca-y-encuentra-ot {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 301px;
+  position            : absolute;
+  margin              : 0;
+  left                : 236px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 400;
+  font-style          : normal;
+  font-size           : 16.0px;
+  color               : rgba(52, 77, 249, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+  text-decoration     : underline;
+}
+.bp2-landing-temporaltablet .bp2-links .bp2-label5 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 722px;
+  height              : auto;
+  width               : 288px;
+  position            : absolute;
+  margin              : 0;
+  left                : 236px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 400;
+  font-style          : normal;
+  font-size           : 16.0px;
+  color               : rgba(52, 77, 249, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+  text-decoration     : underline;
+}
+.bp2-landing-temporaltablet .bp2-links .bp2-meditacin-body-sc {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 96px;
+  height              : auto;
+  width               : 408px;
+  position            : absolute;
+  margin              : 0;
+  left                : 236px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 400;
+  font-style          : normal;
+  font-size           : 16.0px;
+  color               : rgba(52, 77, 249, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+  text-decoration     : underline;
+}
+.bp2-landing-temporaltablet .bp2-links .bp2-label6 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 815px;
+  height              : auto;
+  width               : 407px;
+  position            : absolute;
+  margin              : 0;
+  left                : 236px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 400;
+  font-style          : normal;
+  font-size           : 16.0px;
+  color               : rgba(52, 77, 249, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+  text-decoration     : underline;
+}
+.bp2-landing-temporaltablet .bp2-links .bp2-cancin-otoo-audio {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 265px;
+  height              : auto;
+  width               : 375px;
+  position            : absolute;
+  margin              : 0;
+  left                : 235px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 400;
+  font-style          : normal;
+  font-size           : 16.0px;
+  color               : rgba(52, 77, 249, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+  text-decoration     : underline;
+}
+.bp2-landing-temporaltablet .bp2-links .bp2-label7 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 1055px;
+  height              : auto;
+  width               : 396px;
+  position            : absolute;
+  margin              : 0;
+  left                : 235px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 400;
+  font-style          : normal;
+  font-size           : 16.0px;
+  color               : rgba(52, 77, 249, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+  text-decoration     : underline;
+}
+.bp2-landing-temporaltablet .bp2-links .bp2-actividades-cultural {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 433px;
+  height              : auto;
+  width               : 301px;
+  position            : absolute;
+  margin              : 0;
+  left                : 235px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 400;
+  font-style          : normal;
+  font-size           : 16.0px;
+  color               : rgba(52, 77, 249, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+  text-decoration     : underline;
+}
+.bp2-landing-temporaltablet .bp2-links .bp2-label8 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 1225px;
+  height              : auto;
+  width               : 300px;
+  position            : absolute;
+  margin              : 0;
+  left                : 235px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 400;
+  font-style          : normal;
+  font-size           : 16.0px;
+  color               : rgba(52, 77, 249, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+  text-decoration     : underline;
+}
+.bp2-landing-temporaltablet .bp2-logosinglesencasa {
+  background          : rgba(255, 255, 255, 0.0);
+  width               : 380px;
+  margin-right        : -10px;
+  height              : 100%;
+  pointer-events      : auto;
+  margin-left         : 10px;
+  position            : relative;
+}
+.bp2-landing-temporaltablet .bp2-logosinglesencasa-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 99px;
+  align-items         : center;
+  height              : 87px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp2-landing-temporaltablet .bp2-imagesshapesright {
+  background          : rgba(255, 255, 255, 0.0);
+  right               : 10.07%;
+  top                 : 325px;
+  height              : 208px;
+  width               : 170px;
+  position            : absolute;
+  margin              : 0;
+}
+.bp2-landing-temporaltablet .bp2-imagesshapesright .bp2-oval {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 77px;
+  height              : 22px;
+  width               : 22px;
+  position            : absolute;
+  margin              : 0;
+  left                : 148px;
+}
+.bp2-landing-temporaltablet .bp2-imagesshapesright .bp2-triangle {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 22px;
+  width               : 22px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-landing-temporaltablet .bp2-imagesshapesright .bp2-image1 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 164px;
+  height              : 44px;
+  width               : 44px;
+  position            : absolute;
+  margin              : 0;
+  left                : 108px;
+  -ms-transform       : rotate(-180deg); /* IE 9 */
+  -webkit-transform   : rotate(-180deg); /* Chrome, Safari, Opera */
+  transform           : rotate(-180deg);
+}
+.bp2-landing-temporaltablet .bp2-rectangle3 {
+  background          : rgba(255, 255, 255, 0.0);
+  width               : 14px;
+  margin-right        : 240px;
+  height              : 100%;
+  pointer-events      : auto;
+  margin-left         : -240px;
+  position            : relative;
+  border-style        : solid;
+  border-width        : 3;
+  border-color        : rgba(245, 165, 35, 1.0);
+  -ms-transform       : rotate(-315deg); /* IE 9 */
+  -webkit-transform   : rotate(-315deg); /* Chrome, Safari, Opera */
+  transform           : rotate(-315deg);
+}
+.bp2-landing-temporaltablet .bp2-rectangle3-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 615px;
+  align-items         : center;
+  height              : 14px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp2-landing-temporaltablet .bp2-imagesshapesleft {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 390px;
+  height              : 219px;
+  width               : 154px;
+  position            : absolute;
+  margin              : 0;
+  left                : 9.00%;
+}
+.bp2-landing-temporaltablet .bp2-imagesshapesleft .bp2-image2 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 195px;
+  height              : 24px;
+  width               : 24px;
+  position            : absolute;
+  margin              : 0;
+  left                : 70px;
+}
+.bp2-landing-temporaltablet .bp2-imagesshapesleft .bp2-view4 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 29px;
+  width               : 29px;
+  position            : absolute;
+  margin              : 0;
+  left                : 125px;
+  border-style        : solid;
+  border-width        : 3;
+  border-color        : rgba(183, 232, 134, 1.0);
+}
+.bp2-landing-temporaltablet .bp2-imagesshapesleft .bp2-rectangle4 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 87px;
+  height              : 68px;
+  width               : 28px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  border-radius       : 12px;
+  border-style        : solid;
+  border-width        : 3;
+  border-color        : rgba(247, 231, 27, 1.0);
+}
+.bp2-landing-temporaltablet .bp2-logoscambridgeheader {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 48px;
+  width               : 164px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-landing-temporaltablet .bp2-logo-cu-pcolor {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 2311px;
+  height              : 38px;
+  width               : 178px;
+  position            : absolute;
+  margin              : 0;
+  left                : 8.00%;
+}
+.bp2-landing-temporaltablet .bp2-logo-cu-pcolor .bp2-shape {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 33px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-landing-temporaltablet .bp2-logo-cu-pcolor .bp2-image3 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 32px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-landing-temporaltablet .bp2-logo-cu-pcolor .bp2-image4 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 36px;
+  width               : 32px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-landing-temporaltablet .bp2-logo-cu-pcolor .bp2-image5 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 34px;
+  width               : 32px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-landing-temporaltablet .bp2-logo-cu-pcolor .bp2-image6 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 1px;
+  height              : 11px;
+  width               : 11px;
+  position            : absolute;
+  margin              : 0;
+  left                : 1px;
+}
+.bp2-landing-temporaltablet .bp2-logo-cu-pcolor .bp2-image7 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 1px;
+  height              : 10px;
+  width               : 8px;
+  position            : absolute;
+  margin              : 0;
+  left                : 1px;
+}
+.bp2-landing-temporaltablet .bp2-logo-cu-pcolor .bp2-image8 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 1px;
+  height              : 11px;
+  width               : 27px;
+  position            : absolute;
+  margin              : 0;
+  left                : 5px;
+}
+.bp2-landing-temporaltablet .bp2-logo-cu-pcolor .bp2-image9 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 1px;
+  height              : 10px;
+  width               : 9px;
+  position            : absolute;
+  margin              : 0;
+  left                : 20px;
+}
+.bp2-landing-temporaltablet .bp2-logo-cu-pcolor .bp2-image10 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 9px;
+  height              : 24px;
+  width               : 27px;
+  position            : absolute;
+  margin              : 0;
+  left                : 3px;
+}
+.bp2-landing-temporaltablet .bp2-logo-cu-pcolor .bp2-image11 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 21px;
+  height              : 11px;
+  width               : 9px;
+  position            : absolute;
+  margin              : 0;
+  left                : 1px;
+}
+.bp2-landing-temporaltablet .bp2-logo-cu-pcolor .bp2-image12 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 20px;
+  height              : 12px;
+  width               : 29px;
+  position            : absolute;
+  margin              : 0;
+  left                : 2px;
+}
+.bp2-landing-temporaltablet .bp2-logo-cu-pcolor .bp2-image13 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 21px;
+  height              : 12px;
+  width               : 7px;
+  position            : absolute;
+  margin              : 0;
+  left                : 20px;
+}
+.bp2-landing-temporaltablet .bp2-logo-cu-pcolor .bp2-image14 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 23px;
+  height              : 9px;
+  width               : 7px;
+  position            : absolute;
+  margin              : 0;
+  left                : 21px;
+}
+.bp2-landing-temporaltablet .bp2-logo-cu-pcolor .bp2-image15 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 1px;
+  height              : 34px;
+  width               : 30px;
+  position            : absolute;
+  margin              : 0;
+  left                : 1px;
+}
+.bp2-landing-temporaltablet .bp2-logo-cu-pcolor .bp2-image16 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 13px;
+  height              : 9px;
+  width               : 8px;
+  position            : absolute;
+  margin              : 0;
+  left                : 12px;
+}
+.bp2-landing-temporaltablet .bp2-logo-cu-pcolor .bp2-clipped {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 178px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-landing-temporaltablet .bp2-logo-cu-pcolor .bp2-image17 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 178px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-landing-temporaltablet .bp2-logo-cu-pcolor .bp2-image18 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 178px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-landing-temporaltablet .bp2-logo-cu-pcolor .bp2-image19 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 178px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-landing-temporaltablet .bp2-logo-cu-pcolor .bp2-image20 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 178px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-landing-temporaltablet .bp2-logo-cu-pcolor .bp2-image21 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 178px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-landing-temporaltablet .bp2-logo-cu-pcolor .bp2-image22 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 178px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-landing-temporaltablet .bp2-logo-cu-pcolor .bp2-image23 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 178px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-landing-temporaltablet .bp2-logo-cu-pcolor .bp2-image24 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 178px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-landing-temporaltablet .bp2-a-continuacin-ten {
+  background          : rgba(255, 255, 255, 0.0);
+  pointer-events      : auto;
+  height              : auto;
+  width               : 90.00%;
+  max-width           : 1024px;
+  position            : relative;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 400;
+  font-style          : normal;
+  font-size           : 20.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : center;
+  line-height         : 28.0px;
+}
+.bp2-landing-temporaltablet .bp2-a-continuacin-ten-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 539px;
+  align-items         : center;
+  height              : auto;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp2-landing-temporaltablet .bp2-en-cambridge-univers {
+  background          : rgba(255, 255, 255, 0.0);
+  width               : 90.00%;
+  height              : auto;
+  pointer-events      : auto;
+  position            : relative;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 400;
+  font-style          : normal;
+  font-size           : 24.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : center;
+  line-height         : 32.0px;
+}
+.bp2-landing-temporaltablet .bp2-en-cambridge-univers-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 357px;
+  align-items         : center;
+  height              : auto;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+/* .anima-animate-appear prefix for appear animations */
+.anima-animate-appear {
+  opacity             : 0;
+  display             : block;
+  -webkit-animation   : anima-reveal 0.3s ease-in-out 1 normal forwards;
+  -moz-animation      : anima-reveal 0.3s ease-in 1 normal forwards;
+  -o-animation        : anima-reveal 0.3s ease-in-out 1 normal forwards;
+  animation           : anima-reveal 0.3s ease-in-out 1 normal forwards;
+}
+.anima-animate-disappear {
+  opacity             : 1;
+  display             : block;
+  -webkit-animation   : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+  -moz-animation      : anima-reveal 0.3s ease-in 1 normal forwards;
+  -o-animation        : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+  animation           : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+}
+.anima-animate-nodelay {
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay  : 0;
+  animation-delay     : 0;
+}
+@-webkit-keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@-moz-keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@-o-keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+.bp1-landing-temporaldesktop {
+  width               : 100%;
+  min-width           : 1440px;
+  height              : 100%;
+  min-height          : 2376px;
+  position            : relative;
+  overflow            : hidden;
+  margin              : 0px;
+  background          : rgba(255, 255, 255, 1.0);
+}
+a {
+  text-decoration     : none;
+}
+div {
+  -webkit-text-size-adjust: none;
+}
+.bp1-landing-temporaldesktop .bp1-rectangle2 {
+  background          : rgba(244, 246, 247, 1.0);
+  top                 : 0px;
+  height              : 696px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-landing-temporaldesktop .bp1-view1 {
+  background          : rgba(244, 246, 247, 1.0);
+  bottom              : 0px;
+  height              : 96px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-landing-temporaldesktop .bp1-i-nfantil {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 768px;
+  height              : auto;
+  width               : 186px;
+  position            : absolute;
+  margin              : 0;
+  left                : 8.00%;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 700;
+  font-style          : normal;
+  font-size           : 18.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.bp1-landing-temporaldesktop .bp1-p-rimaria {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 1490px;
+  height              : auto;
+  width               : 186px;
+  position            : absolute;
+  margin              : 0;
+  left                : 8.00%;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 700;
+  font-style          : normal;
+  font-size           : 18.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.bp1-landing-temporaldesktop .bp1-rectangle {
+  background          : rgba(244, 246, 247, 1.0);
+  top                 : 813px;
+  height              : 3px;
+  width               : 92.00%;
+  position            : absolute;
+  margin              : 0;
+  left                : 8.00%;
+}
+.bp1-landing-temporaldesktop .bp1-view2 {
+  background          : rgba(80, 226, 193, 1.0);
+  width               : 96px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.bp1-landing-temporaldesktop .bp1-view2-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 282px;
+  align-items         : center;
+  height              : 3px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp1-landing-temporaldesktop .bp1-view3 {
+  background          : rgba(244, 246, 247, 1.0);
+  top                 : 1533px;
+  height              : 3px;
+  width               : 84.00%;
+  position            : absolute;
+  margin              : 0;
+  left                : 8.00%;
+}
+.bp1-landing-temporaldesktop .bp1-links {
+  background          : rgba(255, 255, 255, 0.0);
+  width               : 786px;
+  margin-right        : -17px;
+  height              : 100%;
+  pointer-events      : auto;
+  margin-left         : 17px;
+  position            : relative;
+}
+.bp1-landing-temporaldesktop .bp1-links-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 888px;
+  align-items         : center;
+  height              : 1381px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp1-landing-temporaldesktop .bp1-links .bp1-juegos {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 600;
+  font-style          : normal;
+  font-size           : 18.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.bp1-landing-temporaldesktop .bp1-links .bp1-label1 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 722px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 600;
+  font-style          : normal;
+  font-size           : 18.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.bp1-landing-temporaldesktop .bp1-links .bp1-educacin-emocional {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 97px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 600;
+  font-style          : normal;
+  font-size           : 18.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.bp1-landing-temporaldesktop .bp1-links .bp1-label2 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 815px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 600;
+  font-style          : normal;
+  font-size           : 18.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.bp1-landing-temporaldesktop .bp1-links .bp1-el-mundo-que-nos-rod {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 433px;
+  height              : auto;
+  width               : 228px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 600;
+  font-style          : normal;
+  font-size           : 18.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.bp1-landing-temporaldesktop .bp1-links .bp1-label3 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 1225px;
+  height              : auto;
+  width               : 228px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 600;
+  font-style          : normal;
+  font-size           : 18.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.bp1-landing-temporaldesktop .bp1-links .bp1-en-familia {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 265px;
+  height              : auto;
+  width               : 228px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 600;
+  font-style          : normal;
+  font-size           : 18.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.bp1-landing-temporaldesktop .bp1-links .bp1-label4 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 1055px;
+  height              : auto;
+  width               : 228px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 600;
+  font-style          : normal;
+  font-size           : 18.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.bp1-landing-temporaldesktop .bp1-links .bp1-busca-y-encuentra-ot {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 305px;
+  position            : absolute;
+  margin              : 0;
+  left                : 298px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 400;
+  font-style          : normal;
+  font-size           : 16.0px;
+  color               : rgba(52, 77, 249, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+  text-decoration     : underline;
+}
+.bp1-landing-temporaldesktop .bp1-links .bp1-label5 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 722px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 298px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 400;
+  font-style          : normal;
+  font-size           : 16.0px;
+  color               : rgba(52, 77, 249, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+  text-decoration     : underline;
+}
+.bp1-landing-temporaldesktop .bp1-links .bp1-meditacin-body-sc {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 96px;
+  height              : auto;
+  width               : 413px;
+  position            : absolute;
+  margin              : 0;
+  left                : 298px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 400;
+  font-style          : normal;
+  font-size           : 16.0px;
+  color               : rgba(52, 77, 249, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+  text-decoration     : underline;
+}
+.bp1-landing-temporaldesktop .bp1-links .bp1-label6 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 815px;
+  height              : auto;
+  width               : 413px;
+  position            : absolute;
+  margin              : 0;
+  left                : 298px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 400;
+  font-style          : normal;
+  font-size           : 16.0px;
+  color               : rgba(52, 77, 249, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+  text-decoration     : underline;
+}
+.bp1-landing-temporaldesktop .bp1-links .bp1-cancin-otoo-audio {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 265px;
+  height              : auto;
+  width               : 380px;
+  position            : absolute;
+  margin              : 0;
+  left                : 297px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 400;
+  font-style          : normal;
+  font-size           : 16.0px;
+  color               : rgba(52, 77, 249, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+  text-decoration     : underline;
+}
+.bp1-landing-temporaldesktop .bp1-links .bp1-label7 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 1055px;
+  height              : auto;
+  width               : 402px;
+  position            : absolute;
+  margin              : 0;
+  left                : 297px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 400;
+  font-style          : normal;
+  font-size           : 16.0px;
+  color               : rgba(52, 77, 249, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+  text-decoration     : underline;
+}
+.bp1-landing-temporaldesktop .bp1-links .bp1-actividades-cultural {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 433px;
+  height              : auto;
+  width               : 305px;
+  position            : absolute;
+  margin              : 0;
+  left                : 297px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 400;
+  font-style          : normal;
+  font-size           : 16.0px;
+  color               : rgba(52, 77, 249, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+  text-decoration     : underline;
+}
+.bp1-landing-temporaldesktop .bp1-links .bp1-label8 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 1225px;
+  height              : auto;
+  width               : 305px;
+  position            : absolute;
+  margin              : 0;
+  left                : 297px;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 400;
+  font-style          : normal;
+  font-size           : 16.0px;
+  color               : rgba(52, 77, 249, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+  text-decoration     : underline;
+}
+.bp1-landing-temporaldesktop .bp1-logosinglesencasa {
+  background          : rgba(255, 255, 255, 0.0);
+  width               : 380px;
+  margin-right        : -10px;
+  height              : 100%;
+  pointer-events      : auto;
+  margin-left         : 10px;
+  position            : relative;
+}
+.bp1-landing-temporaldesktop .bp1-logosinglesencasa-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 99px;
+  align-items         : center;
+  height              : 87px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp1-landing-temporaldesktop .bp1-imagesshapesright {
+  background          : rgba(255, 255, 255, 0.0);
+  right               : 10.07%;
+  top                 : 325px;
+  height              : 208px;
+  width               : 170px;
+  position            : absolute;
+  margin              : 0;
+}
+.bp1-landing-temporaldesktop .bp1-imagesshapesright .bp1-oval {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 77px;
+  height              : 22px;
+  width               : 22px;
+  position            : absolute;
+  margin              : 0;
+  left                : 148px;
+}
+.bp1-landing-temporaldesktop .bp1-imagesshapesright .bp1-triangle {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 22px;
+  width               : 22px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-landing-temporaldesktop .bp1-imagesshapesright .bp1-image1 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 164px;
+  height              : 44px;
+  width               : 44px;
+  position            : absolute;
+  margin              : 0;
+  left                : 108px;
+  -ms-transform       : rotate(-180deg); /* IE 9 */
+  -webkit-transform   : rotate(-180deg); /* Chrome, Safari, Opera */
+  transform           : rotate(-180deg);
+}
+.bp1-landing-temporaldesktop .bp1-rectangle3 {
+  background          : rgba(255, 255, 255, 0.0);
+  width               : 14px;
+  margin-right        : 240px;
+  height              : 100%;
+  pointer-events      : auto;
+  margin-left         : -240px;
+  position            : relative;
+  border-style        : solid;
+  border-width        : 3;
+  border-color        : rgba(245, 165, 35, 1.0);
+  -ms-transform       : rotate(-315deg); /* IE 9 */
+  -webkit-transform   : rotate(-315deg); /* Chrome, Safari, Opera */
+  transform           : rotate(-315deg);
+}
+.bp1-landing-temporaldesktop .bp1-rectangle3-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 615px;
+  align-items         : center;
+  height              : 14px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp1-landing-temporaldesktop .bp1-imagesinfantil {
+  background          : rgba(255, 255, 255, 0.0);
+  right               : -159px;
+  top                 : 880px;
+  height              : 538px;
+  width               : 362px;
+  position            : absolute;
+  margin              : 0;
+}
+.bp1-landing-temporaldesktop .bp1-imagesinfantil .bp1-en-familia-active-fun-primaria {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 183px;
+  height              : 330px;
+  width               : 239px;
+  position            : absolute;
+  margin              : 0;
+  left                : 38px;
+  -ms-transform       : rotate(-15deg); /* IE 9 */
+  -webkit-transform   : rotate(-15deg); /* Chrome, Safari, Opera */
+  transform           : rotate(-15deg);
+}
+.bp1-landing-temporaldesktop .bp1-imagesinfantil .bp1-en-familia-artsandcraft-infantil {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 35px;
+  height              : 318px;
+  width               : 225px;
+  position            : absolute;
+  margin              : 0;
+  left                : 69px;
+  -ms-transform       : rotate(-32deg); /* IE 9 */
+  -webkit-transform   : rotate(-32deg); /* Chrome, Safari, Opera */
+  transform           : rotate(-32deg);
+}
+.bp1-landing-temporaldesktop .bp1-imagesshapesleft {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 390px;
+  height              : 219px;
+  width               : 154px;
+  position            : absolute;
+  margin              : 0;
+  left                : 9.00%;
+}
+.bp1-landing-temporaldesktop .bp1-imagesshapesleft .bp1-image2 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 195px;
+  height              : 24px;
+  width               : 24px;
+  position            : absolute;
+  margin              : 0;
+  left                : 70px;
+}
+.bp1-landing-temporaldesktop .bp1-imagesshapesleft .bp1-view4 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 29px;
+  width               : 29px;
+  position            : absolute;
+  margin              : 0;
+  left                : 125px;
+  border-style        : solid;
+  border-width        : 3;
+  border-color        : rgba(183, 232, 134, 1.0);
+}
+.bp1-landing-temporaldesktop .bp1-imagesshapesleft .bp1-rectangle4 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 87px;
+  height              : 68px;
+  width               : 28px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  border-radius       : 12px;
+  border-style        : solid;
+  border-width        : 3;
+  border-color        : rgba(247, 231, 27, 1.0);
+}
+.bp1-landing-temporaldesktop .bp1-logoscambridgeheader {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 48px;
+  width               : 164px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-landing-temporaldesktop .bp1-logo-cu-pcolor {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 2311px;
+  height              : 38px;
+  width               : 178px;
+  position            : absolute;
+  margin              : 0;
+  left                : 7.00%;
+}
+.bp1-landing-temporaldesktop .bp1-logo-cu-pcolor .bp1-shape {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 33px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-landing-temporaldesktop .bp1-logo-cu-pcolor .bp1-image3 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 32px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-landing-temporaldesktop .bp1-logo-cu-pcolor .bp1-image4 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 36px;
+  width               : 32px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-landing-temporaldesktop .bp1-logo-cu-pcolor .bp1-image5 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 34px;
+  width               : 32px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-landing-temporaldesktop .bp1-logo-cu-pcolor .bp1-image6 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 1px;
+  height              : 11px;
+  width               : 11px;
+  position            : absolute;
+  margin              : 0;
+  left                : 1px;
+}
+.bp1-landing-temporaldesktop .bp1-logo-cu-pcolor .bp1-image7 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 1px;
+  height              : 10px;
+  width               : 8px;
+  position            : absolute;
+  margin              : 0;
+  left                : 1px;
+}
+.bp1-landing-temporaldesktop .bp1-logo-cu-pcolor .bp1-image8 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 1px;
+  height              : 11px;
+  width               : 27px;
+  position            : absolute;
+  margin              : 0;
+  left                : 5px;
+}
+.bp1-landing-temporaldesktop .bp1-logo-cu-pcolor .bp1-image9 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 1px;
+  height              : 10px;
+  width               : 9px;
+  position            : absolute;
+  margin              : 0;
+  left                : 20px;
+}
+.bp1-landing-temporaldesktop .bp1-logo-cu-pcolor .bp1-image10 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 9px;
+  height              : 24px;
+  width               : 27px;
+  position            : absolute;
+  margin              : 0;
+  left                : 3px;
+}
+.bp1-landing-temporaldesktop .bp1-logo-cu-pcolor .bp1-image11 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 21px;
+  height              : 11px;
+  width               : 9px;
+  position            : absolute;
+  margin              : 0;
+  left                : 1px;
+}
+.bp1-landing-temporaldesktop .bp1-logo-cu-pcolor .bp1-image12 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 20px;
+  height              : 12px;
+  width               : 29px;
+  position            : absolute;
+  margin              : 0;
+  left                : 2px;
+}
+.bp1-landing-temporaldesktop .bp1-logo-cu-pcolor .bp1-image13 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 21px;
+  height              : 12px;
+  width               : 7px;
+  position            : absolute;
+  margin              : 0;
+  left                : 20px;
+}
+.bp1-landing-temporaldesktop .bp1-logo-cu-pcolor .bp1-image14 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 23px;
+  height              : 9px;
+  width               : 7px;
+  position            : absolute;
+  margin              : 0;
+  left                : 21px;
+}
+.bp1-landing-temporaldesktop .bp1-logo-cu-pcolor .bp1-image15 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 1px;
+  height              : 34px;
+  width               : 30px;
+  position            : absolute;
+  margin              : 0;
+  left                : 1px;
+}
+.bp1-landing-temporaldesktop .bp1-logo-cu-pcolor .bp1-image16 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 13px;
+  height              : 9px;
+  width               : 8px;
+  position            : absolute;
+  margin              : 0;
+  left                : 12px;
+}
+.bp1-landing-temporaldesktop .bp1-logo-cu-pcolor .bp1-clipped {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 178px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-landing-temporaldesktop .bp1-logo-cu-pcolor .bp1-image17 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 178px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-landing-temporaldesktop .bp1-logo-cu-pcolor .bp1-image18 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 178px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-landing-temporaldesktop .bp1-logo-cu-pcolor .bp1-image19 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 178px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-landing-temporaldesktop .bp1-logo-cu-pcolor .bp1-image20 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 178px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-landing-temporaldesktop .bp1-logo-cu-pcolor .bp1-image21 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 178px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-landing-temporaldesktop .bp1-logo-cu-pcolor .bp1-image22 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 178px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-landing-temporaldesktop .bp1-logo-cu-pcolor .bp1-image23 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 178px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-landing-temporaldesktop .bp1-logo-cu-pcolor .bp1-image24 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 178px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-landing-temporaldesktop .bp1-imagesprimaria {
+  background          : rgba(255, 255, 255, 0.0);
+  right               : -125px;
+  top                 : 1674px;
+  height              : 449px;
+  width               : 378px;
+  position            : absolute;
+  margin              : 0;
+}
+.bp1-landing-temporaldesktop .bp1-imagesprimaria .bp1-juegos-poster-look-find-primaria {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 180px;
+  height              : 244px;
+  width               : 345px;
+  position            : absolute;
+  margin              : 0;
+  left                : 16px;
+  -ms-transform       : rotate(9deg); /* IE 9 */
+  -webkit-transform   : rotate(9deg); /* Chrome, Safari, Opera */
+  transform           : rotate(9deg);
+}
+.bp1-landing-temporaldesktop .bp1-imagesprimaria .bp1-group7 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 23px;
+  height              : 273px;
+  width               : 188px;
+  position            : absolute;
+  margin              : 0;
+  left                : 108px;
+  overflow            : hidden;
+  -ms-transform       : rotate(-18deg); /* IE 9 */
+  -webkit-transform   : rotate(-18deg); /* Chrome, Safari, Opera */
+  transform           : rotate(-18deg);
+}
+.bp1-landing-temporaldesktop .bp1-a-continuacin-ten {
+  background          : rgba(255, 255, 255, 0.0);
+  pointer-events      : auto;
+  margin-right        : -0px;
+  height              : auto;
+  width               : 41.53%;
+  margin-left         : 0px;
+  max-width           : 1024px;
+  position            : relative;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 400;
+  font-style          : normal;
+  font-size           : 20.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : center;
+  line-height         : 28.0px;
+}
+.bp1-landing-temporaldesktop .bp1-a-continuacin-ten-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 532px;
+  align-items         : center;
+  height              : auto;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp1-landing-temporaldesktop .bp1-en-cambridge-univers {
+  background          : rgba(255, 255, 255, 0.0);
+  pointer-events      : auto;
+  margin-right        : -0px;
+  height              : auto;
+  width               : 52.29%;
+  margin-left         : 0px;
+  max-width           : 1024px;
+  position            : relative;
+  font-family         : "Source Sans Pro", Helvetica, Arial, serif;
+  font-weight         : 400;
+  font-style          : normal;
+  font-size           : 24.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : center;
+  line-height         : 32.0px;
+}
+.bp1-landing-temporaldesktop .bp1-en-cambridge-univers-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 357px;
+  align-items         : center;
+  height              : auto;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+/* .anima-animate-appear prefix for appear animations */
+.anima-animate-appear {
+  opacity             : 0;
+  display             : block;
+  -webkit-animation   : anima-reveal 0.3s ease-in-out 1 normal forwards;
+  -moz-animation      : anima-reveal 0.3s ease-in 1 normal forwards;
+  -o-animation        : anima-reveal 0.3s ease-in-out 1 normal forwards;
+  animation           : anima-reveal 0.3s ease-in-out 1 normal forwards;
+}
+.anima-animate-disappear {
+  opacity             : 1;
+  display             : block;
+  -webkit-animation   : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+  -moz-animation      : anima-reveal 0.3s ease-in 1 normal forwards;
+  -o-animation        : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+  animation           : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+}
+.anima-animate-nodelay {
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay  : 0;
+  animation-delay     : 0;
+}
+@-webkit-keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@-moz-keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@-o-keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@media screen and (max-width: 767px) {
+  .bp3-landing-temporalmobile {
+    display             : block;
+  }
+  .bp2-landing-temporaltablet {
+    display             : none;
+  }
+  .bp1-landing-temporaldesktop {
+    display             : none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .bp3-landing-temporalmobile {
+    display             : none;
+  }
+  .bp2-landing-temporaltablet {
+    display             : block;
+  }
+  .bp1-landing-temporaldesktop {
+    display             : none;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .bp3-landing-temporalmobile {
+    display             : none;
+  }
+  .bp2-landing-temporaltablet {
+    display             : none;
+  }
+  .bp1-landing-temporaldesktop {
+    display             : block;
+  }
+}
