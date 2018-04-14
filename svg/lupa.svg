@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/lupa</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="WEB" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Home-1024" transform="translate(-913.000000, -1270.000000)" fill="#103E57" stroke="#103E57" stroke-width="2">
+            <g id="FILTRO" transform="translate(-178.000000, 833.000000)">
+                <g id="REPOSO" transform="translate(316.000000, 336.000000)">
+                    <path d="M793,111 C793,106.5818 789.4182,103 785,103 C780.5818,103 777,106.5818 777,111 C777,115.4182 780.5818,119 785,119 C789.4182,119 793,115.4182 793,111 M799.780794,125.780274 C799.488519,126.073242 799.015721,126.073242 798.72382,125.780274 L791.46628,118.451205 C789.825878,119.882658 787.688383,120.755934 785.34383,120.755934 C780.183419,120.755934 776,116.557231 776,111.377967 C776,106.198703 780.183419,102 785.34383,102 C790.503866,102 794.687659,106.198703 794.687659,111.377967 C794.687659,113.663565 793.871008,115.756728 792.517274,117.383617 L799.780794,124.719439 C800.073069,125.012406 800.073069,125.487307 799.780794,125.780274" id="icon/lupa"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/ins</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="FOOTER" transform="translate(-1212.000000, -128.000000)">
+            <g id="RRSS" transform="translate(1100.000000, 72.000000)">
+                <g id="icon/ins_off" transform="translate(112.000000, 56.000000)">
+                    <g id="INS">
+                        <circle id="circulo_copy-2" fill-opacity="0.200000018" fill="#9B9B9B" fill-rule="nonzero" cx="18" cy="18" r="18"></circle>
+                        <rect id="Rectangle-path" stroke="#2E2E2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="8" y="8" width="20" height="20" rx="5"></rect>
+                        <path d="M21.9568436,17.4134512 C22.209966,19.1204228 21.3398694,20.7972958 19.7984701,21.5731251 C18.2570708,22.3489544 16.3918921,22.0488219 15.1716825,20.8286123 C13.9514729,19.6084027 13.6513404,17.743224 14.4271697,16.2018247 C15.2029991,14.6604254 16.879872,13.7903288 18.5868436,14.0434512 C20.3298203,14.3019128 21.698382,15.6704745 21.9568436,17.4134512 Z" id="Shape" stroke="#2E2E2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <circle id="Oval-2" stroke="#2E2E2E" fill="#2E2E2E" cx="23.5" cy="12.856702" r="1"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,8 +1,8 @@
 /**********************
 FUNCIONES JQUERY
 Autor:Pedro de la Cruz
-Fecha: 31-8-2017
-Cliente: Cambridge Para Ti
+Fecha: 13-4-2018
+Cliente: Inglés en Casa
 ***********************/
 
 
@@ -147,6 +147,19 @@ jQuery(document).on('ready',function(){
 						  },
 						});
 	}
+	
+	//Over de las fichas en desktop
+	jQuery(document).on("mouseenter",".menu_header a", function(e) {
+		e.preventDefault();
+		if(device!='yes'){
+			jQuery(this).addClass('over');
+		}
+	}).on("mouseleave",".menu_header a", function(e) {
+		e.preventDefault();
+		if(device!='yes'){
+			jQuery(this).removeClass('over');
+		}
+	});
 
 	//Cuando quieres ver video del slider home
 	jQuery(document).on('click','.enl_video',function(e){
@@ -250,7 +263,7 @@ jQuery(document).on('ready',function(){
 
 	//Galería de recursos
 	if (jQuery('.carrusel_recursos').is(":visible") ) {
-		jQuery('.carrusel-recientes').slick({
+		jQuery('.carrusel-destacados').slick({
 		  dots: false,
 		  infinite: false,
 		  speed: 300,
@@ -261,27 +274,6 @@ jQuery(document).on('ready',function(){
 		  slidesToScroll: 2
 		});
 
-		jQuery('.carrusel-app').slick({
-		  dots: false,
-		  infinite: false,
-		  speed: 300,
-		  slidesToShow: 1,
-		  centerMode: false,
-		  variableWidth: true,
-		  arrows:false,
-		  slidesToScroll: 2
-		});
-
-		jQuery('.carrusel-visitados').slick({
-		  dots: false,
-		  infinite: false,
-		  speed: 300,
-		  slidesToShow: 1,
-		  centerMode: false,
-		  variableWidth: true,
-		  arrows:false,
-		  slidesToScroll: 2
-		});
 	}
 
 	if (jQuery('.box-body-recursos').is(":visible") ) {
