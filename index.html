@@ -460,9 +460,11 @@
                             </div>
                             <!--Fin Box Recurso-->
 							<!--Bloque intermedio-->
-							<div class="banner_recursos">
-								<p>Banner</p>
-							</div>		
+							<div class="cover_b_recursos">
+								<div class="banner_recursos">
+									<p>Recibe en tu correo los últimos recursos de <strong>Inglés En Casa</strong> <a href="#" class="btn_registrate">REGÍSTRATE</a></p>
+								</div>	
+							</div>
 							<!--Fin Bloque intermedio-->
 							<!--Box Recurso-->
                            <div class="item">
@@ -670,9 +672,29 @@
                             <!--Fin Box Recurso-->
 							<!--Bloque Más recursos-->
 							<div class="box_more_r">
-								<a href="more_recursos">MÁS RECURSOS</a>
+								<a href="#" class="more_recursos">MÁS RECURSOS</a>
 							</div>	
 					</div>	
+				</div>	
+			</div>	
+			<div class="box_newsletter">
+				<div class="container">
+					<p>Recibe en tu correo los últimos recursos</p>
+					<div class="box_f_newsletter">
+						<form id="form_home" action="#" method="post" data-validate="true" novalidate data-error-msg="Ha habido un error, por favor revisa los campos resaltados">
+							<div class="row-h-form">	
+								<label for="nombre"></label>
+								<input type="text" placeholder="Nombre y Apellidos" name="nombre" id="nombre" data-validation-rule="not-empty">
+							</div>	
+							<div class="row-h-form">	
+								<label for="email"></label>
+								<input type="text" placeholder="e-mail" name="email" id="email" autocorrect="off" data-validation-rule="email" data-error-msg="El email no es válido">
+							</div>
+							<div class="row-h-form">	
+								<input type="submit" value="ENVIAR">
+							</div>
+						</form>
+					</div>
 				</div>	
 			</div>	
         </div>
@@ -730,6 +752,37 @@
             </div>
         </div>
         <!--Fin Cookies-->
+		<!--Bloque Lightbox Recursos-->
+		<div class="light_box_recursos">
+			<div class="container_pop">
+				<a href="#" class="close_pop">Cerrar</a>
+				<div class="content_pop">
+				
+				</div>
+				<div class="info_pop">
+					<div class="title_pop">
+						<h3>RECURSO INTERACTIVO</h3>
+						<h4 class="interactivo">Look&Find Otoño</h4>
+					</div>
+					<div class="share_pop">
+						<p>Comparte</p>
+						<ul>
+							<li><a href="#" class="ico_fb_share">Facebook</a></li>
+							<li><a href="#" class="ico_tw_share">Twitter</a></li>
+							<li><a href="#" class="ico_mail_share">Mail</a></li>	
+						</ul>	
+					</div>
+					<div class="material_complementario">
+						<h5>Material complementario</h5>
+						<ul>
+							<li><a href="#" target="_blank">Versión para imprimir</a></li>
+							<li><a href="#" target="_blank">Fichas de soluciones</a></li>
+						</ul>	
+					</div>	
+				</div>	
+			</div>
+		</div>	
+		<!--Fin Bloque Recursos-->
     </div>
     <script src="js/jquery.js"></script>
     <script src="js/jquery-cookie.js"></script>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="94px" height="94px" viewBox="0 0 94 94" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>TW</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="38.5294118%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#000000" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-32.1%" y="-111.1%" width="171.4%" height="377.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="5" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="15" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.431372549   0 0 0 0 0.709803922   0 0 0 0 0.678431373  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="WEB" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Detalle_recurso_INTERACTIVO_1280" transform="translate(-1013.000000, -677.000000)">
+            <g id="RRSS" transform="translate(902.000000, 696.000000)">
+                <g id="botones-RRSS" filter="url(#filter-2)" transform="translate(83.000000, 0.000000)">
+                    <g id="TW" transform="translate(52.000000, 0.000000)">
+                        <circle id="circulo_copy" fill="#FFFFFF" fill-rule="nonzero" cx="18" cy="18" r="18"></circle>
+                        <path d="M27,11.6807584 C26.3325344,12.0009235 25.6165008,12.2121132 24.88,12.3060393 C25.6718472,11.7874907 26.2497625,11.0084285 26.51,10.1087079 C25.7919438,10.5661376 24.9958735,10.8925207 24.16,11.072191 C23.4948219,10.2851863 22.5107595,9.82626404 21.47,9.81769663 C19.3352448,9.91544341 17.6818511,11.6903437 17.77,13.7896067 C17.7724451,14.0939612 17.8059463,14.3973064 17.87,14.6950843 C14.8304449,14.4971084 12.0396479,12.9748798 10.26,10.5442416 C9.92839659,11.1591095 9.75662954,11.845068 9.76,12.5410112 C9.74165008,13.8368923 10.3503092,15.0643437 11.4,15.8483146 C10.8092905,15.8260448 10.23428,15.655095 9.73,15.3518258 L9.73,15.4019663 C9.67196559,17.22015 10.9001035,18.8363234 12.69,19.297191 C12.3751111,19.3889359 12.0484253,19.4356229 11.72,19.4358146 C11.4848326,19.4355464 11.2502991,19.4118296 11.02,19.3650281 C11.4346393,20.9261259 12.8309686,22.0426664 14.47,22.123736 C13.2017131,23.2148113 11.5752679,23.818813 9.89,23.8245787 C9.59573322,23.8249184 9.30176331,23.8061981 9.01,23.7685393 C10.6628868,24.9258339 12.6407967,25.5494033 14.67,25.5529494 C21.46,25.5529494 25.17,19.4997191 25.17,14.2467697 C25.17,14.0747191 25.17,13.9036517 25.16,13.7325843 C25.8925892,13.1616887 26.5156876,12.4668575 27,11.6807584 Z" id="tw_logo" fill="#1DA1F2"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

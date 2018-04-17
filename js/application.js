@@ -276,7 +276,7 @@ jQuery(document).on('ready',function(){
 
 	}
 
-	if (jQuery('.box-body-recursos').is(":visible") ) {
+	/*if (jQuery('.box-body-recursos').is(":visible") ) {
 		//Funciones para el cambio de bloques
 
 		resources = jQuery('.box_recurso');
@@ -291,7 +291,7 @@ jQuery(document).on('ready',function(){
 			calc_pagination();
 		}
 
-	}
+	}*/
 
 	//Checkbox recursos
 	jQuery(document).on('change','.body-filtros input[type=checkbox]',function(event){
@@ -355,21 +355,18 @@ jQuery(document).on('ready',function(){
 	jQuery(document).on('click','a.box_recurso',function(event){
 		event.preventDefault();
 		if(device!='yes'){
-			var url_recurso = jQuery(this).attr('href');
+			/*var url_recurso = jQuery(this).attr('href');
 			var id_recurso  = jQuery(this).attr('data-id');
-			openResource(url_recurso, id_recurso);
+			openResource(url_recurso, id_recurso);*/
 		}
 	});
-
-	//Cuando pulsamos sobre un enlace de un recurso app
-	jQuery(document).on('click','a.btn-playstore,a.btn-applestore,a.go-recurso',function(event){
+	
+	//Cerrar Lighbox Recurso
+	jQuery(document).on('click','.close_pop',function(event){
 		event.preventDefault();
-		if(device!='yes'){
-			var url_recurso = jQuery(this).attr('href');
-			var id_recurso  = jQuery(this).parents('.box_recurso').attr('data-id');
-			openResource(url_recurso, id_recurso);
-		}
+		jQuery('.light_box_recursos').fadeOut(600);
 	});
+	
 
 	//Over de las fichas en desktop
 	jQuery(document).on("mouseenter",".box_recurso", function(e) {
@@ -387,7 +384,7 @@ jQuery(document).on('ready',function(){
 	//Over de las fichas mobile
 	jQuery(document).on('touchend',".box_recurso", function(e) {
 		e.preventDefault();
-		if(jQuery(this).hasClass('over')){
+		/*if(jQuery(this).hasClass('over')){
 			//Miramos si hay enlace de app si no abrimos enlace
 			if(jQuery(this).find('a.btn-playstore').length==0 && jQuery(this).find('a.btn-applestore').length==0 ){
 				var url_recurso = jQuery(this).attr('href');
@@ -397,16 +394,9 @@ jQuery(document).on('ready',function(){
 			 jQuery(this).removeClass('over');
 		}else{
 			jQuery(this).addClass('over');
-		}
+		}*/
 	});
 
-	//Touch sobre enlaces de de app store
-	jQuery(document).on('touchend',"a.btn-playstore,a.btn-applestore,a.go-recurso", function(e) {
-		e.preventDefault();
-		var url_recurso = jQuery(this).attr('href');
-		var id_recurso  = jQuery(this).parents('.box_recurso').attr('data-id');
-		openResource(url_recurso, id_recurso);
-	});
 
 	//Eliminar marco de error cuando se hace click sobre un input con error
 	jQuery(document).on('focus','form input,form textarea,form select',function(event){
