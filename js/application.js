@@ -38,6 +38,10 @@ jQuery(document).on('ready',function(){
 	//Obtenemos altura y anchura del navegador
 	h_win=jQuery(window).height();
 	w_win=jQuery(window).width();
+	
+	jQuery('#scroll-pane').scrollpanel({
+		prefix: 'sp-'
+	});
 
 	n_elems = jQuery('.contenedor-recursos').data('num-elems') ?
 			  jQuery('.contenedor-recursos').data('num-elems') :
@@ -275,6 +279,11 @@ jQuery(document).on('ready',function(){
 		});
 
 	}
+	
+	if ( jQuery(".vid_youtube").is(":visible") ) {
+		jQuery(".vid_youtube").fitVids();
+	}
+	
 
 	/*if (jQuery('.box-body-recursos').is(":visible") ) {
 		//Funciones para el cambio de bloques
@@ -441,6 +450,11 @@ jQuery(document).on('ready',function(){
 /*************************
 FUNCIONES JAVASCRIPT
 **************************/
+
+function load_recurso(id,tipo,url){
+	
+} 
+
 	function filterChange() {
 
 			filterValues = {};
