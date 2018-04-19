@@ -90,11 +90,11 @@ PROPIEDADES HEADER
 .menu_header li:last-child a:after{display: none;}
 .menu_header li:last-child a.over:before{width:100%;}
 
-.ficha_gen{width: 268px;height: 340px;position:absolute;right: 0;bottom: -40px;display: block;background: yellow;}
+.ficha_gen{width: 268px;height: 340px;position:absolute;right: 0;bottom: -40px;display: block;}
 .ficha_gen:before{background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);width: 100%;height: 100%;z-index: 50;position: absolute;content:'';}
 .ficha_gen:after{content: '';display: block;width: 24px;height: 24px;background: url(../svg/arrow.svg) top left no-repeat;right: 18px;bottom: 22px;position: absolute;z-index: 51;}
-.ficha_gen.f_infantil{right: 300px;}
-.ficha_gen.f_primaria{}
+.ficha_gen.f_infantil{right: 300px;background: url(../img/bg_infantil.jpg) center center no-repeat;background-size: cover;}
+.ficha_gen.f_primaria{background: url(../img/bg_primaria.jpg) center center no-repeat;background-size: cover;}
 .ficha_gen .titul_level{font-family:'peace_sansregular', Helvetica, sans-serif;font-size: 32px;color:#ffffff;position: absolute;left: 32px;bottom: 70px;z-index: 51;}
 .ficha_gen .n_recursos{font-size:16px;color:#ffffff;position: absolute;left: 32px;bottom: 44px;z-index: 51; }
 
@@ -175,6 +175,7 @@ PROPIEDADES HOME
 #form_home label{display: none;}
 #form_home input[type=text],#form_home input[type=email]{border:none;width: 238px;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;margin-right: 8px;font-size: 14px;color:#103E57;} 
 #form_home input[type=submit]{display: inline-block;vertical-align: middle;width: 118px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 30px;margin-left: 30px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;}
+#form_home input[type=submit]:hover{opacity: 0.7;}
 .row-h-form{display: inline-block;}
 
 /*****************************
@@ -212,7 +213,7 @@ LIGHTBOX RECURSOS
 .share_pop ul li a.ico_mail_share{background:#ffffff url(../svg/MAIL.svg) top left no-repeat;background-size:36px;}
 .share_pop p{display:inline-block;font-size: 14px;color:#103E57;float: left;line-height: 36px;margin-right: 15px;}
 
-.material_complementario{padding-top:43px; }
+.material_complementario{padding-top:43px;padding-bottom: 20px;}
 .material_complementario h5{font-size: 16px;line-height: 30px;font-family:'source_sans_prosemibold', Helvetica, sans-serif;font-style: italic;color:#103E57;}
 .material_complementario ul{}
 .material_complementario ul li{}
@@ -444,12 +445,21 @@ PROPIEDADES FOOTER
 .rrss_footer{margin:0; padding:0;}
 .rrss_footer li{display: inline-block;margin-right: 10px;}
 .rrss_footer li:last-child{margin-right: 0;}
-.rrss_footer a{display: inline-block;width: 36px;height: 36px;text-indent:-99999px;background-image: url(../svg/sprite_rrss.svg);background-repeat: none;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;}
-.rrss_footer a:hover{opacity: 0.7 !important;}
+.rrss_footer a{display: inline-block;width: 36px;height: 36px;text-indent:-99999px;background-image: url(../svg/sprite_rrss.svg);background-repeat: none;}
 .rrss_footer a.ico-fb{background-position: 0px 0px;}
 .rrss_footer a.ico-tw{background-position: -36px 0px;}
 .rrss_footer a.ico-inst{background-position: -72px 0px;}
 .rrss_footer a.ico-yt{background-position: -108px 0px;}
+
+.rrss_footer a.ico-fb:hover{background-position: 0px -36px;}
+.rrss_footer a.ico-tw:hover{background-position: -36px -36px;}
+.rrss_footer a.ico-inst:hover{background-position: -72px -36px;}
+.rrss_footer a.ico-yt:hover{background-position: -108px -36px;}
+
+.bottom_footer{clear: both;padding-top: 94px;padding-bottom: 40px;}
+.bottom_footer p{color:#2E2E2E;font-size: 12px;text-align: center;}
+.bottom_footer p a{color:#2E2E2E;}
+.bottom_footer p a:before{content:'|';display: inline-block;margin-left:5px;margin-right: 5px;}
 
 
 /**********************************

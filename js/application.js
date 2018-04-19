@@ -280,10 +280,6 @@ jQuery(document).on('ready',function(){
 
 	}
 	
-	if ( jQuery(".vid_youtube").is(":visible") ) {
-		jQuery(".vid_youtube").fitVids();
-	}
-	
 
 	/*if (jQuery('.box-body-recursos').is(":visible") ) {
 		//Funciones para el cambio de bloques
@@ -363,17 +359,18 @@ jQuery(document).on('ready',function(){
 	//Cuando pulsamos sobre un recurso
 	jQuery(document).on('click','a.box_recurso',function(event){
 		event.preventDefault();
-		if(device!='yes'){
-			/*var url_recurso = jQuery(this).attr('href');
-			var id_recurso  = jQuery(this).attr('data-id');
-			openResource(url_recurso, id_recurso);*/
-		}
+		var id_recurso=jQuery(this).attr('data-id');
+		var tipo_recurso = jQuery(this).attr('data-type');
+		var url_recurso  = jQuery(this).attr('data-assets');
+		load_recurso(id_recurso,tipo_recurso,url_recurso);
 	});
 	
 	//Cerrar Lighbox Recurso
 	jQuery(document).on('click','.close_pop',function(event){
 		event.preventDefault();
-		jQuery('.light_box_recursos').fadeOut(600);
+		jQuery('.light_box_recursos').fadeOut(600,function(){
+			jQuery('body').css({overflow:'auto'});
+		});
 	});
 	
 
@@ -452,6 +449,78 @@ FUNCIONES JAVASCRIPT
 **************************/
 
 function load_recurso(id,tipo,url){
+	var url_modal=""
+	switch(tipo){
+		case 'audio':
+			url_modal="modal_video.html";
+		break;
+		case 'video':
+			url_modal="modal_video.html";
+		break;
+		case 'interactivo':
+			url_modal="modal_interactivo.html";
+		break;
+		case 'book':
+			url_modal="modal_video.html";
+		break;
+		case 'imagen':
+			url_modal="modal_video.html";
+		break;
+    }
+	
+	var Parameters = 'q='+Math.random();
+	jQuery.ajax({
+		url: url_modal,
+		type: 'POST',
+		async: false,
+		dataType: 'html',
+		data: Parameters,
+		success: function(data){
+	 		jQuery('.resource-content').html(data);
+			//Mostramos el lightbox
+			switch(tipo){
+			case 'audio':
+				jQuery('.light_box_recursos').css({display:'block',opacity:0});
+				jQuery(".vid_youtube").fitVids();	
+				jQuery('.light_box_recursos').animate({opacity:1},600,function(){
+					jQuery(this).css({overflowY:'auto'});	
+					jQuery('body').css({overflow:'hidden'});	
+				});
+			break;
+			case 'video':
+				jQuery('.light_box_recursos').css({display:'block',opacity:0});
+				jQuery(".vid_youtube").fitVids();	
+				jQuery('.light_box_recursos').animate({opacity:1},600,function(){
+					jQuery(this).css({overflowY:'auto'});	
+					jQuery('body').css({overflow:'hidden'});	
+				});
+			break;
+			case 'interactivo':
+				jQuery('.light_box_recursos').css({display:'block',opacity:0}).animate({opacity:1},600,function(){
+					jQuery(this).css({overflowY:'auto'});	
+					jQuery('body').css({overflow:'hidden'});
+				});
+			break;
+			case 'book':
+				jQuery('.light_box_recursos').css({display:'block',opacity:0});
+				jQuery(".vid_youtube").fitVids();	
+				jQuery('.light_box_recursos').animate({opacity:1},600,function(){
+					jQuery(this).css({overflowY:'auto'});	
+					jQuery('body').css({overflow:'hidden'});	
+				});
+			break;
+			case 'imagen':
+				jQuery('.light_box_recursos').css({display:'block',opacity:0});
+				jQuery(".vid_youtube").fitVids();	
+				jQuery('.light_box_recursos').animate({opacity:1},600,function(){
+					jQuery(this).css({overflowY:'auto'});	
+					jQuery('body').css({overflow:'hidden'});	
+				});
+			break;
+		}
+			
+		}
+	});
 	
 } 
 
