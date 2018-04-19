@@ -365,12 +365,35 @@ jQuery(document).on('ready',function(){
 		load_recurso(id_recurso,tipo_recurso,url_recurso);
 	});
 	
+	//Abrir Over Search
+	jQuery(document).on('click','.search_filter a',function(event){
+		event.preventDefault();
+		jQuery('.over_buscador').fadeIn(600)
+	});
+	
+	//Cerrar Over Search
+	jQuery(document).on('click','.close_search',function(event){
+		event.preventDefault();
+		jQuery('.over_buscador').fadeOut(600)
+	});
+	
 	//Cerrar Lighbox Recurso
 	jQuery(document).on('click','.close_pop',function(event){
 		event.preventDefault();
 		jQuery('.light_box_recursos').fadeOut(600,function(){
 			jQuery('body').css({overflow:'auto'});
 		});
+	});
+	
+	//Abrir Bloque de Filtros
+	jQuery(document).on('click','.filter_nivel a,.filter_tipo a,.filter_producto a',function(event){
+		event.preventDefault();
+		var tipo_f=jQuery(this).attr('rel');
+		jQuery('.filter_nivel a').removeClass('active');
+		jQuery('.filter_tipo a').removeClass('active');
+		jQuery('.filter_producto a').removeClass('active');
+		jQuery(this).addClass('active');
+		jQuery('.over_filtros').fadeIn(600)
 	});
 	
 

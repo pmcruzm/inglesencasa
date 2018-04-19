@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/search_circle</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="20" cy="20" r="20"></circle>
+        <path d="M15.4699868,10.2519782 C15.4699868,7.89852906 13.5704616,5.9920639 11.2292197,5.9920639 C8.88797783,5.9920639 6.98845258,7.89852906 6.98845258,10.2519782 C6.98845258,12.6054273 8.88797783,14.5118924 11.2292197,14.5118924 C13.5704616,14.5118924 15.4699868,12.6054273 15.4699868,10.2519782 Z M19.4386474,20.557147 L15.2180641,16.2949659 C14.048576,17.0752528 12.6712502,17.5039563 11.2292197,17.5039563 C7.23584348,17.5039563 4,14.2562907 4,10.2519782 C4,6.24766564 7.23584348,3 11.2292197,3 C15.2224266,3 18.4584394,6.24774585 18.4584394,10.2519782 C18.4584394,11.6583106 18.0563817,13.0044515 17.320469,14.1564588 L21.5618057,18.440023 C22.1459256,19.0255273 22.1460647,19.97369 21.5622231,20.559367 C20.9761655,21.1468137 20.0261609,21.1468137 19.4386474,20.557147 Z" id="path-3"></path>
+    </defs>
+    <g id="WEB" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-1440-Filtro-producto" transform="translate(-1267.000000, -1169.000000)">
+            <g id="CONTENT" transform="translate(32.000000, 504.000000)">
+                <g id="FILTRO" transform="translate(0.000000, 665.000000)">
+                    <g id="REPOSO" transform="translate(739.000000, 0.000000)">
+                        <g id="FilterAndSearchBar">
+                            <g id="icon/search_circle_off" transform="translate(496.000000, 0.000000)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <circle stroke="#9B9B9B" stroke-width="2" cx="20" cy="20" r="19"></circle>
+                                <g id="icon/search_field" mask="url(#mask-2)">
+                                    <g transform="translate(8.000000, 8.000000)">
+                                        <mask id="mask-4" fill="white">
+                                            <use xlink:href="#path-3"></use>
+                                        </mask>
+                                        <use id="icon/lupa" stroke="none" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-3"></use>
+                                        <g id="UI/Color/Flat/Grey" stroke="none" fill="none" mask="url(#mask-4)" fill-rule="evenodd">
+                                            <rect id="Base" fill="#9B9B9B" x="0" y="0" width="24" height="24"></rect>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
