@@ -461,7 +461,7 @@ function load_recurso(id,tipo,url){
 			url_modal="modal_interactivo.html";
 		break;
 		case 'book':
-			url_modal="modal_video.html";
+			url_modal="modal_pdf.html";
 		break;
 		case 'imagen':
 			url_modal="modal_video.html";
@@ -502,8 +502,7 @@ function load_recurso(id,tipo,url){
 				});
 			break;
 			case 'book':
-				jQuery('.light_box_recursos').css({display:'block',opacity:0});
-				jQuery(".vid_youtube").fitVids();	
+				jQuery('.light_box_recursos').css({display:'block',opacity:0});	
 				jQuery('.light_box_recursos').animate({opacity:1},600,function(){
 					jQuery(this).css({overflowY:'auto'});	
 					jQuery('body').css({overflow:'hidden'});	
