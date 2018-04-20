@@ -101,9 +101,9 @@ jQuery(document).on('ready',function(){
 	jQuery(window).scroll(control_scroll);
 
 	//Reseteamos los checkbox si son visibles
-	if (jQuery('.body-filtros').is(":visible") ) {
-		jQuery('.body-filtros input[type=checkbox]').attr('checked',false);
-		jQuery('.body-filtros label').removeClass('active');
+	if (jQuery('.over_filtros').is(":visible") ) {
+		jQuery('.over_filtros input[type=checkbox]').attr('checked',false);
+		jQuery('.over_filtros label').removeClass('active');
 	}
 
 
@@ -165,105 +165,9 @@ jQuery(document).on('ready',function(){
 		}
 	});
 
-	//Cuando quieres ver video del slider home
-	jQuery(document).on('click','.enl_video',function(e){
-		e.preventDefault();
-
-	});
-
-	//Desplegable Languages
-	jQuery(document).on('click',".enl_language", function(e) {
-		e.preventDefault();
-		if(!jQuery(this).parent().hasClass('active')){
-			jQuery(this).parent().addClass('active');
-		}else{
-			jQuery(this).parent().removeClass('active');
-		}
-	});
-
-	//Menú mobile eventos táctiles
-	jQuery(document).on('touchend',".enl_language", function(e) {
-		e.preventDefault();
-		if(!jQuery(this).parent().hasClass('active')){
-			jQuery(this).parent().addClass('active');
-		}else{
-			jQuery(this).parent().removeClass('active');
-		}
-	});
-
-	//Desplegable de recursos
-	jQuery(document).on('click',".act_filtros", function(e) {
-		e.preventDefault();
-		if(!jQuery(this).hasClass('active')){
-			var txt_btn=jQuery(this).attr('data-close');
-			jQuery(this).addClass('active');
-			jQuery(this).html(txt_btn);
-			jQuery('.body-filtros').slideToggle(600);
-		}else{
-			var txt_btn=jQuery(this).attr('data-open');
-			jQuery(this).removeClass('active');
-			jQuery(this).html(txt_btn);
-			jQuery('.body-filtros').slideToggle(600,function(){
-				if(w_win<768){
-					jQuery('.body_f_mobile').stop().clearQueue().slideUp(0).removeClass('active');
-					jQuery('.header_f_mobile a').removeClass('active');
-				}
-			});
-		}
-	});
-
-	//Desplegable de recursos
-	jQuery(document).on('click',".header_f_mobile a", function(e) {
-		e.preventDefault();
-		if(!jQuery(this).hasClass('active')){
-			jQuery('.header_f_mobile a').removeClass('active');
-			jQuery(this).addClass('active');
-			/*var opc_despl=jQuery(this);*/
-			if(jQuery('.body_f_mobile.active').length>0){
-				jQuery('.body_f_mobile.active').stop().clearQueue().slideUp(400,function(){
-					jQuery(this).removeClass('active');
-					jQuery('.header_f_mobile a.active').parents('.filter').find('.body_f_mobile').stop().clearQueue().slideDown(400,function(){
-						jQuery(this).addClass('active');
-					});
-				});
-			}else{
-				jQuery('.header_f_mobile a.active').parents('.filter').find('.body_f_mobile').stop().clearQueue().slideDown(400,function(){
-					jQuery(this).addClass('active');
-				});
-			}
-		}else{
-			jQuery('.header_f_mobile a').removeClass('active');
-			jQuery(this).removeClass('active');
-			//jQuery(this).parents('.filter').find('.body_f_mobile').slideToggle(600);
-			/*var opc_despl=jQuery(this);*/
-			if(jQuery('.body_f_mobile.active').length>0){
-				jQuery('.body_f_mobile.active').stop().clearQueue().slideUp(400,function(){
-					jQuery(this).removeClass('active');
-					jQuery('.header_f_mobile a.active').parents('.filter').find('.body_f_mobile').stop().clearQueue().slideDown(400,function(){
-						jQuery(this).addClass('active');
-					});
-				});
-			}else{
-				jQuery('.header_f_mobile a.active').parents('.filter').find('.body_f_mobile').stop().clearQueue().slideDown(400,function(){
-					jQuery(this).addClass('active');
-				});
-			}
-		}
-	});
+	
 
 
-	//Mostrar Video a pantalla completa
-	jQuery(document).on('click',".enl_video", function(e) {
-		e.preventDefault();
-		var url_video=jQuery(this).attr('href');
-		jQuery('<div class="fullview"><span class="btn-close-player">Close</span><iframe src="'+url_video+'?autoplay=1&amp;rel=0&amp;fs=0&amp;showinfo=0" frameborder="0"></iframe></div>').appendTo('body');
-	});
-
-	//Eliminamos el player
-	jQuery(document).on('click',".btn-close-player", function(e) {
-		e.preventDefault();
-		jQuery('.fullview').remove();
-	});
 
 	//Galería de recursos
 	if (jQuery('.carrusel_recursos').is(":visible") ) {
@@ -299,7 +203,7 @@ jQuery(document).on('ready',function(){
 	}*/
 
 	//Checkbox recursos
-	jQuery(document).on('change','.body-filtros input[type=checkbox]',function(event){
+	jQuery(document).on('change','.over_filtros input[type=checkbox]',function(event){
 		event.preventDefault();
 			//alert(jQuery(this).attr('class'));
 			if(jQuery(this).parent().hasClass('active')){
@@ -312,17 +216,17 @@ jQuery(document).on('ready',function(){
 	});
 
 	//Limpiar filtros
-	jQuery(document).on('click','.clear_all_filters',function(event){
+	/*jQuery(document).on('click','.clear_all_filters',function(event){
 		event.preventDefault();
 			//alert(jQuery(this).attr('class'));
-			jQuery('.body-filtros input[type=checkbox]').attr('checked',false);
-			jQuery('.body-filtros label').removeClass('active');
+			jQuery('.over_filtros input[type=checkbox]').attr('checked',false);
+			jQuery('.over_filtros label').removeClass('active');
 			//Falta mostrar todos los bloques
 			jQuery('.contenedor-recursos .item').removeClass('hide');
 			n_load=1;
 			calc_pagination();
 
-	});
+	});*/
 
 	//Más recursos en la páginación
 	jQuery(document).on('click','.more-box-recursos .all_recursos',function(event){
@@ -368,7 +272,12 @@ jQuery(document).on('ready',function(){
 	//Abrir Over Search
 	jQuery(document).on('click','.search_filter a',function(event){
 		event.preventDefault();
-		jQuery('.over_buscador').fadeIn(600)
+		jQuery('.over_filtros').slideUp(400, function() {
+			jQuery('.filter_nivel a').removeClass('active');
+			jQuery('.filter_tipo a').removeClass('active');
+			jQuery('.filter_producto a').removeClass('active');
+			jQuery('.over_buscador').fadeIn(600);
+		});
 	});
 	
 	//Cerrar Over Search
@@ -389,11 +298,35 @@ jQuery(document).on('ready',function(){
 	jQuery(document).on('click','.filter_nivel a,.filter_tipo a,.filter_producto a',function(event){
 		event.preventDefault();
 		var tipo_f=jQuery(this).attr('rel');
-		jQuery('.filter_nivel a').removeClass('active');
-		jQuery('.filter_tipo a').removeClass('active');
-		jQuery('.filter_producto a').removeClass('active');
-		jQuery(this).addClass('active');
-		jQuery('.over_filtros').fadeIn(600)
+		if(!jQuery(this).hasClass('active')){
+			jQuery('.filter_nivel a').removeClass('active');
+			jQuery('.filter_tipo a').removeClass('active');
+			jQuery('.filter_producto a').removeClass('active');
+			jQuery(this).addClass('active');
+			jQuery('.over_filtros').slideUp(400, function() {
+				switch(tipo_f){
+					case 'nivel':
+						jQuery('.opc_nivel').show();
+						jQuery('.opc_tipo').hide();
+						jQuery('.opc_producto').hide();
+					break;
+					case 'tipo':
+						jQuery('.opc_nivel').hide();
+						jQuery('.opc_tipo').show();
+						jQuery('.opc_producto').hide();
+					break;
+					case 'producto':
+						jQuery('.opc_nivel').hide();
+						jQuery('.opc_tipo').hide();
+						jQuery('.opc_producto').show();	
+					break;
+				}
+				jQuery('.over_filtros').slideDown(400);
+			});
+		}else{
+			jQuery(this).removeClass('active');
+			jQuery('.over_filtros').slideUp(400);
+		}
 	});
 	
 

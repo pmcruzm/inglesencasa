@@ -62,7 +62,22 @@
 					<h3>Buscar Recursos</h3>
 				</div>	
 				<div class="block_search">
-					
+					<div class="container">
+						<div class="block_search_page">
+							<form id="form_search" action="#" method="#">
+								<div class="cover_serach">
+									<div class="box_input_s">
+										<label for="busqueda"></label>
+										<input type="text" placeholder="Encuentra recursos escribiendo su nombre, categoría, formato, etc." name="busqueda" id="busqueda" data-validation-rule="not-empty">
+									</div>
+									<div class="box_submit_s">	
+										<input type="submit" value="ENVIAR">
+									</div>	
+								</div>	
+							</form>	
+						</div>
+						<p>No se han encontrado recursos que coincidan con tu búsqueda, prueba otros términos o accede a todos los recursos de <a href="infantil.html">Infantil</a>  y <a href="primaria.html">Primaria</a> y utiliza los filtros disponibles. </p>
+					</div>	
 				</div>	
 			</div>	
 			<div class="box_newsletter">
@@ -86,7 +101,7 @@
 				</div>	
 			</div>	
         </div>
-        <div id="footer">
+        <div id="footer">	
         	<div class="container">
             	<div class="colum_logo_footer">
             		<a href="" target="_blank" class="logo_footer">Cambridge University Press</a>
@@ -108,15 +123,16 @@
                 <div class="colum_footer">
             		<h3>RECURSOS POR CATEGORÍA</h3>
                     <ul>
-                    	<li><a target="_blank" href="#">Home</a></li>
-						<li><a target="_blank" href="#">Super Safari</a></li>
-						<li><a target="_blank" href="#">Kid’s Box</a></li>
-						<li><a target="_blank" href="#">Super Minds</a></li>
-						<li><a target="_blank" href="#">Quick Minds</a></li>
-						<li><a target="_blank" href="#">Guess What</a></li>
-						<li><a target="_blank" href="#">Smart Planet</a></li>
-						<li><a target="_blank" href="#">Out & About</a></li>
-						<li><a target="_blank" href="#">Empower </a></li>
+                    	<li><a target="_blank" href="#">Educación emocional</a></li>
+						<li><a target="_blank" href="#">Información para padres</a></li>
+						<li><a target="_blank" href="#">Videos</a></li>
+						<li><a target="_blank" href="#">Audios</a></li>
+						<li><a target="_blank" href="#">Programaciones</a></li>
+						<li><a target="_blank" href="#">En familia</a></li>
+						<li><a target="_blank" href="#">El mundo que nos rodea</a></li>
+						<li><a target="_blank" href="#">Juegos</a></li>
+						<li><a target="_blank" href="#">Deberes/Exámenes</a></li>
+						<li><a target="_blank" href="#">Viajes</a></li>
                     </ul>
                 </div>
 				<div class="colum_footer">
@@ -128,6 +144,9 @@
 						<li><a target="_blank" class="ico-yt" href="#">Youtube</a></li>
                     </ul>
                 </div>
+				<div class="bottom_footer">
+					<p>© Cambridge University Press 2018<a href="#">Aviso Legal</a><a href="#">Contact</a></p>
+				</div>	
             </div>
         </div>
         <!--Bloque Cookies-->
@@ -141,70 +160,8 @@
         </div>
         <!--Fin Cookies-->
 		<!--Bloque Lightbox Recursos-->
-		<div class="light_box_recursos" style="display:block;">
-			<div class="container_pop resource-content">
-				<!--Recurso Video-->
-				<div class="vid_recuso" style="display:none;">
-					<a href="#" class="close_pop">Cerrar</a>
-					<div class="content_pop">
-						<div class="vid_youtube">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/iTv_1V-WPfE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-						</div>	
-					</div>
-					<div class="info_pop">
-						<div class="title_pop">
-							<h3>RECURSO INTERACTIVO</h3>
-							<h4 class="interactivo">Look&Find Otoño</h4>
-						</div>
-						<div class="share_pop">
-							<p>Comparte</p>
-							<ul>
-								<li><a href="#" class="ico_fb_share">Facebook</a></li>
-								<li><a href="#" class="ico_tw_share">Twitter</a></li>
-								<li><a href="#" class="ico_mail_share">Mail</a></li>	
-							</ul>	
-						</div>
-						<div class="material_complementario">
-							<h5>Material complementario</h5>
-							<ul>
-								<li><a href="#" target="_blank">Versión para imprimir</a></li>
-								<li><a href="#" target="_blank">Fichas de soluciones</a></li>
-							</ul>	
-						</div>	
-					</div>
-				</div>
-				<!--PDF Recurso-->
-				<div class="book_recuso">
-					<a href="#" class="close_pop">Cerrar</a>
-					<div class="content_pop">
-						<div class="vid_youtube">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/iTv_1V-WPfE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-						</div>	
-					</div>
-					<div class="info_pop">
-						<div class="title_pop">
-							<h3>RECURSO INTERACTIVO</h3>
-							<h4 class="interactivo">Look&Find Otoño</h4>
-						</div>
-						<div class="share_pop">
-							<p>Comparte</p>
-							<ul>
-								<li><a href="#" class="ico_fb_share">Facebook</a></li>
-								<li><a href="#" class="ico_tw_share">Twitter</a></li>
-								<li><a href="#" class="ico_mail_share">Mail</a></li>	
-							</ul>	
-						</div>
-						<div class="material_complementario">
-							<h5>Material complementario</h5>
-							<ul>
-								<li><a href="#" target="_blank">Versión para imprimir</a></li>
-								<li><a href="#" target="_blank">Fichas de soluciones</a></li>
-							</ul>	
-						</div>	
-					</div>
-				</div>
-				<!---->
-			</div>
+		<div class="light_box_recursos" style="display:none;">
+			<div class="container_pop resource-content"></div>
 		</div>	
 		<!--Fin Bloque Recursos-->
     </div>
@@ -217,6 +174,8 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/jquery.lazyload.min.js"></script>
     <script src="js/slick.min.js"></script>
+	<script src="js/jquery.mousewheel.min.js"></script>
+	<script src="js/jquery-scrollpanel.min.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>
     <script src="js/application.js"></script>
 </body>

@@ -90,7 +90,7 @@ PROPIEDADES HEADER
 .menu_header li:last-child a:after{display: none;}
 .menu_header li:last-child a.over:before{width:100%;}
 
-.ficha_gen{width: 268px;height: 340px;position:absolute;right: 0;bottom: -40px;display: block;}
+.ficha_gen{width: 268px;height: 340px;position:absolute;right: 0;bottom: -40px;display: block;box-shadow: 20px 30px 50px 0 rgba(110,181,173,0.50);}
 .ficha_gen:before{background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);width: 100%;height: 100%;z-index: 50;position: absolute;content:'';}
 .ficha_gen:after{content: '';display: block;width: 24px;height: 24px;background: url(../svg/arrow.svg) top left no-repeat;right: 18px;bottom: 22px;position: absolute;z-index: 51;}
 .ficha_gen.f_infantil{right: 300px;background: url(../img/bg_infantil.jpg) center center no-repeat;background-size: cover;}
@@ -112,7 +112,7 @@ PROPIEDADES HOME
 .carrusel-destacados{padding-left: 32px;}
 .carrusel-destacados .slick-list{padding-top:96px;padding-bottom: 96px; }
 .box_recurso{display:block;height:338px;width:268px;box-sizing:border-box;padding:15px;background:#ffffff;margin-right:30px;-webkit-transition: all 0.15s linear;-moz-transition: all 0.15s linear;-o-transition: all 0.15s linear;transition: all 0.15s linear;}
-.box_recurso.over{box-shadow: 0 0 30px 0 #9B9B9B;}
+.box_recurso.over{box-shadow: 20px 30px 50px 0 rgba(110,181,173,0.50);}
 
 
 .body_recurso{background-position:center center;background-repeat:no-repeat;background-size:cover;height:306px;position:relative;border-radius:4px;}
@@ -171,14 +171,15 @@ PROPIEDADES HOME
 .filter_nivel,.filter_tipo,.filter_producto,.search_filter{display:inline-block;}
 .search_filter a{display:inline-block;width: 40px;height: 40px;background: url(../svg/sprite_search_lupa.svg) 0px 0px no-repeat;text-indent: -99999px;position: absolute;top:0;right:0;}
 .search_filter a:hover{background-position: 0px -40px;}
-.filter_nivel a,.filter_tipo a,.filter_producto a{display: inline-block;height: 40px;line-height: 40px;padding-left:20px;padding-right: 20px;font-size: 12px;color:#9B9B9B; border:1px solid #9B9B9B;border-radius: 20px;margin-right: 16px;text-align: center;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;}
+/*.filter_nivel a,.filter_tipo a,.filter_producto a{display: inline-block;height: 40px;line-height: 40px;padding-left:20px;padding-right: 20px;font-size: 12px;color:#9B9B9B; border:1px solid #9B9B9B;border-radius: 20px;margin-right: 16px;text-align: center;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;}*/
+.filter_nivel a, .filter_tipo a, .filter_producto a {display: inline-block;height: 36px;line-height: 36px;padding-left: 40px;padding-right: 16px;font-size: 12px;color: #9B9B9B;border: 2px solid #9B9B9B;border-radius: 20px;margin-right: 16px;text-align: right;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;color: #9B9B9B;letter-spacing: 1px;}
 .filter_nivel a{width:112px;}
 .filter_tipo a{width:192px;}
 .filter_producto a{width: 144px;}
 .filter_nivel a span:after,.filter_tipo a span:after,.filter_producto a span:after{content:'';display: inline-block;background-image: url(../svg/select_arrows.svg);background-position: 0px 0px;background-repeat: no-repeat;width:16px;height: 16px;vertical-align: middle;margin-left: 8px;position: relative;top:-2px;}
-.filter_nivel a:hover,.filter_tipo a:hover,.filter_producto a:hover{background: #FF6B47;border:1px solid #FF6B47;color:#ffffff;}
+.filter_nivel a:hover,.filter_tipo a:hover,.filter_producto a:hover{background: #FF6B47;border:2px solid #FF6B47;color:#ffffff;}
 .filter_nivel a:hover span:after,.filter_tipo a:hover span:after,.filter_producto a:hover span:after{background-position: 0px -16px;}
-.filter_nivel a.active,.filter_tipo a.active,.filter_producto a.active{background: #FF6B47;border:1px solid #FF6B47;color:#ffffff;}
+.filter_nivel a.active,.filter_tipo a.active,.filter_producto a.active{background: #FF6B47;border:2px solid #FF6B47;color:#ffffff;}
 .filter_nivel a.active span:after,.filter_tipo a.active span:after,.filter_producto a.active span:after{background-position: 0px -16px;}
 
 .over_buscador{background:#ffffff;height: 42px;position: absolute;top: 0;right: 0;width: 100%;display: none;}
@@ -187,10 +188,41 @@ PROPIEDADES HOME
 .box_submit_s input[type=submit]{border: none;-webkit-appearance: none;display:inline-block;width: 40px;height: 40px;background: url(../svg/sprite_search_lupa.svg) 0px -40px no-repeat;text-indent: -99999px;cursor: pointer;}
 .box_submit_s input[type=submit]:hover{opacity: 0.7;}
 .box_input_s{position: absolute;width: 40px;height: 40px;right:56px;top:0;max-width: 540px;width: 100%;}
-.box_input_s input[type=text]{width: 100%;border: none;height: 40px;line-height: 40px;border-bottom:2px solid rgba(148,227,223,0.5) ;font-size: 16px;box-sizing: border-box;padding-left: 10px;padding-right: 10px;}
+.box_input_s input[type=text]{width: 100%;border: none;height: 40px;line-height: 40px;border-bottom:2px solid rgba(148,227,223,0.5) ;font-size: 16px;box-sizing: border-box;padding-left: 10px;padding-right: 10px;color:#4A4A4A;}
 .close_search{display: block;width: 32px;height: 32px;background: url(../svg/close.svg) top left no-repeat;text-indent:-99999px;position: absolute;left: -32px;bottom:-5px;cursor: pointer;}
 
-.over_filtros{width:100%;background:rgba(255,255,255,0.5);height:400px;position: absolute;top:64px;left: 0;z-index: 50;display: none;}
+.over_filtros{width:100%;background:#ffffff;box-sizing:border-box;padding-bottom:30px;overflow:hidden;}
+.opc_nivel{overflow:hidden;}
+.box_ciclo,.box_n_infantil,.box_n_primaria,.box_p_primaria,.box_p_infantil,.box_tipo,.box_formato{float:right;display:inline-block;width:176px;margin-left:16px;}
+.box_ciclo h4,.box_n_infantil h4,.box_n_primaria h4,.box_p_primaria h4,.box_p_infantil h4,.box_tipo h4,.box_formato h4{font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;color: #9B9B9B;letter-spacing: 1px;margin-bottom:16px;padding-left:16px;}
+
+
+.over_filtros input{display:none;}
+.over_filtros label{display:inline-block;height:32px;background:#ffffff;line-height:32px;color:#4A4A4A;text-align:center;border-radius:30px;margin-bottom:4px;font-size:14px;-webkit-transition: all 0.4s linear;-moz-transition: all 0.4s linear;-o-transition: all 0.4s linear;transition: all 0.4s linear;font-family:'source_sans_prosemibold', Helvetica, sans-serif;text-align:left;padding-left:16px;padding-right:16px;}
+.over_filtros label:hover{background:rgba(205,204,205,0.5);color:#4A4A4A;}
+.over_filtros label.active{background:#CDCCCD;color:#4A4A4A;}
+
+
+.over_filtros label span{padding-right:8px;}
+.over_filtros label span:before{content:'';display:inline-block;width:20px;height:20px;vertical-align:middle;background-image: url(../svg/sprite_icon-recursos.svg);background-repeat:none;margin-right:8px;margin-top:-5px;}
+
+.over_filtros label span.interactivo:before{background-position: 80px -40px;}
+.over_filtros label span.pdf:before{background-position: 20px -40px;}
+.over_filtros label span.video:before{background-position: 60px -40px;}
+.over_filtros label span.imagen:before{background-position: 40px -40px;}
+.over_filtros label span.audio:before{background-position: 0px -40px;}
+
+.over_filtros label:hover span.interactivo:before{background-position: 80px -60px;}
+.over_filtros label:hover span.pdf:before{background-position: 20px -60px;}
+.over_filtros label:hover span.video:before{background-position: 60px -60px;}
+.over_filtros label:hover span.imagen:before{background-position: 40px -60px;}
+.over_filtros label:hover span.audio:before{background-position: 0px -60px;}
+
+.over_filtros label.active span.interactivo:before{background-position: 80px -60px;}
+.over_filtros label.active span.pdf:before{background-position: 20px -60px;}
+.over_filtros label.active span.video:before{background-position: 60px -60px;}
+.over_filtros label.active span.imagen:before{background-position: 40px -60px;}
+.over_filtros label.active span.audio:before{background-position: 0px -60px;}
 
 
 
@@ -208,7 +240,10 @@ PROPIEDADES HOME
 /*****************************
 PÁGINA DE SEARCH
 ******************************/
-
+.block_search{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);height:300px;position:relative;padding-top:96px;padding-bottom:400px;}
+.block_search_page{position:relative;width:100%;max-width:636px;margin:0 auto;padding-top:96px;}
+.block_search p{color:#103E57;font-size:22px;line-height:32px;width:100%;max-width:636px;margin:0 auto;text-align:center;}
+.block_search p a{text-decoration:underline;color:#103E57;}
 
 /*****************************
 LIGHTBOX RECURSOS
@@ -217,7 +252,7 @@ LIGHTBOX RECURSOS
 .container_pop{width:100%;max-width: 992px;margin: 0 auto;position: relative;padding-top: 32px;padding-bottom: 32px;height: 300px;}
 #scroll-pane{width: 100%;height: 100px;overflow: auto;}
 .close_pop{display: block;width: 32px;height: 32px;background: url(../svg/close.svg) top left no-repeat;text-indent:-99999px;position: absolute;right: 0px;top: 0;cursor: pointer;}
-.content_pop{box-sizing:border-box;padding: 16px;background: #ffffff;}
+.content_pop{box-sizing:border-box;padding: 16px;background: #ffffff;box-shadow: 10px 20px 40px 0 rgba(110,181,173,0.50);}
 .info_pop{position: relative;}
 .title_pop{padding-top: 32px;}
 .title_pop h3{font-size: 12px;color:#103E57;font-family: 'museosanscyrl', "Lucida Bright", "DejaVu Serif", Georgia, "serif";line-height: 12px;}
@@ -230,11 +265,11 @@ LIGHTBOX RECURSOS
 .title_pop h4.video:after{background-position: 96px -64px;}
 .title_pop h4.interactivo:after{background-position: 128px -64px;}
 
-.share_pop{position: absolute;right: 0;top: 50px;overflow: hidden;}
+.share_pop{position: absolute;right: 0;top: 50px;}
 .share_pop ul{margin: 0;padding: 0;float: right;}
 .share_pop ul li{display: inline-block;width: 36px;height: 36px;margin-right:16px;}
 .share_pop ul li:last-child{margin-right: 0;}
-.share_pop ul li a{display: block;text-indent: -99999px;width: 36px;height: 36px;border-radius:30px;}
+.share_pop ul li a{display: block;text-indent: -99999px;width: 36px;height: 36px;border-radius:30px;box-shadow: 5px 10px 30px 0 rgba(110,181,173,0.50);}
 .share_pop ul li a.ico_fb_share{background:#ffffff url(../svg/FB.svg) top left no-repeat;background-size:36px;}
 .share_pop ul li a.ico_tw_share{background:#ffffff url(../svg/TW.svg) top left no-repeat;background-size:36px;}
 .share_pop ul li a.ico_mail_share{background:#ffffff url(../svg/MAIL.svg) top left no-repeat;background-size:36px;}
