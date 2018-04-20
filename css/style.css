@@ -77,13 +77,13 @@ PROPIEDADES HEADER
 .logo_h{display:block;background:url(../svg/cambridge_header.svg) center center no-repeat;height:48px;width:168px;background-size:168px;text-indent:-99999px;position:absolute;top:0;left: 0;}
 
 #header h1{display: block;width: 464px;height: 80px;background: url(../svg/inglesencasa.svg) top left no-repeat;text-indent: -99999px;position: absolute;left: 10px;bottom: 186px;}
-#header h2{font-size: 30px;color:#103E57;max-width: 475px;position: absolute;left: 10px;bottom: 98px;line-height: 36px;}
-#header h2 span{font-weight: bold;font-style: italic;}
+#header h2{font-size: 30px;color:#103E57;max-width: 475px;position: absolute;left: 10px;bottom: 98px;line-height: 36px;font-family:'aleoitalic', Helvetica, sans-serif;}
+#header h2 span{font-weight: bold;}
 
 
 .menu_header{position:absolute;right:30px;top:20px;padding:0;margin: 0;}
 .menu_header li{display: inline-block;}
-.menu_header li a{display: inline-block;color:#103E57;font-family: 'museosanscyrl', "Lucida Bright", "DejaVu Serif", Georgia, "serif";font-size: 12px;position: relative;}
+.menu_header li a{display: inline-block;color:#103E57;font-family: 'museosanscyrl', Helvetica, sans-serif;font-size: 12px;position: relative;}
 .menu_header li a:after{content:'|';display: inline-block;margin-left: 10px;margin-right: 10px;}
 .menu_header li a.over:before{content:'';display: block;height: 3px;background:#FF6B47;width: calc(100% - 22px);position: absolute;bottom: -3px;}
 .menu_header li.active a:before{content:'';display: block;height: 3px;background:#FF6B47;width: calc(100% - 22px);position: absolute;bottom: -3px;}
@@ -111,8 +111,8 @@ PROPIEDADES HOME
 .box_destacado h3{font-family:'peace_sansregular', Helvetica, sans-serif;font-size: 30px;color:#FF6B47;line-height: 48px;padding-bottom: 16px;}
 .carrusel-destacados{padding-left: 32px;}
 .carrusel-destacados .slick-list{padding-top:96px;padding-bottom: 96px; }
-.box_recurso{display:block;height:338px;width:268px;box-sizing:border-box;padding:15px;background:#ffffff;margin-right:30px;-webkit-transition: all 0.15s linear;-moz-transition: all 0.15s linear;-o-transition: all 0.15s linear;transition: all 0.15s linear;}
-.box_recurso.over{box-shadow: 20px 30px 50px 0 rgba(110,181,173,0.50);}
+.box_recurso{display:block;height:338px;width:268px;box-sizing:border-box;padding:15px;background:#ffffff;margin-right:30px;-webkit-transition: all 0.15s linear;-moz-transition: all 0.15s linear;-o-transition: all 0.15s linear;transition: all 0.15s linear;box-shadow: 20px 30px 50px 0 rgba(110,181,173,0.50);}
+.box_recurso.over{}
 
 
 .body_recurso{background-position:center center;background-repeat:no-repeat;background-size:cover;height:306px;position:relative;border-radius:4px;}
@@ -129,11 +129,11 @@ PROPIEDADES HOME
 .info_recurso{position: absolute;padding: 24px;bottom: 0;left: 0;display: block;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;}
 .info_recurso h4{font-size: 12px;line-height: 16px;color:#ffffff;font-family:'museosanscyrl', Helvetica, sans-serif;}
 .info_recurso h5{line-height: 30px;font-size: 22px;color:#ffffff;}
-.box_recurso.over .info_recurso{opacity: 0.7;}
+.box_recurso.over .info_recurso{opacity: 0.9;}
 .cat_recurso{color:#ffffff;font-size: 14px;position: absolute;top:18px;left: 24px;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;}
-.box_recurso.over .cat_recurso{opacity: 0.7;}
+.box_recurso.over .cat_recurso{opacity: 0.9;}
 .type_recurso{position: absolute;right: 18px;top:18px;width: 20px;height: 20px;text-indent: -99999px;background-image: url(../svg/sprite_icon-recursos.svg);background-repeat: none;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;}
-.box_recurso.over .type_recurso{opacity: 0.7;}
+.box_recurso.over .type_recurso{opacity: 0.9;}
 
 .type_recurso.audio{background-position: 0px -20px;}
 .type_recurso.book{background-position: 20px -20px;}
@@ -164,7 +164,7 @@ PROPIEDADES HOME
 .banner_recursos p{font-size: 22px;line-height: 32px;color:#103E57;}
 .banner_recursos strong{font-family:'source_sans_prosemibold', Helvetica, sans-serif;}
 .btn_registrate,.more_recursos{display: inline-block;vertical-align: middle;width: 159px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 30px;margin-left: 30px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;}
-.btn_registrate:hover,.more_recursos:hover{opacity: 0.7;}
+.btn_registrate:hover,.more_recursos:hover{opacity: 0.9;}
 .box_more_r{text-align: center;padding-bottom: 100px;padding-top: 66px;clear: both;}
 
 .block_filters{position:absolute;top:0;right:0;height: 40px;padding-right: 56px;}
@@ -186,7 +186,7 @@ PROPIEDADES HOME
 .cover_serach{overflow:hidden;}
 .box_submit_s{position: absolute;width: 40px;height: 40px;right: 0;top:0;}
 .box_submit_s input[type=submit]{border: none;-webkit-appearance: none;display:inline-block;width: 40px;height: 40px;background: url(../svg/sprite_search_lupa.svg) 0px -40px no-repeat;text-indent: -99999px;cursor: pointer;}
-.box_submit_s input[type=submit]:hover{opacity: 0.7;}
+.box_submit_s input[type=submit]:hover{opacity: 0.9;}
 .box_input_s{position: absolute;width: 40px;height: 40px;right:56px;top:0;max-width: 540px;width: 100%;}
 .box_input_s input[type=text]{width: 100%;border: none;height: 40px;line-height: 40px;border-bottom:2px solid rgba(148,227,223,0.5) ;font-size: 16px;box-sizing: border-box;padding-left: 10px;padding-right: 10px;color:#4A4A4A;}
 .close_search{display: block;width: 32px;height: 32px;background: url(../svg/close.svg) top left no-repeat;text-indent:-99999px;position: absolute;left: -32px;bottom:-5px;cursor: pointer;}
@@ -234,7 +234,7 @@ PROPIEDADES HOME
 #form_home label{display: none;}
 #form_home input[type=text],#form_home input[type=email]{border:none;width: 238px;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;margin-right: 8px;font-size: 14px;color:#103E57;} 
 #form_home input[type=submit]{display: inline-block;vertical-align: middle;width: 118px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 30px;margin-left: 30px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;}
-#form_home input[type=submit]:hover{opacity: 0.7;}
+#form_home input[type=submit]:hover{opacity: 0.9;}
 .row-h-form{display: inline-block;}
 
 /*****************************
@@ -255,7 +255,7 @@ LIGHTBOX RECURSOS
 .content_pop{box-sizing:border-box;padding: 16px;background: #ffffff;box-shadow: 10px 20px 40px 0 rgba(110,181,173,0.50);}
 .info_pop{position: relative;}
 .title_pop{padding-top: 32px;}
-.title_pop h3{font-size: 12px;color:#103E57;font-family: 'museosanscyrl', "Lucida Bright", "DejaVu Serif", Georgia, "serif";line-height: 12px;}
+.title_pop h3{font-size: 12px;color:#103E57;font-family: 'museosanscyrl', Helvetica, sans-serif;line-height: 12px;}
 .title_pop h4{font-family:'source_sans_prosemibold', Helvetica, sans-serif;font-size: 40px;line-height: 50px;color:#103E57;}
 .title_pop h4:after{content:'';display: inline-block;width: 32px;height: 32px;background-image: url(../svg/sprite_icon-recursos.svg);background-repeat: none;background-size: 160px;margin-left: 16px;}
 
