@@ -106,7 +106,7 @@ PROPIEDADES HOME
 
 /***** DESTACADOS ******/
 
-.box_destacado{box-sizing:border-box;border: 32px solid #ffffff;margin-top: 130px;}
+.box_destacado{box-sizing:border-box;border: 32px solid #ffffff;margin-top: 32px;}
 .carrusel_recursos{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);}
 .box_destacado h3{font-family:'peace_sansregular', Helvetica, sans-serif;font-size: 40px;color:#FF6B47;line-height: 48px;padding-bottom: 16px;}
 .carrusel-destacados{left:calc(50% - 614px);}
