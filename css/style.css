@@ -185,6 +185,8 @@ PROPIEDADES HOME
 .filter_nivel a.active span:after,.filter_tipo a.active span:after,.filter_producto a.active span:after{background-position: 0px -16px;}
 
 .over_buscador{background:#ffffff;height: 42px;position: absolute;top: 0;right: 0;width: 100%;display: none;}
+
+.opc_tipo,.opc_producto,.opc_nivel{box-sizing: border-box;padding-right:50px;overflow:hidden;}
 .cover_serach{overflow:hidden;}
 .box_submit_s{position: absolute;width: 40px;height: 40px;right: 0;top:0;}
 .box_submit_s input[type=submit]{border: none;-webkit-appearance: none;display:inline-block;width: 40px;height: 40px;background: url(../svg/sprite_search_lupa.svg) 0px -40px no-repeat;text-indent: -99999px;cursor: pointer;}
