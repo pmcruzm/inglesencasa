@@ -77,8 +77,8 @@ PROPIEDADES HEADER
 .logo_h{display:block;background:url(../svg/cambridge_header.svg) center center no-repeat;height:48px;width:168px;background-size:168px;text-indent:-99999px;position:absolute;top:0;left: 0;}
 
 #header h1{display: block;width: 464px;height: 80px;background: url(../svg/inglesencasa.svg) top left no-repeat;text-indent: -99999px;position: absolute;left: 10px;bottom: 186px;}
-#header h2{font-size: 30px;color:#103E57;max-width: 475px;position: absolute;left: 10px;bottom: 98px;line-height: 36px;font-family:'aleoitalic', Helvetica, sans-serif;}
-#header h2 span{font-weight: bold;}
+#header h2{font-size: 30px;color:#103E57;max-width: 475px;position: absolute;left: 10px;bottom: 98px;line-height: 36px;}
+#header h2 span{font-weight: bold;font-style:italic;}
 
 
 .menu_header{position:absolute;right:30px;top:20px;padding:0;margin: 0;}
@@ -130,7 +130,7 @@ PROPIEDADES HOME
 .info_recurso h4{font-size: 12px;line-height: 16px;color:#ffffff;font-family:'museosanscyrl', Helvetica, sans-serif;}
 .info_recurso h5{line-height: 30px;font-size: 22px;color:#ffffff;}
 .box_recurso.over .info_recurso{opacity: 0.9;}
-.cat_recurso{color:#ffffff;font-size: 14px;position: absolute;top:18px;left: 24px;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;}
+.cat_recurso{color:#ffffff;font-size: 14px;position: absolute;top:18px;left: 24px;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;font-family:'aleoitalic', Helvetica, sans-serif;}
 .box_recurso.over .cat_recurso{opacity: 0.9;}
 .type_recurso{position: absolute;right: 18px;top:18px;width: 20px;height: 20px;text-indent: -99999px;background-image: url(../svg/sprite_icon-recursos.svg);background-repeat: none;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;}
 .box_recurso.over .type_recurso{opacity: 0.9;}
