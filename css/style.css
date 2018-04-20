@@ -234,8 +234,8 @@ PROPIEDADES HOME
 .box_f_newsletter p{color:#323E48;font-size: 22px;line-height: 32px;}
 #form_home{position: absolute;right: 10px;top:50%;margin-top: -20px;}
 #form_home label{display: none;}
-#form_home input[type=text],#form_home input[type=email]{border:none;width: 238px;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;margin-right: 8px;font-size: 14px;color:#103E57;} 
-#form_home input[type=submit]{display: inline-block;vertical-align: middle;width: 118px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 30px;margin-left: 30px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;}
+#form_home input[type=text],#form_home input[type=email]{border:none;width: 238px;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;margin-right: 8px;font-size: 12px;color:#103E57;} 
+#form_home input[type=submit]{display: inline-block;vertical-align: middle;width: 118px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 30px;margin-left: 30px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 1px;}
 #form_home input[type=submit]:hover{opacity: 0.9;}
 .row-h-form{display: inline-block;}
 
