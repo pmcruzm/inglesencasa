@@ -156,7 +156,7 @@ PROPIEDADES HOME
 
 /***** NUEVOS ******/
 
-.box_nuevos{box-sizing:border-box;border: 32px solid #ffffff;position: relative;}
+.box_nuevos{box-sizing:border-box;border: 32px solid #ffffff;position: relative;border-bottom:0;margin-bottom:16px;}
 .contenedor-recursos{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);padding-top: 98px;overflow: hidden;}
 .contenedor-recursos .container{}
 .box_nuevos h3{font-family:'peace_sansregular', Helvetica, sans-serif;font-size: 40px;color:#FF6B47;line-height: 48px;padding-bottom: 16px;}
@@ -231,7 +231,7 @@ PROPIEDADES HOME
 
 
 /***** NEWSLETTER ******/
-.box_newsletter{background: #EBF7F5;border: 32px solid #ffffff;padding-top: 40px;padding-bottom: 40px;}
+.box_newsletter{background: #EBF7F5;border: 32px solid #ffffff;padding-top: 40px;padding-bottom: 40px;border-top:0;}
 .box_f_newsletter{}
 .box_f_newsletter p{color:#323E48;font-size: 22px;line-height: 32px;}
 #form_home{position: absolute;right: 10px;top:50%;margin-top: -20px;}
