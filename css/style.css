@@ -135,7 +135,7 @@ PROPIEDADES HOME
 .cat_recurso{color:#ffffff;font-size: 14px;position: absolute;top:18px;left: 24px;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;font-family:'aleoitalic', Helvetica, sans-serif;}
 .box_recurso.over .cat_recurso{opacity: 0;}
 .type_recurso{position: absolute;right: 18px;top:18px;width: 20px;height: 20px;text-indent: -99999px;background-image: url(../svg/sprite_icon-recursos.svg);background-repeat: none;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;}
-.box_recurso.over .type_recurso{opacity: 1;}
+.box_recurso.over .type_recurso{opacity: 0;}
 
 .type_recurso.audio{background-position: 0px -20px;}
 .type_recurso.book{background-position: 20px -20px;}
