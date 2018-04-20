@@ -83,7 +83,7 @@ PROPIEDADES HEADER
 
 .menu_header{position:absolute;right:30px;top:20px;padding:0;margin: 0;}
 .menu_header li{display: inline-block;}
-.menu_header li a{display: inline-block;color:#103E57;font-family: 'museosanscyrl', Helvetica, sans-serif;font-size: 12px;position: relative;}
+.menu_header li a{display: inline-block;color:#103E57;font-family: 'museosanscyrl', Helvetica, sans-serif;font-size: 12px;position: relative;letter-spacing: 1px;}
 .menu_header li a:after{content:'|';display: inline-block;margin-left: 10px;margin-right: 10px;}
 .menu_header li a.over:before{content:'';display: block;height: 3px;background:#FF6B47;width: calc(100% - 22px);position: absolute;bottom: -3px;}
 .menu_header li.active a:before{content:'';display: block;height: 3px;background:#FF6B47;width: calc(100% - 22px);position: absolute;bottom: -3px;}
@@ -127,7 +127,7 @@ PROPIEDADES HOME
 .over_recurso_all p:before{content:'';display:block;height:70px;background:url(../svg/icon_cards_browser.svg) 47% 50% no-repeat;}
 .new_tag{display:block;width:50px;height:50px;color:#171614;font-size:8px;line-height:50px;background-color: #FFD101;border-radius:40px;text-align:center;font-family: 'montserratregular', sans-serif;position:absolute;top:-25px;right:20px;z-index:20;}
 .info_recurso{position: absolute;padding: 24px;bottom: 0;left: 0;display: block;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;}
-.info_recurso h4{font-size: 12px;line-height: 16px;color:#ffffff;font-family:'museosanscyrl', Helvetica, sans-serif;}
+.info_recurso h4{font-size: 12px;line-height: 16px;color:#ffffff;font-family:'museosanscyrl', Helvetica, sans-serif;letter-spacing: 1px;}
 .info_recurso h5{line-height: 30px;font-size: 22px;color:#ffffff;}
 .box_recurso.over .info_recurso{opacity: 0.9;}
 .cat_recurso{color:#ffffff;font-size: 14px;position: absolute;top:18px;left: 24px;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;font-family:'aleoitalic', Helvetica, sans-serif;}
@@ -163,7 +163,7 @@ PROPIEDADES HOME
 .banner_recursos{clear:both;border-top: 3px solid rgba(22,84,117,0.1);border-bottom: 3px solid rgba(22,84,117,0.1);text-align: center;padding-top: 43px;padding-bottom: 43px;}
 .banner_recursos p{font-size: 22px;line-height: 32px;color:#103E57;}
 .banner_recursos strong{font-family:'source_sans_prosemibold', Helvetica, sans-serif;}
-.btn_registrate,.more_recursos{display: inline-block;vertical-align: middle;width: 159px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 30px;margin-left: 30px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;}
+.btn_registrate,.more_recursos{display: inline-block;vertical-align: middle;width: 159px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 30px;margin-left: 30px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;font-family:'museosanscyrl', Helvetica, sans-serif;letter-spacing: 1px;}
 .btn_registrate:hover,.more_recursos:hover{opacity: 0.9;}
 .box_more_r{text-align: center;padding-bottom: 100px;padding-top: 66px;clear: both;}
 
@@ -194,7 +194,7 @@ PROPIEDADES HOME
 .over_filtros{width:100%;background:#ffffff;box-sizing:border-box;padding-bottom:30px;overflow:hidden;}
 .opc_nivel{overflow:hidden;}
 .box_ciclo,.box_n_infantil,.box_n_primaria,.box_p_primaria,.box_p_infantil,.box_tipo,.box_formato{float:right;display:inline-block;width:176px;margin-left:16px;}
-.box_ciclo h4,.box_n_infantil h4,.box_n_primaria h4,.box_p_primaria h4,.box_p_infantil h4,.box_tipo h4,.box_formato h4{font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;color: #9B9B9B;letter-spacing: 1px;margin-bottom:16px;padding-left:16px;}
+.box_ciclo h4,.box_n_infantil h4,.box_n_primaria h4,.box_p_primaria h4,.box_p_infantil h4,.box_tipo h4,.box_formato h4{font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;color: #9B9B9B;letter-spacing: 1px;margin-bottom:16px;padding-left:16px;letter-spacing: 1px;}
 
 
 .over_filtros input{display:none;}
@@ -255,7 +255,7 @@ LIGHTBOX RECURSOS
 .content_pop{box-sizing:border-box;padding: 16px;background: #ffffff;box-shadow: 10px 20px 40px 0 rgba(110,181,173,0.50);}
 .info_pop{position: relative;}
 .title_pop{padding-top: 32px;}
-.title_pop h3{font-size: 12px;color:#103E57;font-family: 'museosanscyrl', Helvetica, sans-serif;line-height: 12px;}
+.title_pop h3{font-size: 12px;color:#103E57;font-family: 'museosanscyrl', Helvetica, sans-serif;line-height: 12px;letter-spacing: 1px;}
 .title_pop h4{font-family:'source_sans_prosemibold', Helvetica, sans-serif;font-size: 40px;line-height: 50px;color:#103E57;}
 .title_pop h4:after{content:'';display: inline-block;width: 32px;height: 32px;background-image: url(../svg/sprite_icon-recursos.svg);background-repeat: none;background-size: 160px;margin-left: 16px;}
 
@@ -492,7 +492,7 @@ PROPIEDADES FOOTER
 #footer .container{box-sizing:border-box;padding-top:63px;overflow:hidden;min-width:auto !important;max-width:100% !important;}
 .colum_logo_footer{float:left;width:40%;}
 .colum_footer{float:left;width:20%;}
-.colum_footer h3,.colum_logo_footer h3{color:#9B9B9B;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 13px;line-height: 26px;margin-bottom:32px;}
+.colum_footer h3,.colum_logo_footer h3{color:#9B9B9B;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 13px;line-height: 26px;margin-bottom:32px;letter-spacing: 1px;}
 .colum_footer ul a{color: #2E2E2E;font-size: 14px;line-height: 31px;font-family:'source_sans_prosemibold', Helvetica, sans-serif;}
 .colum_footer ul a:hover{opacity:0.9;}
 
