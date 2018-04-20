@@ -272,9 +272,9 @@ LIGHTBOX RECURSOS
 .share_pop ul li{display: inline-block;width: 36px;height: 36px;margin-right:16px;}
 .share_pop ul li:last-child{margin-right: 0;}
 .share_pop ul li a{display: block;text-indent: -99999px;width: 36px;height: 36px;border-radius:30px;box-shadow: 5px 10px 30px 0 rgba(110,181,173,0.50);}
-.share_pop ul li a.ico_fb_share{background:#ffffff url(../svg/FB.svg) top left no-repeat;background-size:36px;}
-.share_pop ul li a.ico_tw_share{background:#ffffff url(../svg/TW.svg) top left no-repeat;background-size:36px;}
-.share_pop ul li a.ico_mail_share{background:#ffffff url(../svg/MAIL.svg) top left no-repeat;background-size:36px;}
+.share_pop ul li a.ico_fb_share{background:#ffffff url(../svg/fb.svg) top left no-repeat;background-size:36px;}
+.share_pop ul li a.ico_tw_share{background:#ffffff url(../svg/tw.svg) top left no-repeat;background-size:36px;}
+.share_pop ul li a.ico_mail_share{background:#ffffff url(../svg/mail.svg) top left no-repeat;background-size:36px;}
 .share_pop p{display:inline-block;font-size: 14px;color:#103E57;float: left;line-height: 36px;margin-right: 15px;}
 
 .material_complementario{padding-top:43px;padding-bottom: 20px;}
