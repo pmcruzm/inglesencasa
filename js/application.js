@@ -39,10 +39,7 @@ jQuery(document).on('ready',function(){
 	h_win=jQuery(window).height();
 	w_win=jQuery(window).width();
 	
-	jQuery('#scroll-pane').scrollpanel({
-		prefix: 'sp-'
-	});
-
+	
 	n_elems = jQuery('.contenedor-recursos').data('num-elems') ?
 			  jQuery('.contenedor-recursos').data('num-elems') :
 			  12;
@@ -416,7 +413,7 @@ function load_recurso(id,tipo,url){
 		case 'interactivo':
 			url_modal="modal_interactivo.html";
 		break;
-		case 'book':
+		case 'pdf':
 			url_modal="modal_pdf.html";
 		break;
 		case 'imagen':
@@ -457,7 +454,7 @@ function load_recurso(id,tipo,url){
 					jQuery('body').css({overflow:'hidden'});
 				});
 			break;
-			case 'book':
+			case 'pdf':
 				jQuery('.light_box_recursos').css({display:'block',opacity:0});	
 				jQuery('.light_box_recursos').animate({opacity:1},600,function(){
 					jQuery(this).css({overflowY:'auto'});	

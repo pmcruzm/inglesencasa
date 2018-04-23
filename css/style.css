@@ -138,7 +138,7 @@ PROPIEDADES HOME
 .box_recurso.over .type_recurso{opacity: 0;}
 
 .type_recurso.audio{background-position: 0px -20px;}
-.type_recurso.book{background-position: 20px -20px;}
+.type_recurso.pdf{background-position: 20px -20px;}
 .type_recurso.imagen{background-position: 40px -20px;}
 .type_recurso.video{background-position: 60px -20px;}
 .type_recurso.interactivo{background-position: 80px -20px;}
@@ -148,7 +148,7 @@ PROPIEDADES HOME
 .w_recurso .info_recurso h5{color:#737B80;}
 .w_recurso .cat_recurso{color:#737B80;}
 .w_recurso .type_recurso.audio{background-position: 0px 0px;}
-.w_recurso .type_recurso.book{background-position: 20px 0px;}
+.w_recurso .type_recurso.pdf{background-position: 20px 0px;}
 .w_recurso .type_recurso.imagen{background-position: 40px 0px;}
 .w_recurso .type_recurso.video{background-position: 60px 0px;}
 .w_recurso .type_recurso.interactivo{background-position: 80px 0px;}
@@ -250,12 +250,26 @@ PÁGINA DE SEARCH
 .block_search p a{text-decoration:underline;color:#103E57;}
 
 /*****************************
+PÁGINA DE NEWSLETTER
+******************************/
+.block_newsletter{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);height:300px;position:relative;padding:72px 104px 400px 104px;text-align: left;}
+.block_newsletter_page{position:relative;width:100%;max-width:557px;}
+.block_newsletter p{color:#103E57;font-size:22px;line-height:32px;width:100%;max-width:557px;}
+.block_newsletter p a{text-decoration:underline;color:#103E57;}
+.block_newsletter_page .row-h-form{display:block;margin-bottom: 16px;}
+#form_newsletter{margin-top: 54px;}
+#form_newsletter label{display: none;}
+#form_newsletter input[type=text],#form_home input[type=email]{border:none;width: 238px;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;margin-right: 8px;font-size: 12px;color:#103E57;} 
+#form_newsletter input[type=submit]{display: inline-block;vertical-align: middle;width: 118px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 30px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 1px;margin-top: 16px;}
+#form_newsletter input[type=submit]:hover{opacity: 0.9;}
+
+/*****************************
 LIGHTBOX RECURSOS
 ******************************/
-.light_box_recursos{width:100%;height: 100%;position:fixed;box-sizing: border-box;padding: 48px;top: 0;left: 0;z-index: 80;	background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);}
-.container_pop{width:100%;max-width: 992px;margin: 0 auto;position: relative;padding-top: 32px;padding-bottom: 32px;height: 300px;}
+.light_box_recursos{width:100%;height: 100%;position:fixed;box-sizing: border-box;padding: 48px 16px 48px 16px;top: 0;left: 0;z-index: 80;	background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);}
+.container_pop{width:100%;max-width: 992px;margin: 0 auto;position: relative;padding-bottom: 32px;}
 #scroll-pane{width: 100%;height: 100px;overflow: auto;}
-.close_pop{display: block;width: 32px;height: 32px;background: url(../svg/close.svg) top left no-repeat;text-indent:-99999px;position: absolute;right: 0px;top: 0;cursor: pointer;}
+.close_pop{display: block;width: 32px;height: 32px;background: url(../svg/close.svg) center center no-repeat;text-indent:-99999px;position: absolute;right: 0px;top: 0;cursor: pointer;top:-40px;}
 .content_pop{box-sizing:border-box;padding: 16px;background: #ffffff;box-shadow: 10px 20px 40px 0 rgba(110,181,173,0.50);}
 .info_pop{position: relative;}
 .title_pop{padding-top: 32px;}
@@ -264,7 +278,7 @@ LIGHTBOX RECURSOS
 .title_pop h4:after{content:'';display: inline-block;width: 32px;height: 32px;background-image: url(../svg/sprite_icon-recursos.svg);background-repeat: none;background-size: 160px;margin-left: 16px;}
 
 .title_pop h4.audio:after{background-position: 0px 0px;}
-.title_pop h4.book:after{background-position: 32px -64px;}
+.title_pop h4.pdf:after{background-position: 32px -64px;}
 .title_pop h4.imagen:after{background-position: 64px -64px;}
 .title_pop h4.video:after{background-position: 96px -64px;}
 .title_pop h4.interactivo:after{background-position: 128px -64px;}
@@ -285,6 +299,8 @@ LIGHTBOX RECURSOS
 .material_complementario ul li{}
 .material_complementario ul li a{color:#103E57;font-size: 16px;line-height: 30px;}
 
+
+.interactivo_recuso iframe{border:none;min-height:584px; height:100%!important;}
 
 
 /*****************************
@@ -531,7 +547,7 @@ PROPIEDADES FOOTER
 /**********************************
 PROPIEDADES DE CUSTOM CHECKBOX BUTTON
 **********************************/
-#foo:checked::before,
+/*#foo:checked::before,
 input[type="checkbox"] {
     position:absolute;
     clip: rect(0,0,0,0);
@@ -583,7 +599,7 @@ input[type="checkbox"] {
 	position:relative;
 	top:3px;
 	margin-right:10px;
-}
+}*/
 
 
 /*****************************
@@ -653,7 +669,8 @@ MEDIA QUERIES
 
 @media screen and (max-width: 1023px) {
 
-
+	.container_pop{max-width:736px;}
+	.interactivo_recuso iframe{min-height:948px;}
 }
 
 @media screen and (max-width: 900px) {
@@ -665,6 +682,15 @@ MEDIA QUERIES
 }
 
 @media screen and (max-width: 767px) {
+	.container_pop{max-width:288px;}
+	.interactivo_recuso iframe{min-height:452px;}	
+	.content_pop{padding:8px;}
+	.share_pop{position:relative;padding-top:80px;text-align: center;}
+	.share_pop p{float: inherit;width:100%;padding-bottom: 16px;}
+	.share_pop ul{float:inherit;padding-bottom: 100px;}
+	.title_pop h4{font-size:24px;}
+	.title_pop h3{font-size:9px;}
+	
 }
 
 @media screen and (max-width: 640px) {
