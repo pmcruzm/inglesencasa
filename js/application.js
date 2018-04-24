@@ -417,7 +417,7 @@ function load_recurso(id,tipo,url){
 			url_modal="modal_pdf.html";
 		break;
 		case 'imagen':
-			url_modal="modal_video.html";
+			url_modal="modal_imagen.html";
 		break;
     }
 	
@@ -463,7 +463,21 @@ function load_recurso(id,tipo,url){
 			break;
 			case 'imagen':
 				jQuery('.light_box_recursos').css({display:'block',opacity:0});
-				jQuery(".vid_youtube").fitVids();	
+				jQuery('.bxslider_galeria').bxSlider({
+									  pager: false,
+									  infiniteLoop: true,
+									  useCSS: false,
+									  adaptiveHeight: false,
+									  controls:true, 
+									  onSlideBefore: function(slideElement, oldIndex, newIndex){
+									  },
+									  onSlideAfter: function(slideElement, oldIndex, newIndex){
+									  },
+									  onSlideNext: function(slideElement, oldIndex, newIndex){
+									  },
+									  onSlidePrev: function(slideElement, oldIndex, newIndex){
+									  },
+									});
 				jQuery('.light_box_recursos').animate({opacity:1},600,function(){
 					jQuery(this).css({overflowY:'auto'});	
 					jQuery('body').css({overflow:'hidden'});	

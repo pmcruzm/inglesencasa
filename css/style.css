@@ -165,8 +165,8 @@ PROPIEDADES HOME
 .banner_recursos{clear:both;border-top: 3px solid rgba(22,84,117,0.1);border-bottom: 3px solid rgba(22,84,117,0.1);text-align: center;padding-top: 43px;padding-bottom: 43px;}
 .banner_recursos p{font-size: 22px;line-height: 32px;color:#103E57;}
 .banner_recursos strong{font-family:'source_sans_prosemibold', Helvetica, sans-serif;}
-.btn_registrate,.more_recursos{display: inline-block;vertical-align: middle;width: 159px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 12px;border-radius: 30px;margin-left: 30px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;font-family:'museosanscyrl', Helvetica, sans-serif;letter-spacing: 1px;}
-.btn_registrate:hover,.more_recursos:hover{opacity: 0.9;}
+.btn_registrate,.more_recursos,.btn_more_r{display: inline-block;vertical-align: middle;width: 159px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 12px;border-radius: 30px;margin-left: 30px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;font-family:'museosanscyrl', Helvetica, sans-serif;letter-spacing: 1px;}
+.btn_registrate:hover,.more_recursos:hover,.btn_more_r:hover{opacity: 0.9;}
 .box_more_r{text-align: center;padding-bottom: 100px;padding-top: 66px;clear: both;}
 
 .block_filters{position:absolute;top:0;right:0;height: 40px;padding-right: 56px;}
@@ -264,13 +264,30 @@ PÁGINA DE NEWSLETTER
 #form_newsletter input[type=submit]:hover{opacity: 0.9;}
 
 /*****************************
+PÁGINA SINGLE RECURSO
+******************************/
+
+.single_box_recursos{box-sizing: border-box;padding: 0px 16px 48px 16px;background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);}
+.header_s_recurso{height:88px;position: relative;}
+.header_s_recurso h1{display: block;background: url(../svg/inglesencasa_single.svg) top left no-repeat;width: 272px;height: 42px;text-indent: -99999px;position: absolute;top: 50%;margin-top: -21px;left: 0;}
+.header_s_recurso .btn_more_r{position: absolute;top: 50%;right: 0;margin-top: -20px;}
+
+/*****************************
+PÁGINA INFANTIL
+******************************/
+
+/*****************************
+PÁGINA PRIMARIA
+******************************/
+
+/*****************************
 LIGHTBOX RECURSOS
 ******************************/
 .light_box_recursos{width:100%;height: 100%;position:fixed;box-sizing: border-box;padding: 48px 16px 48px 16px;top: 0;left: 0;z-index: 80;	background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);}
 .container_pop{width:100%;max-width: 992px;margin: 0 auto;position: relative;padding-bottom: 32px;}
 #scroll-pane{width: 100%;height: 100px;overflow: auto;}
 .close_pop{display: block;width: 32px;height: 32px;background: url(../svg/close.svg) center center no-repeat;text-indent:-99999px;position: absolute;right: 0px;top: 0;cursor: pointer;top:-40px;}
-.content_pop{box-sizing:border-box;padding: 16px;background: #ffffff;box-shadow: 10px 20px 40px 0 rgba(110,181,173,0.50);}
+.content_pop{box-sizing:border-box;padding: 16px;background: #ffffff;box-shadow: 10px 20px 40px 0 rgba(110,181,173,0.50);overflow: hidden;}
 .info_pop{position: relative;}
 .title_pop{padding-top: 32px;}
 .title_pop h3{font-size: 12px;color:#103E57;font-family: 'museosanscyrl', Helvetica, sans-serif;line-height: 12px;letter-spacing: 1px;}
@@ -300,12 +317,22 @@ LIGHTBOX RECURSOS
 .material_complementario ul li a{color:#103E57;font-size: 16px;line-height: 30px;}
 
 
+/*** RECURSO INTERACTIVO *****/
 .interactivo_recuso iframe{border:none;min-height:584px; height:100%!important;}
 
+/*** RECURSO IMAGEN *****/
+.galeria_modal,.single_slide{min-height:584px;}
+.galeria_modal .bx-wrapper{margin-bottom: 0;}
+.galeria_modal .bx-wrapper .bx-controls-direction a{width: 40px !important;height: 40px !important;margin-top: -20px !important;}
+.galeria_modal .bx-wrapper .bx-prev{background: url(../svg/sprite_btn_arrow.svg) 0px 0px no-repeat;-webkit-transform: rotate(180deg);-moz-transform: rotate(180deg);-ms-transform: rotate(180deg);-o-transform: rotate(180deg);transform: rotate(180deg);}
+.galeria_modal .bx-wrapper .bx-prev:hover{background-position: 0px -40px;}
+.galeria_modal .bx-wrapper .bx-next{background: url(../svg/sprite_btn_arrow.svg) 0px 0px no-repeat;}
+.galeria_modal .bx-wrapper .bx-next:hover{background-position: 0px -40px;}
 
-/*****************************
-CONOCENOS
-******************************/
+
+
+
+
 /*.bg_cab_conocenos{height:486px;background:url(../img/DSC_3975@2x.jpg) center 30% no-repeat;background-size:cover;box-sizing:border-box;position:relative;}
 .bg_cab_conocenos:before{display: block;width: 100%;height:486px;background: linear-gradient(270deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.7) 100%);position: absolute;content: '';top: 0;}
 .bg_cab_conocenos.page_recursos:before{height:324px !important;}
