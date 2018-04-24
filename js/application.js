@@ -38,25 +38,25 @@ jQuery(document).on('ready',function(){
 	//Obtenemos altura y anchura del navegador
 	h_win=jQuery(window).height();
 	w_win=jQuery(window).width();
-	
-	
+
+
 	n_elems = jQuery('.contenedor-recursos').data('num-elems') ?
 			  jQuery('.contenedor-recursos').data('num-elems') :
 			  12;
-	
-	//Página single de recurso de video 
+
+	//Página single de recurso de video
 	if (jQuery('.vid_recuso').is(":visible") ) {
-		jQuery(".vid_youtube").fitVids();	
+		jQuery(".vid_youtube").fitVids();
 	}
-	
-	//Página single de recurso de imágenes 
+
+	//Página single de recurso de imágenes
 	if (jQuery('.galeria_modal').is(":visible") ) {
 		jQuery('.bxslider_galeria').bxSlider({
 									  pager: false,
 									  infiniteLoop: true,
 									  useCSS: false,
 									  adaptiveHeight: false,
-									  controls:true, 
+									  controls:true,
 									  onSlideBefore: function(slideElement, oldIndex, newIndex){
 									  },
 									  onSlideAfter: function(slideElement, oldIndex, newIndex){
@@ -172,7 +172,7 @@ jQuery(document).on('ready',function(){
 						  },
 						});
 	}
-	
+
 	//Over de las fichas en desktop
 	jQuery(document).on("mouseenter",".menu_header a", function(e) {
 		e.preventDefault();
@@ -186,7 +186,7 @@ jQuery(document).on('ready',function(){
 		}
 	});
 
-	
+
 
 
 
@@ -204,7 +204,7 @@ jQuery(document).on('ready',function(){
 		});
 
 	}
-	
+
 
 	/*if (jQuery('.box-body-recursos').is(":visible") ) {
 		//Funciones para el cambio de bloques
@@ -289,7 +289,7 @@ jQuery(document).on('ready',function(){
 		var url_recurso  = jQuery(this).attr('data-assets');
 		load_recurso(id_recurso,tipo_recurso,url_recurso);
 	});
-	
+
 	//Abrir Over Search
 	jQuery(document).on('click','.search_filter a',function(event){
 		event.preventDefault();
@@ -300,13 +300,13 @@ jQuery(document).on('ready',function(){
 			jQuery('.over_buscador').fadeIn(600);
 		});
 	});
-	
+
 	//Cerrar Over Search
 	jQuery(document).on('click','.close_search',function(event){
 		event.preventDefault();
 		jQuery('.over_buscador').fadeOut(600)
 	});
-	
+
 	//Cerrar Lighbox Recurso
 	jQuery(document).on('click','.close_pop',function(event){
 		event.preventDefault();
@@ -314,7 +314,7 @@ jQuery(document).on('ready',function(){
 			jQuery('body').css({overflow:'auto'});
 		});
 	});
-	
+
 	//Abrir Bloque de Filtros
 	jQuery(document).on('click','.filter_nivel a,.filter_tipo a,.filter_producto a',function(event){
 		event.preventDefault();
@@ -339,7 +339,7 @@ jQuery(document).on('ready',function(){
 					case 'producto':
 						jQuery('.opc_nivel').hide();
 						jQuery('.opc_tipo').hide();
-						jQuery('.opc_producto').show();	
+						jQuery('.opc_producto').show();
 					break;
 				}
 				jQuery('.over_filtros').slideDown(400);
@@ -349,7 +349,7 @@ jQuery(document).on('ready',function(){
 			jQuery('.over_filtros').slideUp(400);
 		}
 	});
-	
+
 
 	//Over de las fichas en desktop
 	jQuery(document).on("mouseenter",".box_recurso", function(e) {
@@ -444,7 +444,7 @@ function load_recurso(id,tipo,url){
 			url_modal="modal_imagen.html";
 		break;
     }
-	
+
 	var Parameters = 'q='+Math.random();
 	jQuery.ajax({
 		url: url_modal,
@@ -458,31 +458,31 @@ function load_recurso(id,tipo,url){
 			switch(tipo){
 			case 'audio':
 				jQuery('.light_box_recursos').css({display:'block',opacity:0});
-				jQuery(".vid_youtube").fitVids();	
+				jQuery(".vid_youtube").fitVids();
 				jQuery('.light_box_recursos').animate({opacity:1},600,function(){
-					jQuery(this).css({overflowY:'auto'});	
-					jQuery('body').css({overflow:'hidden'});	
+					jQuery(this).css({overflowY:'auto'});
+					jQuery('body').css({overflow:'hidden'});
 				});
 			break;
 			case 'video':
 				jQuery('.light_box_recursos').css({display:'block',opacity:0});
-				jQuery(".vid_youtube").fitVids();	
+				jQuery(".vid_youtube").fitVids();
 				jQuery('.light_box_recursos').animate({opacity:1},600,function(){
-					jQuery(this).css({overflowY:'auto'});	
-					jQuery('body').css({overflow:'hidden'});	
+					jQuery(this).css({overflowY:'auto'});
+					jQuery('body').css({overflow:'hidden'});
 				});
 			break;
 			case 'interactivo':
 				jQuery('.light_box_recursos').css({display:'block',opacity:0}).animate({opacity:1},600,function(){
-					jQuery(this).css({overflowY:'auto'});	
+					jQuery(this).css({overflowY:'auto'});
 					jQuery('body').css({overflow:'hidden'});
 				});
 			break;
 			case 'pdf':
-				jQuery('.light_box_recursos').css({display:'block',opacity:0});	
+				jQuery('.light_box_recursos').css({display:'block',opacity:0});
 				jQuery('.light_box_recursos').animate({opacity:1},600,function(){
-					jQuery(this).css({overflowY:'auto'});	
-					jQuery('body').css({overflow:'hidden'});	
+					jQuery(this).css({overflowY:'auto'});
+					jQuery('body').css({overflow:'hidden'});
 				});
 			break;
 			case 'imagen':
@@ -492,7 +492,7 @@ function load_recurso(id,tipo,url){
 									  infiniteLoop: true,
 									  useCSS: false,
 									  adaptiveHeight: false,
-									  controls:true, 
+									  controls:true,
 									  onSlideBefore: function(slideElement, oldIndex, newIndex){
 									  },
 									  onSlideAfter: function(slideElement, oldIndex, newIndex){
@@ -503,16 +503,16 @@ function load_recurso(id,tipo,url){
 									  },
 									});
 				jQuery('.light_box_recursos').animate({opacity:1},600,function(){
-					jQuery(this).css({overflowY:'auto'});	
-					jQuery('body').css({overflow:'hidden'});	
+					jQuery(this).css({overflowY:'auto'});
+					jQuery('body').css({overflow:'hidden'});
 				});
 			break;
 		}
-			
+
 		}
 	});
-	
-} 
+
+}
 
 	function filterChange() {
 
