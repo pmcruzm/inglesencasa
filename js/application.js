@@ -43,6 +43,30 @@ jQuery(document).on('ready',function(){
 	n_elems = jQuery('.contenedor-recursos').data('num-elems') ?
 			  jQuery('.contenedor-recursos').data('num-elems') :
 			  12;
+	
+	//Página single de recurso de video 
+	if (jQuery('.vid_recuso').is(":visible") ) {
+		jQuery(".vid_youtube").fitVids();	
+	}
+	
+	//Página single de recurso de imágenes 
+	if (jQuery('.galeria_modal').is(":visible") ) {
+		jQuery('.bxslider_galeria').bxSlider({
+									  pager: false,
+									  infiniteLoop: true,
+									  useCSS: false,
+									  adaptiveHeight: false,
+									  controls:true, 
+									  onSlideBefore: function(slideElement, oldIndex, newIndex){
+									  },
+									  onSlideAfter: function(slideElement, oldIndex, newIndex){
+									  },
+									  onSlideNext: function(slideElement, oldIndex, newIndex){
+									  },
+									  onSlidePrev: function(slideElement, oldIndex, newIndex){
+									  },
+									});
+	}
 
 	//Volver el scroll a top
 	/*jQuery('body').scrollTo( "0px", 0,function(){
