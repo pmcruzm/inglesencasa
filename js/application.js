@@ -45,7 +45,7 @@ jQuery(document).on('ready',function(){
 			  12;
 
 	//Página single de recurso de video
-	if (jQuery('.vid_recuso').is(":visible") ) {
+	if (jQuery('.resource-content .vid_youtube').is(":visible") ) {
 		jQuery(".vid_youtube").fitVids();
 	}
 
@@ -284,10 +284,7 @@ jQuery(document).on('ready',function(){
 	//Cuando pulsamos sobre un recurso
 	jQuery(document).on('click','a.box_recurso',function(event){
 		event.preventDefault();
-		var id_recurso=jQuery(this).attr('data-id');
-		var tipo_recurso = jQuery(this).attr('data-type');
-		var url_recurso  = jQuery(this).attr('data-assets');
-		load_recurso(id_recurso,tipo_recurso,url_recurso);
+		load_recurso( jQuery(this).data('modal') || jQuery(this).attr('href') );
 	});
 
 	//Abrir Over Search
@@ -425,35 +422,17 @@ jQuery(document).on('ready',function(){
 FUNCIONES JAVASCRIPT
 **************************/
 
-function load_recurso(id,tipo,url){
-	var url_modal=""
-	switch(tipo){
-		case 'audio':
-			url_modal="modal_video.html";
-		break;
-		case 'video':
-			url_modal="modal_video.html";
-		break;
-		case 'interactivo':
-			url_modal="modal_interactivo.html";
-		break;
-		case 'pdf':
-			url_modal="modal_pdf.html";
-		break;
-		case 'imagen':
-			url_modal="modal_imagen.html";
-		break;
-    }
+function load_recurso(url){
 
 	var Parameters = 'q='+Math.random();
 	jQuery.ajax({
-		url: url_modal,
-		type: 'POST',
-		async: false,
+		url: url,
+		type: 'GET',
 		dataType: 'html',
 		data: Parameters,
 		success: function(data){
 	 		jQuery('.resource-content').html(data);
+	 		var tipo = jQuery('.resource-content .interactivo_recuso').data('type');
 			//Mostramos el lightbox
 			switch(tipo){
 			case 'audio':
