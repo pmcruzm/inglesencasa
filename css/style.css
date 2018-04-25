@@ -276,15 +276,16 @@ PÁGINA SINGLE RECURSO
 PÁGINA INFANTIL
 ******************************/
 
-.cover_infantil{height: 400px;position: absolute;top:98px;;width: 100%;box-shadow: 20px 30px 50px 0 rgba(110,181,173,0.50);background: url(../img/header_infantil.jpg) center center no-repeat;background-size:cover;/*border-left: 32px solid rgba(255,255,255,0);border-left: 32px solid rgba(255,255,255,0);*/}
+.cover_infantil{height: 400px;position: absolute;top:98px;;width: 100%;box-shadow: 20px 30px 50px 0 rgba(110,181,173,0.50);background: url(../img/header_infantil.jpg) center center no-repeat;background-size:cover;box-sizing: border-box;width: calc(100% - 64px);left:0;right:0;margin: 0 auto;}
 .cover_infantil h3{font-family:'peace_sansregular', Helvetica, sans-serif;font-size: 100px;line-height: 100px; color:#ffffff;position: absolute;left: 104px;bottom: 38px;z-index: 51;}
 .cover_infantil p{font-size: 24px;color:#ffffff;line-height: 16px;position: absolute;right:111px;bottom: 56px;font-family:'source_sans_prosemibold', Helvetica, sans-serif;}
 .box_destacado.inside_pag{margin-top: 108px;border-top: 0;}
+.logo_interior{width:247px !important;height: 42px !important;background-size: 247px !important;position: absolute;top: 9px !important;left:193px !important;bottom: auto !important;}
 
 /*****************************
 PÁGINA PRIMARIA
 ******************************/
-.cover_primaria{height: 400px;position: absolute;top:98px;;width: 100%;box-shadow: 20px 30px 50px 0 rgba(110,181,173,0.50);background: url(../img/header_primaria.jpg) center center no-repeat;background-size:cover;/*border-left: 32px solid rgba(255,255,255,0);border-left: 32px solid rgba(255,255,255,0);*/}
+.cover_primaria{height: 400px;position: absolute;top:98px;;width: 100%;box-shadow: 20px 30px 50px 0 rgba(110,181,173,0.50);background: url(../img/header_primaria.jpg) center center no-repeat;background-size:cover;box-sizing: border-box;width: calc(100% - 64px);left:0;right:0;margin: 0 auto;}
 .cover_primaria h3{font-family:'peace_sansregular', Helvetica, sans-serif;font-size: 100px;line-height: 100px; color:#ffffff;position: absolute;left: 104px;bottom: 38px;z-index: 51;}
 .cover_primaria p{font-size: 24px;color:#ffffff;line-height: 16px;position: absolute;right:111px;bottom: 56px;font-family:'source_sans_prosemibold', Helvetica, sans-serif;}
 .box_destacado.inside_pag{margin-top: 108px;border-top: 0;}
