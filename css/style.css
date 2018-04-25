@@ -244,10 +244,12 @@ PROPIEDADES HOME
 /*****************************
 PÁGINA DE SEARCH
 ******************************/
-.block_search{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);height:300px;position:relative;padding-top:96px;padding-bottom:400px;}
-.block_search_page{position:relative;width:100%;max-width:636px;margin:0 auto;padding-top:96px;}
-.block_search p{color:#103E57;font-size:22px;line-height:32px;width:100%;max-width:636px;margin:0 auto;text-align:center;}
-.block_search p a{text-decoration:underline;color:#103E57;}
+.block_search{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);position:relative;padding-top:96px;min-height: 700px;}
+.block_search_page{position:relative;width:100%;max-width:636px;margin:0 auto;p}
+.block_search form{height: 40px;}
+.block_search p.txt_search{color:#103E57;font-size:22px;line-height:32px;width:100%;max-width:636px;margin:0 auto;text-align:center;padding-top: 64px;}
+.block_search p.txt_search a{text-decoration:underline;color:#103E57;}
+.block_search .contenedor-recursos{background:none;padding-top: 96px;}
 
 /*****************************
 PÁGINA DE NEWSLETTER
