@@ -9,10 +9,6 @@ Cliente: Inglés en Casa
 /**********************
 VARIABLES
 **********************/
-var resources, filterValues;
-var n_load=1;
-var n_elems=12;
-var touch_control=0;
 var ACEPTA_COOKIES_NAME  = 'cambridge-para-ti-acepta-cookies';
 var RECURSOS_COOKIE_NAME = 'cambridge-para-ti-recursos';
 
@@ -38,11 +34,6 @@ jQuery(document).on('ready',function(){
 	//Obtenemos altura y anchura del navegador
 	h_win=jQuery(window).height();
 	w_win=jQuery(window).width();
-
-
-	n_elems = jQuery('.contenedor-recursos').data('num-elems') ?
-			  jQuery('.contenedor-recursos').data('num-elems') :
-			  12;
 
 	//Página single de recurso de video
 	if (jQuery('.resource-content .vid_youtube').is(":visible") ) {
@@ -127,8 +118,6 @@ jQuery(document).on('ready',function(){
 		jQuery('.over_filtros label').removeClass('active');
 	}
 
-
-
 	//Over de las fichas en desktop
 	jQuery(document).on("mouseenter",".menu_header a", function(e) {
 		e.preventDefault();
@@ -141,9 +130,6 @@ jQuery(document).on('ready',function(){
 			jQuery(this).removeClass('over');
 		}
 	});
-
-
-
 
 
 	//Galería de recursos
@@ -161,66 +147,12 @@ jQuery(document).on('ready',function(){
 
 	}
 
-
-	/*if (jQuery('.box-body-recursos').is(":visible") ) {
-		//Funciones para el cambio de bloques
-
-		resources = jQuery('.box_recurso');
-		if ( resources.length == 0  ) {
-			jQuery('.more-box-recursos h4').show();
-			jQuery('.more-box-recursos .all_recursos').hide();
-		}else{
-			if(resources.length<=n_elems){
-				jQuery('.more-box-recursos .all_recursos').hide();
-			}
-			n_load=1;
-			calc_pagination();
-		}
-
-	}*/
-
-	//Checkbox recursos
-	jQuery(document).on('change','.over_filtros input[type=checkbox]',function(event){
-		event.preventDefault();
-			//alert(jQuery(this).attr('class'));
-			if(jQuery(this).parent().hasClass('active')){
-				jQuery(this).parent().removeClass('active');
-			}else{
-				jQuery(this).parent().addClass('active');
-			}
-
-			filterChange();
-	});
-
-	//Más recursos en la páginación
-	jQuery(document).on('click','.more-box-recursos .all_recursos',function(event){
-		event.preventDefault();
-			n_load++;
-			calc_pagination();
-	});
-
 	//Cuando pulsamos sobre un recurso
 	jQuery(document).on('click','a.box_recurso',function(event){
 		event.preventDefault();
 		load_recurso( jQuery(this).data('modal') || jQuery(this).attr('href') );
 	});
 
-	//Abrir Over Search
-	jQuery(document).on('click','.search_filter a',function(event){
-		event.preventDefault();
-		jQuery('.over_filtros').slideUp(400, function() {
-			jQuery('.filter_nivel a').removeClass('active');
-			jQuery('.filter_tipo a').removeClass('active');
-			jQuery('.filter_producto a').removeClass('active');
-			jQuery('.over_buscador').fadeIn(600);
-		});
-	});
-
-	//Cerrar Over Search
-	jQuery(document).on('click','.close_search',function(event){
-		event.preventDefault();
-		jQuery('.over_buscador').fadeOut(600)
-	});
 
 	//Cerrar Lighbox Recurso
 	jQuery(document).on('click','.close_pop',function(event){
@@ -229,42 +161,6 @@ jQuery(document).on('ready',function(){
 			jQuery('body').css({overflow:'auto'});
 		});
 	});
-
-	//Abrir Bloque de Filtros
-	jQuery(document).on('click','.filter_nivel a,.filter_tipo a,.filter_producto a',function(event){
-		event.preventDefault();
-		var tipo_f=jQuery(this).attr('rel');
-		if(!jQuery(this).hasClass('active')){
-			jQuery('.filter_nivel a').removeClass('active');
-			jQuery('.filter_tipo a').removeClass('active');
-			jQuery('.filter_producto a').removeClass('active');
-			jQuery(this).addClass('active');
-			jQuery('.over_filtros').slideUp(400, function() {
-				switch(tipo_f){
-					case 'nivel':
-						jQuery('.opc_nivel').show();
-						jQuery('.opc_tipo').hide();
-						jQuery('.opc_producto').hide();
-					break;
-					case 'tipo':
-						jQuery('.opc_nivel').hide();
-						jQuery('.opc_tipo').show();
-						jQuery('.opc_producto').hide();
-					break;
-					case 'producto':
-						jQuery('.opc_nivel').hide();
-						jQuery('.opc_tipo').hide();
-						jQuery('.opc_producto').show();
-					break;
-				}
-				jQuery('.over_filtros').slideDown(400);
-			});
-		}else{
-			jQuery(this).removeClass('active');
-			jQuery('.over_filtros').slideUp(400);
-		}
-	});
-
 
 	//Over de las fichas en desktop
 	jQuery(document).on("mouseenter",".box_recurso", function(e) {

@@ -168,6 +168,8 @@ PROPIEDADES HOME
 .btn_registrate,.more_recursos,.btn_more_r{display: inline-block;vertical-align: middle;width: 159px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 12px;border-radius: 30px;margin-left: 30px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;font-family:'museosanscyrl', Helvetica, sans-serif;letter-spacing: 1px;}
 .btn_registrate:hover,.more_recursos:hover,.btn_more_r:hover{opacity: 0.9;}
 .box_more_r{text-align: center;padding-bottom: 100px;padding-top: 66px;clear: both;}
+.box_more_r h4{font-size: 22px;line-height: 32px;color:#103E57;display: none;}
+.more_recursos{margin-left:0 !important;}
 
 .block_filters{position:absolute;top:0;right:0;height: 40px;padding-right: 56px;}
 .filter_nivel,.filter_tipo,.filter_producto,.search_filter{display:inline-block;}

@@ -18,7 +18,8 @@ jQuery(window).on('load',function(){
 });
 
 jQuery(document).on('ready',function(){
-
+	console.log('validation');
+	
 	//Eliminar marco de error cuando se hace click sobre un input con error
 	jQuery(document).on('focus','form input,form textarea,form select',function(event){
 		event.preventDefault();
