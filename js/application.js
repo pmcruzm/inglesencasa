@@ -117,7 +117,7 @@ jQuery(document).on('ready',function(){
 					usePlaylistScroll:true,
 					playlistScrollOrientation:"vertical",
 					playlistScrollTheme:"light",
-					useDownload:false,
+					useDownload:true,
 					facebookAppId:"",
 					useNumbersInPlaylist: true,
 					numberTitleSeparator: ".  ",

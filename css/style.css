@@ -308,7 +308,7 @@ LIGHTBOX RECURSOS
 .title_pop h4{font-family:'source_sans_prosemibold', Helvetica, sans-serif;font-size: 40px;line-height: 50px;color:#103E57;}
 .title_pop h4:after{content:'';display: inline-block;width: 32px;height: 32px;background-image: url(../svg/sprite_icon-recursos.svg);background-repeat: none;background-size: 160px;margin-left: 16px;}
 
-.title_pop h4.audio:after{background-position: 0px 0px;}
+.title_pop h4.audio:after{background-position: 0px -64px;}
 .title_pop h4.pdf:after{background-position: 32px -64px;}
 .title_pop h4.imagen:after{background-position: 64px -64px;}
 .title_pop h4.video:after{background-position: 96px -64px;}
