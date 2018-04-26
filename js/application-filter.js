@@ -88,6 +88,22 @@ jQuery(document).on('ready',function(){
 		}
 	});
 	
+	//Abrir Bloque de Filtros
+	jQuery(document).on('click','.filter_mob a',function(event){
+		event.preventDefault();
+		var tipo_f=jQuery(this).attr('rel');
+		if(!jQuery(this).hasClass('active')){
+			jQuery(this).addClass('active');
+			jQuery('.over_filtros').slideUp(400, function() {
+				jQuery('.over_filtros').slideDown(400);
+			});
+		}else{
+			jQuery(this).removeClass('active');
+			jQuery('.over_filtros').slideUp(400);
+		}
+	
+	});
+	
 	//Checkbox recursos
 	jQuery(document).on('change','.over_filtros input[type=checkbox]',function(event){
 		event.preventDefault();

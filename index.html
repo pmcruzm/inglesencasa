@@ -243,6 +243,9 @@
 				<div class="container">
 					<h3>Nuevos</h3>
 					<div class="block_filters">
+						<div class="filter_mob">
+							<a href="#" class="btn_filter_mob"><span>FILTRAR</span></a>
+						</div>	
 						<div class="filter_nivel">
 							<a href="#" class="btn_filter_n" rel="nivel"><span>NIVEL</span></a>
 						</div>
@@ -271,66 +274,87 @@
 						</div>
 					</div>
 				</div>
-				<div class="over_filtros" style="display:none;">
+				<div class="over_filtros">
 					<div class="container">
 						<!--Filtros Nivel-->
 						<div class="opc_nivel" style="display:none;">
-							<div class="box_n_infantil">
+							<a href="#">NIVEL</a>
+							<div class="box_n_infantil box_single_f">
 								<h4>NIVEL PRIMARIA</h4>
-								<div><label><input name="nivelinfantil[]" value="PRIMERO" type="checkbox"> Primero</label></div>
-                                <div><label><input name="nivelinfantil[]" value="SEGUNDO" type="checkbox"> Segundo</label></div>
-								<div><label><input name="nivelinfantil[]" value="TERCERO" type="checkbox"> Tercero</label></div>
+								<a href="#">NIVEL PRIMARIA</a>
+								<div class="desplegable_filtro">
+									<div><label><input name="nivelinfantil[]" value="PRIMERO" type="checkbox"> Primero</label></div>
+                                	<div><label><input name="nivelinfantil[]" value="SEGUNDO" type="checkbox"> Segundo</label></div>
+									<div><label><input name="nivelinfantil[]" value="TERCERO" type="checkbox"> Tercero</label></div>
+								</div>
 							</div>
-							<div class="box_n_primaria">
+							<div class="box_n_primaria box_single_f">
 								<h4>INFANTIL</h4>
-								<div><label><input name="nivelprimaria[]" value="PRIMERO" type="checkbox"> Primero</label></div>
-                                <div><label><input name="nivelprimaria[]" value="SEGUNDO" type="checkbox"> Segundo</label></div>
-								<div><label><input name="nivelprimaria[]" value="TERCERO" type="checkbox"> Tercero</label></div>
-								<div><label><input name="nivelprimaria[]" value="CUARTO" type="checkbox"> Cuarto</label></div>
-                                <div><label><input name="nivelprimaria[]" value="QUINTO" type="checkbox"> Quinto</label></div>
-								<div><label><input name="nivelprimaria[]" value="SEXTO" type="checkbox"> Sexto</label></div>
+								<a href="#">INFANTIL</a>
+								<div class="desplegable_filtro">
+									<div><label><input name="nivelprimaria[]" value="PRIMERO" type="checkbox"> Primero</label></div>
+									<div><label><input name="nivelprimaria[]" value="SEGUNDO" type="checkbox"> Segundo</label></div>
+									<div><label><input name="nivelprimaria[]" value="TERCERO" type="checkbox"> Tercero</label></div>
+									<div><label><input name="nivelprimaria[]" value="CUARTO" type="checkbox"> Cuarto</label></div>
+									<div><label><input name="nivelprimaria[]" value="QUINTO" type="checkbox"> Quinto</label></div>
+									<div><label><input name="nivelprimaria[]" value="SEXTO" type="checkbox"> Sexto</label></div>
+								</div>	
 							</div>
 						</div>
 						<!--Filtros Nivel-->
-						<div class="opc_tipo">
-							<div class="box_formato">
+						<div class="opc_tipo" style="display:none;">
+							<a href="#">TIPO DE RECURSO</a>
+							<div class="box_formato box_single_f">
 								<h4>FORMATO</h4>
-								<div><label><input name="formato[]" value="INTERACTIVO" type="checkbox"> <span class="interactivo">Interactivo</span></label></div>
-                                <div><label><input name="formato[]" value="PDF" type="checkbox"> <span class="pdf">Pdf</span></label></div>
-								<div><label><input name="formato[]" value="AUDIO" type="checkbox"> <span class="audio">Audio</span></label></div>
-                                <div><label><input name="formato[]" value="VIDEO" type="checkbox"> <span class="video">Video</span></label></div>
-								<div><label><input name="formato[]" value="IMAGEN" type="checkbox"> <span class="imagen">Imagen</span></label></div>
+								<a href="#">FORMATO</a>
+								<div class="desplegable_filtro">
+									<div><label><input name="formato[]" value="INTERACTIVO" type="checkbox"> <span class="interactivo">Interactivo</span></label></div>
+									<div><label><input name="formato[]" value="PDF" type="checkbox"> <span class="pdf">Pdf</span></label></div>
+									<div><label><input name="formato[]" value="AUDIO" type="checkbox"> <span class="audio">Audio</span></label></div>
+									<div><label><input name="formato[]" value="VIDEO" type="checkbox"> <span class="video">Video</span></label></div>
+									<div><label><input name="formato[]" value="IMAGEN" type="checkbox"> <span class="imagen">Imagen</span></label></div>
+								</div>	
 							</div>
-							<div class="box_tipo">
+							<div class="box_tipo box_single_f">
 								<h4>TIPO RECURSO</h4>
-								<div><label><input name="tipo[]" value="JUEGOS" type="checkbox"> Juegos</label></div>
-                                <div><label><input name="tipo[]" value="EDUCACION-EMOCIONAL" type="checkbox"> Educación emocional</label></div>
-								<div><label><input name="tipo[]" value="EN-FAMILIA" type="checkbox"> En familia</label></div>
-								<div><label><input name="tipo[]" value="EL-MUNDO-QUE-NOS-RODEA" type="checkbox"> El mundo que nos rodea</label></div>
-                                <div><label><input name="tipo[]" value="TECNOLOGIA" type="checkbox"> Tecnología</label></div>
-								<div><label><input name="tipo[]" value="DEBERES" type="checkbox"> Deberes</label></div>
-								<div><label><input name="tipo[]" value="VIAJES" type="checkbox"> Viajes</label></div>
+								<a href="#">TIPO RECURSO</a>
+								<div class="desplegable_filtro">
+									<div><label><input name="tipo[]" value="JUEGOS" type="checkbox"> Juegos</label></div>
+									<div><label><input name="tipo[]" value="EDUCACION-EMOCIONAL" type="checkbox"> Educación emocional</label></div>
+									<div><label><input name="tipo[]" value="EN-FAMILIA" type="checkbox"> En familia</label></div>
+									<div><label><input name="tipo[]" value="EL-MUNDO-QUE-NOS-RODEA" type="checkbox"> El mundo que nos rodea</label></div>
+									<div><label><input name="tipo[]" value="TECNOLOGIA" type="checkbox"> Tecnología</label></div>
+									<div><label><input name="tipo[]" value="DEBERES" type="checkbox"> Deberes</label></div>
+									<div><label><input name="tipo[]" value="VIAJES" type="checkbox"> Viajes</label></div>
+								</div>
 							</div>
 						</div>
 						<!--Filtros Nivel-->
 						<div class="opc_producto" style="display:none;">
-							<div class="box_p_primaria">
+							<a href="#">MÉTODO</a>
+							<div class="box_p_primaria box_single_f">
 								<h4>PRIMARIA</h4>
-								<div><label><input name="productoprimaria[]" value="GUESS-WHAT!" type="checkbox"> Guess What!</label></div>
-                                <div><label><input name="productoprimaria[]" value="KIDS-BOX" type="checkbox"> Kid's Box</label></div>
-								<div><label><input name="productoprimaria[]" value="QUICK-MINDS" type="checkbox"> Quick Minds</label></div>
-								<div><label><input name="productoprimaria[]" value="SUPER-MINDS" type="checkbox"> Super Minds</label></div>
-                                <div><label><input name="productoprimaria[]" value="THE-ENGLISH-LADDER" type="checkbox"> The English Ladder</label></div>
-								<div><label><input name="productoprimaria[]" value="PLAYWAY-2ND-EDITION" type="checkbox"> Playway 2nd edition</label></div>
-								<div><label><input name="productoprimaria[]" value="PRIMARY-I-DICTIONARY" type="checkbox"> Primary i-Dictionary</label></div>
-                                <div><label><input name="productoprimaria[]" value="PRIMARY-I-BOX" type="checkbox"> Primary i-Box</label></div>
-								<div><label><input name="productoprimaria[]" value="CAMBRIDGE-COPY" type="checkbox"> Cambridge Copy</label></div>
-								<div><label><input name="productoprimaria[]" value="COLLECTION" type="checkbox"> Collection</label></div>
+								<a href="#">PRIMARIA</a>
+								<div class="desplegable_filtro">
+									<div><label><input name="productoprimaria[]" value="GUESS-WHAT!" type="checkbox"> Guess What!</label></div>
+									<div><label><input name="productoprimaria[]" value="KIDS-BOX" type="checkbox"> Kid's Box</label></div>
+									<div><label><input name="productoprimaria[]" value="QUICK-MINDS" type="checkbox"> Quick Minds</label></div>
+									<div><label><input name="productoprimaria[]" value="SUPER-MINDS" type="checkbox"> Super Minds</label></div>
+									<div><label><input name="productoprimaria[]" value="THE-ENGLISH-LADDER" type="checkbox"> The English Ladder</label></div>
+									<div><label><input name="productoprimaria[]" value="PLAYWAY-2ND-EDITION" type="checkbox"> Playway 2nd edition</label></div>
+									<div><label><input name="productoprimaria[]" value="PRIMARY-I-DICTIONARY" type="checkbox"> Primary i-Dictionary</label></div>
+									<div><label><input name="productoprimaria[]" value="PRIMARY-I-BOX" type="checkbox"> Primary i-Box</label></div>
+									<div><label><input name="productoprimaria[]" value="CAMBRIDGE-COPY" type="checkbox"> Cambridge Copy</label></div>
+									<div><label><input name="productoprimaria[]" value="COLLECTION" type="checkbox"> Collection</label></div>
+								</div>	
 							</div>
-							<div class="box_p_infantil">
+							<div class="box_p_infantil box_single_f">
 								<h4>INFANTIL</h4>
-								<div><label><input name="productoinfantil[]" value="PRIMERO" type="checkbox"> Primero</label></div>
-                                <div><label><input name="productoinfantil[]" value="SEGUNDO" type="checkbox"> Segundo</label></div>
+								<a href="#">INFANTIL</a>
+								<div class="desplegable_filtro">
+									<div><label><input name="productoinfantil[]" value="PRIMERO" type="checkbox"> Primero</label></div>
+									<div><label><input name="productoinfantil[]" value="SEGUNDO" type="checkbox"> Segundo</label></div>
+								</div>
 							</div>
 						</div>
 						<!--Limpiar Filtros-->
