@@ -95,6 +95,9 @@ jQuery(document).on('ready',function(){
 		if(!jQuery(this).hasClass('active')){
 			jQuery(this).addClass('active');
 			jQuery('.over_filtros').slideUp(400, function() {
+				jQuery('.opc_tipo').show();
+				jQuery('.opc_producto').show();
+				jQuery('.opc_nivel').show();
 				jQuery('.over_filtros').slideDown(400);
 			});
 		}else{
