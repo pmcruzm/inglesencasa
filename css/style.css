@@ -343,7 +343,18 @@ LIGHTBOX RECURSOS
 .galeria_modal .bx-wrapper .bx-next{background: url(../svg/sprite_btn_arrow.svg) 0px 0px no-repeat;}
 .galeria_modal .bx-wrapper .bx-next:hover{background-position: 0px -40px;}
 
-
+/*** RECURSO AUDIO *****/
+#awp-wrapper{top:0 !important}
+.awp-playlist-selected{color:#bdbd7b !important;}
+.awp-playlist-non-selected{color:#1b1b1b !important;}
+.awp-playlist-holder{background:#ffffff !important;border-top:none;}
+.awp-player-holder{background:#ffffff !important;}
+.awp-player-thumb-wrapper {background: #ffffff;position: relative;width: 100px;height: 100px;float: left;overflow: hidden;}
+.awp-player-thumb {position: absolute;width: 100%;height: 100%;border-radius: 100%;overflow: hidden; }
+.awp-player-thumb img {display: block;position: absolute;max-width: none;height: 100%;width: auto !important; min-width: 100px;}
+.awp-player-holder{height:100%;}
+.awp-download, .awp-link{color:#1b1b1b !important;}
+.awp-download:hover, .awp-link:hover{color:#bdbd7b !important;}
 
 
 

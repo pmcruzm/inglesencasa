@@ -21,7 +21,7 @@ jQuery(window).on('load',function(){
 });
 
 jQuery(document).on('ready',function(){
-	console.log('filter');
+	//console.log('filter');
 	
 	n_elems = jQuery('.contenedor-recursos').data('num-elems') ?
 			  jQuery('.contenedor-recursos').data('num-elems') :
@@ -32,7 +32,7 @@ jQuery(document).on('ready',function(){
 		//Funciones para el cambio de bloques
 
 		resources = jQuery('.contenedor-recursos .box_recurso');
-		console.log(resources.length)
+		//console.log(resources.length)
 		if ( resources.length == 0  ) {
 			jQuery('.box_more_r h4').show();
 			jQuery('.box_more_r .more_recursos').hide();

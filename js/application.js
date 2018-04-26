@@ -9,6 +9,7 @@ Cliente: Inglés en Casa
 /**********************
 VARIABLES
 **********************/
+var awp_player;  
 var ACEPTA_COOKIES_NAME  = 'cambridge-para-ti-acepta-cookies';
 var RECURSOS_COOKIE_NAME = 'cambridge-para-ti-recursos';
 
@@ -58,6 +59,84 @@ jQuery(document).on('ready',function(){
 									  },
 									});
 	}
+	
+	//Página single de recurso de audio
+	if (jQuery('.player-audio').is(":visible") ) {
+	
+		/*var settings = {
+                    instanceName:"default2",
+                    sourcePath:"",
+                    playlistList:"#awp-playlist-list",
+                    activePlaylist:"playlist-audio1",
+                    activeItem:0,
+                    volume:0.5,
+                    autoPlay:true,
+                    drawWaveWithoutLoad:false,
+                    randomPlay:false,
+                    loopingOn:true,
+                    autoAdvanceToNextMedia:true,
+                    mediaEndAction:"loop",
+                    soundCloudAppId:"6d5131010ae3b3953fc7d881c38bc555",
+                    gDriveAppId:"AIzaSyB0Rw9B0WgjWQUYoxRi_rwpwr5E0ZxXuXs",
+                    useKeyboardNavigationForPlayback:true,
+                    usePlaylistScroll:true,
+                    playlistScrollOrientation:"vertical",
+                    playlistScrollTheme:"light",
+                    useDownload:true,
+                    facebookAppId:"644413448983338",
+                    useNumbersInPlaylist: true,
+                    numberTitleSeparator: ".  ",
+                    artistTitleSeparator: " - ",
+                    playlistItemContent:"title",
+                    wavesurfer:{
+                        waveColor: '#F444D9',
+                        progressColor: '#33FDFF',
+                        barWidth: 3,
+                        cursorColor: '#ffffff',
+                        cursorWidth: 1,
+                        height: 100,
+                    }
+                };*/
+		
+				var settings = {
+					instanceName:"default2",
+					sourcePath:"",
+					playlistList:"#awp-playlist-list",
+					activePlaylist:"playlist-audio1",
+					activeItem:0,
+					volume:0.5,
+					autoPlay:true,
+					drawWaveWithoutLoad:false,
+					randomPlay:false,
+					loopingOn:true,
+					autoAdvanceToNextMedia:true,
+					mediaEndAction:"loop",
+					soundCloudAppId:"",
+					gDriveAppId:"",
+					useKeyboardNavigationForPlayback:true,
+					usePlaylistScroll:true,
+					playlistScrollOrientation:"vertical",
+					playlistScrollTheme:"light",
+					useDownload:false,
+					facebookAppId:"",
+					useNumbersInPlaylist: true,
+					numberTitleSeparator: ".  ",
+					artistTitleSeparator: " - ",
+					playlistItemContent:"title",
+					wavesurfer:{
+						waveColor: '#00d0c6',
+						progressColor: '#c0c07e',
+						barWidth: 3,
+						cursorColor: '#ffffff',
+						cursorWidth: 1,
+						height: 100,
+					}
+				};
+		
+				
+
+                awp_player = jQuery("#awp-wrapper").awp(settings);
+		}
 
 	//Volver el scroll a top
 	/*jQuery('body').scrollTo( "0px", 0,function(){
@@ -219,7 +298,7 @@ function load_recurso(url){
 			switch(tipo){
 			case 'audio':
 				jQuery('.light_box_recursos').css({display:'block',opacity:0});
-				jQuery(".vid_youtube").fitVids();
+				
 				jQuery('.light_box_recursos').animate({opacity:1},600,function(){
 					jQuery(this).css({overflowY:'auto'});
 					jQuery('body').css({overflow:'hidden'});
