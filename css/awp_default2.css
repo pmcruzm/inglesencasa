@@ -1,22 +1,3 @@
-*{
-	margin:0;
-	padding:0;
-	border:0;
-	outline:none;
-}
-a{ 
-	text-decoration: none; 
-}
-body {
-	background:#3a3636;
-	-webkit-font-smoothing: subpixel-antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-
-
-
-
 #awp-wrapper{
 	position:relative;
 	min-width:320px;
@@ -44,9 +25,6 @@ body {
 	height:100%;
 	border-radius: 100%;
 	overflow: hidden;
-	-webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);*/
 }
 
 .awp-player-thumb img{

@@ -35,6 +35,11 @@ jQuery(document).on('ready',function(){
 	//Obtenemos altura y anchura del navegador
 	h_win=jQuery(window).height();
 	w_win=jQuery(window).width();
+	
+	//Página single de recurso de video
+	if (jQuery('.single_box_recursos').is(":visible") ) {
+		jQuery('.single_box_recursos').css({'min-height':h_win-48});
+	}
 
 	//Página single de recurso de video
 	if (jQuery('.resource-content .vid_youtube').is(":visible") ) {
@@ -62,41 +67,6 @@ jQuery(document).on('ready',function(){
 	
 	//Página single de recurso de audio
 	if (jQuery('.player-audio').is(":visible") ) {
-	
-		/*var settings = {
-                    instanceName:"default2",
-                    sourcePath:"",
-                    playlistList:"#awp-playlist-list",
-                    activePlaylist:"playlist-audio1",
-                    activeItem:0,
-                    volume:0.5,
-                    autoPlay:true,
-                    drawWaveWithoutLoad:false,
-                    randomPlay:false,
-                    loopingOn:true,
-                    autoAdvanceToNextMedia:true,
-                    mediaEndAction:"loop",
-                    soundCloudAppId:"6d5131010ae3b3953fc7d881c38bc555",
-                    gDriveAppId:"AIzaSyB0Rw9B0WgjWQUYoxRi_rwpwr5E0ZxXuXs",
-                    useKeyboardNavigationForPlayback:true,
-                    usePlaylistScroll:true,
-                    playlistScrollOrientation:"vertical",
-                    playlistScrollTheme:"light",
-                    useDownload:true,
-                    facebookAppId:"644413448983338",
-                    useNumbersInPlaylist: true,
-                    numberTitleSeparator: ".  ",
-                    artistTitleSeparator: " - ",
-                    playlistItemContent:"title",
-                    wavesurfer:{
-                        waveColor: '#F444D9',
-                        progressColor: '#33FDFF',
-                        barWidth: 3,
-                        cursorColor: '#ffffff',
-                        cursorWidth: 1,
-                        height: 100,
-                    }
-                };*/
 		
 				var settings = {
 					instanceName:"default2",
@@ -273,7 +243,12 @@ jQuery(document).on('ready',function(){
 
 	//Evento para capturar el resize de la ventana
 	jQuery( window ).resize(function() {
-
+		h_win=jQuery(window).height();
+		
+		//Página single de recurso 
+		if (jQuery('.single_box_recursos').is(":visible") ) {
+			jQuery('.single_box_recursos').css({'min-height':h_win-48});
+		}
 	});
 
 });

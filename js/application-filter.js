@@ -121,6 +121,19 @@ jQuery(document).on('ready',function(){
 		jQuery('.over_buscador').fadeOut(600)
 	});
 	
+	//Limpiar filtros
+	jQuery(document).on('click','.clear_all_filters',function(event){
+		event.preventDefault();
+			//alert(jQuery(this).attr('class'));
+			jQuery('.over_filtros input[type=checkbox]').attr('checked',false);
+			jQuery('.over_filtros label').removeClass('active');
+			//Falta mostrar todos los bloques
+			jQuery('.contenedor-recursos .item').removeClass('hide');
+			n_load=1;
+			calc_pagination();
+
+	});
+	
 	
 	
 });
