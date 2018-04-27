@@ -199,7 +199,7 @@ PROPIEDADES HOME
 .box_input_s input[type=text]{width: 100%;border: none;height: 40px;line-height: 40px;border-bottom:2px solid rgba(148,227,223,0.5) ;font-size: 16px;box-sizing: border-box;padding-left: 10px;padding-right: 10px;color:#4A4A4A;}
 .close_search{display: block;width: 32px;height: 32px;background: url(../svg/close.svg) top left no-repeat;text-indent:-99999px;position: absolute;left: -32px;bottom:-5px;cursor: pointer;}
 
-.over_filtros{width:100%;background:#ffffff;box-sizing:border-box;padding-bottom:30px;overflow:hidden;}
+.over_filtros{width:100%;background:#ffffff;box-sizing:border-box;padding-bottom:30px;overflow:hidden;display:none;}
 .opc_nivel{overflow:hidden;}
 .box_ciclo,.box_n_infantil,.box_n_primaria,.box_p_primaria,.box_p_infantil,.box_tipo,.box_formato{float:right;display:inline-block;min-width:106px;margin-left:16px;box-sizing:border-box;padding-left:32px;}
 .box_ciclo h4,.box_n_infantil h4,.box_n_primaria h4,.box_p_primaria h4,.box_p_infantil h4,.box_tipo h4,.box_formato h4{font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;color: #9B9B9B;letter-spacing: 1px;margin-bottom:16px;padding-left:16px;letter-spacing: 1px;}
@@ -233,6 +233,7 @@ PROPIEDADES HOME
 .over_filtros label.active span.audio:before{background-position: 0px -60px;}
 
 .box_clear_filtros{clear:both;text-align: center;}
+.box_clear_filtros a{font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;color: #9B9B9B;letter-spacing: 1px;margin-bottom:16px;padding-left:16px;letter-spacing: 1px;color:#FF6B47;}
 
 .opc_nivel>a,.opc_tipo>a,.opc_producto>a{display:none;}
 .filter_mob{display:none;}
@@ -592,6 +593,7 @@ MEDIA QUERIES
 	.box_destacado h3,.box_nuevos h3{font-size:24px;line-height: 24px;}
 	.carrusel-destacados .slick-list{padding-top: 48px;padding-left: 8px;padding-bottom: 48px;}
 	.box_nuevos > .container, .box_destacado > .container{padding-left:0;}
+	.block_filters{top:auto;bottom: 15px;}
 	
 }
 
@@ -627,7 +629,15 @@ MEDIA QUERIES
 	.box_nuevos{margin-top: 24px;}
 	
 	.box_single_f>a{display:block;}
-	.desplegable_filtro{display:none;}
+	.desplegable_filtro{display:none;padding-left:46px;}
+	.opc_nivel > a, .opc_tipo > a, .opc_producto > a{display:inline-block;padding-left: 32px;color:#4A4A4A;font-size: 16px;line-height: 40px;font-family:'museosanscyrl', Helvetica, sans-serif;letter-spacing: 1px;}
+	.box_single_f{display:block !important;float:inherit !important;max-width:100%;padding-left: 0 !important;margin-left: 0 !important;}
+	.box_ciclo h4, .box_n_infantil h4, .box_n_primaria h4, .box_p_primaria h4, .box_p_infantil h4, .box_tipo h4, .box_formato h4{padding-left:0;}
+	.box_single_f h4{display:none;}
+	.box_single_f a{color:#9B9B9B;font-size: 12px;line-height: 32px;padding-left: 32px;font-family:'museosanscyrl', Helvetica, sans-serif;letter-spacing: 1px;}
+	.box_single_f a:before{content:'';display: inline-block;background-image: url(../svg/select_arrows.svg);background-position: 0px 0px;background-repeat: no-repeat;width: 16px;height: 16px;vertical-align: middle;margin-right: 8px;position: relative;top: -2px;}
+	.over_buscador{right:0;}
+	.block_filters{padding-right: 48px;}
 	
 	/*.box_recurso{max-width:140px;height: 177px;}
 	.content_recurso,.body_recurso,.over_recurso_img{height: 137px;}*/
@@ -640,6 +650,7 @@ MEDIA QUERIES
 
 
 @media screen and (max-width: 480px) {
+	.box_input_s{width:50%;}
 }
 
 

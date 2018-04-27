@@ -153,6 +153,19 @@ jQuery(document).on('ready',function(){
 
 	});
 	
+	//Abrir filtros mobile 
+	jQuery(document).on('click','.box_single_f a',function(event){
+		event.preventDefault();
+			if(!jQuery(this).hasClass('active')){
+				jQuery('.box_single_f a').removeClass('active');
+				jQuery('.desplegable_filtro').hide();
+				jQuery(this).addClass('active');
+				jQuery(this).parents('.box_single_f').find('.desplegable_filtro').slideToggle(600);
+			}else{
+				jQuery(this).removeClass('active');
+				jQuery(this).parents('.box_single_f').find('.desplegable_filtro').slideToggle(600);	
+			}
+	});
 	
 	
 });
