@@ -298,12 +298,46 @@ function load_recurso(url){
 		data: Parameters,
 		success: function(data){
 	 		jQuery('.resource-content').html(data);
-	 		var tipo = jQuery('.resource-content .interactivo_recuso').data('type');
+	 		var tipo = jQuery('.resource-content .content_recurso').data('type');
 			//Mostramos el lightbox
 			switch(tipo){
 			case 'audio':
 				jQuery('.light_box_recursos').css({display:'block',opacity:0});
-				
+				var settings = {
+					instanceName:"default2",
+					sourcePath:"",
+					playlistList:"#awp-playlist-list",
+					activePlaylist:"playlist-audio1",
+					activeItem:0,
+					volume:0.5,
+					autoPlay:true,
+					drawWaveWithoutLoad:false,
+					randomPlay:false,
+					loopingOn:true,
+					autoAdvanceToNextMedia:true,
+					mediaEndAction:"loop",
+					soundCloudAppId:"",
+					gDriveAppId:"",
+					useKeyboardNavigationForPlayback:true,
+					usePlaylistScroll:true,
+					playlistScrollOrientation:"vertical",
+					playlistScrollTheme:"light",
+					useDownload:true,
+					facebookAppId:"",
+					useNumbersInPlaylist: true,
+					numberTitleSeparator: ".  ",
+					artistTitleSeparator: " - ",
+					playlistItemContent:"title",
+					wavesurfer:{
+						waveColor: '#00d0c6',
+						progressColor: '#c0c07e',
+						barWidth: 3,
+						cursorColor: '#ffffff',
+						cursorWidth: 1,
+						height: 100,
+					}
+				};
+                awp_player = jQuery("#awp-wrapper").awp(settings);
 				jQuery('.light_box_recursos').animate({opacity:1},600,function(){
 					jQuery(this).css({overflowY:'auto'});
 					jQuery('body').css({overflow:'hidden'});
@@ -333,7 +367,7 @@ function load_recurso(url){
 			case 'imagen':
 				jQuery('.light_box_recursos').css({display:'block',opacity:0});
 				jQuery('.bxslider_galeria').bxSlider({
-									  pager: false,
+									  pager: true,
 									  infiniteLoop: true,
 									  useCSS: false,
 									  adaptiveHeight: false,
