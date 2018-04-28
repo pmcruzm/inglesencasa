@@ -38,7 +38,7 @@ jQuery(document).on('ready',function(){
 	
 	//Página single de recurso de video
 	if (jQuery('.single_box_recursos').is(":visible") ) {
-		jQuery('.single_box_recursos').css({'min-height':h_win-48});
+		jQuery('.single_box_recursos').css({'min-height':h_win});
 	}
 
 	//Página single de recurso de video
@@ -183,16 +183,6 @@ jQuery(document).on('ready',function(){
 
 	//Galería de recursos
 	if (jQuery('.carrusel_recursos').is(":visible") ) {
-		/*jQuery('.carrusel-destacados').slick({
-		  dots: false,
-		  infinite: false,
-		  speed: 300,
-		  slidesToShow: 1,
-		  centerMode: false,
-		  variableWidth: true,
-		  arrows:true,
-		  slidesToScroll: 2
-		});*/
 		jQuery('.carrusel-destacados').slick({
 		  dots: false,
 		  infinite: false,
@@ -277,7 +267,7 @@ jQuery(document).on('ready',function(){
 		
 		//Página single de recurso 
 		if (jQuery('.single_box_recursos').is(":visible") ) {
-			jQuery('.single_box_recursos').css({'min-height':h_win-48});
+			jQuery('.single_box_recursos').css({'min-height':h_win});
 		}
 	});
 
