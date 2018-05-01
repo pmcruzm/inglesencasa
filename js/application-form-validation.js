@@ -19,7 +19,7 @@ jQuery(window).on('load',function(){
 
 jQuery(document).on('ready',function(){
 	//console.log('validation');
-	
+
 	//Eliminar marco de error cuando se hace click sobre un input con error
 	jQuery(document).on('focus','form input,form textarea,form select',function(event){
 		event.preventDefault();
@@ -44,15 +44,15 @@ jQuery(document).on('ready',function(){
 				jQuery(this).parents('.form-group').find('input[type=checkbox]').removeClass('error');
 			}
 	});
-	
-	
+
+
 	//Validación de formularios de contacto
 	jQuery('form[data-validate="true"]').on('submit', function(event){
 		if( ! validateForm.validate(event) ) {
 			event.preventDefault();
 		}
 	});
-	
+
 });
 
 function validateEmail(email) {

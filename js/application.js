@@ -9,9 +9,8 @@ Cliente: Inglés en Casa
 /**********************
 VARIABLES
 **********************/
-var awp_player;  
-var ACEPTA_COOKIES_NAME  = 'cambridge-para-ti-acepta-cookies';
-var RECURSOS_COOKIE_NAME = 'cambridge-para-ti-recursos';
+var awp_player;
+var ACEPTA_COOKIES_NAME  = 'cambridge-inglesencasa-acepta-cookies';
 
 
 //Eventos para dispositivos móviles
@@ -35,7 +34,7 @@ jQuery(document).on('ready',function(){
 	//Obtenemos altura y anchura del navegador
 	h_win=jQuery(window).height();
 	w_win=jQuery(window).width();
-	
+
 	//Página single de recurso de video
 	if (jQuery('.single_box_recursos').is(":visible") ) {
 		jQuery('.single_box_recursos').css({'min-height':h_win});
@@ -45,7 +44,7 @@ jQuery(document).on('ready',function(){
 	if (jQuery('.vid_youtube').is(":visible") ) {
 		jQuery(".vid_youtube").fitVids();
 	}
-	
+
 	//Página single de recurso interactivo o pdf
 	if (jQuery('.single_box_recursos iframe').is(":visible") ) {
 		calc_iframe_height();
@@ -69,10 +68,10 @@ jQuery(document).on('ready',function(){
 									  },
 									});
 	}
-	
+
 	//Página single de recurso de audio
 	if (jQuery('.player-audio').is(":visible") ) {
-		
+
 				var settings = {
 					instanceName:"default2",
 					sourcePath:"",
@@ -107,8 +106,8 @@ jQuery(document).on('ready',function(){
 						height: 100,
 					}
 				};
-		
-				
+
+
 
                 awp_player = jQuery("#awp-wrapper").awp(settings);
 		}
@@ -269,17 +268,17 @@ jQuery(document).on('ready',function(){
 	//Evento para capturar el resize de la ventana
 	jQuery( window ).resize(function() {
 		h_win=jQuery(window).height();
-		
-		//Página single de recurso 
+
+		//Página single de recurso
 		if (jQuery('.single_box_recursos').is(":visible") ) {
 			jQuery('.single_box_recursos').css({'min-height':h_win});
 		}
-		
+
 		//Recurso lightbox
 		if (jQuery('.container_pop iframe').is(":visible") ) {
 			calc_iframe_height();
 		}
-		
+
 	});
 
 });
@@ -352,17 +351,17 @@ function load_recurso(url){
 					jQuery('body').css({overflow:'hidden'});
 				});
 			break;
-			case 'interactivo':	
+			case 'interactivo':
 				jQuery('.light_box_recursos').css({display:'block',opacity:0});
-				calc_iframe_height();	
+				calc_iframe_height();
 				jQuery('.light_box_recursos').animate({opacity:1},600,function(){
 					jQuery(this).css({overflowY:'auto'});
 					jQuery('body').css({overflow:'hidden'});
 				});
 			break;
-			case 'pdf':	
+			case 'pdf':
 				jQuery('.light_box_recursos').css({display:'block',opacity:0});
-				calc_iframe_height();	
+				calc_iframe_height();
 				jQuery('.light_box_recursos').animate({opacity:1},600,function(){
 					jQuery(this).css({overflowY:'auto'});
 					jQuery('body').css({overflow:'hidden'});
@@ -401,24 +400,24 @@ function load_recurso(url){
 function calc_iframe_height(){
   //Obtenemosanchura del navegador
   var w_win=jQuery(window).width();
-  jQuery('.container_pop iframe').removeAttr('style');	
+  jQuery('.container_pop iframe').removeAttr('style');
 	console.log(jQuery('.container_pop iframe').width());
   if(w_win<1024){
 	  if(w_win<768){
 		var w_iframe=jQuery('.container_pop iframe').width();
-		var h_iframe= Math.round(w_iframe*(1.3465));   
-		jQuery('.container_pop iframe').height(h_iframe);	 
+		var h_iframe= Math.round(w_iframe*(1.3465));
+		jQuery('.container_pop iframe').height(h_iframe);
 	  }else{
 		var w_iframe=jQuery('.container_pop iframe').width();
-		var h_iframe= Math.round(w_iframe*(1.6617));   
-		jQuery('.container_pop iframe').height(h_iframe); 
+		var h_iframe= Math.round(w_iframe*(1.6617));
+		jQuery('.container_pop iframe').height(h_iframe);
 	  }
   }else{
 	var w_iframe=jQuery('.container_pop iframe').width();
-	var h_iframe= Math.round(w_iframe*(0.6083));  
-	jQuery('.container_pop iframe').height(h_iframe);	 
-  }	
-	
+	var h_iframe= Math.round(w_iframe*(0.6083));
+	jQuery('.container_pop iframe').height(h_iframe);
+  }
+
 }
 
 

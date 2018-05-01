@@ -22,11 +22,11 @@ jQuery(window).on('load',function(){
 
 jQuery(document).on('ready',function(){
 	//console.log('filter');
-	
+
 	n_elems = jQuery('.contenedor-recursos').data('num-elems') ?
 			  jQuery('.contenedor-recursos').data('num-elems') :
 			  24;
-	
+
 	//Comprobación de los recursos a mostrar
 	if (jQuery('.contenedor-recursos').is(":visible") ) {
 		//Funciones para el cambio de bloques
@@ -45,14 +45,14 @@ jQuery(document).on('ready',function(){
 		}
 
 	}
-	
+
 	//Más recursos en la páginación
 	jQuery(document).on('click','.box_more_r .more_recursos',function(event){
 		event.preventDefault();
 			n_load++;
 			calc_pagination();
 	});
-	
+
 	//Abrir Bloque de Filtros
 	jQuery(document).on('click','.filter_nivel a,.filter_tipo a,.filter_producto a',function(event){
 		event.preventDefault();
@@ -87,7 +87,7 @@ jQuery(document).on('ready',function(){
 			jQuery('.over_filtros').slideUp(400);
 		}
 	});
-	
+
 	//Abrir Bloque de Filtros
 	jQuery(document).on('click','.filter_mob a',function(event){
 		event.preventDefault();
@@ -104,9 +104,9 @@ jQuery(document).on('ready',function(){
 			jQuery(this).removeClass('active');
 			jQuery('.over_filtros').slideUp(400);
 		}
-	
+
 	});
-	
+
 	//Checkbox recursos
 	jQuery(document).on('change','.over_filtros input[type=checkbox]',function(event){
 		event.preventDefault();
@@ -116,7 +116,7 @@ jQuery(document).on('ready',function(){
 			}else{
 				jQuery(this).parent().addClass('active');
 			}
-			
+
 			//Borramos la barra de banner del listado de filtros
 			jQuery('.cover_b_recursos').hide();
 			filterChange();
@@ -139,7 +139,7 @@ jQuery(document).on('ready',function(){
 		event.preventDefault();
 		jQuery('.over_buscador').fadeOut(600)
 	});
-	
+
 	//Limpiar filtros
 	jQuery(document).on('click','.clear_all_filters',function(event){
 		event.preventDefault();
@@ -152,8 +152,8 @@ jQuery(document).on('ready',function(){
 			calc_pagination();
 
 	});
-	
-	//Abrir filtros mobile 
+
+	//Abrir filtros mobile
 	jQuery(document).on('click','.box_single_f a',function(event){
 		event.preventDefault();
 			if(!jQuery(this).hasClass('active')){
@@ -163,11 +163,11 @@ jQuery(document).on('ready',function(){
 				jQuery(this).parents('.box_single_f').find('.desplegable_filtro').slideToggle(600);
 			}else{
 				jQuery(this).removeClass('active');
-				jQuery(this).parents('.box_single_f').find('.desplegable_filtro').slideToggle(600);	
+				jQuery(this).parents('.box_single_f').find('.desplegable_filtro').slideToggle(600);
 			}
 	});
-	
-	
+
+
 });
 
 
@@ -175,18 +175,11 @@ jQuery(document).on('ready',function(){
 
 			filterValues = {};
 
-			//Get nivelprimaria filter:
-			filterValues.nivelinfantil = [];
+			//Get nivel filter:
+			filterValues.nivel = [];
 
-			jQuery('input[name="nivelinfantil[]"]:checked').each(function(){
-				filterValues.nivelinfantil.push( jQuery(this).val() )
-			});
-
-			//Get mcer filter:
-			filterValues.nivelprimaria = [];
-
-			jQuery('input[name="nivelprimaria[]"]:checked').each(function(){
-				filterValues.nivelprimaria.push( jQuery(this).val() )
+			jQuery('input[name="nivel[]"]:checked').each(function(){
+				filterValues.nivel.push( jQuery(this).val() )
 			});
 
 			//Get formato filter:
@@ -195,26 +188,26 @@ jQuery(document).on('ready',function(){
 			jQuery('input[name="formato[]"]:checked').each(function(){
 				filterValues.formato.push( jQuery(this).val() )
 			});
-		
+
 			//Get tipo filter:
 			filterValues.tipo = [];
 
 			jQuery('input[name="tipo[]"]:checked').each(function(){
 				filterValues.tipo.push( jQuery(this).val() )
 			});
-		
-			//Get productoprimaria filter:
-			filterValues.productoprimaria = [];
 
-			jQuery('input[name="productoprimaria[]"]:checked').each(function(){
-				filterValues.productoprimaria.push( jQuery(this).val() )
+			//Get producto filter:
+			filterValues.producto = [];
+
+			jQuery('input[name="producto[]"]:checked').each(function(){
+				filterValues.producto.push( jQuery(this).val() )
 			});
-		
-			//Get productoinfantil filter:
-			filterValues.productoinfantil = [];
 
-			jQuery('input[name="productoinfantil[]"]:checked').each(function(){
-				filterValues.productoinfantil.push( jQuery(this).val() )
+			//Get destreza filter:
+			filterValues.destreza = [];
+
+			jQuery('input[name="destreza[]"]:checked').each(function(){
+				filterValues.destreza.push( jQuery(this).val() )
 			});
 
 			console.log(filterValues);
@@ -253,28 +246,23 @@ jQuery(document).on('ready',function(){
 				return false;
 			}
 
-
-			if( filterValues.nivelinfantil.length && ! findOne(filterValues.nivelinfantil, itemData.nivelinfantil)) {
-				return true;
-			}
-
-			if( filterValues.nivelprimaria.length && ! findOne(filterValues.nivelprimaria, itemData.nivelprimaria)) {
+			if( filterValues.nivel.length && ! findOne(filterValues.nivel, itemData.nivel)) {
 				return true;
 			}
 
 			if( filterValues.formato.length && ! findOne(filterValues.formato, itemData.formato) ) {
 				return true;
 			}
-			
+
 			if( filterValues.tipo.length && ! findOne(filterValues.tipo, itemData.tipo) ) {
 				return true;
 			}
-			
-			if( filterValues.productoprimaria.length && ! findOne(filterValues.productoprimaria, itemData.productoprimaria) ) {
+
+			if( filterValues.producto.length && ! findOne(filterValues.producto, itemData.producto) ) {
 				return true;
 			}
-			
-			if( filterValues.productoinfantil.length && ! findOne(filterValues.productoinfantil, itemData.productoinfantil) ) {
+
+			if( filterValues.destreza.length && ! findOne(filterValues.destreza, itemData.destreza) ) {
 				return true;
 			}
 
@@ -283,6 +271,11 @@ jQuery(document).on('ready',function(){
 
 		function findOne(haystack, arr) {
 			//alert(filterValues.cambridgequalifications.toString()+'--'+arr.toString());
+
+			if( ! Array.isArray(arr) ) {
+				return false;
+			}
+
 			return arr.some(function (v) {
 				return haystack.indexOf(v) >= 0;
 			});
