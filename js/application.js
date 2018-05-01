@@ -54,7 +54,7 @@ jQuery(document).on('ready',function(){
 	//Página single de recurso de imágenes
 	if (jQuery('.galeria_modal').is(":visible") ) {
 		jQuery('.bxslider_galeria').bxSlider({
-									  pager: false,
+									  pager: true,
 									  infiniteLoop: true,
 									  useCSS: false,
 									  adaptiveHeight: false,
