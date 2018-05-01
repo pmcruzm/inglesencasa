@@ -265,9 +265,9 @@ PROPIEDADES HOME
 PÁGINA DE SEARCH
 ******************************/
 .block_search{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);position:relative;padding-top:96px;min-height: 700px;}
-.block_search_page{position:relative;width:100%;max-width:636px;margin:0 auto;p}
+.block_search_page{position:relative;width:90%;max-width:636px;margin:0 auto;}
 .block_search form{height: 40px;}
-.block_search p.txt_search{color:#103E57;font-size:22px;line-height:32px;width:100%;max-width:636px;margin:0 auto;text-align:center;padding-top: 64px;}
+.block_search p.txt_search{color:#103E57;font-size:22px;line-height:32px;width:90%;max-width:636px;margin:0 auto;text-align:center;padding-top: 64px;}
 .block_search p.txt_search a{text-decoration:underline;color:#103E57;}
 .block_search .contenedor-recursos{background:none;padding-top: 96px;}
 
@@ -575,6 +575,7 @@ MEDIA QUERIES
 	.content_recurso,.body_recurso,.over_recurso_img{height: 274px;}
 	.cover_infantil{width:calc(100% - 32px)}
 	.cover_primaria{width:calc(100% - 32px)}
+	.box_nuevos{margin-bottom:0px;}
 }
 
 @media screen and (max-width: 1140px) {
@@ -618,6 +619,8 @@ MEDIA QUERIES
 	
 	.cover_primaria h3{font-size:80px;left: 32px;}
 	.cover_primaria p{font-size:18px;right: 32px;}
+	
+	.block_newsletter_page .box_f_newsletter{text-align: left;}
 	
 }
 
@@ -720,6 +723,14 @@ MEDIA QUERIES
 	.cover_primaria{height:370px;top:138px; }
 	
 	.logo_interior{width:207px !important;height: 42px !important;background-size: 207px !important;position: absolute !important;top: 5px !important;left:152px !important;bottom: auto !important;right: auto !important;}
+	
+	.box_nuevos,.box_destacado,.box_newsletter{border:8px solid #ffffff;}
+	.box_destacado{margin-top:79px;}
+	.box_nuevos{margin-top:48px;margin-bottom: -8px;}
+	
+	.block_search .box_input_s{width:calc(100% - 56px);}
+	
+
 
 	
 }
@@ -737,7 +748,9 @@ MEDIA QUERIES
 
 
 @media screen and (max-width: 480px) {
+	
 	.box_input_s{width:50%;}
+	.block_newsletter{padding:72px 24px 400px 24px}
 }
 
 
