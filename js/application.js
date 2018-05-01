@@ -42,8 +42,13 @@ jQuery(document).on('ready',function(){
 	}
 
 	//Página single de recurso de video
-	if (jQuery('.resource-content .vid_youtube').is(":visible") ) {
+	if (jQuery('.vid_youtube').is(":visible") ) {
 		jQuery(".vid_youtube").fitVids();
+	}
+	
+	//Página single de recurso interactivo o pdf
+	if (jQuery('.single_box_recursos iframe').is(":visible") ) {
+		calc_iframe_height();
 	}
 
 	//Página single de recurso de imágenes
@@ -269,6 +274,12 @@ jQuery(document).on('ready',function(){
 		if (jQuery('.single_box_recursos').is(":visible") ) {
 			jQuery('.single_box_recursos').css({'min-height':h_win});
 		}
+		
+		//Recurso lightbox
+		if (jQuery('.container_pop iframe').is(":visible") ) {
+			calc_iframe_height();
+		}
+		
 	});
 
 });
@@ -341,14 +352,17 @@ function load_recurso(url){
 					jQuery('body').css({overflow:'hidden'});
 				});
 			break;
-			case 'interactivo':
-				jQuery('.light_box_recursos').css({display:'block',opacity:0}).animate({opacity:1},600,function(){
+			case 'interactivo':	
+				jQuery('.light_box_recursos').css({display:'block',opacity:0});
+				calc_iframe_height();	
+				jQuery('.light_box_recursos').animate({opacity:1},600,function(){
 					jQuery(this).css({overflowY:'auto'});
 					jQuery('body').css({overflow:'hidden'});
 				});
 			break;
-			case 'pdf':
+			case 'pdf':	
 				jQuery('.light_box_recursos').css({display:'block',opacity:0});
+				calc_iframe_height();	
 				jQuery('.light_box_recursos').animate({opacity:1},600,function(){
 					jQuery(this).css({overflowY:'auto'});
 					jQuery('body').css({overflow:'hidden'});
@@ -381,6 +395,30 @@ function load_recurso(url){
 		}
 	});
 
+}
+
+//Funcion para calcular el aspect_ratio iframe
+function calc_iframe_height(){
+  //Obtenemosanchura del navegador
+  var w_win=jQuery(window).width();
+  jQuery('.container_pop iframe').removeAttr('style');	
+	console.log(jQuery('.container_pop iframe').width());
+  if(w_win<1024){
+	  if(w_win<768){
+		var w_iframe=jQuery('.container_pop iframe').width();
+		var h_iframe= Math.round(w_iframe*(1.3465));   
+		jQuery('.container_pop iframe').height(h_iframe);	 
+	  }else{
+		var w_iframe=jQuery('.container_pop iframe').width();
+		var h_iframe= Math.round(w_iframe*(1.6617));   
+		jQuery('.container_pop iframe').height(h_iframe); 
+	  }
+  }else{
+	var w_iframe=jQuery('.container_pop iframe').width();
+	var h_iframe= Math.round(w_iframe*(0.6083));  
+	jQuery('.container_pop iframe').height(h_iframe);	 
+  }	
+	
 }
 
 
