@@ -94,15 +94,15 @@ jQuery(document).on('ready',function(){
 		var tipo_f=jQuery(this).attr('rel');
 		if(!jQuery(this).hasClass('active')){
 			jQuery(this).addClass('active');
-			jQuery('.over_filtros').slideUp(400, function() {
+			jQuery('.over_filtros').slideUp(200, function() {
 				jQuery('.opc_tipo').show();
 				jQuery('.opc_producto').show();
 				jQuery('.opc_nivel').show();
-				jQuery('.over_filtros').slideDown(400);
+				jQuery('.over_filtros').slideDown(200);
 			});
 		}else{
 			jQuery(this).removeClass('active');
-			jQuery('.over_filtros').slideUp(400);
+			jQuery('.over_filtros').slideUp(200);
 		}
 
 	});
@@ -162,10 +162,10 @@ jQuery(document).on('ready',function(){
 				jQuery('.box_single_f a').removeClass('active');
 				jQuery('.desplegable_filtro').hide();
 				jQuery(this).addClass('active');
-				jQuery(this).parents('.box_single_f').find('.desplegable_filtro').slideToggle(600);
+				jQuery(this).parents('.box_single_f').find('.desplegable_filtro').slideToggle(400);
 			}else{
 				jQuery(this).removeClass('active');
-				jQuery(this).parents('.box_single_f').find('.desplegable_filtro').slideToggle(600);
+				jQuery(this).parents('.box_single_f').find('.desplegable_filtro').slideToggle(400);
 			}
 	});
 
@@ -230,6 +230,7 @@ jQuery(document).on('ready',function(){
 				//No hay elementos
 				jQuery('.box_more_r h4').show();
 				jQuery('.box_more_r .more_recursos').hide();
+				jQuery('.n_recuros').html('0');
 			}else{
 				//Miramos si hay que paginar
 				jQuery('.box_more_r h4').hide();
@@ -293,9 +294,11 @@ function calc_pagination(){
 				jQuery(this).addClass('hide-page');
 				//Mostramos botón de más
 				jQuery('.box_more_r .more_recursos').show();
+				jQuery('.n_recuros').html(count);
 			}else{
 				jQuery(this).removeClass('hide-page');
 				count++;
+				jQuery('.n_recuros').html(count);
 			}
 	});
 	//ELiminamos si alguna de las páginas

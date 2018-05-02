@@ -98,8 +98,8 @@ jQuery(document).on('ready',function(){
 					artistTitleSeparator: " - ",
 					playlistItemContent:"title",
 					wavesurfer:{
-						waveColor: '#00d0c6',
-						progressColor: '#c0c07e',
+						waveColor: '#50E3C2',
+						progressColor: '#55BFC0',
 						barWidth: 3,
 						cursorColor: '#ffffff',
 						cursorWidth: 1,
@@ -327,8 +327,8 @@ function load_recurso(url){
 					artistTitleSeparator: " - ",
 					playlistItemContent:"title",
 					wavesurfer:{
-						waveColor: '#00d0c6',
-						progressColor: '#c0c07e',
+						waveColor: '#50E3C2',
+						progressColor: '#55BFC0',
 						barWidth: 3,
 						cursorColor: '#ffffff',
 						cursorWidth: 1,
