@@ -377,6 +377,7 @@ LIGHTBOX RECURSOS
 
 /*** RECURSO AUDIO *****/
 #awp-wrapper{top:0 !important}
+.awp-player-thumb{background-color: #ff6b47;}
 .awp-playlist-selected{color:#55BFC0 !important;}
 .awp-playlist-non-selected{color:#103E57 !important;}
 .awp-playlist-holder{background:#ffffff !important;border-top:none;}
