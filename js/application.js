@@ -74,7 +74,7 @@ jQuery(document).on('ready',function(){
 
 				var settings = {
 					instanceName:"default2",
-					sourcePath:"",
+					sourcePath:jQuery("#awp-wrapper").data('source-path') || "",
 					playlistList:"#awp-playlist-list",
 					activePlaylist:"playlist-audio1",
 					activeItem:0,
@@ -91,7 +91,7 @@ jQuery(document).on('ready',function(){
 					usePlaylistScroll:true,
 					playlistScrollOrientation:"vertical",
 					playlistScrollTheme:"light",
-					useDownload:true,
+					useDownload:false,
 					facebookAppId:"",
 					useNumbersInPlaylist: true,
 					numberTitleSeparator: ".  ",
@@ -100,14 +100,14 @@ jQuery(document).on('ready',function(){
 					wavesurfer:{
 						waveColor: '#50E3C2',
 						progressColor: '#55BFC0',
-						barWidth: 3,
+						barWidth: 1,
 						cursorColor: '#ffffff',
 						cursorWidth: 1,
 						height: 100,
 					}
 				};
-		
-                awp_player = jQuery("#awp-wrapper").awp(settings);
+
+				awp_player = jQuery("#awp-wrapper").awp(settings);
 		}
 
 	//Volver el scroll a top
@@ -303,7 +303,7 @@ function load_recurso(url){
 				jQuery('.light_box_recursos').css({display:'block',opacity:0});
 				var settings = {
 					instanceName:"default2",
-					sourcePath:"",
+					sourcePath:jQuery("#awp-wrapper").data('source-path') || "",
 					playlistList:"#awp-playlist-list",
 					activePlaylist:"playlist-audio1",
 					activeItem:0,
@@ -320,7 +320,7 @@ function load_recurso(url){
 					usePlaylistScroll:true,
 					playlistScrollOrientation:"vertical",
 					playlistScrollTheme:"light",
-					useDownload:true,
+					useDownload:false,
 					facebookAppId:"",
 					useNumbersInPlaylist: true,
 					numberTitleSeparator: ".  ",
@@ -329,13 +329,13 @@ function load_recurso(url){
 					wavesurfer:{
 						waveColor: '#50E3C2',
 						progressColor: '#55BFC0',
-						barWidth: 3,
+						barWidth: 1,
 						cursorColor: '#ffffff',
 						cursorWidth: 1,
 						height: 100,
 					}
 				};
-                awp_player = jQuery("#awp-wrapper").awp(settings);
+				awp_player = jQuery("#awp-wrapper").awp(settings);
 				jQuery('.light_box_recursos').animate({opacity:1},600,function(){
 					jQuery(this).css({overflowY:'auto'});
 					jQuery('body').css({overflow:'hidden'});
