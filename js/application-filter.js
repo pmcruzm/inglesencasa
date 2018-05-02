@@ -148,6 +148,8 @@ jQuery(document).on('ready',function(){
 			jQuery('.over_filtros label').removeClass('active');
 			//Falta mostrar todos los bloques
 			jQuery('.contenedor-recursos .item').removeClass('hide');
+			jQuery('.box_more_r h4').hide();
+			jQuery('.cover_b_recursos').show();
 			n_load=1;
 			calc_pagination();
 
@@ -230,6 +232,7 @@ jQuery(document).on('ready',function(){
 				jQuery('.box_more_r .more_recursos').hide();
 			}else{
 				//Miramos si hay que paginar
+				jQuery('.box_more_r h4').hide();
 				n_load=1;
 				calc_pagination();
 			}

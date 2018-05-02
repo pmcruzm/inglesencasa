@@ -106,9 +106,7 @@ jQuery(document).on('ready',function(){
 						height: 100,
 					}
 				};
-
-
-
+		
                 awp_player = jQuery("#awp-wrapper").awp(settings);
 		}
 
