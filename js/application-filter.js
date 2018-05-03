@@ -87,7 +87,7 @@ jQuery(document).on('ready',function(){
 			jQuery('.over_filtros').slideUp(400);
 		}
 	});
-	
+
 	//Cerrar bloque de filtros
 	jQuery(document).on('click','.row_close_filter a',function(event){
 		event.preventDefault();
@@ -100,7 +100,7 @@ jQuery(document).on('ready',function(){
 			jQuery('.opc_producto').hide();
 		});
 	});
-	
+
 
 	//Abrir Bloque de Filtros
 	jQuery(document).on('click','.filter_mob a',function(event){
@@ -187,117 +187,117 @@ jQuery(document).on('ready',function(){
 });
 
 
-	function filterChange() {
+function filterChange() {
 
-			filterValues = {};
+	filterValues = {};
 
-			//Get nivel filter:
-			filterValues.nivel = [];
+	//Get nivel filter:
+	filterValues.nivel = [];
 
-			jQuery('input[name="nivel[]"]:checked').each(function(){
-				filterValues.nivel.push( jQuery(this).val() )
-			});
+	jQuery('input[name="nivel[]"]:checked').each(function(){
+		filterValues.nivel.push( jQuery(this).val() )
+	});
 
-			//Get formato filter:
-			filterValues.formato = [];
+	//Get formato filter:
+	filterValues.formato = [];
 
-			jQuery('input[name="formato[]"]:checked').each(function(){
-				filterValues.formato.push( jQuery(this).val() )
-			});
+	jQuery('input[name="formato[]"]:checked').each(function(){
+		filterValues.formato.push( jQuery(this).val() )
+	});
 
-			//Get tipo filter:
-			filterValues.tipo = [];
+	//Get tipo filter:
+	filterValues.tipo = [];
 
-			jQuery('input[name="tipo[]"]:checked').each(function(){
-				filterValues.tipo.push( jQuery(this).val() )
-			});
+	jQuery('input[name="tipo[]"]:checked').each(function(){
+		filterValues.tipo.push( jQuery(this).val() )
+	});
 
-			//Get producto filter:
-			filterValues.producto = [];
+	//Get producto filter:
+	filterValues.producto = [];
 
-			jQuery('input[name="producto[]"]:checked').each(function(){
-				filterValues.producto.push( jQuery(this).val() )
-			});
+	jQuery('input[name="producto[]"]:checked').each(function(){
+		filterValues.producto.push( jQuery(this).val() )
+	});
 
-			//Get destreza filter:
-			filterValues.destreza = [];
+	//Get destreza filter:
+	filterValues.destreza = [];
 
-			jQuery('input[name="destreza[]"]:checked').each(function(){
-				filterValues.destreza.push( jQuery(this).val() )
-			});
+	jQuery('input[name="destreza[]"]:checked').each(function(){
+		filterValues.destreza.push( jQuery(this).val() )
+	});
 
-			console.log(filterValues);
+	console.log(filterValues);
 
-			var count = 0;
+	var count = 0;
 
-			resources.each(function(){
-				var item = jQuery(this);
+	resources.each(function(){
+		var item = jQuery(this);
 
-				var hide = shouldHide(item);
+		var hide = shouldHide(item);
 
-				if( ! hide) count++;
+		if( ! hide) count++;
 
-				item.parent().toggleClass('hide', hide );
-			});
+		item.parent().toggleClass('hide', hide );
+	});
 
-			if(count==0){
-				//No hay elementos
-				jQuery('.box_more_r h4').show();
-				jQuery('.box_more_r .more_recursos').hide();
-				jQuery('.n_recuros').html('0');
-			}else{
-				//Miramos si hay que paginar
-				jQuery('.box_more_r h4').hide();
-				n_load=1;
-				calc_pagination();
-			}
+	if(count==0){
+		//No hay elementos
+		jQuery('.box_more_r h4').show();
+		jQuery('.box_more_r .more_recursos').hide();
+		jQuery('.n_recuros').html('0');
+	}else{
+		//Miramos si hay que paginar
+		jQuery('.box_more_r h4').hide();
+		n_load=1;
+		calc_pagination();
+	}
 
-			//jQuery('span.count').text(count);
+	//jQuery('span.count').text(count);
 
-		}
+}
 
-		function shouldHide(item) {
+function shouldHide(item) {
 
-			var itemData = item.data();
+	var itemData = item.data();
 
-			if( itemData.alwaysVisible ) {
-				return false;
-			}
+	if( itemData.alwaysVisible ) {
+		return false;
+	}
 
-			if( filterValues.nivel.length && ! findOne(filterValues.nivel, itemData.nivel)) {
-				return true;
-			}
+	if( filterValues.nivel.length && ! findOne(filterValues.nivel, itemData.nivel)) {
+		return true;
+	}
 
-			if( filterValues.formato.length && ! findOne(filterValues.formato, itemData.formato) ) {
-				return true;
-			}
+	if( filterValues.formato.length && ! findOne(filterValues.formato, itemData.formato) ) {
+		return true;
+	}
 
-			if( filterValues.tipo.length && ! findOne(filterValues.tipo, itemData.tipo) ) {
-				return true;
-			}
+	if( filterValues.tipo.length && ! findOne(filterValues.tipo, itemData.tipo) ) {
+		return true;
+	}
 
-			if( filterValues.producto.length && ! findOne(filterValues.producto, itemData.producto) ) {
-				return true;
-			}
+	if( filterValues.producto.length && ! findOne(filterValues.producto, itemData.producto) ) {
+		return true;
+	}
 
-			if( filterValues.destreza.length && ! findOne(filterValues.destreza, itemData.destreza) ) {
-				return true;
-			}
+	if( filterValues.destreza.length && ! findOne(filterValues.destreza, itemData.destreza) ) {
+		return true;
+	}
 
-			return false;
-		}
+	return false;
+}
 
-		function findOne(haystack, arr) {
-			//alert(filterValues.cambridgequalifications.toString()+'--'+arr.toString());
+function findOne(haystack, arr) {
+	//alert(filterValues.cambridgequalifications.toString()+'--'+arr.toString());
 
-			if( ! Array.isArray(arr) ) {
-				return false;
-			}
+	if( ! Array.isArray(arr) ) {
+		return false;
+	}
 
-			return arr.some(function (v) {
-				return haystack.indexOf(v) >= 0;
-			});
-		}
+	return arr.some(function (v) {
+		return haystack.indexOf(v) >= 0;
+	});
+}
 
 function calc_pagination(){
 	// Recursos coincidentes con el filtrado
