@@ -787,6 +787,8 @@ MEDIA QUERIES
 	
 	.rrss_footer li{width:auto;margin-bottom: 0px;}
 	
+	.menu_header li a:after{margin-right:10px;margin-left: 0;}
+	
 
 
 
