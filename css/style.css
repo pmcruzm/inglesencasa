@@ -194,8 +194,8 @@ PROPIEDADES HOME
 .filter_tipo a{width:152px;}
 .filter_producto a{width: 90px;}
 .filter_nivel a span:after,.filter_tipo a span:after,.filter_producto a span:after,.filter_mob a span:after{content:'';display: inline-block;background-image: url(../svg/select_arrows.svg);background-position: 0px 0px;background-repeat: no-repeat;width:16px;height: 16px;vertical-align: middle;margin-left: 8px;position: relative;top:-2px;}
-.filter_nivel a:hover,.filter_tipo a:hover,.filter_producto a:hover,.filter_mob a:hover{background: #FF6B47;border:2px solid #FF6B47;color:#ffffff;}
-.filter_nivel a:hover span:after,.filter_tipo a:hover span:after,.filter_producto a:hover span:after,.filter_mob a:hover span:after{background-position: 0px -16px;}
+.filter_nivel a:hover,.filter_tipo a:hover,.filter_producto a:hover,.filter_mob a:hover{border:2px solid #E7E7E7;}
+
 .filter_nivel a.active,.filter_tipo a.active,.filter_producto a.active,.filter_mob a.active{background: #FF6B47;border:2px solid #FF6B47;color:#ffffff;}
 .filter_nivel a.active span:after,.filter_tipo a.active span:after,.filter_producto a.active span:after,.filter_mob a.active span:after{background-position: 0px -16px;}
 
