@@ -418,7 +418,7 @@ function calc_iframe_height(){
   jQuery('.container_pop iframe').removeAttr('style');
 	console.log(jQuery('.container_pop iframe').width());
   if(w_win<1024){
-	  if(w_win>768){
+	  if(w_win<769){
 		var w_iframe=jQuery('.container_pop iframe').width();
 		var h_iframe= Math.round(w_iframe*(1.3465));
 		jQuery('.container_pop iframe').height(h_iframe);
