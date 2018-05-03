@@ -164,6 +164,7 @@ jQuery(document).on('ready',function(){
 			jQuery('.contenedor-recursos .item').removeClass('hide');
 			jQuery('.box_more_r h4').hide();
 			jQuery('.cover_b_recursos').show();
+			jQuery('.box_clear_filtros').css({display:'none'});
 			n_load=1;
 			calc_pagination();
 
@@ -245,9 +246,11 @@ function filterChange() {
 		jQuery('.box_more_r h4').show();
 		jQuery('.box_more_r .more_recursos').hide();
 		jQuery('.n_recuros').html('0');
+		jQuery('.box_clear_filtros').css({display:'none'});
 	}else{
 		//Miramos si hay que paginar
 		jQuery('.box_more_r h4').hide();
+		jQuery('.box_clear_filtros').css({display:'inline-block'});
 		n_load=1;
 		calc_pagination();
 	}
