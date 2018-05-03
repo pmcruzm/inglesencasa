@@ -284,6 +284,9 @@ PÁGINA DE SEARCH
 .block_search p.txt_search{color:#103E57;font-size:22px;line-height:32px;width:90%;max-width:636px;margin:0 auto;text-align:center;padding-top: 64px;}
 .block_search p.txt_search a{text-decoration:underline;color:#103E57;}
 .block_search .contenedor-recursos{background:none;padding-top: 96px;}
+.block_search .box_input_s{height:56px;line-height:56px;}
+.block_search .box_input_s input{height:56px;line-height:56px;font-size: 24px;}
+.block_search .box_submit_s{top:10px;}
 
 /*****************************
 PÁGINA DE NEWSLETTER
