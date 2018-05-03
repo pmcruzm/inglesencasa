@@ -248,10 +248,10 @@ jQuery(document).on('ready',function(){
 	});
 
 	//Over de las fichas mobile
-	jQuery(document).on('touchend',".box_recurso", function(e) {
+	/*jQuery(document).on('touchend',".box_recurso", function(e) {
 		e.preventDefault();
 		load_recurso( jQuery(this).data('modal') || jQuery(this).attr('href') );
-	});
+	});*/
 
 
 	//Evento para capturar el resize de la ventana
