@@ -300,21 +300,19 @@ jQuery(document).on('ready',function(){
 		}
 
 function calc_pagination(){
-	elems_show = jQuery('.contenedor-recursos .item').not(".hide");
-	var all_elems=elems_show.length;
-	var count=0;
-	elems_show.each(function(){
-			if(count>=(n_load*n_elems)){
-				jQuery(this).addClass('hide-page');
-				//Mostramos botón de más
-				jQuery('.box_more_r .more_recursos').show();
-				jQuery('.n_recuros').html(count);
-			}else{
-				jQuery(this).removeClass('hide-page');
-				count++;
-				jQuery('.n_recuros').html(count);
-			}
-	});
-	//ELiminamos si alguna de las páginas
-	if(count==all_elems){jQuery('.box_more_r .more_recursos').hide();}
+	// Recursos coincidentes con el filtrado
+	var elems_show = jQuery('.contenedor-recursos .item').not(".hide");
+
+	// Número máximo de recursos a mostrar según la paǵina
+	var pageMaxVisible = n_load * n_elems;
+
+	// Ocultamos los recursos que exceden del paginado
+	elems_show.removeClass('hide-page').filter(":gt("+(pageMaxVisible-1)+")").addClass('hide-page');
+
+	// Mostramos el número total de recursos coincidentes con el filtrado
+	jQuery('.n_recuros').html(elems_show.length);
+
+	// Mostramos el "MORE" si hay más recursos más allá de la página actual
+	jQuery('.box_more_r .more_recursos').toggle( elems_show.length > pageMaxVisible );
 }
+
