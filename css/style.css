@@ -189,7 +189,7 @@ PROPIEDADES HOME
 .block_filters{position:absolute;top:0;right:0;height: 40px;padding-right: 56px;}
 .filter_nivel,.filter_tipo,.filter_producto,.search_filter{display:inline-block;}
 .search_filter a{display:inline-block;width: 40px;height: 40px;background: url(../svg/sprite_search_lupa.svg) 0px 0px no-repeat;text-indent: -99999px;position: absolute;top:0;right:0;}
-.search_filter a:hover{background-position: 0px -40px;}
+.search_filter a:hover,.search_filter a:focus{background-position: 0px -40px;}
 /*.filter_nivel a,.filter_tipo a,.filter_producto a{display: inline-block;height: 40px;line-height: 40px;padding-left:20px;padding-right: 20px;font-size: 12px;color:#9B9B9B; border:1px solid #9B9B9B;border-radius: 20px;margin-right: 16px;text-align: center;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;}*/
 .filter_nivel a, .filter_tipo a, .filter_producto a,.filter_mob a {display: inline-block;height: 36px;line-height: 36px;padding-left: 16px;padding-right: 16px;font-size: 12px;color: #9B9B9B;border: 2px solid #9B9B9B;border-radius: 20px;margin-left: 16px;text-align: right;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;color: #9B9B9B;letter-spacing: 1px;}
 .filter_nivel a{width:72px;}
