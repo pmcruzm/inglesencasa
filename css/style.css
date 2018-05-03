@@ -648,8 +648,9 @@ MEDIA QUERIES
 	.block_newsletter_page .box_f_newsletter{text-align: left;}
 	
 
-	.filter_nivel a, .filter_tipo a, .filter_producto a, .filter_mob a{margin-left:8px;}
+	.filter_nivel a, .filter_tipo a, .filter_producto a, .filter_mob a{margin-left:6px;}
 	.rrss_footer li{width:60px;margin-bottom: 16px;}
+	.block_filters{padding-right: 78px;}
 
 }
 
