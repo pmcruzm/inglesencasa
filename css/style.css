@@ -429,8 +429,10 @@ PROPIEDADES FOOTER
 #footer{background:#ffffff;}
 #footer .container{box-sizing:border-box;padding-top:63px;overflow:hidden;}
 .colum_logo_footer{float:left;width:34%;}
-.colum_footer{float:right;width:22%;box-sizing: border-box;padding-right: 10px;}
-.colum_footer h3,.colum_logo_footer h3{color:#9B9B9B;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 13px;line-height: 26px;margin-bottom:32px;letter-spacing: 1px;}
+.colum_footer{float:right;width:calc(32% - 85px);box-sizing: border-box;padding-right: 10px;}
+.colum_footer_rrss{float:right;width: 190px;}
+.inside_f_rrss{display:inline-block;float: right;}
+.colum_footer h3,.colum_logo_footer h3,.colum_footer_rrss h3{color:#9B9B9B;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 13px;line-height: 26px;margin-bottom:32px;letter-spacing: 1px;}
 .colum_footer ul a{color: #2E2E2E;font-size: 14px;line-height: 31px;font-family:'source_sans_prosemibold', Helvetica, sans-serif;}
 .colum_footer ul a:hover{opacity:0.9;}
 
@@ -604,6 +606,9 @@ MEDIA QUERIES
 	.box_nuevos{margin-bottom:0px;}
 	
 	.logo_footer{margin-left:16px;}
+	
+	.colum_footer{float:right;width:calc(32% - 94px);box-sizing: border-box;padding-right: 10px;}
+	.colum_footer_rrss{float:right;width: 190px;padding-right: 16px;}
 
 }
 
@@ -652,8 +657,8 @@ MEDIA QUERIES
 	
 
 	.filter_nivel a, .filter_tipo a, .filter_producto a, .filter_mob a{margin-left:6px;}
-	.rrss_footer li{width:60px;margin-bottom: 16px;}
 	.block_filters{padding-right: 78px;}
+	.colum_logo_footer{width:33%;}
 
 }
 
@@ -792,6 +797,9 @@ MEDIA QUERIES
 	.rrss_footer li{width:auto;margin-bottom: 0px;}
 	
 	.menu_header li a:after{margin-right:10px;margin-left: 0;}
+	
+	#footer .colum_footer_rrss{float: inherit !important;clear: both !important;width: 100% !important;text-align: center;padding-bottom: 52px;display: block;padding-right: 0;padding-top: 32px;}
+	.inside_f_rrss{display:block;width: 100%;float: inherit;}
 	
 
 
