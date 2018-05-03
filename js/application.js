@@ -250,17 +250,7 @@ jQuery(document).on('ready',function(){
 	//Over de las fichas mobile
 	jQuery(document).on('touchend',".box_recurso", function(e) {
 		e.preventDefault();
-		/*if(jQuery(this).hasClass('over')){
-			//Miramos si hay enlace de app si no abrimos enlace
-			if(jQuery(this).find('a.btn-playstore').length==0 && jQuery(this).find('a.btn-applestore').length==0 ){
-				var url_recurso = jQuery(this).attr('href');
-				var id_recurso  = jQuery(this).attr('data-id');
-				openResource(url_recurso, id_recurso);
-			 }
-			 jQuery(this).removeClass('over');
-		}else{
-			jQuery(this).addClass('over');
-		}*/
+		load_recurso( jQuery(this).data('modal') || jQuery(this).attr('href') );
 	});
 
 
