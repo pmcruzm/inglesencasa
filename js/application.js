@@ -169,7 +169,33 @@ jQuery(document).on('ready',function(){
 		jQuery('.over_filtros label').removeClass('active');
 	}
 
-	//Over de las fichas en desktop
+	//Over de las filtros en desktop
+	jQuery(document).on("mouseenter",".filter_nivel a,.filter_tipo a,.filter_producto a,.filter_mob a", function(e) {
+		e.preventDefault();
+		if(device!='yes'){
+			jQuery(this).addClass('over');
+		}
+	}).on("mouseleave",".filter_nivel a,.filter_tipo a,.filter_producto a,.filter_mob a", function(e) {
+		e.preventDefault();
+		if(device!='yes'){
+			jQuery(this).removeClass('over');
+		}
+	});
+	
+	//Over de las flechas galeria
+	jQuery(document).on("mouseenter",".carrusel-destacados .slick-prev,.carrusel-destacados .slick-next", function(e) {
+		e.preventDefault();
+		if(device!='yes'){
+			jQuery(this).addClass('over');
+		}
+	}).on("mouseleave",".carrusel-destacados .slick-prev,.carrusel-destacados .slick-next", function(e) {
+		e.preventDefault();
+		if(device!='yes'){
+			jQuery(this).removeClass('over');
+		}
+	});
+	
+	//Over menú
 	jQuery(document).on("mouseenter",".menu_header a", function(e) {
 		e.preventDefault();
 		if(device!='yes'){
