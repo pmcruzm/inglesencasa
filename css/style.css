@@ -76,8 +76,8 @@ PROPIEDADES HEADER
 /*#header .container{min-width:auto !important;max-width:100%;box-sizing:border-box;padding-left:30px;padding-right:30px;position:relative;height:90px;}*/
 .logo_h{display:block;background:url(../svg/cambridge_header.svg) center center no-repeat;height:48px;width:168px;background-size:168px;text-indent:-99999px;position:absolute;top:0;left: 0;z-index: 10;}
 
-#header h1{display: block;width: 464px;height: 80px;background: url(../svg/inglesencasa.svg) top left no-repeat;text-indent: -99999px;position: absolute;left: 10px;bottom: 186px;}
-#header h2{font-size: 30px;color:#103E57;max-width: 475px;position: absolute;left: 10px;bottom: 98px;line-height: 36px;}
+#header h1{display: block;width: 464px;height: 80px;background: url(../svg/inglesencasa.svg) top left no-repeat;text-indent: -99999px;position: absolute;/*left: 10px;*/bottom: 186px;}
+#header h2{font-size: 30px;color:#103E57;max-width: 475px;position: absolute;/*left: 10px;*/bottom: 98px;line-height: 36px;}
 #header h2 span{font-weight: bold;font-style:italic;}
 #header h1 a {display: block; position: absolute; width: 100%; height: 100%;}
 
@@ -110,10 +110,12 @@ PROPIEDADES HOME
 .box_destacado{box-sizing:border-box;border: 32px solid #ffffff;margin-top: 32px;box-sizing: border-box;}
 .carrusel_recursos{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);}
 .box_destacado h3{font-family:'peace_sansregular', Helvetica, sans-serif;font-size: 40px;color:#FF6B47;line-height: 48px;padding-bottom: 16px;}
-.carrusel-destacados{padding-left: 24px;padding-right: 24px;box-sizing: border-box;}
+.carrusel-destacados{box-sizing: border-box;}
 .carrusel-destacados .slick-list{padding-top:96px;padding-bottom: 96px;overflow: inherit;}
 .box_recurso{display:block;height:338px;max-width:268px;box-sizing:border-box;padding:15px;background:#ffffff;margin-right:30px;-webkit-transition: all 0.15s linear;-moz-transition: all 0.15s linear;-o-transition: all 0.15s linear;transition: all 0.15s linear;box-shadow: 20px 30px 50px 0 rgba(110,181,173,0.50);width: 95%;margin: 0 auto;}
 .box_recurso.over{}
+
+/*.slick-slide .box_recurso{float:left;}*/
 
 /*.carrusel-destacados .box_recurso{width:248px;margin-right: 30px;}*/
 .carrusel-destacados .slick-prev{width: 40px !important;height: 40px !important;margin-top: -20px !important;background: url(../svg/sprite_btn_arrow.svg) 0px 0px no-repeat;border:none;font-size: 0;-webkit-appearance: none;position:absolute;top:50%;left:0px;z-index: 80;cursor: pointer;}
@@ -260,8 +262,8 @@ PROPIEDADES HOME
 .row_close_filter a{font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;color: #94E3DF;letter-spacing: 1px;color:#FF6B47;}
 
 /***** NEWSLETTER ******/
-.box_newsletter{background: #EBF7F5;border: 32px solid #ffffff;padding-top: 40px;padding-bottom: 40px;border-top:0;}
-.box_newsletter p{display: inline-block;padding-left: 20px;}
+.box_newsletter{background: #EBF7F5;border: 32px solid #ffffff;padding-top: 40px;padding-bottom: 40px;border-top:0;padding-left: 16px;}
+.box_newsletter p{display: inline-block;/*padding-left: 20px;*/}
 .box_f_newsletter{}
 .box_f_newsletter p{color:#323E48;font-size: 22px;line-height: 32px;}
 #form_home{position: absolute;right: 10px;top:50%;margin-top: -20px;}
@@ -430,7 +432,7 @@ PROPIEDADES FOOTER
 .colum_footer ul a:hover{opacity:0.9;}
 
 
-.logo_footer{display:block;text-indent:-99999px;background:url(../svg/CUP_Logo.svg) center center no-repeat;height:47px;width:179px;background-size:179px;margin-left:30px;}
+.logo_footer{display:block;text-indent:-99999px;background:url(../svg/CUP_Logo.svg) center center no-repeat;height:47px;width:179px;background-size:179px;/*margin-left:30px;*/}
 
 .inf_footer{clear:both;padding-top:85px;}
 .inf_footer p{padding-top:16px;padding-bottom:16px;color:#393939;font-size:12px;line-height:31px;}
@@ -569,7 +571,8 @@ MEDIA QUERIES
 }
 
 
-@media screen and (max-width: 1322px) {
+@media screen and (max-width: 1264px) {
+	.logo_footer{margin-left:32px;}
 }
 
 
@@ -579,8 +582,8 @@ MEDIA QUERIES
 	.block_filters{padding-right: 88px;}
 	.search_filter a{right:32px;}
 	.over_buscador{right:32px;}
-	#header h1{width: 348px;height: 60px;background-size: 348px;left: 78px;}
-	#header h2{max-width:348px;left:78px;}
+	#header h1{width: 348px;height: 60px;background-size: 348px;left: 48px;}
+	#header h2{max-width:348px;left:48px;}
 	.ficha_gen{width: 248px;height: 340px;}
 	.ficha_gen.f_primaria{right:32px;}
 	.ficha_gen.f_infantil{right:312px;}
@@ -596,6 +599,9 @@ MEDIA QUERIES
 	.cover_infantil{width:calc(100% - 32px)}
 	.cover_primaria{width:calc(100% - 32px)}
 	.box_nuevos{margin-bottom:0px;}
+	
+	.logo_footer{margin-left:16px;}
+
 }
 
 @media screen and (max-width: 1140px) {
@@ -609,8 +615,8 @@ MEDIA QUERIES
 
 	/*.container_pop iframe{height:948px;}*/
 
-	#header h1{width: 244px;height: 42px;background-size: 244px;left: 56px;bottom:136px;}
-	#header h2{max-width:251px;left:56px;font-size: 21px;line-height: 25px;bottom: 68px;}
+	#header h1{width: 244px;height: 42px;background-size: 244px;left: 50px;bottom:136px;}
+	#header h2{max-width:251px;left:50px;font-size: 21px;line-height: 25px;bottom: 68px;}
 	.ficha_gen{width: 199px;height: 272px;}
 	.ficha_gen.f_primaria{right:32px;}
 	.ficha_gen.f_infantil{right:243px;}
@@ -640,6 +646,10 @@ MEDIA QUERIES
 	.cover_primaria p{font-size:18px;right: 32px;}
 
 	.block_newsletter_page .box_f_newsletter{text-align: left;}
+	
+
+	.filter_nivel a, .filter_tipo a, .filter_producto a, .filter_mob a{margin-left:8px;}
+	.rrss_footer li{width:60px;margin-bottom: 16px;}
 
 }
 
@@ -774,6 +784,10 @@ MEDIA QUERIES
 	.title_pop h4.interactivo:after{background-position: 88px -44px;}
 	
 	.box_clear_filtros > .container > div{margin-right:16px;}
+	
+	.rrss_footer li{width:auto;margin-bottom: 0px;}
+	
+
 
 
 
@@ -799,6 +813,8 @@ MEDIA QUERIES
 	.header_s_recurso h1{display: block;background: url(../svg/inglesencasa_single.svg) top left no-repeat;width: 142px;height: 25px;text-indent: -99999px;position: absolute;top: 50%;margin-top: -13px;left: 0;background-size: 142px;}
 	.single_box_recursos .btn_more_r{width:120px;}
 	.inside_recurso{display:none;}
+	
+	.slick-slide .box_recurso{float:none;}
 }
 
 
