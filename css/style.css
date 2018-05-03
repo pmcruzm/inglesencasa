@@ -736,7 +736,7 @@ MEDIA QUERIES
 	.contenedor-recursos .info_recurso h4{font-size:8px;}
 	.contenedor-recursos .info_recurso h5{font-size:12px;line-height: 16px;}
 	.contenedor-recursos .info_recurso{padding:8px;}
-	.contenedor-recursos .cat_recurso{font-size:8px;left: 8px;top:8px;}
+	.contenedor-recursos .cat_recurso{font-size:8px;left: 8px;top:4px;}
 	.contenedor-recursos .type_recurso{right:8px;top:8px;}
 	
 	.contenedor-recursos .type_recurso{width: 16px;height: 16px;background-size:80px; }
