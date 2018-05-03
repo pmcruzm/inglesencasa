@@ -168,12 +168,12 @@ PROPIEDADES HOME
 /***** NUEVOS ******/
 
 .box_nuevos{box-sizing:border-box;border: 32px solid #ffffff;position: relative;border-bottom:0;margin-bottom:16px;}
-.contenedor-recursos{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);padding-top: 98px;overflow: hidden;box-sizing: border-box;padding-left: 24px;padding-right: 24px;position: relative;}
+.contenedor-recursos{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);padding-top: 98px;overflow: hidden;box-sizing: border-box;padding-left: 24px;padding-right: 24px;position: relative;min-height: 850px;}
 .contenedor-recursos .container{/*width: calc(100% + 30px);max-width:1208px*/}
 .box_nuevos h3{font-family:'peace_sansregular', Helvetica, sans-serif;font-size: 40px;color:#FF6B47;line-height: 48px;padding-bottom: 16px;}
 .contenedor-recursos .item{width: 25%;float: left;margin-bottom: 30px;text-align: center;}
 .cover_b_recursos{clear:both;padding-top: 40px;padding-bottom: 70px;}
-.banner_recursos{clear:both;border-top: 3px solid rgba(22,84,117,0.1);border-bottom: 3px solid rgba(22,84,117,0.1);text-align: center;padding-top: 43px;padding-bottom: 43px;}
+.banner_recursos{clear:both;border-top: 3px solid #94E3DF;border-bottom: 3px solid #94E3DF;text-align: center;padding-top: 43px;padding-bottom: 43px;}
 .banner_recursos p{font-size: 22px;line-height: 32px;color:#103E57;display: inline-block;}
 .banner_recursos div{display: inline-block;}
 .banner_recursos strong{font-family:'source_sans_prosemibold', Helvetica, sans-serif;}
