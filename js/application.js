@@ -230,6 +230,7 @@ jQuery(document).on('ready',function(){
 		event.preventDefault();
 		jQuery('.light_box_recursos').fadeOut(600,function(){
 			jQuery('body').css({overflow:'auto'});
+			jQuery('.resource-content').html('');
 		});
 	});
 
