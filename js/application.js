@@ -416,22 +416,23 @@ function calc_iframe_height(){
   //Obtenemos anchura del navegador
   var w_win=jQuery(window).width();
   jQuery('.container_pop iframe').removeAttr('style');
-	console.log(jQuery('.container_pop iframe').width());
-  if(w_win<1024){
+	//console.log(jQuery('.container_pop iframe').width());
+ 
 	  if(w_win<769){
 		var w_iframe=jQuery('.container_pop iframe').width();
 		var h_iframe= Math.round(w_iframe*(1.3465));
 		jQuery('.container_pop iframe').height(h_iframe);
+		  /*if(){
+			var w_iframe=jQuery('.container_pop iframe').width();
+			var h_iframe= Math.round(w_iframe*(1.6617));
+			jQuery('.container_pop iframe').height(h_iframe);
+			 }*/
 	  }else{
 		var w_iframe=jQuery('.container_pop iframe').width();
-		var h_iframe= Math.round(w_iframe*(1.6617));
-		jQuery('.container_pop iframe').height(h_iframe);
+		var h_iframe= Math.round(w_iframe*(0.6083));
+		jQuery('.container_pop iframe').height(h_iframe);  
 	  }
-  }else{
-	var w_iframe=jQuery('.container_pop iframe').width();
-	var h_iframe= Math.round(w_iframe*(0.6083));
-	jQuery('.container_pop iframe').height(h_iframe);
-  }
+ 
 
 }
 
