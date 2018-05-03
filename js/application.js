@@ -387,7 +387,7 @@ function load_recurso(url){
 
 //Funcion para calcular el aspect_ratio iframe
 function calc_iframe_height(){
-  //Obtenemosanchura del navegador
+  //Obtenemos anchura del navegador
   var w_win=jQuery(window).width();
   jQuery('.container_pop iframe').removeAttr('style');
 	console.log(jQuery('.container_pop iframe').width());
