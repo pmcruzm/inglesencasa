@@ -87,6 +87,20 @@ jQuery(document).on('ready',function(){
 			jQuery('.over_filtros').slideUp(400);
 		}
 	});
+	
+	//Cerrar bloque de filtros
+	jQuery(document).on('click','.row_close_filter a',function(event){
+		event.preventDefault();
+		jQuery('.over_filtros').slideUp(400, function() {
+			jQuery('.filter_nivel a').removeClass('active');
+			jQuery('.filter_tipo a').removeClass('active');
+			jQuery('.filter_producto a').removeClass('active');
+			jQuery('.opc_nivel').show();
+			jQuery('.opc_tipo').hide();
+			jQuery('.opc_producto').hide();
+		});
+	});
+	
 
 	//Abrir Bloque de Filtros
 	jQuery(document).on('click','.filter_mob a',function(event){
