@@ -149,14 +149,14 @@ jQuery(document).on('ready',function(){
 	//Cerrar cuadro info cookies
 	jQuery(document).on('click','.close_c',function(event){
 		event.preventDefault();
-		jQuery('.block-cookies').fadeOut(600);
+		jQuery('.block-cookies').fadeOut(300);
 	});
 
 	//Aceptar cookies en el cuadro
 	jQuery(document).on('click','.btn-accept',function(e){
 		e.preventDefault();
 		jQuery.cookie(ACEPTA_COOKIES_NAME, 'acepta', { expires: 365 * 10 ,path: '/' });
-		jQuery('.block-cookies').fadeOut(600);
+		jQuery('.block-cookies').fadeOut(300);
 		//Inicializamos GoogleAnalytics
 		initGoogleAnalytics();
 	});
@@ -327,7 +327,7 @@ function load_recurso(url){
 					}
 				};
 				awp_player = jQuery("#awp-wrapper").awp(settings);
-				jQuery('.light_box_recursos').animate({opacity:1},600,function(){
+				jQuery('.light_box_recursos').animate({opacity:1},300,function(){
 					jQuery(this).css({overflowY:'auto'});
 					jQuery('body').css({overflow:'hidden'});
 				});
@@ -335,7 +335,7 @@ function load_recurso(url){
 			case 'video':
 				jQuery('.light_box_recursos').css({display:'block',opacity:0});
 				jQuery(".vid_youtube").fitVids();
-				jQuery('.light_box_recursos').animate({opacity:1},600,function(){
+				jQuery('.light_box_recursos').animate({opacity:1},300,function(){
 					jQuery(this).css({overflowY:'auto'});
 					jQuery('body').css({overflow:'hidden'});
 				});
@@ -343,7 +343,7 @@ function load_recurso(url){
 			case 'interactivo':
 				jQuery('.light_box_recursos').css({display:'block',opacity:0});
 				calc_iframe_height();
-				jQuery('.light_box_recursos').animate({opacity:1},600,function(){
+				jQuery('.light_box_recursos').animate({opacity:1},300,function(){
 					jQuery(this).css({overflowY:'auto'});
 					jQuery('body').css({overflow:'hidden'});
 				});
@@ -351,7 +351,7 @@ function load_recurso(url){
 			case 'pdf':
 				jQuery('.light_box_recursos').css({display:'block',opacity:0});
 				calc_iframe_height();
-				jQuery('.light_box_recursos').animate({opacity:1},600,function(){
+				jQuery('.light_box_recursos').animate({opacity:1},300,function(){
 					jQuery(this).css({overflowY:'auto'});
 					jQuery('body').css({overflow:'hidden'});
 				});
@@ -373,7 +373,7 @@ function load_recurso(url){
 									  onSlidePrev: function(slideElement, oldIndex, newIndex){
 									  },
 									});
-				jQuery('.light_box_recursos').animate({opacity:1},600,function(){
+				jQuery('.light_box_recursos').animate({opacity:1},300,function(){
 					jQuery(this).css({overflowY:'auto'});
 					jQuery('body').css({overflow:'hidden'});
 				});
