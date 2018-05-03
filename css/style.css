@@ -85,8 +85,8 @@ PROPIEDADES HEADER
 .menu_header li{display: inline-block;}
 .menu_header li a{display: inline-block;color:#103E57;font-family: 'museosanscyrl', Helvetica, sans-serif;font-size: 12px;position: relative;letter-spacing: 1px;}
 .menu_header li a:after{content:'|';display: inline-block;margin-left: 20px;margin-right: 20px;}
-.menu_header li a.over:before{content:'';display: block;height: 3px;background:#FF6B47;width: calc(100% - 22px);position: absolute;bottom: -3px;}
-.menu_header li.active a:before{content:'';display: block;height: 3px;background:#FF6B47;width: calc(100% - 22px);position: absolute;bottom: -3px;}
+.menu_header li a.over:before{content:'';display: block;height: 3px;background:#FF6B47;width: calc(100% - 42px);position: absolute;bottom: -3px;}
+.menu_header li.active a:before{content:'';display: block;height: 3px;background:#FF6B47;width: calc(100% - 42px);position: absolute;bottom: -3px;}
 .menu_header li:last-child a:after{display: none;}
 .menu_header li:last-child a.over:before{width:100%;}
 
