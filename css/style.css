@@ -715,8 +715,24 @@ MEDIA QUERIES
 	.contenedor-recursos .info_recurso h4{font-size:8px;}
 	.contenedor-recursos .info_recurso h5{font-size:12px;line-height: 16px;}
 	.contenedor-recursos .info_recurso{padding:8px;}
-	.contenedor-recursos .cat_recurso{font-size:8px;left: 8px;}
-	.contenedor-recursos .type_recurso{right:8px;}
+	.contenedor-recursos .cat_recurso{font-size:8px;left: 8px;top:8px;}
+	.contenedor-recursos .type_recurso{right:8px;top:8px;}
+	
+	.contenedor-recursos .type_recurso{width: 16px;height: 16px;background-size:80px; }
+
+	.contenedor-recursos .type_recurso.audio{background-position: 0px -16px;}
+	.contenedor-recursos .type_recurso.pdf{background-position: 16px -16px;}
+	.contenedor-recursos .type_recurso.imagen{background-position: 32px -16px;}
+	.contenedor-recursos .type_recurso.video{background-position: 48px -16px;}
+	.contenedor-recursos .type_recurso.interactivo{background-position: 64px -16px;}
+
+	.contenedor-recursos .w_recurso .type_recurso.audio{background-position: 0px 0px;}
+	.contenedor-recursos .w_recurso .type_recurso.pdf{background-position: 16px 0px;}
+	.contenedor-recursos .w_recurso .type_recurso.imagen{background-position: 32px 0px;}
+	.contenedor-recursos .w_recurso .type_recurso.video{background-position: 48px 0px;}
+	.contenedor-recursos .w_recurso .type_recurso.interactivo{background-position: 64px 0px;}
+	
+	
 
 	.contenedor-recursos{padding-left:8px;padding-right:8px;padding-top: 98px;}
 
