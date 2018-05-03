@@ -364,7 +364,7 @@ LIGHTBOX RECURSOS
 .material_complementario h5{font-size: 16px;line-height: 30px;font-family:'source_sans_prosemibold', Helvetica, sans-serif;font-style: italic;color:#103E57;}
 .material_complementario ul{}
 .material_complementario ul li{}
-.material_complementario ul li a{color:#103E57;font-size: 16px;line-height: 30px;}
+.material_complementario ul li a{color:#103E57;font-size: 16px;line-height: 30px;text-decoration: underline;}
 
 
 /*** RECURSO INTERACTIVO *****/
@@ -389,7 +389,6 @@ LIGHTBOX RECURSOS
 .awp-download, .awp-link{color:#103E57 !important;}
 .awp-download:hover, .awp-link:hover{color:#55BFC0 !important;}
 .awp-playlist-title{text-shadow:none;}
-.awp-playlist-item > a{text-decoration: underline !important;}
 
 
 
