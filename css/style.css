@@ -346,9 +346,10 @@ LIGHTBOX RECURSOS
 .info_pop{position: relative;}
 .title_pop{padding-top: 32px;}
 .title_pop h3{font-size: 12px;color:#103E57;font-family: 'museosanscyrl', Helvetica, sans-serif;line-height: 12px;letter-spacing: 1px;}
-.title_pop h4{font-family:'source_sans_prosemibold', Helvetica, sans-serif;font-size: 40px;line-height: 50px;color:#103E57;}
+.title_pop h4{font-family:'source_sans_prosemibold', Helvetica, sans-serif;font-size: 40px;line-height: 50px;color:#103E57; margin-top: 12px;}
 .title_pop h4:after{content:'';display: inline-block;width: 32px;height: 32px;background-image: url(../svg/sprite_icon-recursos.svg);background-repeat: none;background-size: 160px;margin-left: 16px;}
 
+.title_pop h3 + h4 {margin-top: 0;}
 .title_pop h4.audio:after{background-position: 0px -64px;}
 .title_pop h4.pdf:after{background-position: 32px -64px;}
 .title_pop h4.imagen:after{background-position: 64px -64px;}
@@ -606,12 +607,12 @@ MEDIA QUERIES
 	.cover_infantil{width:calc(100% - 32px)}
 	.cover_primaria{width:calc(100% - 32px)}
 	.box_nuevos{margin-bottom:0px;}
-	
+
 	.logo_footer{margin-left:16px;}
-	
+
 	.colum_footer{float:right;width:calc(32% - 94px);box-sizing: border-box;padding-right: 10px;}
 	.colum_footer_rrss{float:right;width: 190px;padding-right: 16px;}
-	
+
 	.cover_infantil h3{left: 32px;}
 	.cover_infantil p{right: 32px;}
 	.cover_primaria h3{left: 32px;}
@@ -661,7 +662,7 @@ MEDIA QUERIES
 	.cover_primaria p{font-size:18px;right: 32px;}
 
 	.block_newsletter_page .box_f_newsletter{text-align: left;}
-	
+
 
 	.filter_nivel a, .filter_tipo a, .filter_producto a, .filter_mob a{margin-left:6px;}
 	.block_filters{padding-right: 78px;}
@@ -745,7 +746,7 @@ MEDIA QUERIES
 	.contenedor-recursos .info_recurso{padding:8px;}
 	.contenedor-recursos .cat_recurso{font-size:8px;left: 8px;top:4px;}
 	.contenedor-recursos .type_recurso{right:8px;top:8px;}
-	
+
 	.contenedor-recursos .type_recurso{width: 16px;height: 16px;background-size:80px; }
 
 	.contenedor-recursos .type_recurso.audio{background-position: 0px -16px;}
@@ -759,8 +760,8 @@ MEDIA QUERIES
 	.contenedor-recursos .w_recurso .type_recurso.imagen{background-position: 32px 0px;}
 	.contenedor-recursos .w_recurso .type_recurso.video{background-position: 48px 0px;}
 	.contenedor-recursos .w_recurso .type_recurso.interactivo{background-position: 64px 0px;}
-	
-	
+
+
 
 	.contenedor-recursos{padding-left:8px;padding-right:8px;padding-top: 98px;}
 
@@ -800,16 +801,16 @@ MEDIA QUERIES
 	.title_pop h4.imagen:after{background-position: 44px -44px;}
 	.title_pop h4.video:after{background-position: 66px -44px;}
 	.title_pop h4.interactivo:after{background-position: 88px -44px;}
-	
+
 	.box_clear_filtros > .container > div{margin-right:16px;}
-	
+
 	.rrss_footer li{width:auto;margin-bottom: 0px;}
-	
+
 	.menu_header li a:after{margin-right:10px;margin-left: 0;}
-	
+
 	#footer .colum_footer_rrss{float: inherit !important;clear: both !important;width: 100% !important;text-align: center;padding-bottom: 52px;display: block;padding-right: 0;padding-top: 32px;}
 	.inside_f_rrss{display:block;width: 100%;float: inherit;}
-	
+
 
 
 
@@ -836,7 +837,7 @@ MEDIA QUERIES
 	.header_s_recurso h1{display: block;background: url(../svg/inglesencasa_single.svg) top left no-repeat;width: 142px;height: 25px;text-indent: -99999px;position: absolute;top: 50%;margin-top: -13px;left: 0;background-size: 142px;}
 	.single_box_recursos .btn_more_r{width:120px;}
 	.inside_recurso{display:none;}
-	
+
 	.slick-slide .box_recurso{float:none;}
 }
 
