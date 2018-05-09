@@ -17,7 +17,11 @@ var touch_control=0;
 jQuery.noConflict();
 
 jQuery(window).on('load',function(){
+	var filterParams = window.location.hash.substr(1).split(':');
 
+	if( filterParams.shift() == "filter" ) {
+		applyFilter(filterParams[0], filterParams[1]);
+	}
 });
 
 jQuery(document).on('ready',function(){
@@ -185,8 +189,26 @@ jQuery(document).on('ready',function(){
 	});
 
 
+	jQuery( window ).on('hashchange',function(event){
+		var filterParams = window.location.hash.substr(1).split(':');
+
+		if( filterParams.shift() == "filter" ) {
+			applyFilter(filterParams[0], filterParams[1]);
+		}
+	});
+
 });
 
+function applyFilter(filterName, filterValue) {
+	var elem = jQuery('input[name="'+filterName+'[]"][value="'+filterValue+'"]');
+
+	if( elem.length ) {
+		// Clear existing filters
+		jQuery('input[type="checkbox"]', '.over_filtros').prop('checked', false).parent().removeClass('active');
+		// Set selected filter and trigger a filterChange
+		elem.prop('checked', true).trigger('change');
+	}
+}
 
 function filterChange() {
 
