@@ -207,6 +207,8 @@ function applyFilter(filterName, filterValue) {
 		jQuery('input[type="checkbox"]', '.over_filtros').prop('checked', false).parent().removeClass('active');
 		// Set selected filter and trigger a filterChange
 		elem.prop('checked', true).trigger('change');
+		// Move scroll to top
+		window.scrollTo(0, jQuery(".box_nuevos").offset().top);
 	}
 }
 
