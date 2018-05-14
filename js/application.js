@@ -46,7 +46,7 @@ jQuery(document).on('ready',function(){
 	}
 
 	//Página single de recurso interactivo o pdf
-	if (jQuery('.single_box_recursos iframe').is(":visible") ) {
+	if (jQuery('.single_box_recursos iframe.iframe_dynamic').is(":visible") ) {
 		calc_iframe_height();
 	}
 
@@ -290,7 +290,7 @@ jQuery(document).on('ready',function(){
 		}
 
 		//Recurso lightbox
-		if (jQuery('.container_pop iframe').is(":visible") ) {
+		if (jQuery('.container_pop iframe.iframe_dynamic').is(":visible") ) {
 			calc_iframe_height();
 		}
 
@@ -415,22 +415,22 @@ function load_recurso(url){
 function calc_iframe_height(){
   //Obtenemos anchura del navegador
   var w_win=jQuery(window).width();
-  jQuery('.container_pop iframe').removeAttr('style');
+  jQuery('.container_pop iframe.iframe_dynamic').removeAttr('style');
 	//console.log(jQuery('.container_pop iframe').width());
  
 	  if(w_win<769){
-		var w_iframe=jQuery('.container_pop iframe').width();
+		var w_iframe=jQuery('.container_pop iframe.iframe_dynamic').width();
 		var h_iframe= Math.round(w_iframe*(1.3465));
-		jQuery('.container_pop iframe').height(h_iframe);
+		jQuery('.container_pop iframe.iframe_dynamic').height(h_iframe);
 		  /*if(){
 			var w_iframe=jQuery('.container_pop iframe').width();
 			var h_iframe= Math.round(w_iframe*(1.6617));
 			jQuery('.container_pop iframe').height(h_iframe);
 			 }*/
 	  }else{
-		var w_iframe=jQuery('.container_pop iframe').width();
+		var w_iframe=jQuery('.container_pop iframe.iframe_dynamic').width();
 		var h_iframe= Math.round(w_iframe*(0.6083));
-		jQuery('.container_pop iframe').height(h_iframe);  
+		jQuery('.container_pop iframe.iframe_dynamic').height(h_iframe);  
 	  }
  
 
