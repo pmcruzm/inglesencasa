@@ -542,9 +542,12 @@ input[type="checkbox"] {
 /*****************************
 FRAMEWORK AUDIO.JS
 ******************************/
-.audiojs{max-width:300px;/*background:#FF6B47; */}
-.audiojs .scrubber{width:calc(100% - 170px);}
-.audiojs .time{}
+.audiojs{max-width:300px;background:#FF5306;}
+.audiojs .scrubber{width:calc(100% - 170px);border-top:0px;}
+.audiojs .play-pause{border-right:1px solid rgba(219,54,9,0.5);}
+.audiojs .time{border-left:1px solid rgba(219,54,9,0.5);color:#DB3609;}
+.audiojs .loaded{background:#F23A09;}
+.audiojs .progress{background:#DB3609;}
 
 
 /*****************************
