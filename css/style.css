@@ -548,6 +548,7 @@ FRAMEWORK AUDIO.JS
 .audiojs .time{border-left:1px solid rgba(219,54,9,0.5);color:#DB3609;}
 .audiojs .loaded{background:#F23A09;}
 .audiojs .progress{background:#DB3609;}
+.audiojs .time .played{text-shadow:none;}
 
 
 /*****************************
