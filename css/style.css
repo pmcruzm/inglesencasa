@@ -356,6 +356,20 @@ LIGHTBOX RECURSOS
 .title_pop h4.video:after{background-position: 96px -64px;}
 .title_pop h4.interactivo:after{background-position: 128px -64px;}
 
+.row_tags{padding-top:18px;padding-bottom: 32px;}
+.row_tags a{display: inline-block;padding-left:18px;padding-right: 18px;border: 2px solid rgba(16,62,87,0.3);border-radius: 18px;text-align: center;color:#2E2E2E;font-size: 12px;margin-left:8px;text-transform: uppercase;}
+.row_tags a:first-child{margin-left:0;}
+.txt_recurso{font-family:'source_sans_prosemibold', Helvetica, sans-serif;max-width: 664px;color: #103E57;font-size: 16px;font-weight: bold;line-height: 24px;}
+.box_audios{padding-top:42px;}
+.box_audios h5{color: #103E57;font-family:'source_sans_prosemibold', Helvetica, sans-serif;font-size: 16px;line-height: 24px;font-style: italic;display: inline-block;vertical-align: top;margin-right: 20px;position: relative;top:6px;}
+.box_player{display:inline-block;max-width: 300px;}
+.top_b_audio{padding-bottom: 32px;}
+.list_audios{}
+.list_audios ol{}
+.list_audios li{}
+.list_audios p{color:#103E57;font-size: 16px;line-height: 30px;margin-bottom:32px;}
+.list_audios a{color: #FF6B47;font-family:'source_sans_prosemibold', Helvetica, sans-serif;font-size: 16px;line-height: 24px;text-decoration: underline;}
+
 .share_pop{position: absolute;right: 0;top: 50px;}
 .share_pop ul{margin: 0;padding: 0;float: right;}
 .share_pop ul li{display: inline-block;width: 36px;height: 36px;margin-right:16px;}
@@ -523,6 +537,14 @@ input[type="checkbox"] {
 	top:3px;
 	margin-right:10px;
 }*/
+
+
+/*****************************
+FRAMEWORK AUDIO.JS
+******************************/
+.audiojs{max-width:300px;/*background:#FF6B47; */}
+.audiojs .scrubber{width:calc(100% - 170px);}
+.audiojs .time{}
 
 
 /*****************************
@@ -839,6 +861,8 @@ MEDIA QUERIES
 	.inside_recurso{display:none;}
 
 	.slick-slide .box_recurso{float:none;}
+	.box_player{display:block;padding-top: 18px;max-width: 100%;}
+	.audiojs{max-width:100%;}
 }
 
 

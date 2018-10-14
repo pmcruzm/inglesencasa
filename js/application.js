@@ -356,6 +356,7 @@ function load_recurso(url){
 				jQuery('.light_box_recursos').animate({opacity:1},300,function(){
 					jQuery(this).css({overflowY:'auto'});
 					jQuery('body').css({overflow:'hidden'});
+					load_player();
 				});
 			break;
 			case 'video':
@@ -364,6 +365,7 @@ function load_recurso(url){
 				jQuery('.light_box_recursos').animate({opacity:1},300,function(){
 					jQuery(this).css({overflowY:'auto'});
 					jQuery('body').css({overflow:'hidden'});
+					load_player();
 				});
 			break;
 			case 'interactivo':
@@ -372,6 +374,7 @@ function load_recurso(url){
 				jQuery('.light_box_recursos').animate({opacity:1},300,function(){
 					jQuery(this).css({overflowY:'auto'});
 					jQuery('body').css({overflow:'hidden'});
+					load_player();
 				});
 			break;
 			case 'pdf':
@@ -380,6 +383,7 @@ function load_recurso(url){
 				jQuery('.light_box_recursos').animate({opacity:1},300,function(){
 					jQuery(this).css({overflowY:'auto'});
 					jQuery('body').css({overflow:'hidden'});
+					load_player();
 				});
 			break;
 			case 'imagen':
@@ -402,6 +406,7 @@ function load_recurso(url){
 				jQuery('.light_box_recursos').animate({opacity:1},300,function(){
 					jQuery(this).css({overflowY:'auto'});
 					jQuery('body').css({overflow:'hidden'});
+					load_player();
 				});
 			break;
 		}
@@ -436,6 +441,40 @@ function calc_iframe_height(){
 
 }
 
+
+//Función para cargar el player de audio
+function load_player(){
+	//Cargamos el player y el listado de audios	
+       var a = audiojs.createAll({
+          trackEnded: function() {
+            var next = jQuery('ol li.playing').next();
+            if (!next.length) next = jQuery('ol li').first();
+            next.addClass('playing').siblings().removeClass('playing');
+            audio.load(jQuery('a', next).attr('data-src'));
+            audio.play();
+          }
+        });
+        
+        // Load in the first track
+        var audio = a[0];
+        first = jQuery('ol a').attr('data-src');
+        jQuery('ol li').first().addClass('playing');
+        audio.load(first);
+        
+        // Load in the first track
+        /*var audio = a[0];
+        first = jQuery('ol a').attr('data-src');
+        jQuery('ol li').first().addClass('playing');
+        audio.load(first);*/
+
+        // Load in a track on click
+        jQuery('ol li').click(function(e) {
+          e.preventDefault();
+          jQuery(this).addClass('playing').siblings().removeClass('playing');
+          audio.load(jQuery('a', this).attr('data-src'));
+          audio.play();
+        });
+}
 
 //Función para capturar eventos scroll
 function control_scroll(e){
