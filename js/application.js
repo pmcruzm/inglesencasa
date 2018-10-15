@@ -447,11 +447,6 @@ function load_player(){
 	//Cargamos el player y el listado de audios	
        var a = audiojs.createAll({
           trackEnded: function() {
-            var next = jQuery('ol li.playing').next();
-            if (!next.length) next = jQuery('ol li').first();
-            next.addClass('playing').siblings().removeClass('playing');
-            audio.load(jQuery('a', next).attr('data-src'));
-            audio.play();
           }
         });
         
@@ -461,11 +456,6 @@ function load_player(){
         jQuery('ol li').first().addClass('playing');
         audio.load(first);
         
-        // Load in the first track
-        /*var audio = a[0];
-        first = jQuery('ol a').attr('data-src');
-        jQuery('ol li').first().addClass('playing');
-        audio.load(first);*/
 
         // Load in a track on click
         jQuery('ol li').click(function(e) {

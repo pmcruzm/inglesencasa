@@ -357,7 +357,8 @@ LIGHTBOX RECURSOS
 .title_pop h4.interactivo:after{background-position: 128px -64px;}
 
 .row_tags{padding-top:18px;padding-bottom: 32px;}
-.row_tags a{display: inline-block;padding-left:18px;padding-right: 18px;border: 2px solid rgba(16,62,87,0.3);border-radius: 18px;text-align: center;color:#2E2E2E;font-size: 12px;margin-left:8px;text-transform: uppercase;}
+.row_tags a{display: inline-block;padding-left:18px;padding-right: 18px;border: 2px solid rgba(16,62,87,0.3);border-radius: 18px;text-align: center;color:#2E2E2E;font-size: 12px;margin-left:8px;text-transform: uppercase;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;}
+.row_tags a:hover{background: rgba(16,62,87,0.3);}
 .row_tags a:first-child{margin-left:0;}
 .txt_recurso{font-family:'source_sans_prosemibold', Helvetica, sans-serif;max-width: 664px;color: #103E57;font-size: 16px;font-weight: bold;line-height: 24px;}
 .box_audios{padding-top:42px;}
@@ -542,10 +543,10 @@ input[type="checkbox"] {
 /*****************************
 FRAMEWORK AUDIO.JS
 ******************************/
-.audiojs{max-width:300px;background:#FF5306;}
-.audiojs .scrubber{width:calc(100% - 170px);border-top:0px;}
+.audiojs{max-width:300px;background:#FF5306;box-shadow: none;}
+.audiojs .scrubber{width:calc(100% - 60px);border-top:0px;background:#F23A09;}
 .audiojs .play-pause{border-right:1px solid rgba(219,54,9,0.5);}
-.audiojs .time{border-left:1px solid rgba(219,54,9,0.5);color:#DB3609;}
+.audiojs .time{display: none;}
 .audiojs .loaded{background:#F23A09;}
 .audiojs .progress{background:#DB3609;}
 .audiojs .time .played{text-shadow:none;}
