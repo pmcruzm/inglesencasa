@@ -460,9 +460,14 @@ function load_player(){
         // Load in a track on click
         jQuery('ol li').click(function(e) {
           e.preventDefault();
-          jQuery(this).addClass('playing').siblings().removeClass('playing');
-          audio.load(jQuery('a', this).attr('data-src'));
-          audio.play();
+			if(!jQuery('.box_player').hasClass('active')){
+				jQuery('.box_player').css({visibility:'visible'}).animate({opacity:1},600,function(){
+					jQuery('.box_player').addClass('active');
+				});	
+			}
+            jQuery(this).addClass('playing').siblings().removeClass('playing');
+            audio.load(jQuery('a', this).attr('data-src'));
+            audio.play();
         });
 }
 

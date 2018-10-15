@@ -361,15 +361,17 @@ LIGHTBOX RECURSOS
 .row_tags a:hover{background: rgba(16,62,87,0.3);}
 .row_tags a:first-child{margin-left:0;}
 .txt_recurso{font-family:'source_sans_prosemibold', Helvetica, sans-serif;max-width: 664px;color: #103E57;font-size: 16px;font-weight: bold;line-height: 24px;}
-.box_audios{padding-top:42px;}
-.box_audios h5{color: #103E57;font-family:'source_sans_prosemibold', Helvetica, sans-serif;font-size: 16px;line-height: 24px;font-style: italic;display: inline-block;vertical-align: top;margin-right: 20px;position: relative;top:6px;}
-.box_player{display:inline-block;max-width: 300px;}
+.box_audios{padding-top:42px;max-width: 664px;}
+.box_audios h5{color: #103E57;font-family:'source_sans_prosemibold', Helvetica, sans-serif;font-size: 20px;line-height: 24px;font-style: italic;display: inline-block;vertical-align: top;margin-right: 20px;position: relative;top:6px;}
+.box_player{display:inline-block;max-width: 300px;opacity: 0;visibility: hidden;}
 .top_b_audio{padding-bottom: 32px;}
 .list_audios{}
 .list_audios ol{}
 .list_audios li{}
-.list_audios p{color:#103E57;font-size: 16px;line-height: 30px;margin-bottom:32px;}
-.list_audios a{color: #FF6B47;font-family:'source_sans_prosemibold', Helvetica, sans-serif;font-size: 16px;line-height: 24px;text-decoration: underline;}
+.list_audios p{color:#103E57;font-size: 16px;line-height: 30px;margin-bottom:16px;}
+.list_audios li p{color:#103E57;font-size: 16px;line-height: 30px;margin-bottom:32px;}
+.list_audios a{color: #FF6B47;font-family:'source_sans_prosemibold', Helvetica, sans-serif;font-size: 16px;line-height: 24px;text-decoration: underline;display: inline-block;padding-right: 36px;position: relative;}
+.list_audios a:after{display: inline-block;content: '';width:20px;height: 18px;background: url(../svg/play_audio.svg) center center no-repeat;position: absolute;right:0;top:50%;margin-top:-9px;}
 
 .share_pop{position: absolute;right: 0;top: 50px;}
 .share_pop ul{margin: 0;padding: 0;float: right;}
@@ -383,7 +385,7 @@ LIGHTBOX RECURSOS
 .share_pop p{display:inline-block;font-size: 14px;color:#103E57;float: left;line-height: 36px;margin-right: 15px;}
 
 .material_complementario{padding-top:38px;padding-bottom: 20px;}
-.material_complementario h5{font-size: 16px;line-height: 30px;font-family:'source_sans_prosemibold', Helvetica, sans-serif;font-style: italic;color:#103E57;}
+.material_complementario h5{font-size: 20px;line-height: 30px;font-family:'source_sans_prosemibold', Helvetica, sans-serif;font-style: italic;color:#103E57;}
 .material_complementario ul{}
 .material_complementario ul li{}
 .material_complementario ul li a{color:#103E57;font-size: 16px;line-height: 30px;text-decoration: underline;}
