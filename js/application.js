@@ -418,29 +418,40 @@ function calc_iframe_height(){
 
 //Función para cargar el player de audio
 function load_player(){
-	//Cargamos el player y el listado de audios	
-       var a = audiojs.createAll({
+	//Cargamos el player y el listado de audios
+
+        var audioLinks = jQuery('.list_audios a').filter(function(index){
+        	return ("mp3" == jQuery(this).attr('href').toLowerCase().split('.').pop());
+        });
+
+        if( audioLinks.length == 0 ) {
+        	return;
+        }
+
+        var a = audiojs.createAll({
           trackEnded: function() {
           }
         });
-        
+
         // Load in the first track
         var audio = a[0];
-        first = jQuery('ol a').attr('data-src');
-        jQuery('ol li').first().addClass('playing');
-        audio.load(first);
-        
+        first = audioLinks.first();
+        first.addClass('playing');
+        audio.load(first.attr('href'));
+
 
         // Load in a track on click
-        jQuery('ol li').click(function(e) {
+        audioLinks.click(function(e) {
+        	var me = jQuery(this);
           e.preventDefault();
 			if(!jQuery('.box_player').hasClass('active')){
 				jQuery('.box_player').css({visibility:'visible'}).animate({opacity:1},600,function(){
 					jQuery('.box_player').addClass('active');
-				});	
+				});
 			}
-            jQuery(this).addClass('playing').siblings().removeClass('playing');
-            audio.load(jQuery('a', this).attr('data-src'));
+            audioLinks.removeClass('playing');
+            me.addClass('playing');
+            audio.load(me.attr('href'));
             audio.play();
         });
 }
