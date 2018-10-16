@@ -10,7 +10,6 @@ Cliente: Inglés en Casa
 VARIABLES
 **********************/
 var awp_player;
-var ACEPTA_COOKIES_NAME  = 'cambridge-inglesencasa-acepta-cookies';
 
 
 //Eventos para dispositivos móviles
@@ -136,31 +135,6 @@ jQuery(document).on('ready',function(){
 		}
 	});*/
 
-	//Miramos si la cookie de aceptación está creada
-	if(jQuery.cookie(ACEPTA_COOKIES_NAME) == 'acepta'){
-		//Ocultamos info cookies
-		jQuery('.block-cookies').hide();
-		//Inicializamos GoogleAnalytics
-		initGoogleAnalytics();
-	}else{
-		jQuery('.block-cookies').show();
-	}
-
-	//Cerrar cuadro info cookies
-	jQuery(document).on('click','.close_c',function(event){
-		event.preventDefault();
-		jQuery('.block-cookies').fadeOut(300);
-	});
-
-	//Aceptar cookies en el cuadro
-	jQuery(document).on('click','.btn-accept',function(e){
-		e.preventDefault();
-		jQuery.cookie(ACEPTA_COOKIES_NAME, 'acepta', { expires: 365 * 10 ,path: '/' });
-		jQuery('.block-cookies').fadeOut(300);
-		//Inicializamos GoogleAnalytics
-		initGoogleAnalytics();
-	});
-
 	jQuery(window).scroll(control_scroll);
 
 	//Reseteamos los checkbox si son visibles
@@ -181,7 +155,7 @@ jQuery(document).on('ready',function(){
 			jQuery(this).removeClass('over');
 		}
 	});
-	
+
 	//Over de las flechas galeria
 	jQuery(document).on("mouseenter",".carrusel-destacados .slick-prev,.carrusel-destacados .slick-next", function(e) {
 		e.preventDefault();
@@ -194,7 +168,7 @@ jQuery(document).on('ready',function(){
 			jQuery(this).removeClass('over');
 		}
 	});
-	
+
 	//Over menú
 	jQuery(document).on("mouseenter",".menu_header a", function(e) {
 		e.preventDefault();
@@ -422,7 +396,7 @@ function calc_iframe_height(){
   var w_win=jQuery(window).width();
   jQuery('.container_pop iframe.iframe_dynamic').removeAttr('style');
 	//console.log(jQuery('.container_pop iframe').width());
- 
+
 	  if(w_win<769){
 		var w_iframe=jQuery('.container_pop iframe.iframe_dynamic').width();
 		var h_iframe= Math.round(w_iframe*(1.3465));
@@ -435,9 +409,9 @@ function calc_iframe_height(){
 	  }else{
 		var w_iframe=jQuery('.container_pop iframe.iframe_dynamic').width();
 		var h_iframe= Math.round(w_iframe*(0.6083));
-		jQuery('.container_pop iframe.iframe_dynamic').height(h_iframe);  
+		jQuery('.container_pop iframe.iframe_dynamic').height(h_iframe);
 	  }
- 
+
 
 }
 
@@ -480,17 +454,6 @@ function control_scroll(e){
   //Obtenemos altura y anchura del navegador
   h_win=jQuery(window).height();
   w_win=jQuery(window).width();
-
-  //Añadir Cookie si se hace scroll a +100px
-  if(scrollAmount>100){
- 		if(jQuery.cookie(ACEPTA_COOKIES_NAME) != 'acepta'){
-			jQuery.cookie(ACEPTA_COOKIES_NAME, 'acepta', { expires: 365 * 10 ,path: '/' });
-			jQuery('.block-cookies').fadeOut(600);
-			//Inicializamos GoogleAnalytics
-			initGoogleAnalytics();
-		}
-  }
-
 }
 
 
@@ -530,17 +493,3 @@ function doOnOrientationChange()
 		break;
 	}
   }
-
-
-function initGoogleAnalytics() {
-
-	var GA_ID = jQuery('meta[property="google-analytics-id"]').attr('content');
-
-	if(GA_ID && GA_ID != '') {
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', GA_ID);
-	}
-}
