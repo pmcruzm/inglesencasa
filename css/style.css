@@ -365,11 +365,11 @@ LIGHTBOX RECURSOS
 .box_audios h5{color: #103E57;font-family:'source_sans_prosemibold', Helvetica, sans-serif;font-size: 20px;line-height: 24px;font-style: italic;display: inline-block;vertical-align: top;margin-right: 20px;position: relative;top:6px;}
 .box_player{display:inline-block;max-width: 300px;opacity: 0;visibility: hidden;}
 .top_b_audio{padding-bottom: 32px;}
-.list_audios{}
-.list_audios ol{}
-.list_audios li{}
-.list_audios p{color:#103E57;font-size: 16px;line-height: 30px;margin-bottom:16px;}
-.list_audios li p{color:#103E57;font-size: 16px;line-height: 30px;margin-bottom:32px;}
+.list_audios {color:#103E57;}
+.list_audios ol,.list_audios ul {margin-bottom: 20px;}
+.list_audios li {list-style: disc; margin-left: 20px;}
+.list_audios p{font-size: 16px;line-height: 30px;margin-bottom:16px;}
+.list_audios strong, .list_audios b {font-weight: bold;}
 .list_audios a{color: #FF6B47;font-family:'source_sans_prosemibold', Helvetica, sans-serif;font-size: 16px;line-height: 24px;text-decoration: underline;display: inline-block;padding-right: 36px;position: relative;}
 .list_audios a:after{display: inline-block;content: '';width:20px;height: 18px;background: url(../svg/play_audio.svg) center center no-repeat;position: absolute;right:0;top:50%;margin-top:-9px;}
 
