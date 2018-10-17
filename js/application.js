@@ -428,13 +428,14 @@ function load_player(){
         	return;
         }
 
-        var a = audiojs.createAll({
+        var audioTag = jQuery('.box_player audio').get(0);
+
+        var audio = audiojs.newInstance(audioTag, {
           trackEnded: function() {
           }
         });
 
         // Load in the first track
-        var audio = a[0];
         first = audioLinks.first();
         first.addClass('playing');
         audio.load(first.attr('href'));
