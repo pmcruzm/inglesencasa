@@ -34,6 +34,12 @@ jQuery(document).on('ready',function(){
 	h_win=jQuery(window).height();
 	w_win=jQuery(window).width();
 
+
+	//Si estamos en la página de detalle de recurso, inicializamos el player de las actividades
+	if (jQuery('.single_box_recursos').is(":visible") ) {
+		load_player();
+	}
+
 	//Página single de recurso de video
 	if (jQuery('.single_box_recursos').is(":visible") ) {
 		jQuery('.single_box_recursos').css({'min-height':h_win});
