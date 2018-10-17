@@ -224,6 +224,13 @@ jQuery(document).on('ready',function(){
 
 	}
 
+	//Forzamos la recarga de la página con los hash de las tags
+	jQuery(document).on('click','.row_tags a',function(event){
+		event.preventDefault();
+	    window.location.href = jQuery(this).attr('href');
+	    location.reload();
+	});
+
 	//Cuando pulsamos sobre un recurso
 	jQuery(document).on('click','a.box_recurso',function(event){
 		event.preventDefault();
