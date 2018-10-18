@@ -370,7 +370,7 @@ LIGHTBOX RECURSOS
 .list_audios li {list-style: disc; margin-left: 20px;}
 .list_audios p{font-size: 16px;line-height: 30px;margin-bottom:16px;}
 .list_audios strong, .list_audios b {font-weight: bold;}
-.list_audios a{color: #FF6B47;font-family:'source_sans_prosemibold', Helvetica, sans-serif;font-size: 16px;line-height: 24px;text-decoration: underline;display: inline-block;padding-right: 36px;position: relative;}
+.list_audios a{color: #FF6B47;font-family:'source_sans_prosemibold', Helvetica, sans-serif;font-size: 16px;line-height: 24px;text-decoration: underline;display: inline-block;padding-right: 26px;position: relative;}
 .list_audios a:after{display: inline-block;content: '';width:20px;height: 18px;background: url(../svg/play_audio.svg) center center no-repeat;position: absolute;right:0;top:50%;margin-top:-9px;}
 
 .share_pop{position: absolute;right: 0;top: 50px;}
