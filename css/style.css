@@ -77,7 +77,7 @@ PROPIEDADES HEADER
 .logo_h{display:block;background:url(../svg/cambridge_header.svg) center center no-repeat;height:48px;width:168px;background-size:168px;text-indent:-99999px;position:absolute;top:0;left: 0;z-index: 10;}
 
 #header h1{display: block;width: 464px;height: 80px;background: url(../svg/inglesencasa.svg) top left no-repeat;text-indent: -99999px;position: absolute;/*left: 10px;*/bottom: 186px;}
-#header h2{font-size: 30px;color:#103E57;max-width: 475px;position: absolute;/*left: 10px;*/bottom: 98px;line-height: 36px;}
+#header h2{font-size: 30px;color:#103E57;max-width: 475px;position: absolute;/*left: 10px;*/bottom: 98px;line-height: 36px;max-width: 400px;}
 #header h2 span{font-weight: bold;font-style:italic;}
 #header h1 a {display: block; position: absolute; width: 100%; height: 100%;}
 
@@ -287,6 +287,21 @@ PÁGINA DE SEARCH
 .block_search .box_input_s{height:56px;line-height:56px;}
 .block_search .box_input_s input{height:56px;line-height:56px;font-size: 24px;}
 .block_search .box_submit_s{top:10px;}
+
+
+/*****************************
+PÁGINA DE NOSOTROS
+******************************/
+.block_nosotros{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);position:relative;padding-top:77px;min-height: 700px;}
+.block_nosotros .container{overflow:hidden;}
+.block_nosotros .left_nosotros,.block_nosotros .right_nosotros{width: 50%;float: left;box-sizing: border-box;}
+.block_nosotros .right_nosotros{text-align: center;}
+.block_nosotros .right_nosotros img{max-width: 100%;}
+
+.block_nosotros h4{color:#103E57;font-size:22px;line-height:32px;width:90%;margin-bottom: 32px;}
+.block_nosotros p{color:#103E57;font-size:16px;line-height:24px;width:90%;margin-bottom: 16px;}
+.block_nosotros p a{text-decoration:underline;color:#103E57;}
+.block_nosotros p strong{font-family:'source_sans_prosemibold', Helvetica, sans-serif;}
 
 /*****************************
 PÁGINA DE NEWSLETTER
@@ -610,6 +625,7 @@ MEDIA QUERIES
 
 @media screen and (max-width: 1264px) {
 	.logo_footer{margin-left:32px;}
+	.block_nosotros .left_nosotros{padding-left:32px;}
 }
 
 
@@ -620,7 +636,7 @@ MEDIA QUERIES
 	.search_filter a{right:32px;}
 	.over_buscador{right:32px;}
 	#header h1{width: 348px;height: 60px;background-size: 348px;left: 48px;}
-	#header h2{max-width:348px;left:48px;}
+	#header h2{max-width:348px;left:48px;bottom:70px;}
 	.ficha_gen{width: 248px;height: 340px;}
 	.ficha_gen.f_primaria{right:32px;}
 	.ficha_gen.f_infantil{right:312px;}
@@ -646,6 +662,8 @@ MEDIA QUERIES
 	.cover_infantil p{right: 32px;}
 	.cover_primaria h3{left: 32px;}
 	.cover_primaria p{right: 32px;}
+	
+	.block_nosotros .left_nosotros{padding-left:32px;}
 
 }
 
@@ -661,7 +679,7 @@ MEDIA QUERIES
 	/*.container_pop iframe{height:948px;}*/
 
 	#header h1{width: 244px;height: 42px;background-size: 244px;left: 50px;bottom:136px;}
-	#header h2{max-width:251px;left:50px;font-size: 21px;line-height: 25px;bottom: 68px;}
+	#header h2{max-width:251px;left:50px;font-size: 21px;line-height: 25px;bottom: 55px;}
 	.ficha_gen{width: 199px;height: 272px;}
 	.ficha_gen.f_primaria{right:32px;}
 	.ficha_gen.f_infantil{right:243px;}
@@ -840,8 +858,9 @@ MEDIA QUERIES
 	#footer .colum_footer_rrss{float: inherit !important;clear: both !important;width: 100% !important;text-align: center;padding-bottom: 52px;display: block;padding-right: 0;padding-top: 32px;}
 	.inside_f_rrss{display:block;width: 100%;float: inherit;}
 
-
-
+	.block_nosotros .left_nosotros{padding-left:16px;width: 100%;padding-right: 16px;}
+	.block_nosotros .left_nosotros p{width: 100%}
+	.block_nosotros .right_nosotros{display: none;}
 
 
 
@@ -856,6 +875,7 @@ MEDIA QUERIES
 
 	.cover_primaria h3{font-size:60px;left: 16px;}
 	.cover_primaria p{font-size:16px;left: 16px;bottom:36px;}
+	.block_nosotros{padding-bottom:50px;}
 }
 
 
