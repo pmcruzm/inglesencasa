@@ -720,7 +720,7 @@ MEDIA QUERIES
 }
 
 @media screen and (max-width: 900px) {
-	.block_nosotros .right_nosotros img{margin-top: -30%;}
+	.block_nosotros .right_nosotros img{margin-top: -30%;} 
 }
 
 
