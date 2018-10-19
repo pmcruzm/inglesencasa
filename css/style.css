@@ -293,10 +293,10 @@ PÁGINA DE SEARCH
 PÁGINA DE NOSOTROS
 ******************************/
 .block_nosotros{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);position:relative;padding-top:77px;min-height: 700px;}
-.block_nosotros .container{overflow:hidden;}
+.block_nosotros .container{}
 .block_nosotros .left_nosotros,.block_nosotros .right_nosotros{width: 50%;float: left;box-sizing: border-box;}
 .block_nosotros .right_nosotros{text-align: center;}
-.block_nosotros .right_nosotros img{max-width: 100%;}
+.block_nosotros .right_nosotros img{max-width: 100%;position: relative;margin-top: -20%;}
 
 .block_nosotros h4{color:#103E57;font-size:22px;line-height:32px;width:90%;margin-bottom: 32px;}
 .block_nosotros p{color:#103E57;font-size:16px;line-height:24px;width:90%;margin-bottom: 16px;}
@@ -714,10 +714,13 @@ MEDIA QUERIES
 	.filter_nivel a, .filter_tipo a, .filter_producto a, .filter_mob a{margin-left:6px;}
 	.block_filters{padding-right: 78px;}
 	.colum_logo_footer{width:33%;}
+	
+	.block_nosotros .right_nosotros img{margin-top: -25%;}
 
 }
 
 @media screen and (max-width: 900px) {
+	.block_nosotros .right_nosotros img{margin-top: -30%;}
 }
 
 
