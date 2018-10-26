@@ -441,6 +441,8 @@ function load_player(){
         	return;
         }
 
+        audioLinks.addClass('link-audio')
+
         var audioTag = jQuery('.box_player audio').get(0);
 
         var audio = audiojs.newInstance(audioTag, {
