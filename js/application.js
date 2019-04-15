@@ -422,7 +422,7 @@ function calc_iframe_height(tipo){
 
 	  if(w_win<769){
 		var w_iframe=jQuery('.container_pop iframe.iframe_dynamic').width();
-		console.log(w_win);
+		//console.log(w_win);
 		if(tipo=='pdf' && w_win==768){
 			var h_iframe= Math.round(w_iframe*(1.0772));
 		}else{
