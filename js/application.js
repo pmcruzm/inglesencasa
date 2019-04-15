@@ -424,7 +424,7 @@ function calc_iframe_height(tipo){
 		var w_iframe=jQuery('.container_pop iframe.iframe_dynamic').width();
 		console.log(w_win);
 		if(tipo=='pdf' && w_win==768){
-			h_iframe= Math.round(w_iframe*(0.4866));
+			var h_iframe= Math.round(w_iframe*(1.0772));
 		}else{
 			var h_iframe= Math.round(w_iframe*(1.3465));
 		}
@@ -436,6 +436,7 @@ function calc_iframe_height(tipo){
 			 }*/
 	  }else{
 		var w_iframe=jQuery('.container_pop iframe.iframe_dynamic').width();
+		var h_iframe= Math.round(w_iframe*(0.6083));
 		//var h_iframe= Math.round(w_iframe*(0.6083));
 		//if(tipo=='pdf'){
 		//	h_iframe= Math.round(w_iframe*(0.4866));
