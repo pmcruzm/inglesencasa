@@ -76,8 +76,8 @@ PROPIEDADES HEADER
 /*#header .container{min-width:auto !important;max-width:100%;box-sizing:border-box;padding-left:30px;padding-right:30px;position:relative;height:90px;}*/
 .logo_h{display:block;background:url(../svg/cambridge_header.svg) center center no-repeat;height:48px;width:168px;background-size:168px;text-indent:-99999px;position:absolute;top:0;left: 0;z-index: 10;}
 
-#header h1{display: block;width: 464px;height: 80px;background: url(../svg/inglesencasa.svg) top left no-repeat;text-indent: -99999px;position: absolute;/*left: 10px;*/bottom: 186px;}
-#header h2{font-size: 29px;color:#103E57;max-width: 475px;position: absolute;/*left: 10px;*/bottom: 98px;line-height: 36px;max-width: 400px;}
+#header h1{display: block;width: 363px;height: 139px;background: url(../svg/inglesencasa_vertical.svg) top left no-repeat;text-indent: -99999px;position: absolute;/*left: 10px;*/bottom: 165px;}
+#header h2{font-size: 30px;color:#103E57;max-width: 475px;position: absolute;/*left: 10px;*/bottom: 78px;line-height: 36px;}
 #header h2 span{font-weight: bold;font-style:italic;}
 #header h1 a {display: block; position: absolute; width: 100%; height: 100%;}
 
@@ -140,21 +140,21 @@ PROPIEDADES HOME
 .over_recurso_all p:before{content:'';display:block;height:70px;background:url(../svg/icon_cards_browser.svg) 47% 50% no-repeat;}
 .new_tag{display:block;width:50px;height:50px;color:#171614;font-size:8px;line-height:50px;background-color: #FFD101;border-radius:40px;text-align:center;font-family: 'montserratregular', sans-serif;position:absolute;top:-25px;right:20px;z-index:20;}
 .info_recurso{position: absolute;padding: 24px;bottom: 0;left: 0;display: block;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;}
-.info_recurso h4{font-size: 12px;line-height: 16px;color:#ffffff;font-family:'museosanscyrl', Helvetica, sans-serif;letter-spacing: 1px;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;}
-.info_recurso h5{line-height: 30px;font-size: 22px;color:#ffffff;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;}
+.info_recurso h4{font-size: 12px;line-height: 16px;color:#737B80;font-family:'museosanscyrl', Helvetica, sans-serif;letter-spacing: 1px;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;}
+.info_recurso h5{line-height: 30px;font-size: 22px;color:#737B80;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;}
 .box_recurso.over .info_recurso h4{opacity:0;}
 .box_recurso.over .info_recurso h5{opacity:0;}
 .box_recurso.over .info_recurso{opacity: 0.9;}
-.cat_recurso{color:#ffffff;font-size: 14px;position: absolute;top:18px;left: 24px;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;font-family:'aleoitalic', Helvetica, sans-serif;}
+.cat_recurso{color:#737B80;font-size: 14px;position: absolute;top:18px;left: 24px;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;font-family:'aleoitalic', Helvetica, sans-serif;}
 .box_recurso.over .cat_recurso{opacity: 0;}
 .type_recurso{position: absolute;right: 18px;top:18px;width: 20px;height: 20px;text-indent: -99999px;background-image: url(../svg/sprite_icon-recursos.svg);background-repeat: none;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;}
 .box_recurso.over .type_recurso{opacity: 0;}
 
-.type_recurso.audio{background-position: 0px -20px;}
-.type_recurso.pdf{background-position: 20px -20px;}
-.type_recurso.imagen{background-position: 40px -20px;}
-.type_recurso.video{background-position: 60px -20px;}
-.type_recurso.interactivo{background-position: 80px -20px;}
+.type_recurso.audio{background-position: 0px 0px;}
+.type_recurso.pdf{background-position: 20px 0px;}
+.type_recurso.imagen{background-position: 40px 0px;}
+.type_recurso.video{background-position: 60px 0px;}
+.type_recurso.interactivo{background-position: 80px 0px;}
 
 
 .w_recurso .info_recurso h4{color:#737B80;}
@@ -213,7 +213,8 @@ PROPIEDADES HOME
 .close_search{display: block;width: 32px;height: 32px;background: url(../svg/close.svg) top left no-repeat;text-indent:-99999px;position: absolute;left: -32px;bottom:-5px;cursor: pointer;}
 
 .over_filtros{width:100%;background:#ffffff;box-sizing:border-box;padding-bottom:30px;overflow:hidden;display:none;}
-.opc_nivel{overflow:hidden;}
+.opc_nivel{overflow:hidden;max-width: 520px;float: right;width: 100%;text-align: left;}
+.opc_nivel .box_n_infantil{float:left !important;padding-left: 0 !important;margin-left: 0 !important;}
 .box_ciclo,.box_n_infantil,.box_n_primaria,.box_p_primaria,.box_p_infantil,.box_tipo,.box_formato{float:right;display:inline-block;min-width:106px;margin-left:16px;box-sizing:border-box;padding-left:32px;}
 .box_ciclo h4,.box_n_infantil h4,.box_n_primaria h4,.box_p_primaria h4,.box_p_infantil h4,.box_tipo h4,.box_formato h4{font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;color: #9B9B9B;letter-spacing: 1px;margin-bottom:16px;padding-left:16px;letter-spacing: 1px;}
 
@@ -324,7 +325,7 @@ PÁGINA SINGLE RECURSO
 
 .single_box_recursos{box-sizing: border-box;padding: 0px 16px 48px 16px;background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);}
 .header_s_recurso{height:88px;position: relative;}
-.header_s_recurso h1{display: block;background: url(../svg/inglesencasa_single.svg) top left no-repeat;width: 272px;height: 42px;text-indent: -99999px;position: absolute;top: 50%;margin-top: -21px;left: 0;}
+.header_s_recurso h1{display: block;background: url(../svg/inglesencasa_horizontal.svg) top left no-repeat;width: 311px;height: 36px;text-indent: -99999px;position: absolute;top: 50%;margin-top: -18px;left: 0;background-size:311px;}
 .header_s_recurso .btn_more_r{position: absolute;top: 50%;right: 0;margin-top: -20px;}
 
 /*****************************
@@ -337,7 +338,7 @@ PÁGINA INFANTIL
 .cover_infantil:before{background: linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.5) 100%);width: 100%;height: 100%;z-index: 50;position: absolute;content:'';-webkit-transition: all 0.15s linear;-moz-transition: all 0.15s linear;-o-transition: all 0.15s linear;transition: all 0.15s linear;}
 .cover_infantil p{font-size: 24px;color:#ffffff;line-height: 16px;position: absolute;right:0px;bottom: 56px;font-family:'source_sans_prosemibold', Helvetica, sans-serif;z-index: 51;}
 .box_destacado.inside_pag{margin-top: 108px;border-top: 0;}
-.logo_interior{width:247px !important;height: 42px !important;background-size: 247px !important;position: absolute;top: 9px !important;left:193px !important;bottom: auto !important;}
+.logo_interior{width:311px !important;height: 36px !important;position: absolute;top: 13px !important;left:193px !important;bottom: auto !important;background: url(../svg/inglesencasa_horizontal.svg) top left no-repeat !important;background-size:311px !important;}
 
 /*****************************
 PÁGINA PRIMARIA
@@ -636,8 +637,8 @@ MEDIA QUERIES
 	.block_filters{padding-right: 88px;}
 	.search_filter a{right:32px;}
 	.over_buscador{right:32px;}
-	#header h1{width: 348px;height: 60px;background-size: 348px;left: 48px;}
-	#header h2{max-width:348px;left:48px;bottom:70px;font-size: 25px;bottom: 98px;}
+	#header h1{width: 363px;height: 139px;background-size: 363px;left: 48px;}
+    #header h2{max-width:348px;left:48px;}
 	.ficha_gen{width: 248px;height: 340px;}
 	.ficha_gen.f_primaria{right:32px;}
 	.ficha_gen.f_infantil{right:312px;}
@@ -679,8 +680,8 @@ MEDIA QUERIES
 
 	/*.container_pop iframe{height:948px;}*/
 
-	#header h1{width: 244px;height: 42px;background-size: 244px;left: 50px;bottom:136px;}
-	#header h2{max-width:251px;left:50px;font-size: 17px;line-height: 25px;bottom: 75px;}
+	#header h1{width: 244px;height: 92px;background-size: 244px;left: 50px;bottom:136px;}
+    #header h2{max-width:251px;left:50px;font-size: 21px;line-height: 25px;bottom: 68px;}
 	.ficha_gen{width: 199px;height: 272px;}
 	.ficha_gen.f_primaria{right:32px;}
 	.ficha_gen.f_infantil{right:243px;}
@@ -724,6 +725,7 @@ MEDIA QUERIES
 
 @media screen and (max-width: 900px) {
 	.block_nosotros .right_nosotros img{margin-top: -35%;}
+	.logo_interior{width:231px !important;height: 27px !important;position: absolute;top: 16px !important;left:193px !important;bottom: auto !important;background: url(../svg/inglesencasa_horizontal.svg) top left no-repeat !important;background-size:231px !important;}
 }
 
 
@@ -772,8 +774,8 @@ MEDIA QUERIES
 	.ficha_gen .titul_level{font-size:20px;left: 20px;bottom: 45px;}
 	.ficha_gen .n_recursos{font-size:10px;left: 20px;bottom:30px;}
 	.ficha_gen:after {width: 15px;height: 15px;background-size: 15px;right: 14px;bottom:14px;}
-	#header h1{width: 276px;height: 47px;background-size: 276px;left:0;right:0;margin: 0 auto;bottom: auto;top:142px;}
-	#header h2{width: 296px;left:0;right:0;margin: 0 auto;bottom: auto;top:208px;font-size: 17px;line-height: 24px;}
+	#header h1{width: 276px;height: 107px;background-size: 276px;left:0;right:0;margin: 0 auto;bottom: auto;top:92px;}
+    #header h2{width: 276px;left:0;right:0;margin: 0 auto;bottom: auto;top:208px;font-size: 19px;line-height: 24px;}
 	.menu_header li{display:block;text-align: right;}
 	.menu_header li a{padding-bottom:8px;}
 	.menu_header li a:after{display:block;content: '';width: 10px;height: 2px;background:#103E57;position: absolute;right:-8px;margin-top: 6px;}
@@ -867,6 +869,9 @@ MEDIA QUERIES
 	.block_nosotros .left_nosotros{padding-left:16px;width: 100%;padding-right: 16px;}
 	.block_nosotros .left_nosotros p{width: 100%}
 	.block_nosotros .right_nosotros{display: none;}
+	
+	.opc_nivel{overflow:hidden;max-width: 100%;float: inherit;width: 100%;}
+    .opc_nivel .box_n_infantil{float:inherit !important;}
 
 
 
@@ -882,6 +887,9 @@ MEDIA QUERIES
 	.cover_primaria h3{font-size:60px;left: 16px;}
 	.cover_primaria p{font-size:16px;left: 16px;bottom:36px;}
 	.block_nosotros{padding-bottom:50px;}
+	
+	#header h1{width: 256px;height: 87px;background-size: 216px;left:0;right:0;margin: 0 auto;bottom: auto;top:118px;}
+    .logo_interior{width:200px !important;height: 27px !important;background-size:200px !important;}
 }
 
 
@@ -889,7 +897,7 @@ MEDIA QUERIES
 
 	/*.box_input_s{width:50%;}*/
 	.block_newsletter{padding:72px 24px 400px 24px}
-	.header_s_recurso h1{display: block;background: url(../svg/inglesencasa_single.svg) top left no-repeat;width: 142px;height: 25px;text-indent: -99999px;position: absolute;top: 50%;margin-top: -13px;left: 0;background-size: 142px;}
+	.header_s_recurso h1{display: block;/*background: url(../svg/inglesencasa_single.svg) top left no-repeat;*/width: 162px;height: 25px;text-indent: -99999px;position: absolute;top: 50%;margin-top: -13px;left: 0;background-size: 162px;}
 	.single_box_recursos .btn_more_r{width:120px;}
 	.inside_recurso{display:none;}
 

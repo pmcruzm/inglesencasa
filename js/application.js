@@ -52,7 +52,12 @@ jQuery(document).on('ready',function(){
 
 	//Página single de recurso interactivo o pdf
 	if (jQuery('.single_box_recursos iframe.iframe_dynamic').is(":visible") ) {
-		calc_iframe_height();
+		//calc_iframe_height();
+		if (jQuery('.pdf_recurso').is(":visible") ) {
+			calc_iframe_height('pdf');
+		}else{
+			calc_iframe_height('interactivo');	
+		}
 	}
 
 	//Página single de recurso de imágenes
@@ -278,7 +283,12 @@ jQuery(document).on('ready',function(){
 
 		//Recurso lightbox
 		if (jQuery('.container_pop iframe.iframe_dynamic').is(":visible") ) {
-			calc_iframe_height();
+			//calc_iframe_height();
+			if (jQuery('.pdf_recurso').is(":visible") ) {
+				calc_iframe_height('pdf');
+			}else{
+				calc_iframe_height('interactivo');	
+			}
 		}
 
 	});
@@ -357,7 +367,7 @@ function load_recurso(url){
 			break;
 			case 'interactivo':
 				jQuery('.light_box_recursos').css({display:'block',opacity:0});
-				calc_iframe_height();
+				calc_iframe_height('interactivo');
 				jQuery('.light_box_recursos').animate({opacity:1},300,function(){
 					jQuery(this).css({overflowY:'auto'});
 					jQuery('body').css({overflow:'hidden'});
@@ -366,7 +376,7 @@ function load_recurso(url){
 			break;
 			case 'pdf':
 				jQuery('.light_box_recursos').css({display:'block',opacity:0});
-				calc_iframe_height();
+				calc_iframe_height('pdf');
 				jQuery('.light_box_recursos').animate({opacity:1},300,function(){
 					jQuery(this).css({overflowY:'auto'});
 					jQuery('body').css({overflow:'hidden'});
@@ -404,7 +414,7 @@ function load_recurso(url){
 }
 
 //Funcion para calcular el aspect_ratio iframe
-function calc_iframe_height(){
+function calc_iframe_height(tipo){
   //Obtenemos anchura del navegador
   var w_win=jQuery(window).width();
   jQuery('.container_pop iframe.iframe_dynamic').removeAttr('style');
@@ -421,7 +431,12 @@ function calc_iframe_height(){
 			 }*/
 	  }else{
 		var w_iframe=jQuery('.container_pop iframe.iframe_dynamic').width();
-		var h_iframe= Math.round(w_iframe*(0.6083));
+		//var h_iframe= Math.round(w_iframe*(0.6083));
+		if(tipo=='pdf'){
+			h_iframe= Math.round(w_iframe*(0.4866));
+		}else{
+			h_iframe= Math.round(w_iframe*(0.6083));
+		}
 		jQuery('.container_pop iframe.iframe_dynamic').height(h_iframe);
 	  }
 
