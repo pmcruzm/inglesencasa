@@ -89,6 +89,7 @@ PROPIEDADES HEADER
 .menu_header li.active a:before{content:'';display: block;height: 3px;background:#FF6B47;width: calc(100% - 42px);position: absolute;bottom: -3px;}
 .menu_header li:last-child a:after{display: none;}
 .menu_header li:last-child a.over:before{width:100%;}
+.menu_header li.active:last-child a:before{width:100%;}
 
 .ficha_gen{width: 268px;height: 340px;position:absolute;right: 0;bottom: -40px;display: block;box-shadow: 20px 30px 50px 0 rgba(110,181,173,0.50);}
 .ficha_gen:before{background: linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.5) 100%);width: 100%;height: 100%;z-index: 50;position: absolute;content:'';-webkit-transition: all 0.4s linear;-moz-transition: all 0.4s linear;-o-transition: all 0.4s linear;transition: all 0.4s linear;}
