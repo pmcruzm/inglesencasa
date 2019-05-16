@@ -230,7 +230,7 @@ jQuery(document).on('ready',function(){
 	}
 
 	//Forzamos la recarga de la página con los hash de las tags
-	jQuery(document).on('click','.row_tags a',function(event){
+	jQuery(document).on('click','.light_box_recursos .row_tags a',function(event){
 		event.preventDefault();
 	    window.location.href = jQuery(this).attr('href');
 	    location.reload();
