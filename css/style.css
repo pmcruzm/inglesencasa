@@ -420,6 +420,7 @@ LIGHTBOX RECURSOS
 .galeria_modal .bx-wrapper .bx-prev:hover{background-position: 0px -40px;}
 .galeria_modal .bx-wrapper .bx-next{background: url(../svg/sprite_btn_arrow.svg) 0px 0px no-repeat;-webkit-transform: rotate(180deg);-moz-transform: rotate(180deg);-ms-transform: rotate(180deg);-o-transform: rotate(180deg);transform: rotate(180deg);}
 .galeria_modal .bx-wrapper .bx-next:hover{background-position: 0px -40px;}
+.galeria_modal .bx-wrapper img{margin:0 auto;}
 
 /*** RECURSO AUDIO *****/
 #awp-wrapper{top:0 !important}
