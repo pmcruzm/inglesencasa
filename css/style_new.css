@@ -177,7 +177,7 @@ PROPIEDADES HOME
 
 /***** NUEVOS ******/
 
-.box_nuevos{box-sizing:border-box;border: 32px solid #ffffff;position: relative;border-bottom:0;margin-bottom:16px;margin-top:120px;}
+.box_nuevos{box-sizing:border-box;border: 32px solid #ffffff;position: relative;border-bottom:0;margin-bottom:16px;}
 .contenedor-recursos{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);padding-top: 98px;overflow: hidden;box-sizing: border-box;padding-left: 24px;padding-right: 24px;position: relative;min-height: 850px;}
 .contenedor-recursos .container{/*width: calc(100% + 30px);max-width:1208px*/}
 .box_nuevos h3{font-family:'peace_sansregular', Helvetica, sans-serif;font-size: 40px;color:#FF6B47;line-height: 48px;padding-bottom: 16px;}
@@ -298,6 +298,62 @@ PÁGINA DE SEARCH
 .block_search .box_input_s input{height:56px;line-height:56px;font-size: 24px;}
 .block_search .box_submit_s{top:10px;}
 
+/*****************************
+PÁGINA DE LOGIN
+******************************/
+.txt_login{}
+.txt_login h5{font-size: 18px !important;line-height: 26px !important;font-family:'source_sans_prosemibold', Helvetica, sans-serif;color: #103E57;}
+.txt_login p{font-size: 18px !important;line-height: 26px !important;}
+.txt_login .btn_registrate{margin-left:0px;margin-top: 20px;}
+.box-login-form{}
+#form_login{}
+#form_login label{display: none;}
+#form_login input[type=text],#form_login input[type=password],#form_login input[type=email]{border:1px solid #ffffff;max-width: 368px;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;margin-right: 8px;font-size: 12px;color:#103E57;margin-bottom: 38px;width: 100%;}
+#form_login input[type=text].error,#form_login input[type=password].error,#form_login input[type=email].error{border:1px solid #ff0000 !important;}
+#form_login input[type=submit]{display: inline-block;vertical-align: middle;width: 118px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 1px;}
+#form_login input[type=submit]:hover{opacity: 0.9;}
+.txt_recordar{width:100%;max-width:368px;text-align: right;margin-top:-20px;}
+.txt_recordar a{font-size: 14px;}
+.errores{font-size:15px;color:red;padding-top:35px;padding-bottom:35px;}
+
+/*****************************
+PÁGINA DE REGISTRO
+******************************/
+.block_registro{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);position:relative;padding-top:77px;min-height: 700px;}
+.block_registro .container{}
+
+/*****************************
+PÁGINA DE CONTACTO
+******************************/
+.block_contacto{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);position:relative;padding-top:77px;min-height: 700px;padding-bottom: 77px;}
+.block_contacto .container{max-width: 768px;width: 90%;}
+.block_contacto h4{color:#103E57;font-size:22px;line-height:32px;margin-bottom: 32px;}
+#form_contacto{}
+#form_contacto label{color:#103E57;font-size: 12px;text-transform: uppercase;letter-spacing: 1px;}
+#form_contacto input[type=text],#form_contacto input[type=email]{border:1px solid #ffffff;max-width: 368px;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;font-size: 12px;color:#103E57;margin-bottom: 38px;width: 100%;position: relative;}
+#form_contacto input[type=text].error,#form_contacto input[type=email].error{border:1px solid #ff0000 !important;}
+#form_contacto input[type=submit]{display: inline-block;vertical-align: middle;width: 118px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 1px;}
+#form_contacto input[type=submit]:hover{opacity: 0.9;}
+#form_contacto .half-group{float:left;width: 50%;position: relative;box-sizing: border-box;padding-right: 16px;}
+#form_contacto .half-group:after{content:'';display:block;height:2px;background:rgba(148,227,223,0.5);width: calc(100% - 16px);position: absolute;bottom:36px;}
+#form_contacto .select-row:after{content:'';display:block;height:2px;background:rgba(148,227,223,0.5);width: 100%;position: absolute;bottom:-42px;}
+#form_contacto .textarea-row:after{content:'';display:block;height:2px;background:rgba(148,227,223,0.5);width:100%;position: absolute;bottom:0px;}
+#form_contacto textarea{width:100% ;border: none;-webkit-appearance: none;height: 160px;}
+#form_contacto .submit-row{margin-top:32px;}
+#form_contacto .captcha-row{margin-top:32px;}
+#form_contacto .select-row{margin-bottom:42px;width: calc(50% - 16px);position: relative;}
+#form_contacto .textarea-row{position:relative;}
+.cover-half .half-group:nth-child(even) {padding-right:0px !important;padding-left:16px;}
+
+.bg-select{background:#103E57 url(../img/icon_select.png) 0px 0px no-repeat;display:block;width:100%;float:left;overflow:hidden;height:40px;}
+.bg-select > select{background:none;color:#ffffff;width:110%;height:40px;line-height:40px;padding-right:17%;box-sizing:border-box;font-size:14px;border:none;-webkit-appearance:none;cursor:pointer;padding-left:10px;}
+.bg-select > select.right-t{text-align:right;}
+.bg-select > select option{text-align:left;background:#103E57;}
+.bg-select > select.right-t option{text-align:right;}
+
+.bg-select.error{background-color:#ff0000;}
+.bg-select.error> select{}
+.bg-select.error > select option{background:#ff0000;}
 
 /*****************************
 PÁGINA DE NOSOTROS
@@ -861,7 +917,7 @@ MEDIA QUERIES
 	.logo_interior{width:207px !important;height: 42px !important;background-size: 207px !important;position: absolute !important;top: 5px !important;left:152px !important;bottom: auto !important;right: auto !important;}
 
 	.box_nuevos,.box_destacado,.box_newsletter{border:8px solid #ffffff;}
-	.box_destacado{margin-top:79px;}
+	.box_destacado{margin-top:58px;}
 	.box_nuevos{margin-top:48px;margin-bottom: -8px;}
 
 	.block_search .box_input_s{width:calc(100% - 56px);}
@@ -935,6 +991,12 @@ MEDIA QUERIES
     .logo_interior{width:200px !important;height: 27px !important;background-size:200px !important;}
 	#header h1{left:10px;}
 	#header h2{left:10px;}
+	
+	#form_contacto .half-group{float:inherit;width: 100%;}
+	#form_contacto .half-group{padding-left:0px !important;padding-right:0px !important}
+	#form_contacto input[type="text"], #form_contacto input[type="email"]{max-width:100%;}
+	#form_contacto .select-row{width:100%;}
+	#form_contacto .half-group:after{width:100%}
 }
 
 
