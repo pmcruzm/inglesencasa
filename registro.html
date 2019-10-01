@@ -61,10 +61,10 @@
 								<label class="control-label required" for="book_code">BOOK CODE <span>*</span></label><br/>
 								<input id="book_code" name="book_code" placeholder="" class="form-control" type="text" data-validation-rule="not-empty">
 								<div class="box_tooltip">
-									<span class="icon"></span>
 									<div class="pop_tooltip">
 										<p>Este código te lo facilitará tu centro educativo, y da acceso a los contenidos de tu libro. Si tienes más de un código, utiliza uno de ellos para el registro. Podrás añadir el resto una vez registrado.</p>
 									</div>	
+									<span class="icon"></span>
 								</div>	
 							</div>
 							<br class="clear"/>
@@ -285,10 +285,10 @@
 								<label class="control-label required" for="password">CONTRASEÑA <span>*</span></label><br/>
 								<input id="password" name="password" placeholder="" class="form-control" type="password" data-validation-rule="not-empty">
 								<div class="box_tooltip">
-									<span class="icon"></span>
 									<div class="pop_tooltip">
 										<p>La contraseña debe tener al menos 8 caracteres. Te recomendamos que uses una combinación de mayúsculas, minúsculas, números y caracteres especiales.</p>
 									</div>	
+									<span class="icon"></span>
 								</div>
 							</div>
 							<div class="form-group half-group clear">
@@ -296,6 +296,12 @@
 								<input id="rep_password" name="rep_password" placeholder="" class="form-control" type="password" data-validation-rule="not-empty">
 							</div>
 							<br class="clear"/>
+							<div class="form-group">
+                                 <div class="checkbox"><input id="accept_legal_terms" data-validation-rule="checkbox" data-error-msg="Debe aceptar política de privacidad." name="accept_legal_terms" value="1" type="checkbox"><label for="accept_legal_terms"></label>Acepto los términos legales</div>
+                            </div>
+                             <div class="form-group">
+                                 <div class="checkbox"><input id="accept_promos" name="accept_promos" value="1" type="checkbox"><label for="accept_promos"></label>Acepto recibir comunicaciones comerciales</div>
+                            </div>
 							<div class="form-group captcha-row">
 								<img src="img/captcha.svg"/>
 							</div>

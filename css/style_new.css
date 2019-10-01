@@ -345,7 +345,7 @@ PÁGINA DE REGISTRO
 
 .box_tooltip{position: absolute;right: -16px;top:40px;}
 .box_tooltip .icon{width:16px;height:16px;background: red;display: block;}
-.pop_tooltip{width: 275px;background:#FF6B47;color:#ffffff;padding: 8px;border-radius: 8px;font-size: 14px;line-height: 21px;position: absolute;left:-140px;top:-138px;text-align: center;display: none;}
+.pop_tooltip{width: 275px;background:#FF6B47;color:#ffffff;padding: 8px;border-radius: 8px;font-size: 14px;line-height: 21px;position: absolute;left:-140px;bottom:34px;text-align: center;display: none;}
 
 .date-row{margin-bottom: 38px;}
 .date-row p{color:#103E57;font-size: 12px;text-transform: uppercase;letter-spacing: 1px;}
@@ -393,6 +393,11 @@ PÁGINA DE CONTACTO
 .bg-select.error> select{}
 .bg-select.error > select option{background:#ff0000;}
 
+
+.form-group>.checkbox{margin-bottom: 18px;padding-left: 30px;color:#103E57;padding-left:30px;box-sizing:border-box;position:relative;font-size:14px;}
+.form-group>.checkbox a{color:#103E57;text-decoration:underline;}
+.multi-checkbox{overflow:hidden;padding-bottom:54px;}
+.multi-checkbox .checkbox {float:left;padding-bottom:16px;color:#4A4A4A;font-size:16px;padding-left:30px;box-sizing:border-box;position:relative;}
 
 
 /*****************************
@@ -610,7 +615,7 @@ PROPIEDADES FOOTER
 /**********************************
 PROPIEDADES DE CUSTOM CHECKBOX BUTTON
 **********************************/
-/*#foo:checked::before,
+#foo:checked::before,
 input[type="checkbox"] {
     position:absolute;
     clip: rect(0,0,0,0);
@@ -618,7 +623,7 @@ input[type="checkbox"] {
 }
 
 #foo:checked,
-.form-contact input[type="checkbox"] + label::before {
+input[type="checkbox"] + label::before {
     content:'';
     cursor:pointer;
     display:inline-block;
@@ -634,7 +639,7 @@ input[type="checkbox"] {
 }
 
 #foo:checked,
-.form-contact input[type="checkbox"].error + label::before {
+input[type="checkbox"].error + label::before {
     content:'';
     cursor:pointer;
     display:inline-block;
@@ -649,7 +654,7 @@ input[type="checkbox"] {
 	margin-right:10px;
 }
 
-.form-contact input[type="checkbox"]:checked + label::before {
+input[type="checkbox"]:checked + label::before {
     content:'';
     cursor:pointer;
     display:inline-block;
@@ -662,7 +667,7 @@ input[type="checkbox"] {
 	position:relative;
 	top:3px;
 	margin-right:10px;
-}*/
+}
 
 
 /*****************************
