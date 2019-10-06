@@ -361,6 +361,53 @@ PÁGINA DE REGISTRO
 
 
 /*****************************
+PÁGINA DE PERFIL
+******************************/
+.block_perfil{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);position:relative;padding-top:53px;padding-bottom: 63px;}
+.block_perfil .container{max-width: 768px; width: 90%;}
+
+.block_perfil form{}
+.block_perfil form .form-group{position: relative;}
+.block_perfil form label{color:#103E57;font-size: 12px;text-transform: uppercase;letter-spacing: 1px;}
+.block_perfil form label span{color:#FF6B47;}
+.block_perfil form input[type=text],.block_perfil form input[type=email],.block_perfil form input[type=password]{border:1px solid #ffffff;max-width: 368px;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;font-size: 12px;color:#103E57;margin-bottom: 38px;width: 100%;position: relative;}
+.block_perfil form input[type=text]:disabled,.block_perfil form input[type=email]:disabled,.block_perfil form input[type=password]:disabled{border:1px solid #ffffff;max-width: 368px;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;font-size: 12px;color:#103E57;margin-bottom: 38px;width: 100%;position: relative;background:#ffffff;opacity:0.5;}
+.block_perfil form input[type=text].error,.block_perfil form input[type=email].error,#.block_perfil form input[type=password].error{border:1px solid #ff0000 !important;}
+.block_perfil form input[type=submit]{display: inline-block;vertical-align: middle;width: 118px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 1px;}
+.block_perfil form input[type=submit]:hover{opacity: 0.9;}
+.block_perfil form .half-group{float:left;width: 50%;position: relative;box-sizing: border-box;padding-right: 16px;}
+.block_perfil form .half-group:after{content:'';display:block;height:2px;background:rgba(148,227,223,0.5);width: calc(100% - 16px);position: absolute;bottom:36px;}
+.block_perfil form .half-group.no-line:after{display: none;}
+.block_perfil form .select-row:after{content:'';display:block;height:2px;background:rgba(148,227,223,0.5);width: 100%;position: absolute;bottom:-42px;}
+.block_perfil form .textarea-row:after{content:'';display:block;height:2px;background:rgba(148,227,223,0.5);width:100%;position: absolute;bottom:0px;}
+.block_perfil form .submit-row{margin-top:32px;}
+.block_perfil form .captcha-row{margin-top:32px;}
+.block_perfil form .select-row{margin-bottom:42px;width: 100%;position: relative;}
+.cover-half .half-group:nth-child(even) {padding-right:0px !important;padding-left:16px;}
+
+.row_day select:disabled,.row_month select:disabled,.row_year select:disabled{height: 40px;box-sizing: border-box;background: #ffffff;border: none;background: #ffffff;color:#B0B0B1;font-size: 14px;font-size:14px;border:none;-webkit-appearance:none;cursor:pointer;width: 100%;text-align: center;opacity:0.5;}
+
+.block_perfil form .row_day:after,.block_perfil form .row_year:after{content:'';display:block;height:2px;background:rgba(148,227,223,0.5);width: calc(25% - 4px);position: absolute;bottom:-2px;}
+.block_perfil form .row_month:after{content:'';display:block;height:2px;background:rgba(148,227,223,0.5);width: calc(50% - 24px);position: absolute;bottom:-2px;}
+.block_perfil.box-code-book form .submit-row,.block_perfil.box-change-password form .submit-row,.block_perfil.box-delete-cuenta form .submit-row{margin-top:0px;}
+.block_perfil.box-code-book form input[type="submit"]{width:166px;}
+.top-perfil{margin-top:52px;}
+.block_perfil.box-change-password form input[type="submit"]{width:198px;}
+.block_perfil.box-delete-cuenta{}
+.block_perfil.box-delete-cuenta .cover-half{overflow: hidden}
+.block_perfil.box-delete-cuenta .half-group{float:left;width: 50%;position: relative;box-sizing: border-box;padding-right: 36px;}
+.block_perfil.box-delete-cuenta form input[type="submit"]{width:198px;}
+.block_perfil.box-delete-cuenta p{color:#0B2A3B;font-size:18px;line-height: 26px;}
+
+.header_perfil{height:48px;position: absolute; left: 194px;width: 310px;}
+.header_perfil h1{display: block;background: url(../svg/inglesencasa_horizontal.svg) top left no-repeat !important;width: 311px !important;height: 36px !important;text-indent: -99999px !important;position: absolute !important;left: 0px;background-size:311px !important;bottom: 0px !important;}
+
+.info_perfil{position:absolute;bottom:32px;}
+.info_perfil .tipo_p{color:#103E57;font-size: 16px;line-height: 49px;font-weight: bold;}
+.info_perfil .name_p{color:#103E57;font-size: 40px;line-height: 49px;font-family: 'peace_sansregular', Helvetica, sans-serif;}
+
+
+/*****************************
 PÁGINA DE CONTACTO
 ******************************/
 .block_contacto{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);position:relative;padding-top:77px;min-height: 700px;padding-bottom: 77px;}

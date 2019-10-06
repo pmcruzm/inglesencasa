@@ -1,0 +1,478 @@
+ <!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title></title>
+    <meta name="description" content="" />
+	<meta property="og:title" content=""/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+    <meta property="google-tracking-id" content="UA-31155962-13" />
+
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+    <link rel="stylesheet" type="text/css" href="css/fontface.css" />
+    <link rel="stylesheet" type="text/css" href="css/style_new.css" />
+     <!-- Font Awesome styles-->
+    <!--<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">-->
+
+    <!--El siguiente comentario es un comentario condicional que solo IE sabe interpretar-->
+    <!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="css/css_ie.css"/>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div id="wrapper">
+    	<div id="header">
+			<a href="#" class="logo_h">Cambridge University Press</a>
+			<div class="header_perfil">
+				<a href="#"><h1>Inglés en casa</h1></a>
+			</div>
+			<ul class="menu_header">
+				<li><a href="nosotros.html">NOSOTROS</a></li>
+				<li><a href="contacto.html">CONTACTO</a></li>
+				<li><a href="ayuda.html">AYUDA</a></li>
+			</ul>
+			<a class="btn_acceso" href="perfil.html">PERFIL</a>
+        	<div class="container">
+               <div class="info_perfil">
+				   <p class="tipo_p">Padre / Madre / Tutor</p>
+               	   <p class="name_p">Miguel Ángel Rodríguez</p>
+			   </div> 
+            </div>
+        </div>
+        <div id="content">
+			<!--Box Búsqueda-->
+			<div class="box_destacado">
+				<div class="container">
+					<h3>Datos personales</h3>
+				</div>
+				<div class="block_perfil">
+					<div class="container">
+						
+						<form id="form_personales" action="#" method="post" data-validate="true" novalidate data-error-msg="Ha habido un error, por favor revisa los campos resaltados">
+							<div class="cover-half">
+								<div class="form-group half-group">
+									<label class="control-label required" data-text="NOMBRE" data-text14="NOMBRE PADRE/MADRE/TUTOR" for="nombre">NOMBRE</label><br/>
+									<input id="nombre" name="nombre" placeholder="" class="form-control" value="Miguel Ángel" type="text" data-validation-rule="not-empty" disabled>
+								</div>
+								<div class="form-group half-group">
+									<label class="control-label required" data-text="APELLIDOS" data-text14="APELLIDOS PADRE/MADRE/TUTOR" for="apellidos">APELLIDOS</label><br/>
+									<input id="apellidos" name="apellidos" value="Rodríguez" placeholder="" class="form-control" type="text" data-validation-rule="not-empty" disabled>
+								</div>
+							</div>
+							<div class="cover-half">
+								<div class="form-group half-group date-row no-line">
+									<p>FECHA DE NACIMIENTO</p>
+									<div class="cover_dates">
+										<div class="row_day">
+											<select id="dia_fecha" name="dia_fecha" class="form-control" data-validation-rule="select-option" disabled>
+												<option value="">Día</option>
+												<option value="1" selected="selected">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+												<option value="6">6</option>
+												<option value="7">7</option>
+												<option value="8">8</option>
+												<option value="9">9</option>
+												<option value="10">10</option>
+												<option value="11">11</option>
+												<option value="12">12</option>
+												<option value="13">13</option>
+												<option value="14">14</option>
+												<option value="15">15</option>
+												<option value="16">16</option>
+												<option value="17">17</option>
+												<option value="18">18</option>
+												<option value="19">19</option>
+												<option value="20">20</option>
+												<option value="21">21</option>
+												<option value="22">22</option>
+												<option value="23">23</option>
+												<option value="24">24</option>
+												<option value="25">25</option>
+												<option value="26">26</option>
+												<option value="27">27</option>
+												<option value="28">28</option>
+												<option value="29">29</option>
+												<option value="30">30</option>
+												<option value="31">31</option>
+											</select>
+										</div>
+										<div class="row_month">
+											<select id="mes_fecha" name="mes_fecha" class="form-control" data-validation-rule="select-option" disabled>
+												<option value="">Mes</option>
+												<option value="1">Enero</option>
+												<option value="2">Febrero</option>
+												<option value="3">Marzo</option>
+												<option value="4">Abril</option>
+												<option value="5">Mayo</option>
+												<option value="6">Junio</option>
+												<option value="7">Julio</option>
+												<option value="8" selected="selected">Agosto</option>
+												<option value="9">Septiembre</option>
+												<option value="10">Octubre</option>
+												<option value="11">Noviembre</option>
+												<option value="12">Diciembre</option>
+											</select>
+										</div>
+										<div class="row_year">
+											<select id="ano_fecha" name="ano_fecha" class="form-control" data-validation-rule="select-option" disabled>
+												<option value="">Año</option>
+												<option value="2019">2019</option>
+												<option value="2018">2018</option>
+												<option value="2017">2017</option>
+												<option value="2016">2016</option>
+												<option value="2015">2015</option>
+												<option value="2014">2014</option>
+												<option value="2013">2013</option>
+												<option value="2012">2012</option>
+												<option value="2011">2011</option>
+												<option value="2010">2010</option>
+												<option value="2009">2009</option>
+												<option value="2008">2008</option>
+												<option value="2007">2007</option>
+												<option value="2006">2006</option>
+												<option value="2005">2005</option>
+												<option value="2004">2004</option>
+												<option value="2003">2003</option>
+												<option value="2002">2002</option>
+												<option value="2001">2001</option>
+												<option value="2000">2000</option>
+												<option value="1999">1999</option>
+												<option value="1998">1998</option>
+												<option value="1997">1997</option>
+												<option value="1996">1996</option>
+												<option value="1995">1995</option>
+												<option value="1994">1994</option>
+												<option value="1993">1993</option>
+												<option value="1992">1992</option>
+												<option value="1991">1991</option>
+												<option value="1990">1990</option>
+												<option value="1989">1989</option>
+												<option value="1988">1988</option>
+												<option value="1987">1987</option>
+												<option value="1986">1986</option>
+												<option value="1985">1985</option>
+												<option value="1984">1984</option>
+												<option value="1983">1983</option>
+												<option value="1982">1982</option>
+												<option value="1981">1981</option>
+												<option value="1980">1980</option>
+												<option value="1979">1979</option>
+												<option value="1978">1978</option>
+												<option value="1977">1977</option>
+												<option value="1976">1976</option>
+												<option value="1975">1975</option>
+												<option value="1974" selected>1974</option>
+												<option value="1973">1973</option>
+												<option value="1972">1972</option>
+												<option value="1971">1971</option>
+												<option value="1970">1970</option>
+												<option value="1969">1969</option>
+												<option value="1968">1968</option>
+												<option value="1967">1967</option>
+												<option value="1966">1966</option>
+												<option value="1965">1965</option>
+												<option value="1964">1964</option>
+												<option value="1963">1963</option>
+												<option value="1962">1962</option>
+												<option value="1961">1961</option>
+												<option value="1960">1960</option>
+												<option value="1959">1959</option>
+												<option value="1958">1958</option>
+												<option value="1957">1957</option>
+												<option value="1956">1956</option>
+												<option value="1955">1955</option>
+												<option value="1954">1954</option>
+												<option value="1953">1953</option>
+												<option value="1952">1952</option>
+												<option value="1951">1951</option>
+												<option value="1950">1950</option>
+												<option value="1949">1949</option>
+												<option value="1948">1948</option>
+												<option value="1947">1947</option>
+												<option value="1946">1946</option>
+												<option value="1945">1945</option>
+												<option value="1944">1944</option>
+												<option value="1943">1943</option>
+												<option value="1942">1942</option>
+												<option value="1941">1941</option>
+												<option value="1940">1940</option>
+												<option value="1939">1939</option>
+												<option value="1938">1938</option>
+												<option value="1937">1937</option>
+												<option value="1936">1936</option>
+												<option value="1935">1935</option>
+												<option value="1934">1934</option>
+												<option value="1933">1933</option>
+												<option value="1932">1932</option>
+												<option value="1931">1931</option>
+												<option value="1930">1930</option>
+												<option value="1929">1929</option>
+												<option value="1928">1928</option>
+												<option value="1927">1927</option>
+												<option value="1926">1926</option>
+												<option value="1925">1925</option>
+												<option value="1924">1924</option>
+												<option value="1923">1923</option>
+												<option value="1922">1922</option>
+												<option value="1921">1921</option>
+												<option value="1920">1920</option>
+												<option value="1919">1919</option>
+												<option value="1918">1918</option>
+												<option value="1917">1917</option>
+												<option value="1916">1916</option>
+												<option value="1915">1915</option>
+												<option value="1914">1914</option>
+												<option value="1913">1913</option>
+												<option value="1912">1912</option>
+												<option value="1911">1911</option>
+												<option value="1910">1910</option>
+												<option value="1909">1909</option>
+												<option value="1908">1908</option>
+												<option value="1907">1907</option>
+												<option value="1906">1906</option>
+												<option value="1905">1905</option>
+											</select>
+										</div>	
+									</div>	
+								</div>
+								<div class="form-group half-group">
+									<label class="control-label required" for="email">EMAIL</label><br/>
+									<input id="email" value="jar@gmail.com" name="email" placeholder="" class="form-control" type="email" type="email" autocorrect="off" data-validation-rule="email" data-error-msg="El email no es válido">
+								</div>
+							</div>	
+							<br class="clear"/>
+							<div class="cover-half">
+								<div class="form-group half-group">
+									<label class="control-label required" for="cp">CÓDIGO POSTAL DEL CENTRO </label><br/>
+									<input id="cp" name="cp" value="28001" placeholder="" class="form-control" type="text" data-validation-rule="zip">
+								</div>
+								<div class="form-group half-group no-line">
+									<div class="form-group select-row">
+										<label class="control-label required" for="centro">NOMBRE DEL CENTRO </label><br/>
+										<div class="bg-select">
+												<select id="centro" name="centro" class="form-control" data-validation-rule="select-option">
+													<option value="" selected="selected">Nombre del centro</option>
+													<option value="1">Centro 1</option>
+													<option value="2">Centro 2</option>
+													<option value="3">Centro 3</option>
+												</select>
+										</div>
+										<a href="#">¿No encuentras el nombre del centro?</a>
+									</div>
+								</div>
+							</div>	
+							<br class="clear"/>
+                             <div class="form-group">
+                                 <div class="checkbox"><input id="accept_promos" name="accept_promos" value="1" type="checkbox"><label for="accept_promos"></label>Acepto recibir comunicaciones comerciales</div>
+                            </div>
+							<div class="form-group submit-row">
+								<input type="submit" value="ACTUALIZAR">
+							</div>
+							<div class="errores">Ha habido un error, por favor revisa los campos resaltados</div>
+						</form>
+						
+					</div>
+				</div>
+				<div class="container top-perfil">
+					<h3>Book Code</h3>
+				</div>
+				<div class="block_perfil box-code-book">
+					<div class="container">
+						<form id="form_book_code" action="#" method="post" data-validate="true" novalidate data-error-msg="Ha habido un error, por favor revisa los campos resaltados">
+							<div class="cover-half">
+								<div class="form-group half-group">
+									<label class="control-label required" for="new_book_code">NUEVO BOOK CODE </label><br/>
+									<input id="new_book_code" name="new_book_code" placeholder="" class="form-control" value="" type="text" data-validation-rule="not-empty">
+								</div>
+								<div class="form-group half-group">
+									<label class="control-label required" for="old_book_code">BOOK CODES ACTIVOS</label><br/>
+									<input id="old_book_code" name="old_book_code" value="wwd3-3wod-2wod-Kid´s Box 1" placeholder="" class="form-control" type="text" data-validation-rule="not-empty" disabled>
+								</div>
+							</div>
+							<br class="clear"/>
+							<div class="form-group submit-row">
+								<input type="submit" value="AÑADIR CÓDIGO">
+							</div>
+							<div class="errores">Ha habido un error, por favor revisa los campos resaltados</div>
+						</form>
+						
+					</div>
+				</div>
+				
+				<div class="container top-perfil">
+					<h3>Cambiar contraseña</h3>
+				</div>
+				<div class="block_perfil box-change-password">
+					<div class="container">
+						<form id="form_contrasena" action="#" method="post" data-validate="true" novalidate data-error-msg="Ha habido un error, por favor revisa los campos resaltados">
+							<div class="form-group half-group clear">
+								<label class="control-label required" for="password">CONTRASEÑA ACTUAL</label><br/>
+								<input id="password" name="password" placeholder="" class="form-control" type="password" data-validation-rule="not-empty">
+							</div>
+							<br class="clear"/>
+							<div class="cover-half">
+								<div class="form-group half-group">
+									<label class="control-label required" for="new_password">NUEV CONTRASEÑA</label><br/>
+									<input id="new_password" name="new_password" placeholder="" class="form-control" value="" type="password" data-validation-rule="not-empty">
+								</div>
+								<div class="form-group half-group">
+									<label class="control-label required" for="rep_new_password">REPETIR NUEVA CONTRASEÑA</label><br/>
+									<input id="rep_new_password" name="rep_new_password" value="" placeholder="" class="form-control" type="password" data-validation-rule="not-empty">
+								</div>
+							</div>
+							<br class="clear"/>
+							<div class="form-group submit-row">
+								<input type="submit" value="CAMBIAR CONTRASEÑA">
+							</div>
+							<div class="errores">Ha habido un error, por favor revisa los campos resaltados</div>
+						</form>
+						
+					</div>
+				</div>
+				
+				<div class="container top-perfil">
+					<h3>Eliminar cuenta</h3>
+				</div>
+				<div class="block_perfil box-delete-cuenta">
+					<div class="container">
+						<div class="cover-half">
+							<div class="half-group">
+								<p>Si deseas eliminar tu cuenta, introduce tu contraseña. Una vez cerrada eliminaremos tu perfil y si deseas tener de nuevo acceso a tus cursos deberás crearte una nueva cuenta.</p>		
+							</div>
+							<div class="half-group">
+								<form id="form_delete_cuenta" action="#" method="post" data-validate="true" novalidate data-error-msg="Ha habido un error, por favor revisa los campos resaltados">
+								<div class="form-group">
+									<label class="control-label required" for="rep_new_password">CONTRASEÑA ACTUAL</label><br/>
+									<input id="rep_new_password" name="rep_new_password" value="" placeholder="" class="form-control" type="password" data-validation-rule="not-empty">
+								</div>	
+								<div class="form-group submit-row">
+								<input type="submit" value="ELIMINAR CUENTA">
+								</div>
+							</form>	
+							</div>
+						</div>
+						<br class="clear"/>
+					</div>
+				</div>
+			</div>
+			<!--<div class="box_newsletter">
+				<div class="container">
+					<p>Recibe en tu correo los últimos recursos</p>
+					<div class="box_f_newsletter">
+						<form id="form_home" action="#" method="post" data-validate="true" novalidate data-error-msg="Ha habido un error, por favor revisa los campos resaltados">
+							<div class="row-h-form">
+								<label for="nombre"></label>
+								<input type="text" placeholder="Nombre y Apellidos" name="nombre" id="nombre" data-validation-rule="not-empty">
+							</div>
+							<div class="row-h-form">
+								<label for="email"></label>
+								<input type="text" placeholder="e-mail" name="email" id="email" autocorrect="off" data-validation-rule="email" data-error-msg="El email no es válido">
+							</div>
+							<div class="row-h-form">
+								<input type="submit" value="ENVIAR">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>-->
+        </div>
+      	<div id="footer">
+        	<div class="container">
+				<div class="colum_footer_rrss">
+					<div class="inside_f_rrss">
+						<h3>SÍGUENOS</h3>
+						<ul class="rrss_footer">
+							<li><a target="_blank" class="ico-fb" href="#">Facebook</a></li>
+							<li><a target="_blank" class="ico-tw" href="#">Twitter</a></li>
+							<li><a target="_blank" class="ico-inst" href="#">Instagram</a></li>
+							<li><a target="_blank" class="ico-yt" href="#">Youtube</a></li>
+						</ul>
+					</div>
+                </div>
+                <div class="colum_footer">
+            		<h3>RECURSOS POR CATEGORÍA</h3>
+                    <ul>
+                    	<li><a target="_blank" href="#">Educación emocional</a></li>
+						<li><a target="_blank" href="#">Información para padres</a></li>
+						<li><a target="_blank" href="#">Videos</a></li>
+						<li><a target="_blank" href="#">Audios</a></li>
+						<li><a target="_blank" href="#">Programaciones</a></li>
+						<li><a target="_blank" href="#">En familia</a></li>
+						<li><a target="_blank" href="#">El mundo que nos rodea</a></li>
+						<li><a target="_blank" href="#">Juegos</a></li>
+						<li><a target="_blank" href="#">Deberes/Exámenes</a></li>
+						<li><a target="_blank" href="#">Viajes</a></li>
+                    </ul>
+                </div>
+				<div class="colum_footer">
+            		<h3>RECURSOS POR PRODUCTO</h3>
+                    <ul>
+                    	<li><a target="_blank" href="#">Home</a></li>
+						<li><a target="_blank" href="#">Super Safari</a></li>
+						<li><a target="_blank" href="#">Kid’s Box</a></li>
+						<li><a target="_blank" href="#">Super Minds</a></li>
+						<li><a target="_blank" href="#">Quick Minds</a></li>
+						<li><a target="_blank" href="#">Guess What</a></li>
+						<li><a target="_blank" href="#">Smart Planet</a></li>
+						<li><a target="_blank" href="#">Out & About</a></li>
+						<li><a target="_blank" href="#">Empower </a></li>
+                    </ul>
+                </div>
+				<div class="colum_logo_footer">
+            		<a href="" target="_blank" class="logo_footer">Cambridge University Press</a>
+                </div>
+				<div class="bottom_footer">
+					<p>© Cambridge University Press 2018<a href="#">Aviso Legal</a><a href="#">Contact</a></p>
+				</div>
+            </div>
+        </div>
+        <!--Bloque Cookies-->
+        <div class="block-cookies">
+        	<div class="container">
+                <h2>Política de Cookies</h2>
+                <p>Utilizamos cookies propias y de terceros para ofrecerte una mejor experiencia y servicio, de acuerdo a tus hábitos de navegación. Si continúas navegando, consideramos que aceptas su uso. Puedes obtener más información en nuestra <a target="_blank" href="#" title="Política de Cookies">Política de Cookies.</a></p>
+                <a href="#" class="btn-accept">Ok</a>
+                <a href="#" title="" class="close_c"></a>
+            </div>
+        </div>
+        <!--Fin Cookies-->
+		<!--Bloque Lightbox Recursos-->
+		<div class="light_box_recursos" style="display:none;">
+			<div class="container_pop resource-content"></div>
+		</div>
+		<!--Fin Bloque Recursos-->
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-cookie.js"></script>
+	<script src="js/moment.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.lazyload.min.js"></script>
+    <script src="js/slick.min.js"></script>
+	<script src="js/jquery.mousewheel.min.js"></script>
+	<script src="js/jquery-scrollpanel.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/application_new.js"></script>
+	<script src="js/application-form-validation_new.js"></script>
+	<script src="js/application-filter.js"></script>
+	<script src="js/application-cookies.js"></script>
+</body>
+</html>
