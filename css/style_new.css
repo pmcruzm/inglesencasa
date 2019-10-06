@@ -406,6 +406,9 @@ PÁGINA DE PERFIL
 .info_perfil .tipo_p{color:#103E57;font-size: 16px;line-height: 49px;font-weight: bold;}
 .info_perfil .name_p{color:#103E57;font-size: 40px;line-height: 49px;font-family: 'peace_sansregular', Helvetica, sans-serif;}
 
+#header.perfil-h {height: 272px;}
+#header.perfil-h  .container{height: 272px;}
+
 
 /*****************************
 PÁGINA DE CONTACTO
