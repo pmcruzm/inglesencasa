@@ -399,7 +399,7 @@ PÁGINA DE PERFIL
 .block_perfil.box-delete-cuenta form input[type="submit"]{width:198px;}
 .block_perfil.box-delete-cuenta p{color:#0B2A3B;font-size:18px;line-height: 26px;}
 
-.header_perfil{height:48px;position: absolute; left: 194px;width: 310px;}
+.header_perfil{height:48px;position: absolute; left: 194px;width: 310px;z-index: 1;}
 .header_perfil h1{display: block;background: url(../svg/inglesencasa_horizontal.svg) top left no-repeat !important;width: 311px !important;height: 36px !important;text-indent: -99999px !important;position: absolute !important;left: 0px;background-size:311px !important;bottom: 0px !important;}
 
 .info_perfil{position:absolute;bottom:32px;}
