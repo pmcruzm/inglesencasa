@@ -1,4 +1,4 @@
- <!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html>
 <head>
 	<meta charset="UTF-8" />
@@ -15,12 +15,17 @@
     <meta property="google-tracking-id" content="UA-31155962-13" />
 
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+
+	<!-- Font Awesome styles-->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/awp_default2.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css" media="all"><!-- playlist scroll -->
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
     <link rel="stylesheet" type="text/css" href="css/fontface.css" />
     <link rel="stylesheet" type="text/css" href="css/style_new.css" />
-     <!-- Font Awesome styles-->
-    <!--<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">-->
+
 
     <!--El siguiente comentario es un comentario condicional que solo IE sabe interpretar-->
     <!--[if IE]>
@@ -44,22 +49,1103 @@
         	<div class="container">
                <h1><a href="index.html">Inglés en casa</a></h1>
                <h2>Recursos de Inglés para la conexión <span>escuela/hogar</span></h2>
-				<div class="box-img-header"><img src="img/destacado_primaria@2x.png" /></div>
+				<div class="box-img-header home"><img src="img/home2x.png" /></div>
             </div>
         </div>
         <div id="content">
-			<!--Box Búsqueda-->
+			<!--Box Destacados-->
 			<div class="box_destacado">
 				<div class="container">
-					<h3>Registro</h3>
+					<h3>Destacados</h3>
 				</div>
-				<div class="block_nosotros">
+				<div class="carrusel_recursos">
 					<div class="container">
-						<div class="left_nosotros">
-							<h4>Mauris lorem eros, ultrices nec fermentum sagittis, porta nec justo. Suspendisse ac risus tempor, tempor tellus sed, vulputate eros. Proin id tincidunt erat, et dapibus lacus. Aliquam eu metus posuere, aliquet velit nec, congue arcu. Quisque vitae lorem commodo ex aliquam venenatis. </h4>
-							<div><a href="#" class="btn_registrate home">REGÍSTRATE AHORA</a></div>
+                  	 <div class="carrusel-destacados">
+                     	   <!--Box Recurso-->
+                           <div class="item">
+                                <a data-type="audio" class="box_recurso" href="single.html" data-modal="modal_audio.html">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_1.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso audio">Audio</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso 2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                           <!--Fin Box Recurso-->
+					   	   <!--Box Recurso-->
+                           <div class="item">
+                                <a data-type="video" class="box_recurso" href="single.html" data-modal="modal_video.html">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_2.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="type_recurso video">Video</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Recurso 1 línea</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+					   		<!--Box Recurso-->
+                           	<div class="item">
+                                <a data-type="interactivo" class="box_recurso" href="single.html" data-modal="modal_interactivo.html">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_3.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso interactivo">Interactivo</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+					   		<!--Box Recurso-->
+                             <div class="item">
+                                <a data-type="pdf" class="box_recurso" href="single.html" data-modal="modal_pdf.html">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_4.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso pdf">PDF</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+					   		<!--Box Recurso-->
+                            <div class="item">
+                                <a data-type="imagen" class="box_recurso" href="single.html" data-modal="modal_imagen.html">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_5.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso imagen">Imagen</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+					   		<!--Box Recurso-->
+                           <div class="item">
+                                <a data-type="audio" class="box_recurso" href="single.html" data-modal="modal_audio.html">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_6.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso audio">Audio</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                           <!--Fin Box Recurso-->
+					   	   <!--Box Recurso-->
+                           <div class="item">
+                                <a data-type="video" class="box_recurso" href="single.html" data-modal="modal_video.html">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_7.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="type_recurso video">Video</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Recurso 1 línea</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+					   		<!--Box Recurso-->
+                           	<div class="item">
+                                <a data-type="interactivo" class="box_recurso" href="single.html" data-modal="modal_interactivo.html">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_8.png);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="type_recurso interactivo">Interactivo</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+					   		<!--Box Recurso-->
+                             <div class="item">
+                                <a data-type="pdf" class="box_recurso" href="single.html" data-modal="modal_pdf.html">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_1.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso pdf">PDF</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+					   		<!--Box Recurso-->
+                            <div class="item">
+                                <a data-type="imagen" class="box_recurso" href="single.html" data-modal="modal_imagen.html">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_2.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso imagen">Imagen</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+                   </div>
+					</div>
+				</div>
+			</div>
+			<!--Box Nuevos-->
+			<div class="box_nuevos">
+				<div class="container">
+					<h3>Nuevos</h3>
+					<div class="block_filters">
+						<div class="filter_mob">
+							<a href="#" class="btn_filter_mob"><span>FILTRAR</span></a>
 						</div>
-					    <br class="clear"/>
+						<div class="filter_nivel">
+							<a href="#" class="btn_filter_n" rel="nivel"><span>EDAD</span></a>
+						</div>
+						<div class="filter_tipo">
+							<a href="#" class="btn_filter_t" rel="tipo"><span>TIPO DE RECURSO</span></a>
+						</div>
+						<div class="filter_producto">
+							<a href="#" class="btn_filter_p" rel="producto"><span>MÉTODO</a></a>
+						</div>
+						<div class="search_filter">
+							<a href="#">BUSCAR</a>
+						</div>
+						<div class="over_buscador">
+							<form id="form_search" action="#" method="post">
+								<div class="cover_serach">
+									<div class="box_input_s">
+										<a class="close_search" href="#">Cerrar</a>
+										<label for="busqueda"></label>
+										<input type="text" placeholder="Encuentra recursos escribiendo su nombre, categoría, formato, etc." name="busqueda" id="busqueda" data-validation-rule="not-empty">
+									</div>
+									<div class="box_submit_s">
+										<input type="submit" value="ENVIAR">
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="over_filtros">
+					<div class="container">
+						<!--Filtros Nivel-->
+						<div class="opc_nivel" style="display:none;">
+							<a href="#">EDAD</a>
+        <div class="box_n_infantil box_single_f">
+         <h4>EDAD</h4>
+         <a href="#">EDAD</a>
+         <div class="desplegable_filtro">
+          <div><label><input name="nivel[]" value="p-1" type="checkbox"> De 3 a 5 años</label></div>
+          <div><label><input name="nivel[]" value="p-2" type="checkbox"> De 6 a 8 años</label></div>
+          <div><label><input name="nivel[]" value="p-3" type="checkbox"> De 8 en adelante</label></div>
+         </div>
+        </div>
+						</div>
+						<!--Filtros Nivel-->
+						<div class="opc_tipo" style="display:none;">
+							<a href="#">TIPO DE RECURSO</a>
+							<div class="box_formato box_single_f">
+								<h4>PRACTICAR</h4>
+								<a href="#">PRACTICAR</a>
+								<div class="desplegable_filtro">
+									<div><label><input name="destreza[]" value="GRAMMAR" type="checkbox"> Gramática</label></div>
+									<div><label><input name="destreza[]" value="VOCABULARY" type="checkbox"> Vocabulario</label></div>
+									<div><label><input name="destreza[]" value="READING" type="checkbox"> Reading</label></div>
+									<div><label><input name="destreza[]" value="LISTENING" type="checkbox"> Listening</label></div>
+									<div><label><input name="destreza[]" value="SPEAKING" type="checkbox"> Speaking</label></div>
+									<div><label><input name="destreza[]" value="WRITING" type="checkbox"> Writing</label></div>
+								</div>
+							</div>
+							<div class="box_formato box_single_f">
+								<h4>FORMATO</h4>
+								<a href="#">FORMATO</a>
+								<div class="desplegable_filtro">
+									<div><label><input name="formato[]" value="INTERACTIVO" type="checkbox"> <span class="interactivo">Interactivo</span></label></div>
+									<div><label><input name="formato[]" value="PDF" type="checkbox"> <span class="pdf">Pdf</span></label></div>
+									<div><label><input name="formato[]" value="AUDIO" type="checkbox"> <span class="audio">Audio</span></label></div>
+									<div><label><input name="formato[]" value="VIDEO" type="checkbox"> <span class="video">Video</span></label></div>
+									<div><label><input name="formato[]" value="IMAGEN" type="checkbox"> <span class="imagen">Imagen</span></label></div>
+								</div>
+							</div>
+							<div class="box_tipo box_single_f">
+								<h4>TIPO RECURSO</h4>
+								<a href="#">TIPO RECURSO</a>
+								<div class="desplegable_filtro">
+									<div><label><input name="tipo[]" value="JUEGOS" type="checkbox"> Juegos</label></div>
+									<div><label><input name="tipo[]" value="EDUCACION-EMOCIONAL" type="checkbox"> Educación emocional</label></div>
+									<div><label><input name="tipo[]" value="EN-FAMILIA" type="checkbox"> En familia</label></div>
+									<div><label><input name="tipo[]" value="EL-MUNDO-QUE-NOS-RODEA" type="checkbox"> El mundo que nos rodea</label></div>
+									<div><label><input name="tipo[]" value="TECNOLOGIA" type="checkbox"> Tecnología</label></div>
+									<div><label><input name="tipo[]" value="DEBERES" type="checkbox"> Deberes</label></div>
+									<div><label><input name="tipo[]" value="VIAJES" type="checkbox"> Viajes</label></div>
+								</div>
+							</div>
+						</div>
+						<!--Filtros Nivel-->
+						<div class="opc_producto" style="display:none;">
+							<a href="#">MÉTODO</a>
+							<div class="box_p_primaria box_single_f">
+								<h4>PRIMARIA</h4>
+								<a href="#">PRIMARIA</a>
+								<div class="desplegable_filtro">
+									<div><label><input name="producto[]" value="GUESS-WHAT!" type="checkbox"> Guess What!</label></div>
+									<div><label><input name="producto[]" value="KIDS-BOX" type="checkbox"> Kid's Box</label></div>
+									<div><label><input name="producto[]" value="QUICK-MINDS" type="checkbox"> Quick Minds</label></div>
+									<div><label><input name="producto[]" value="SUPER-MINDS" type="checkbox"> Super Minds</label></div>
+									<div><label><input name="producto[]" value="THE-ENGLISH-LADDER" type="checkbox"> The English Ladder</label></div>
+									<div><label><input name="producto[]" value="PLAYWAY-2ND-EDITION" type="checkbox"> Playway 2nd edition</label></div>
+									<div><label><input name="producto[]" value="PRIMARY-I-DICTIONARY" type="checkbox"> Primary i-Dictionary</label></div>
+									<div><label><input name="producto[]" value="PRIMARY-I-BOX" type="checkbox"> Primary i-Box</label></div>
+									<div><label><input name="producto[]" value="CAMBRIDGE-COPY" type="checkbox"> Cambridge Copy</label></div>
+									<div><label><input name="producto[]" value="COLLECTION" type="checkbox"> Collection</label></div>
+								</div>
+							</div>
+							<div class="box_p_infantil box_single_f">
+								<h4>INFANTIL</h4>
+								<a href="#">INFANTIL</a>
+								<div class="desplegable_filtro">
+									<div><label><input name="producto[]" value="GREENMAN" type="checkbox"> Greenman</label></div>
+									<div><label><input name="producto[]" value="SUPER-SAFARI" type="checkbox"> Super Safari</label></div>
+								</div>
+							</div>
+						</div>
+						<div class="row_close_filter">
+							<a href="#">Cerrar Filtros</a>
+						</div>
+					</div>
+				</div>
+				<div class="contenedor-recursos" data-num-elems="24">
+					<div class="container">
+						<!--Limpiar Filtros-->
+						<div class="box_clear_filtros">
+							<div><p class="inside_recurso"><span class="n_recuros">24</span> RECURSOS ENCONTRADOS</p><a href="#" class="clear_all_filters"><span>QUITAR FILTROS</a></div>
+						</div>
+						<!--Box Recurso-->
+                           <div class="item">
+                                <a data-type="audio" class="box_recurso" href="single.html" data-modal="modal_audio.html" data-nivel="[&quot;i-1&quot;]" data-formato="[&quot;AUDIO&quot;]" data-tipo="[&quot;VIAJES&quot;]" data-producto="[&quot;QUICK-MINDS&quot;]" data-destreza="[&quot;GRAMMAR&quot;]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_1.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso audio">Audio</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                           <!--Fin Box Recurso-->
+					   	   <!--Box Recurso-->
+                           <div class="item">
+                                <a data-type="video" class="box_recurso" href="single.html" data-modal="modal_video.html" data-modal="modal_audio.html" data-nivel="[&quot;p-2&quot;]" data-formato="[&quot;VIDEO&quot;]" data-tipo="[&quot;DEBERES&quot;,&quot;EL-MUNDO-QUE-NOS-RODEA&quot;]" data-producto="[&quot;QUICK-MINDS&quot;]" data-destreza="[&quot;GRAMMAR&quot;]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_2.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="type_recurso video">Video</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Recurso 1 línea</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+					   		<!--Box Recurso-->
+                           	<div class="item">
+                                <a data-type="interactivo" class="box_recurso" href="single.html" data-modal="modal_interactivo.html" data-modal="modal_audio.html" data-nivel="[&quot;i-3&quot;]" data-formato="[&quot;INTERACTIVO&quot;]" data-tipo="[&quot;JUEGOS&quot;]" data-producto="[&quot;GREENMAN&quot;]" data-destreza="[&quot;VOCABULARY&quot;]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_3.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso interactivo">Interactivo</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+					   		<!--Box Recurso-->
+                             <div class="item">
+                                <a data-type="pdf" class="box_recurso" href="single.html" data-modal="modal_pdf.html" data-modal="modal_audio.html" data-nivel="[&quot;i-1&quot;]" data-formato="[&quot;PDF&quot;]" data-tipo="[&quot;EDUCACION-EMOCIONAL&quot;]" data-producto="[&quot;QUICK-MINDS&quot;]" data-destreza="[&quot;GRAMMAR&quot;]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_4.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso pdf">PDF</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+					   		<!--Box Recurso-->
+                            <div class="item">
+                                <a data-type="imagen" class="box_recurso" href="single.html" data-modal="modal_imagen.html" data-modal="modal_audio.html" data-nivel="[&quot;p-1&quot;]" data-formato="[&quot;IMAGEN&quot;]" data-tipo="[&quot;EN-FAMILIA&quot;]" data-producto="[&quot;KIDS-BOX&quot;]" data-destreza="[&quot;READING&quot;]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_5.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso imagen">Imagen</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+					   		<!--Box Recurso-->
+                           <div class="item">
+                                <a data-type="audio" class="box_recurso" href="single.html" data-modal="modal_audio.html" data-modal="modal_audio.html" data-nivel="[&quot;i-3&quot;]" data-formato="[&quot;AUDIO&quot;]" data-tipo="[&quot;TECNOLOGIA&quot;]" data-producto="[&quot;GREENMAN&quot;]" data-destreza="[&quot;VOCABULARY&quot;]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_6.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso audio">Audio</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                           <!--Fin Box Recurso-->
+					   	   <!--Box Recurso-->
+                           <div class="item">
+                                <a data-type="video" class="box_recurso" href="single.html" data-modal="modal_video.html" data-modal="modal_audio.html" data-nivel="[&quot;p-4&quot;]" data-formato="[&quot;VIDEO&quot;]" data-tipo="[]" data-producto="[&quot;PLAYWAY-2ND-EDITION&quot;]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_7.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="type_recurso video">Video</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Recurso 1 línea</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+					   		<!--Box Recurso-->
+                           	<div class="item">
+                                <a data-type="interactivo" class="box_recurso" href="single.html" data-modal="modal_interactivo.html" data-modal="modal_audio.html" data-formato="[&quot;INTERACTIVO&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_8.png);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="type_recurso interactivo">Interactivo</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+					   		<!--Box Recurso-->
+                             <div class="item">
+                                <a data-type="pdf" class="box_recurso" href="single.html" data-modal="modal_pdf.html" data-modal="modal_audio.html" data-formato="[&quot;PDF&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_1.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso pdf">PDF</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+					   		<!--Box Recurso-->
+                            <div class="item">
+                                <a data-type="imagen" class="box_recurso" href="single.html" data-modal="modal_imagen.html" data-modal="modal_audio.html" data-formato="[&quot;IMAGEN&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_1.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso imagen">Imagen</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+							<!--Box Recurso-->
+                             <div class="item">
+                                <a data-type="pdf" class="box_recurso" href="single.html" data-modal="modal_pdf.html" data-modal="modal_audio.html" data-formato="[&quot;PDF&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_2.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso pdf">PDF</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+					   		<!--Box Recurso-->
+                            <div class="item">
+                                <a data-type="imagen" class="box_recurso" href="single.html" data-modal="modal_imagen.html" data-modal="modal_audio.html" data-formato="[&quot;IMAGEN&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_3.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso imagen">Imagen</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+							<!--Bloque intermedio-->
+							<div class="cover_b_recursos">
+								<div class="banner_recursos">
+									<p>Recibe en tu correo los últimos recursos de <strong>Inglés En Casa</strong> <div><a href="#" class="btn_registrate">REGÍSTRATE</a></div></p>
+								</div>
+							</div>
+							<!--Fin Bloque intermedio-->
+							<!--Box Recurso-->
+                           <div class="item">
+                                <a data-type="audio" class="box_recurso" href="single.html" data-modal="modal_audio.html" data-modal="modal_audio.html" data-formato="[&quot;AUDIO&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_4.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso audio">Audio</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                           <!--Fin Box Recurso-->
+					   	   <!--Box Recurso-->
+                           <div class="item">
+                                <a data-type="video" class="box_recurso" href="single.html" data-modal="modal_video.html" data-modal="modal_audio.html" data-formato="[&quot;VIDEO&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_5.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="type_recurso video">Video</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Recurso 1 línea</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+					   		<!--Box Recurso-->
+                           	<div class="item">
+                                <a data-type="interactivo" class="box_recurso" href="single.html" data-modal="modal_interactivo.html" data-modal="modal_audio.html" data-formato="[&quot;INTERACTIVO&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_6.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso interactivo">Interactivo</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+					   		<!--Box Recurso-->
+                             <div class="item">
+                                <a data-type="pdf" class="box_recurso" href="single.html" data-modal="modal_pdf.html" data-modal="modal_audio.html" data-formato="[&quot;PDF&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_7.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso pdf">PDF</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+					   		<!--Box Recurso-->
+                            <div class="item">
+                                <a data-type="imagen" class="box_recurso" href="single.html" data-modal="modal_imagen.html" data-modal="modal_audio.html" data-formato="[&quot;IMAGEN&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_8.png);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="type_recurso imagen">Imagen</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+					   		<!--Box Recurso-->
+                           <div class="item">
+                                <a data-type="audio" class="box_recurso" href="single.html" data-modal="modal_audio.html" data-modal="modal_audio.html" data-formato="[&quot;AUDIO&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_1.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso audio">Audio</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                           <!--Fin Box Recurso-->
+					   	   <!--Box Recurso-->
+                           <div class="item">
+                                <a data-type="video" class="box_recurso" href="single.html" data-modal="modal_video.html" data-modal="modal_audio.html" data-formato="[&quot;VIDEO&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_2.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="type_recurso video">Video</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Recurso 1 línea</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+					   		<!--Box Recurso-->
+                           	<div class="item">
+                                <a data-type="interactivo" class="box_recurso" href="single.html" data-modal="modal_interactivo.html" data-modal="modal_audio.html" data-formato="[&quot;INTERACTIVO&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_3.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso interactivo">Interactivo</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+					   		<!--Box Recurso-->
+                             <div class="item">
+                                <a data-type="pdf" class="box_recurso" href="single.html" data-modal="modal_pdf.html" data-modal="modal_audio.html" data-formato="[&quot;PDF&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_4.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso pdf">PDF</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+					   		<!--Box Recurso-->
+                            <div class="item">
+                                <a data-type="imagen" class="box_recurso" href="single.html" data-modal="modal_imagen.html" data-modal="modal_audio.html" data-formato="[&quot;IMAGEN&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_5.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso imagen">Imagen</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+							<!--Box Recurso-->
+                             <div class="item">
+                                <a data-type="pdf" class="box_recurso" href="single.html" data-modal="modal_pdf.html" data-modal="modal_audio.html" data-formato="[&quot;PDF&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_6.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso pdf">PDF</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+					   		<!--Box Recurso-->
+                            <div class="item">
+                                <a data-type="imagen" class="box_recurso" href="single.html" data-modal="modal_imagen.html" data-modal="modal_audio.html" data-formato="[&quot;IMAGEN&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_7.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso imagen">Imagen</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+							<!--Box Recurso-->
+                            <div class="item">
+                                <a data-type="imagen" class="box_recurso" href="single.html" data-modal="modal_imagen.html" data-modal="modal_audio.html" data-formato="[]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_8.png);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="type_recurso imagen">Imagen</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+					   		<!--Box Recurso-->
+                           <div class="item">
+                                <a data-type="audio" class="box_recurso" href="single.html" data-modal="modal_audio.html" data-modal="modal_audio.html" data-formato="[&quot;AUDIO&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_1.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso audio">Audio</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                           <!--Fin Box Recurso-->
+					   	   <!--Box Recurso-->
+                           <div class="item">
+                                <a data-type="video" class="box_recurso" href="single.html" data-modal="modal_video.html" data-modal="modal_audio.html" data-formato="[&quot;VIDEO&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_2.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="type_recurso video">Video</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Recurso 1 línea</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+					   		<!--Box Recurso-->
+                           	<div class="item">
+                                <a data-type="interactivo" class="box_recurso" href="single.html" data-modal="modal_interactivo.html" data-modal="modal_audio.html" data-formato="[&quot;INTERACTIVO&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_3.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso interactivo">Interactivo</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+					   		<!--Box Recurso-->
+                             <div class="item">
+                                <a data-type="pdf" class="box_recurso" href="single.html" data-modal="modal_pdf.html" data-modal="modal_audio.html" data-formato="[&quot;PDF&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_4.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso pdf">PDF</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+					   		<!--Box Recurso-->
+                            <div class="item">
+                                <a data-type="imagen" class="box_recurso" href="single.html" data-modal="modal_imagen.html" data-modal="modal_audio.html" data-formato="[&quot;IMAGEN&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_5.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso imagen">Imagen</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+							<!--Box Recurso-->
+                             <div class="item">
+                                <a data-type="pdf" class="box_recurso" href="single.html" data-modal="modal_pdf.html" data-modal="modal_audio.html" data-formato="[&quot;PDF&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_6.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso pdf">PDF</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+					   		<!--Box Recurso-->
+                            <div class="item">
+                                <a data-type="imagen" class="box_recurso" href="single.html" data-modal="modal_imagen.html" data-modal="modal_audio.html" data-formato="[&quot;IMAGEN&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_7.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso imagen">Imagen</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+							<!--Box Recurso-->
+                           <div class="item">
+                                <a data-type="audio" class="box_recurso" href="single.html" data-modal="modal_audio.html" data-modal="modal_audio.html" data-formato="[&quot;AUDIO&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso " style="background-image:url(img/recurso_1.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso audio">Audio</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                           <!--Fin Box Recurso-->
+					   	   <!--Box Recurso-->
+                           <div class="item">
+                                <a data-type="video" class="box_recurso" href="single.html" data-modal="modal_video.html" data-modal="modal_audio.html" data-formato="[&quot;VIDEO&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_2.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="type_recurso video">Video</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Recurso 1 línea</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+					   		<!--Box Recurso-->
+                           	<div class="item">
+                                <a data-type="interactivo" class="box_recurso" href="single.html" data-modal="modal_interactivo.html" data-modal="modal_audio.html" data-formato="[&quot;INTERACTIVO&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_3.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso interactivo">Interactivo</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+					   		<!--Box Recurso-->
+                             <div class="item">
+                                <a data-type="pdf" class="box_recurso" href="single.html" data-modal="modal_pdf.html" data-modal="modal_audio.html" data-formato="[&quot;PDF&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_4.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso pdf">PDF</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+					   		<!--Box Recurso-->
+                            <div class="item">
+                                <a data-type="imagen" class="box_recurso" href="single.html" data-modal="modal_imagen.html" data-modal="modal_audio.html" data-formato="[&quot;IMAGEN&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_5.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso imagen">Imagen</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+							<!--Box Recurso-->
+                             <div class="item">
+                                <a data-type="pdf" class="box_recurso" href="single.html" data-modal="modal_pdf.html" data-modal="modal_audio.html" data-formato="[&quot;PDF&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_6.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso pdf">PDF</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+					   		<!--Box Recurso-->
+                            <div class="item">
+                                <a data-type="imagen" class="box_recurso" href="single.html" data-modal="modal_imagen.html" data-modal="modal_audio.html" data-formato="[&quot;IMAGEN&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_7.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso imagen">Imagen</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+							<!--Box Recurso-->
+                           <div class="item">
+                                <a data-type="audio" class="box_recurso" href="single.html" data-modal="modal_audio.html" data-modal="modal_audio.html" data-formato="[&quot;AUDIO&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_1.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso audio">Audio</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                           <!--Fin Box Recurso-->
+					   	   <!--Box Recurso-->
+                           <div class="item">
+                                <a data-type="video" class="box_recurso" href="single.html" data-modal="modal_video.html" data-modal="modal_audio.html" data-formato="[&quot;VIDEO&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_2.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="type_recurso video">Video</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Recurso 1 línea</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+					   		<!--Box Recurso-->
+                           	<div class="item">
+                                <a data-type="interactivo" class="box_recurso" href="single.html" data-modal="modal_interactivo.html" data-modal="modal_audio.html" data-formato="[&quot;INTERACTIVO&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_3.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso interactivo">Interactivo</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+					   		<!--Box Recurso-->
+                             <div class="item">
+                                <a data-type="pdf" class="box_recurso" href="single.html" data-modal="modal_pdf.html" data-modal="modal_audio.html" data-formato="[&quot;PDF&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_4.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso pdf">PDF</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+					   		<!--Box Recurso-->
+                            <div class="item">
+                                <a data-type="imagen" class="box_recurso" href="single.html" data-modal="modal_imagen.html" data-modal="modal_audio.html" data-formato="[&quot;IMAGEN&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_5.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso imagen">Imagen</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+							<!--Box Recurso-->
+                             <div class="item">
+                                <a data-type="pdf" class="box_recurso" href="single.html" data-modal="modal_pdf.html" data-modal="modal_audio.html" data-formato="[&quot;PDF&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_6.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso pdf">PDF</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+					   		<!--Box Recurso-->
+                            <div class="item">
+                                <a data-type="imagen" class="box_recurso" href="single.html" data-modal="modal_imagen.html" data-modal="modal_audio.html" data-formato="[&quot;IMAGEN&quot;]" data-tipo="[]">
+                                    <div class="body_recurso w_recurso" style="background-image:url(img/recurso_7.jpg);">
+                                        <div class="over_recurso_img" style="background:#F5F7F7;"></div>
+                                        <div class="content_recurso">
+										   <span class="cat_recurso">Infantil</span>
+										   <span class="type_recurso imagen">Imagen</span>
+										   <div class="info_recurso">
+                                           	   <h4>RECURSO</h4>
+										   	   <h5>Texto recurso2 líneas</h5>
+										   </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Fin Box Recurso-->
+							<!--Bloque Más recursos-->
+							<div class="box_more_r">
+								<a href="#" class="more_recursos">MÁS RECURSOS</a>
+								<h4>No se han encontrado recursos que coincidan con tu selección, prueba aplicando menos filtros o accede a todos los recursos de <a href="#">Infantil</a> y <a href="#">Primaria</a> y utiliza los filtros disponibles. </h4>
+							</div>
 					</div>
 				</div>
 			</div>
@@ -84,9 +1170,20 @@
 				</div>
 			</div>-->
         </div>
-      	<div id="footer">
+        <div id="footer">
         	<div class="container">
-				<div class="colum_footer_rrss">
+				<div class="colum_footer_acceso">
+					<a class="btn_acceso" href="registro.html">ACCESO</a>	
+                </div>
+				<div class="colum_footer">
+					<h3>ENLACES</h3>
+                    <ul>
+                    	<li><a target="_blank" href="#">Contacto</a></li>
+						<li><a target="_blank" href="#">Ayuda</a></li>
+						<li><a target="_blank" href="#">Cambridge University Press</a></li>
+						<li><a target="_blank" href="#">Cambridge para Ti</a></li>
+						<li><a target="_blank" href="#">Cambridge Assessment English</a></li>
+                    </ul>
 					<div class="inside_f_rrss">
 						<h3>SÍGUENOS</h3>
 						<ul class="rrss_footer">
@@ -98,7 +1195,7 @@
 					</div>
                 </div>
                 <div class="colum_footer">
-            		<h3>RECURSOS POR CATEGORÍA</h3>
+					<h3>RECURSOS</h3>
                     <ul>
                     	<li><a target="_blank" href="#">Educación emocional</a></li>
 						<li><a target="_blank" href="#">Información para padres</a></li>
@@ -112,20 +1209,7 @@
 						<li><a target="_blank" href="#">Viajes</a></li>
                     </ul>
                 </div>
-				<div class="colum_footer">
-            		<h3>RECURSOS POR PRODUCTO</h3>
-                    <ul>
-                    	<li><a target="_blank" href="#">Home</a></li>
-						<li><a target="_blank" href="#">Super Safari</a></li>
-						<li><a target="_blank" href="#">Kid’s Box</a></li>
-						<li><a target="_blank" href="#">Super Minds</a></li>
-						<li><a target="_blank" href="#">Quick Minds</a></li>
-						<li><a target="_blank" href="#">Guess What</a></li>
-						<li><a target="_blank" href="#">Smart Planet</a></li>
-						<li><a target="_blank" href="#">Out & About</a></li>
-						<li><a target="_blank" href="#">Empower </a></li>
-                    </ul>
-                </div>
+				
 				<div class="colum_logo_footer">
             		<a href="" target="_blank" class="logo_footer">Cambridge University Press</a>
                 </div>
@@ -152,17 +1236,23 @@
     </div>
     <script src="js/jquery.js"></script>
     <script src="js/jquery-cookie.js"></script>
+	<script src="js/audio.min.js"></script>
     <script src="js/jquery.easing.1.3.js"></script>
     <script src="js/jquery.scrollTo.js"></script>
     <script src="js/jquery.fitvids.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/jquery.lazyload.min.js"></script>
     <script src="js/slick.min.js"></script>
 	<script src="js/jquery.mousewheel.min.js"></script>
 	<script src="js/jquery-scrollpanel.min.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>
-    <script src="js/application.js"></script>
+	<script type="text/javascript" src="js/jsmediatags.min.js"></script><!-- id3 tags -->
+	<script type="text/javascript" src="js/wavesurfer/src/wavesurfer.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script><!-- playlist scroll -->
+	<script type="text/javascript" src="js/new_cb.js"></script>
+	<script type="text/javascript" src="js/new.js"></script>
+    <script src="js/application_new.js"></script>
 	<script src="js/application-form-validation.js"></script>
 	<script src="js/application-filter.js"></script>
 	<script src="js/application-cookies.js"></script>

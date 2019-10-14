@@ -105,6 +105,7 @@ PROPIEDADES HEADER
 .ficha_gen .n_recursos{font-size:16px;color:#ffffff;position: absolute;left: 32px;bottom: 44px;z-index: 51; }
 
 .box-img-header{position: absolute;right: -70px;top:123px;width: 50%;z-index: 50;}
+.box-img-header.home{top:auto !important;bottom: -99px;}
 .box-img-header img{max-width: 100%;}
 
 
@@ -344,8 +345,9 @@ PÁGINA DE REGISTRO
 .select-row a{display: inline-block;float:right;color:#103E57;text-decoration: underline;font-size: 14px;line-height: 32px;margin-top: 16px;}
 
 .box_tooltip{position: absolute;right: -16px;top:40px;}
-.box_tooltip .icon{width:16px;height:16px;background: red;display: block;}
+.box_tooltip .icon{width:16px;height:16px;display: block;background:url(../svg/Info.svg) center center no-repeat;}
 .pop_tooltip{width: 275px;background:#FF6B47;color:#ffffff;padding: 8px;border-radius: 8px;font-size: 14px;line-height: 21px;position: absolute;left:-140px;bottom:34px;text-align: center;display: none;}
+.pop_tooltip:after{content:'';display: block;background: url(../img/Point@2X.png) center bottom no-repeat;height:6px;background-size: 12px;width: 100%;position:absolute;bottom:-6px;left:2px;}
 
 .date-row{margin-bottom: 38px;}
 .date-row p{color:#103E57;font-size: 12px;text-transform: uppercase;letter-spacing: 1px;}
@@ -433,7 +435,7 @@ PÁGINA DE CONTACTO
 #form_contacto .textarea-row{position:relative;}
 .cover-half .half-group:nth-child(even) {padding-right:0px !important;padding-left:16px;}
 
-.bg-select{background:#103E57 url(../img/icon_select.png) 0px 0px no-repeat;display:block;width:100%;float:left;overflow:hidden;height:40px;}
+.bg-select{background:#103E57 url(../svg/arrow_down.svg) 95% 50% no-repeat;display:block;width:100%;float:left;overflow:hidden;height:40px;}
 .bg-select > select{background:none;color:#ffffff;width:110%;height:40px;line-height:40px;padding-right:17%;box-sizing:border-box;font-size:14px;border:none;-webkit-appearance:none;cursor:pointer;padding-left:10px;}
 .bg-select > select.right-t{text-align:right;}
 .bg-select > select option{text-align:left;background:#103E57;}
@@ -628,11 +630,13 @@ PROPIEDADES FOOTER
 #footer .container{box-sizing:border-box;padding-top:63px;overflow:hidden;}
 .colum_logo_footer{float:left;width:34%;}
 .colum_footer{float:right;width:calc(32% - 85px);box-sizing: border-box;padding-right: 10px;}
-.colum_footer_rrss{float:right;width: 190px;}
-.inside_f_rrss{display:inline-block;float: right;}
+.colum_footer_acceso{float:right;width: 90px;}
+.inside_f_rrss{display:inline-block;margin-top:40px;}
 .colum_footer h3,.colum_logo_footer h3,.colum_footer_rrss h3{color:#9B9B9B;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 13px;line-height: 26px;margin-bottom:32px;letter-spacing: 1px;}
 .colum_footer ul a{color: #2E2E2E;font-size: 14px;line-height: 31px;font-family:'source_sans_prosemibold', Helvetica, sans-serif;}
 .colum_footer ul a:hover{opacity:0.9;}
+
+.colum_footer_acceso .btn_acceso{position:relative !important;}
 
 
 .logo_footer{display:block;text-indent:-99999px;background:url(../svg/CUP_Logo.svg) center center no-repeat;height:47px;width:179px;background-size:179px;/*margin-left:30px;*/}
@@ -679,8 +683,8 @@ input[type="checkbox"] + label::before {
     display:inline-block;
     width:16px;
     height:16px;
-    background:url(../img/sprite_checkbox.png) no-repeat;
-    background-position:0px 0px;
+    background:url(../img/checkbox@2X.png) no-repeat;
+    background-position:0px -16px;
     margin-left:-30px;
     background-size:16px;
 	position:relative;
@@ -688,6 +692,7 @@ input[type="checkbox"] + label::before {
 	margin-right:10px;
 }
 
+/*Pendiente*/
 #foo:checked,
 input[type="checkbox"].error + label::before {
     content:'';
@@ -695,7 +700,7 @@ input[type="checkbox"].error + label::before {
     display:inline-block;
     width:16px;
     height:16px;
-    background:url(../img/sprite_checkbox.png) no-repeat;
+    background:url(../img/checkbox@2X.png) no-repeat;
     background-position:0px -32px;
     margin-left:-30px;
     background-size:16px;
@@ -710,8 +715,8 @@ input[type="checkbox"]:checked + label::before {
     display:inline-block;
     width:16px;
     height:16px;
-    background:url(../img/sprite_checkbox.png) no-repeat;
-    background-position:0px -16px;
+    background:url(../img/checkbox@2X.png) no-repeat;
+    background-position:0px 0px;
     margin-left:-30px;
     background-size:16px;
 	position:relative;
