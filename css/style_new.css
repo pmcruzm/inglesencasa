@@ -80,6 +80,7 @@ PROPIEDADES HEADER
 #header h2{font-size: 30px;color:#103E57;max-width: 475px;position: absolute;/*left: 10px;*/bottom: 78px;line-height: 36px;}
 #header h2 span{font-weight: bold;font-style:italic;}
 #header h1 a {display: block; position: absolute; width: 100%; height: 100%;}
+#header h2.titel_2{max-width:430px;}
 
 .menu_header{position:absolute;right:169px;top:23px;padding:0;margin: 0;z-index: 10;}
 .menu_header li{display: inline-block;}
@@ -123,6 +124,10 @@ PROPIEDADES HOME
 .carrusel-destacados .slick-list{padding-top:96px;padding-bottom: 96px;overflow: inherit;}
 .box_recurso{display:block;height:338px;max-width:268px;box-sizing:border-box;padding:15px;background:#ffffff;margin-right:30px;-webkit-transition: all 0.15s linear;-moz-transition: all 0.15s linear;-o-transition: all 0.15s linear;transition: all 0.15s linear;box-shadow: 20px 30px 50px 0 rgba(110,181,173,0.50);width: 95%;margin: 0 auto;}
 .box_recurso.over{}
+
+.box_recurso.privado{padding: 0px;box-shadow:none;background: none;}
+.box_recurso.privado .body_recurso{border-radius: 0px;box-shadow: 20px 30px 50px 0 rgba(110,181,173,0.50);}
+.titel_rec_privado{text-align: center;color:#103E57;font-size: 14px;padding-top:10px;}
 
 /*.slick-slide .box_recurso{float:left;}*/
 
@@ -179,10 +184,10 @@ PROPIEDADES HOME
 /***** NUEVOS ******/
 
 .box_nuevos{box-sizing:border-box;border: 32px solid #ffffff;position: relative;border-bottom:0;margin-bottom:16px;}
-.contenedor-recursos{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);padding-top: 98px;overflow: hidden;box-sizing: border-box;padding-left: 24px;padding-right: 24px;position: relative;min-height: 850px;}
-.contenedor-recursos .container{/*width: calc(100% + 30px);max-width:1208px*/}
+.contenedor-recursos,.contenedor-recursos-curso{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);padding-top: 98px;overflow: hidden;box-sizing: border-box;padding-left: 24px;padding-right: 24px;position: relative;min-height: 850px;}
+.contenedor-recursos .container,.contenedor-recursos-curso .container{/*width: calc(100% + 30px);max-width:1208px*/}
 .box_nuevos h3{font-family:'peace_sansregular', Helvetica, sans-serif;font-size: 40px;color:#FF6B47;line-height: 48px;padding-bottom: 16px;}
-.contenedor-recursos .item{width: 25%;float: left;margin-bottom: 30px;text-align: center;}
+.contenedor-recursos .item,.contenedor-recursos-curso .item{width: 25%;float: left;margin-bottom: 30px;text-align: center;}
 .cover_b_recursos{clear:both;padding-top: 40px;padding-bottom: 70px;}
 .banner_recursos{clear:both;border-top: 3px solid #94E3DF;border-bottom: 3px solid #94E3DF;text-align: center;padding-top: 43px;padding-bottom: 43px;}
 .banner_recursos p{font-size: 22px;line-height: 32px;color:#103E57;display: inline-block;}
@@ -285,6 +290,15 @@ PROPIEDADES HOME
 #form_home input[type=submit]{display: inline-block;vertical-align: middle;width: 118px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;margin-left: 10px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 1px;}
 #form_home input[type=submit]:hover{opacity: 0.9;}
 .row-h-form{display: inline-block;}
+
+.contenedor-recursos-curso{padding-bottom:68px;}
+.contenedor-recursos-curso .info_recurso h5{color:#ffffff;}
+.contenedor-recursos-curso .type_recurso{position:relative;display: block;width: 20px;height: 20px;right:0px;top:-10px;}
+.contenedor-recursos-curso .type_recurso.audio{background-position: 0px 40px;}
+.contenedor-recursos-curso .type_recurso.pdf{background-position: 20px 40px;}
+.contenedor-recursos-curso .type_recurso.imagen{background-position: 40px 40px;}
+.contenedor-recursos-curso .type_recurso.video{background-position: 60px 40px;}
+.contenedor-recursos-curso .type_recurso.interactivo{background-position: 80px 40px;}
 
 /*****************************
 PÁGINA DE SEARCH
@@ -411,6 +425,8 @@ PÁGINA DE PERFIL
 #header.perfil-h {height: 272px;}
 #header.perfil-h  .container{height: 272px;}
 
+#header.privada:after{position:absolute;width:100%;height:440px;content:'';display:block;background: url("../img/trama_iconos_cabecera@2X.png") bottom left no-repeat;top:0;left:0;background-size: cover;}
+
 
 /*****************************
 PÁGINA DE CONTACTO
@@ -511,6 +527,20 @@ PÁGINA PRIMARIA
 .cover_primaria p{font-size: 24px;color:#ffffff;line-height: 16px;position: absolute;right:0px;bottom: 56px;font-family:'source_sans_prosemibold', Helvetica, sans-serif;z-index: 51;}
 .cover_primaria:before{background: linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.5) 100%);width: 100%;height: 100%;z-index: 50;position: absolute;content:'';-webkit-transition: all 0.15s linear;-moz-transition: all 0.15s linear;-o-transition: all 0.15s linear;transition: all 0.15s linear;}
 .box_destacado.inside_pag{margin-top: 108px;border-top: 0;}
+
+
+/*****************************
+PÁGINA LIBRO
+******************************/
+.cover_pag_book{height: 400px;position: absolute;top:98px;;width: 100%;box-shadow: 20px 30px 50px 0 rgba(110,181,173,0.50);background-size:cover;box-sizing: border-box;width: calc(100% - 64px);left:0;right:0;margin: 0 auto;}
+.cover_pag_book .container{height: 400px !important;}
+.cover_pag_book h3{font-family:'peace_sansregular', Helvetica, sans-serif;font-size: 80px;line-height: 100px; color:#ffffff;position: absolute;left: 0px;bottom: 38px;z-index: 51;}
+.cover_pag_book p{font-size: 24px;color:#ffffff;line-height: 16px;position: absolute;right:0px;bottom: 56px;font-family:'source_sans_prosemibold', Helvetica, sans-serif;z-index: 51;}
+.cover_pag_book:before{background: linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.5) 100%);width: 100%;height: 100%;z-index: 50;position: absolute;content:'';-webkit-transition: all 0.15s linear;-moz-transition: all 0.15s linear;-o-transition: all 0.15s linear;transition: all 0.15s linear;}
+.box_destacado.inside_pag{margin-top: 108px;border-top: 0;}
+
+.img_book{max-width:100%;width: 268px;position: absolute;right:0px;bottom:-40px;z-index: 51;}
+
 
 /*****************************
 LIGHTBOX RECURSOS
@@ -622,6 +652,32 @@ PROPIEDADES COOKIES
 .close_c:hover{color:#ffffff;}
 .btn-accept{background:#E33C10;color:#ffffff;height:30px;display:block;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;width:140px;margin:0 auto;line-height:30px;text-align:center;margin-top:20px;}
 .btn-accept:hover{color:#ffffff;}
+
+
+/*****************************
+PROPIEDADES QUANTCAST
+******************************/
+.qc-cmp-button.qc-cmp-secondary-button { border-color: #eee !important;background-color: #eee !important;}
+.qc-cmp-persistent-link{background-color:rgba(255,84,39,0.95) !important;color:#ffffff !important;}
+.qc-cmp-ui{background-color: rgba(255,84,39,0.95) !important;}
+.qc-cmp-main-messaging,.qc-cmp-messaging,.qc-cmp-sub-title,.qc-cmp-privacy-settings-title,.qc-cmp-purpose-list,.qc-cmp-tab,.qc-cmp-title,.qc-cmp-vendor-list,.qc-cmp-vendor-list-title {color: #ffffff !important;}
+.qc-cmp-table-header{/*color: #ff5c48 !important;*/}
+.qc-cmp-table{/*color: #ff5c48 !important;*/}
+.qc-cmp-alt-action,.qc-cmp-link {/*color: #ff5c48 !important;*/}
+.qc-cmp-alt-action:hover,.qc-cmp-link:hover {/*color: #ff5c48 !important;*/}
+.qc-cmp-button,.qc-cmp-button.qc-cmp-secondary-button:hover {background-color: #ffffff !important;border-color: #ffffff !important;color:rgba(255,84,39,0.95) !important;}
+.qc-cmp-button:hover,.qc-cmp-button.qc-cmp-secondary-button {background-color: transparent !important; border-color: #ffffff !important;color:#ffffff !important;}
+.qc-cmp-horizontal-buttons .qc-cmp-secondary-button{display:none !important;}
+.qc-cmp-alt-action, .qc-cmp-alt-action:not([href]):not([tabindex]){color:#ffffff !important;}
+.qc-cmp-table-header{color:#ffffff !important;}
+.qc-cmp-table{color:#ffffff !important;border:1px solid #ffffff !important;}
+.qc-cmp-table-row:last-child{border:1px solid #ffffff !important;}
+.qc-cmp-toggle-status{color:#ffffff !important;}
+.qc-cmp-table-row{border-top:1px solid #ffffff !important;}
+.qc-cmp-back::before{background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 5l6 6 6-6'/%3E%3C/svg%3E") 50% no-repeat !important;}
+.qc-cmp-arrow-down{background:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 5l6 6 6-6'/%3E%3C/svg%3E") 50% no-repeat !important;}
+.qc-cmp-persistent-link svg g{fill:#ffffff !important;}
+.qc-cmp-close-icon{background:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M.5.5l23 23m0-23l-23 23' fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10'/%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3C/svg%3E") 50% no-repeat !important;}
 
 /*****************************
 PROPIEDADES FOOTER
@@ -861,7 +917,7 @@ MEDIA QUERIES
 	.carrusel-destacados .slick-list{padding-top:78px;padding-bottom:78px}
 	.box_recurso{max-width:224px;height: 292px;}
 	.content_recurso,.body_recurso,.over_recurso_img{height: 258px;}
-	.contenedor-recursos .item{width:33.3333%;}
+	.contenedor-recursos .item,.contenedor-recursos-curso .item{width:33.3333%;}
 
 	.box_f_newsletter{text-align:center;}
 	.box_newsletter p{display:block;text-align: center;margin-bottom: 16px;}
@@ -953,7 +1009,7 @@ MEDIA QUERIES
 	.menu_header li a{padding-bottom:8px;}
 	.menu_header li a:after{display:block;content: '';width: 10px;height: 2px;background:#103E57;position: absolute;right:-8px;margin-top: 6px;}
 	.logo_h{width: 130px;height: 38px;background-size: 130px;}
-	.contenedor-recursos .item{width:33.3333%;}
+	.contenedor-recursos .item,.contenedor-recursos-curso .item{width:33.3333%;}
 	.box_destacado h3,.box_nuevos h3{font-size:24px;line-height: 24px;}
 	.carrusel-destacados .slick-list{padding-top: 48px;padding-left: 8px;padding-bottom: 48px;padding-right: 8px;}
 	.box_nuevos > .container, .box_destacado > .container{padding-left:0;}
@@ -963,25 +1019,25 @@ MEDIA QUERIES
 
 	/*.carrusel-destacados .box_recurso{width:197px;height: 267px;margin-right: 37px;}*/
 
-	.contenedor-recursos .content_recurso,.contenedor-recursos .body_recurso,.contenedor-recursos .over_recurso_img{height: 235px;}
+	.contenedor-recursos .content_recurso,.contenedor-recursos .body_recurso,.contenedor-recursos .over_recurso_img,.contenedor-recursos-curso .content_recurso{height: 235px;}
 
-	.contenedor-recursos .box_recurso{max-width:140px;height: 177px;padding:8px;}
+	.contenedor-recursos .box_recurso,.contenedor-recursos-curso .box_recurso{max-width:140px;height: 177px;padding:8px;}
 
-	.contenedor-recursos .content_recurso,.contenedor-recursos .body_recurso,.contenedor-recursos .over_recurso_img{height: 161px;}
+	.contenedor-recursos .content_recurso,.contenedor-recursos-curso .content_recurso,.contenedor-recursos .body_recurso,.contenedor-recursos .over_recurso_img{height: 161px;}
 
-	.contenedor-recursos .info_recurso h4{font-size:8px;}
-	.contenedor-recursos .info_recurso h5{font-size:12px;line-height: 16px;}
-	.contenedor-recursos .info_recurso{padding:8px;}
-	.contenedor-recursos .cat_recurso{font-size:8px;left: 8px;top:4px;}
-	.contenedor-recursos .type_recurso{right:8px;top:8px;}
+	.contenedor-recursos .info_recurso h4,.contenedor-recursos-curso .info_recurso h4,.contenedor-recursos-curso .info_recurso h4{font-size:8px;}
+	.contenedor-recursos .info_recurso h5,.contenedor-recursos-curso .info_recurso h5,.contenedor-recursos-curso .info_recurso h5{font-size:12px;line-height: 16px;}
+	.contenedor-recursos .info_recurso,.contenedor-recursos-curso .info_recurso,.contenedor-recursos-curso .info_recurso{padding:8px;}
+	.contenedor-recursos .cat_recurso,.contenedor-recursos-curso .cat_recurso,.contenedor-recursos-curso .cat_recurso{font-size:8px;left: 8px;top:4px;}
+	.contenedor-recursos .type_recurso,.contenedor-recursos-curso .type_recurso,.contenedor-recursos-curso .type_recurso{right:8px;top:8px;}
 
-	.contenedor-recursos .type_recurso{width: 16px;height: 16px;background-size:80px; }
+	.contenedor-recursos .type_recurso,.contenedor-recursos-curso .type_recurso{width: 16px;height: 16px;background-size:80px; }
 
-	.contenedor-recursos .type_recurso.audio{background-position: 0px 0px;}
-	.contenedor-recursos .type_recurso.pdf{background-position: 16px 0px;}
-	.contenedor-recursos .type_recurso.imagen{background-position: 32px 0px;}
-	.contenedor-recursos .type_recurso.video{background-position: 48px 0px;}
-	.contenedor-recursos .type_recurso.interactivo{background-position: 64px 0px;}
+	.contenedor-recursos .type_recurso.audio,.contenedor-recursos-curso .type_recurso.audio{background-position: 0px 0px;}
+	.contenedor-recursos .type_recurso.pdf,.contenedor-recursos-curso .type_recurso.pdf{background-position: 16px 0px;}
+	.contenedor-recursos .type_recurso.imagen,.contenedor-recursos-curso .type_recurso.imagen{background-position: 32px 0px;}
+	.contenedor-recursos .type_recurso.video,.contenedor-recursos-curso .type_recurso.video{background-position: 48px 0px;}
+	.contenedor-recursos .type_recurso.interactivo,.contenedor-recursos-curso .type_recurso.interactivo{background-position: 64px 0px;}
 
 	.contenedor-recursos .w_recurso .type_recurso.audio{background-position: 0px 0px;}
 	.contenedor-recursos .w_recurso .type_recurso.pdf{background-position: 16px 0px;}
@@ -991,7 +1047,7 @@ MEDIA QUERIES
 
 
 
-	.contenedor-recursos{padding-left:8px;padding-right:8px;padding-top: 98px;}
+	.contenedor-recursos,.contenedor-recursos-curso{padding-left:8px;padding-right:8px;padding-top: 98px;}
 
 	.banner_recursos p{font-size:16px;line-height: 22px;}
 	.row-h-form{display:block;margin-bottom: 16px;}
@@ -1077,7 +1133,7 @@ MEDIA QUERIES
 }
 
 @media screen and (max-width: 640px) {
-	.contenedor-recursos .item{width:50%;}
+	.contenedor-recursos .item,.contenedor-recursos-curso .item{width:50%;}
 
 	.logo_interior {width: 167px !important; height: 42px !important;background-size: 167px !important;position: absolute !important;top: 55px !important;bottom: auto !important; right: auto !important;left: 8px !important;}
 	.cover_infantil h3{font-size:60px;left: 16px;}

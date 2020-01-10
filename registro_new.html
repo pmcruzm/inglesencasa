@@ -43,7 +43,7 @@
 			<a class="btn_acceso" href="registro.html">ACCESO</a>
         	<div class="container">
                <h1><a href="index.html">Inglés en casa</a></h1>
-               <h2>Recursos de Inglés para la conexión <span>escuela/hogar</span></h2>
+               <h2 class="titel_2">Accede a los <span>recursos exclusivos</span> para tu curso</h2>
             </div>
         </div>
         <div id="content">
@@ -84,12 +84,12 @@
 													<option value="3">Centro 3</option>
 												</select>
 										</div>
-										<a href="#">¿No encuentras el nombre del centro?</a>
+										<a href="#">¿No encuentras tu centro?</a>
 									</div>
 								</div>
 							</div>	
 							<div class="form-group half-group clear date-row no-line">
-								<p>FECHA DE NACIMIENTO <span>*</span></p>
+								<p>FECHA DE NACIMIENTO ALUMNO <span>*</span></p>
 								<div class="cover_dates">
 									<div class="row_day">
 										<select id="dia_fecha" name="dia_fecha" class="form-control" data-validation-rule="select-option">
@@ -267,6 +267,20 @@
 								</div>	
 							</div>
 							<br class="clear"/>
+							<div class="form-group half-group date-row no-line">
+								<div class="form-group select-row">
+									<label class="control-label required" for="curso">CURSO ESCOLAR <span>*</span></label><br/>
+									<div class="bg-select">
+										<select id="curso" name="curso" class="form-control" data-validation-rule="select-option">
+											<option value="" selected="selected">Selecciona el curso escolar</option>
+											<option value="1">Curso 1</option>
+											<option value="2">Curso 2</option>
+											<option value="3">Curso 3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<br class="clear"/>
 							<div class="cover-half">
 								<div class="form-group half-group">
 									<label class="control-label required" data-text="NOMBRE" data-text14="NOMBRE PADRE/MADRE/TUTOR" for="nombre">NOMBRE <span>*</span></label><br/>
@@ -314,26 +328,6 @@
 					</div>
 				</div>
 			</div>
-			<!--<div class="box_newsletter">
-				<div class="container">
-					<p>Recibe en tu correo los últimos recursos</p>
-					<div class="box_f_newsletter">
-						<form id="form_home" action="#" method="post" data-validate="true" novalidate data-error-msg="Ha habido un error, por favor revisa los campos resaltados">
-							<div class="row-h-form">
-								<label for="nombre"></label>
-								<input type="text" placeholder="Nombre y Apellidos" name="nombre" id="nombre" data-validation-rule="not-empty">
-							</div>
-							<div class="row-h-form">
-								<label for="email"></label>
-								<input type="text" placeholder="e-mail" name="email" id="email" autocorrect="off" data-validation-rule="email" data-error-msg="El email no es válido">
-							</div>
-							<div class="row-h-form">
-								<input type="submit" value="ENVIAR">
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>-->
         </div>
       	<div id="footer">
         	<div class="container">
@@ -383,16 +377,6 @@
 				</div>
             </div>
         </div>
-        <!--Bloque Cookies-->
-        <div class="block-cookies">
-        	<div class="container">
-                <h2>Política de Cookies</h2>
-                <p>Utilizamos cookies propias y de terceros para ofrecerte una mejor experiencia y servicio, de acuerdo a tus hábitos de navegación. Si continúas navegando, consideramos que aceptas su uso. Puedes obtener más información en nuestra <a target="_blank" href="#" title="Política de Cookies">Política de Cookies.</a></p>
-                <a href="#" class="btn-accept">Ok</a>
-                <a href="#" title="" class="close_c"></a>
-            </div>
-        </div>
-        <!--Fin Cookies-->
 		<!--Bloque Lightbox Recursos-->
 		<div class="light_box_recursos" style="display:none;">
 			<div class="container_pop resource-content"></div>
