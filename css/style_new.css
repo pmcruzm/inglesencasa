@@ -76,8 +76,8 @@ PROPIEDADES HEADER
 /*#header .container{min-width:auto !important;max-width:100%;box-sizing:border-box;padding-left:30px;padding-right:30px;position:relative;height:90px;}*/
 .logo_h{display:block;background:url(../svg/cambridge_header.svg) center center no-repeat;height:48px;width:168px;background-size:168px;text-indent:-99999px;position:absolute;top:0;left: 0;z-index: 10;}
 
-#header h1{display: block;width: 363px;height: 139px;background: url(../svg/inglesencasa_vertical.svg) top left no-repeat;text-indent: -99999px;position: absolute;/*left: 10px;*/bottom: 165px;}
-#header h2{font-size: 30px;color:#103E57;max-width: 475px;position: absolute;/*left: 10px;*/bottom: 78px;line-height: 36px;}
+#header h1{display: block;width: 363px;height: 139px;background: url(../svg/inglesencasa_vertical.svg) top left no-repeat;text-indent: -99999px;position: absolute;/*left: 10px;*/bottom: 165px;z-index: 1;}
+#header h2{font-size: 30px;color:#103E57;max-width: 475px;position: absolute;/*left: 10px;*/bottom: 78px;line-height: 36px;z-index: 1;}
 #header h2 span{font-weight: bold;font-style:italic;}
 #header h1 a {display: block; position: absolute; width: 100%; height: 100%;}
 #header h2.titel_2{max-width:430px;}
@@ -126,8 +126,9 @@ PROPIEDADES HOME
 .box_recurso.over{}
 
 .box_recurso.privado{padding: 0px;box-shadow:none;background: none;}
-.box_recurso.privado .body_recurso{border-radius: 0px;box-shadow: 20px 30px 50px 0 rgba(110,181,173,0.50);}
-.titel_rec_privado{text-align: center;color:#103E57;font-size: 14px;padding-top:10px;}
+.box_recurso.privado .body_recurso{border-radius: 0px;}
+.box_recurso.privado .body_recurso img{max-width: 100%;box-shadow: 20px 30px 50px 0 rgba(110,181,173,0.50);position: absolute;bottom: 0;}
+.titel_rec_privado{text-align: center;color:#103E57;font-size: 14px;padding-top:10px;font-family: 'museosanscyrl', Helvetica, sans-serif;}
 
 /*.slick-slide .box_recurso{float:left;}*/
 
@@ -291,14 +292,21 @@ PROPIEDADES HOME
 #form_home input[type=submit]:hover{opacity: 0.9;}
 .row-h-form{display: inline-block;}
 
+
+
 .contenedor-recursos-curso{padding-bottom:68px;}
+.contenedor-recursos-curso .box_recurso.over .over_recurso_img{opacity:1 !important;}
+.contenedor-recursos-curso .box_recurso.over .info_recurso h4{opacity:1 !important;}
+.contenedor-recursos-curso .box_recurso.over .info_recurso h5{opacity:1 !important;}
+.contenedor-recursos-curso .box_recurso.over .info_recurso{opacity:1 !important;}
+.contenedor-recursos-curso .box_recurso.over .type_recurso{opacity:1 !important;}
 .contenedor-recursos-curso .info_recurso h5{color:#ffffff;}
-.contenedor-recursos-curso .type_recurso{position:relative;display: block;width: 20px;height: 20px;right:0px;top:-10px;}
-.contenedor-recursos-curso .type_recurso.audio{background-position: 0px 40px;}
-.contenedor-recursos-curso .type_recurso.pdf{background-position: 20px 40px;}
-.contenedor-recursos-curso .type_recurso.imagen{background-position: 40px 40px;}
-.contenedor-recursos-curso .type_recurso.video{background-position: 60px 40px;}
-.contenedor-recursos-curso .type_recurso.interactivo{background-position: 80px 40px;}
+.contenedor-recursos-curso .type_recurso{position:relative;display: block;width: 30px;height: 30px;right:0px;top:-10px;background-size:150px;}
+.contenedor-recursos-curso .type_recurso.audio{background-position: 0px 60px;}
+.contenedor-recursos-curso .type_recurso.pdf{background-position: 30px 60px;}
+.contenedor-recursos-curso .type_recurso.imagen{background-position: 60px 60px;}
+.contenedor-recursos-curso .type_recurso.video{background-position: 90px 60px;}
+.contenedor-recursos-curso .type_recurso.interactivo{background-position: 120px 60px;}
 
 /*****************************
 PÁGINA DE SEARCH
@@ -536,7 +544,7 @@ PÁGINA LIBRO
 .cover_pag_book .container{height: 400px !important;}
 .cover_pag_book h3{font-family:'peace_sansregular', Helvetica, sans-serif;font-size: 80px;line-height: 100px; color:#ffffff;position: absolute;left: 0px;bottom: 38px;z-index: 51;}
 .cover_pag_book p{font-size: 24px;color:#ffffff;line-height: 16px;position: absolute;right:0px;bottom: 56px;font-family:'source_sans_prosemibold', Helvetica, sans-serif;z-index: 51;}
-.cover_pag_book:before{background: linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.5) 100%);width: 100%;height: 100%;z-index: 50;position: absolute;content:'';-webkit-transition: all 0.15s linear;-moz-transition: all 0.15s linear;-o-transition: all 0.15s linear;transition: all 0.15s linear;}
+.cover_pag_book:before{/*background: linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.5) 100%);*/width: 100%;height: 100%;z-index: 50;position: absolute;content:'';-webkit-transition: all 0.15s linear;-moz-transition: all 0.15s linear;-o-transition: all 0.15s linear;transition: all 0.15s linear;background: url(../img/iconos_cabecera.png) center center no-repeat;background-size: cover;}
 .box_destacado.inside_pag{margin-top: 108px;border-top: 0;}
 
 .img_book{max-width:100%;width: 268px;position: absolute;right:0px;bottom:-40px;z-index: 51;}
