@@ -347,7 +347,7 @@ PÁGINA DE REGISTRO
 
 #form_registro{}
 #form_registro .form-group{position: relative;}
-#form_registro label{color:#103E57;font-size: 12px;text-transform: uppercase;letter-spacing: 1px;}
+#form_registro label{color:#103E57;font-size: 12px;text-transform: uppercase;letter-spacing: 1px;font-family: 'source_sans_prosemibold', Helvetica, sans-serif;}
 #form_registro label span{color:#FF6B47;}
 #form_registro input[type=text],#form_registro input[type=email],#form_registro input[type=password]{border:1px solid #ffffff;max-width: 368px;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;font-size: 12px;color:#103E57;margin-bottom: 38px;width: 100%;position: relative;}
 #form_registro input[type=text].error,#form_registro input[type=email].error,#form_registro input[type=password].error{border:1px solid #ff0000 !important;}
@@ -372,7 +372,7 @@ PÁGINA DE REGISTRO
 .pop_tooltip:after{content:'';display: block;background: url(../img/Point@2X.png) center bottom no-repeat;height:6px;background-size: 12px;width: 100%;position:absolute;bottom:-6px;left:2px;}
 
 .date-row{margin-bottom: 38px;}
-.date-row p{color:#103E57;font-size: 12px;text-transform: uppercase;letter-spacing: 1px;}
+.date-row p{color:#103E57;font-size: 12px;text-transform: uppercase;letter-spacing: 1px;font-family: 'source_sans_prosemibold', Helvetica, sans-serif;}
 .date-row p span{color:#FF6B47;}
 .cover_dates{overflow:hidden;}
 .row_day,.row_month,.row_year{float:left;box-sizing: border-box;}
@@ -392,7 +392,7 @@ PÁGINA DE PERFIL
 
 .block_perfil form{}
 .block_perfil form .form-group{position: relative;}
-.block_perfil form label{color:#103E57;font-size: 12px;text-transform: uppercase;letter-spacing: 1px;}
+.block_perfil form label{color:#103E57;font-size: 12px;text-transform: uppercase;letter-spacing: 1px;font-family: 'source_sans_prosemibold', Helvetica, sans-serif;}
 .block_perfil form label span{color:#FF6B47;}
 .block_perfil form input[type=text],.block_perfil form input[type=email],.block_perfil form input[type=password]{border:1px solid #ffffff;max-width: 368px;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;font-size: 12px;color:#103E57;margin-bottom: 38px;width: 100%;position: relative;}
 .block_perfil form input[type=text]:disabled,.block_perfil form input[type=email]:disabled,.block_perfil form input[type=password]:disabled{border:1px solid #ffffff;max-width: 368px;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;font-size: 12px;color:#103E57;margin-bottom: 38px;width: 100%;position: relative;background:#ffffff;opacity:0.5;}
@@ -443,7 +443,7 @@ PÁGINA DE CONTACTO
 .block_contacto .container{max-width: 768px;width: 90%;}
 .block_contacto h4{color:#103E57;font-size:22px;line-height:32px;margin-bottom: 32px;}
 #form_contacto{}
-#form_contacto label{color:#103E57;font-size: 12px;text-transform: uppercase;letter-spacing: 1px;}
+#form_contacto label{color:#103E57;font-size: 12px;text-transform: uppercase;letter-spacing: 1px;font-family: 'source_sans_prosemibold', Helvetica, sans-serif;}
 #form_contacto input[type=text],#form_contacto input[type=email]{border:1px solid #ffffff;max-width: 368px;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;font-size: 12px;color:#103E57;margin-bottom: 38px;width: 100%;position: relative;}
 #form_contacto input[type=text].error,#form_contacto input[type=email].error{border:1px solid #ff0000 !important;}
 #form_contacto input[type=submit]{display: inline-block;vertical-align: middle;width: 118px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 1px;}
@@ -459,7 +459,7 @@ PÁGINA DE CONTACTO
 #form_contacto .textarea-row{position:relative;}
 .cover-half .half-group:nth-child(even) {padding-right:0px !important;padding-left:16px;}
 
-.bg-select{background:#103E57 url(../svg/arrow_down.svg) 95% 50% no-repeat;display:block;width:100%;float:left;overflow:hidden;height:40px;}
+.bg-select{background:#103E57 url(../svg/arrow_down.svg) 95% 50% no-repeat;display:block;width:100%;float:left;overflow:hidden;height:40px;background-size: 25px;}
 .bg-select > select{background:none;color:#ffffff;width:110%;height:40px;line-height:40px;padding-right:17%;box-sizing:border-box;font-size:14px;border:none;-webkit-appearance:none;cursor:pointer;padding-left:10px;}
 .bg-select > select.right-t{text-align:right;}
 .bg-select > select option{text-align:left;background:#103E57;}
