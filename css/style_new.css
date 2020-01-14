@@ -666,14 +666,14 @@ PROPIEDADES COOKIES
 PROPIEDADES QUANTCAST
 ******************************/
 .qc-cmp-button.qc-cmp-secondary-button { border-color: #eee !important;background-color: #eee !important;}
-.qc-cmp-persistent-link{background-color:rgba(255,84,39,0.95) !important;color:#ffffff !important;}
-.qc-cmp-ui{background-color: rgba(255,84,39,0.95) !important;}
+.qc-cmp-persistent-link{background-color:rgba(255, 255, 255,0.95) !important;color:#ffffff !important;}
+.qc-cmp-ui{background-color: rgba(255, 255, 255,0.95) !important;}
 .qc-cmp-main-messaging,.qc-cmp-messaging,.qc-cmp-sub-title,.qc-cmp-privacy-settings-title,.qc-cmp-purpose-list,.qc-cmp-tab,.qc-cmp-title,.qc-cmp-vendor-list,.qc-cmp-vendor-list-title {color: #ffffff !important;}
 .qc-cmp-table-header{/*color: #ff5c48 !important;*/}
 .qc-cmp-table{/*color: #ff5c48 !important;*/}
 .qc-cmp-alt-action,.qc-cmp-link {/*color: #ff5c48 !important;*/}
 .qc-cmp-alt-action:hover,.qc-cmp-link:hover {/*color: #ff5c48 !important;*/}
-.qc-cmp-button,.qc-cmp-button.qc-cmp-secondary-button:hover {background-color: #ffffff !important;border-color: #ffffff !important;color:rgba(255,84,39,0.95) !important;}
+.qc-cmp-button,.qc-cmp-button.qc-cmp-secondary-button:hover {background-color: #ffffff !important;border-color: #ffffff !important;color:rgba(255, 255, 255,0.95) !important;}
 .qc-cmp-button:hover,.qc-cmp-button.qc-cmp-secondary-button {background-color: transparent !important; border-color: #ffffff !important;color:#ffffff !important;}
 .qc-cmp-horizontal-buttons .qc-cmp-secondary-button{display:none !important;}
 .qc-cmp-alt-action, .qc-cmp-alt-action:not([href]):not([tabindex]){color:#ffffff !important;}
