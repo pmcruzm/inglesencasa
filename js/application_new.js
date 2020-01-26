@@ -56,7 +56,7 @@ jQuery(document).on('ready',function(){
 		if (jQuery('.pdf_recurso').is(":visible") ) {
 			calc_iframe_height('pdf');
 		}else{
-			calc_iframe_height('interactivo');	
+			calc_iframe_height('interactivo');
 		}
 	}
 
@@ -192,7 +192,7 @@ jQuery(document).on('ready',function(){
 			jQuery(this).removeClass('over');
 		}
 	});
-	
+
 	//Tooltip de registro
 	jQuery(document).on("mouseenter",".box_tooltip .icon", function(e) {
 		e.preventDefault();
@@ -201,7 +201,7 @@ jQuery(document).on('ready',function(){
 		e.preventDefault();
 		jQuery(this).parent().find('.pop_tooltip').fadeOut(400);
 	});
-	
+
 
 	//Galería de recursos
 	if (jQuery('.carrusel_recursos').is(":visible") ) {
@@ -246,7 +246,7 @@ jQuery(document).on('ready',function(){
 	});
 
 	//Cuando pulsamos sobre un recurso
-	jQuery(document).on('click','a.box_recurso',function(event){
+	jQuery(document).on('click','a.box_recurso[data-type]',function(event){
 		event.preventDefault();
 		load_recurso( jQuery(this).data('modal') || jQuery(this).attr('href') );
 	});
@@ -279,7 +279,7 @@ jQuery(document).on('ready',function(){
 		e.preventDefault();
 		load_recurso( jQuery(this).data('modal') || jQuery(this).attr('href') );
 	});*/
-	
+
 
 
 	//Evento para capturar el resize de la ventana
@@ -297,7 +297,7 @@ jQuery(document).on('ready',function(){
 			if (jQuery('.pdf_recurso').is(":visible") ) {
 				calc_iframe_height('pdf');
 			}else{
-				calc_iframe_height('interactivo');	
+				calc_iframe_height('interactivo');
 			}
 		}
 
