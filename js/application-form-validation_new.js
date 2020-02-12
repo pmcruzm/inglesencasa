@@ -17,7 +17,7 @@ jQuery(window).on('load',function(){
 
 });
 
-jQuery(document).on('ready',function(){
+jQuery(document).on('ready',function($){
 	//console.log('validation');
 
 	//Eliminar marco de error cuando se hace click sobre un input con error
@@ -44,13 +44,13 @@ jQuery(document).on('ready',function(){
 				jQuery(this).parents('.form-group').find('input[type=checkbox]').removeClass('error');
 			}
 	});
-	
+
 	//Detectar cambios en select registro fecha
 	jQuery(document).on('change','form .date-row select',function(event){
 		event.preventDefault();
-		var d_fecha=jQuery("#dia_fecha").val();
-		var m_fecha=jQuery("#mes_fecha").val();
-		var y_fecha=jQuery("#ano_fecha").val();
+		var d_fecha=jQuery("#birth_day").val();
+		var m_fecha=jQuery("#birth_month").val();
+		var y_fecha=jQuery("#birth_year").val();
 		//Comprobar bisiestos y meses de 30 y 31 días
 		//Pendiente
 		if(d_fecha!="" && m_fecha!="" && y_fecha!="" ){
@@ -62,22 +62,28 @@ jQuery(document).on('ready',function(){
 			if(aux<14){
 				isUnder14 = true;
 			}else{
-				isUnder14 = false;	
+				isUnder14 = false;
 			}
 			jQuery('#form_registro label[data-text]').each(function(){
 				var labelKey = isUnder14 ? 'text14' : 'text';
 				jQuery(this).text( jQuery(this).data(labelKey) );
-			});	
+			});
 		}
-		
+
 	});
 
 
 	//Validación de formularios de contacto
 	jQuery('form[data-validate="true"]').on('submit', function(event){
-		if( ! validateForm.validate(event) ) {
+
+		var form = jQuery(event.target);
+
+		if( validateForm.validate(event) ) {
+			jQuery('input[type="submit"]', form).prop("disabled", true);
+		} else {
 			event.preventDefault();
 		}
+
 	});
 
 });

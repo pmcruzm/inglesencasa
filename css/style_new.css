@@ -92,7 +92,7 @@ PROPIEDADES HEADER
 .menu_header li:last-child a.over:before{width:100%;}
 .menu_header li.active:last-child a:before{width:100%;}
 
-.btn_acceso{position:absolute;right:32px;top:16px;display: inline-block;color:#103E57;font-family: 'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 1px;border:2px solid #103E57;border-radius: 20px;width: 113px;height: 36px;line-height: 36px;text-align: center;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;z-index: 50;}
+.btn_acceso{position:absolute;right:32px;top:16px;display: inline-block;color:#103E57;font-family: 'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 2px;border:2px solid #103E57;border-radius: 20px;width: 113px;height: 36px;line-height: 36px;text-align: center;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;z-index: 50;}
 
 .btn_acceso:hover{color:#ffffff;background:#103E57;}
 
@@ -224,6 +224,7 @@ PROPIEDADES HOME
 .box_submit_s{position: absolute;width: 40px;height: 40px;right: 0;top:0;}
 .box_submit_s input[type=submit]{border: none;-webkit-appearance: none;display:inline-block;width: 40px;height: 40px;background: url(../svg/sprite_search_lupa.svg) 0px -40px no-repeat;text-indent: -99999px;cursor: pointer;}
 .box_submit_s input[type=submit]:hover{opacity: 0.9;}
+.box_submit_s input[type=submit]:disabled{opacity: 0.5;cursor: default;}
 .box_input_s{position: absolute;width: 40px;height: 40px;right:56px;top:0;max-width: 540px;width: 100%;}
 .box_input_s input[type=text]{width: 100%;border: none;height: 40px;line-height: 40px;border-bottom:2px solid rgba(148,227,223,0.5) ;font-size: 16px;box-sizing: border-box;padding-left: 10px;padding-right: 10px;color:#4A4A4A;font-family:'source_sans_proregular', Helvetica, sans-serif;}
 .close_search{display: block;width: 32px;height: 32px;background: url(../svg/close.svg) top left no-repeat;text-indent:-99999px;position: absolute;left: -32px;bottom:-5px;cursor: pointer;}
@@ -263,7 +264,7 @@ PROPIEDADES HOME
 .over_filtros label.active span.audio:before{background-position: 0px -60px;}
 
 .box_clear_filtros{display:none;position:absolute;top:-66px;right: 0;}
-.box_clear_filtros p{color:#55BFC0;font-size: 10px !important;line-height: 32px;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 1px;position: relative;}
+.box_clear_filtros p{color:#55BFC0;font-size: 10px !important;line-height: 32px;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 2px;position: relative;}
 .box_clear_filtros a{font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 10px;color: #94E3DF;letter-spacing: 1px;line-height: 30px;width: 142px;text-align: center;border:2px solid #94E3DF;border-radius: 20px;display:inline-block;vertical-align: middle;height: 30px;margin-left: 16px;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;}
 .box_clear_filtros a span{display:inline-block;line-height:32px;position: relative;margin-left: -22px;}
 .box_clear_filtros a span:after{display: inline-block;width: 16px;height: 16px;vertical-align: middle;background-image: url(../svg/sprite_crosscircle_btn-quitarfiltros.svg);background-position: 0px 0px;background-repeat: no-repeat;content:'';margin-left: 8px;position: absolute;top:50%;margin-top: -9px;}
@@ -288,8 +289,9 @@ PROPIEDADES HOME
 #form_home label{display: none;}
 #form_home input[type=text],#form_home input[type=email]{border:1px solid #ffffff;width: 238px;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;margin-right: 8px;font-size: 12px;color:#103E57;}
 #form_home input[type=text].error,#form_home input[type=email].error{border:1px solid #ff0000 !important;}
-#form_home input[type=submit]{display: inline-block;vertical-align: middle;width: 118px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;margin-left: 10px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 1px;}
+#form_home input[type=submit]{display: inline-block;vertical-align: middle;padding:0 15px;min-width: 100px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;margin-left: 10px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 2px;}
 #form_home input[type=submit]:hover{opacity: 0.9;}
+#form_home input[type=submit]:disabled{opacity: 0.5;cursor: default;}
 .row-h-form{display: inline-block;}
 
 
@@ -333,8 +335,9 @@ PÁGINA DE LOGIN
 #form_login label{display: none;}
 #form_login input[type=text],#form_login input[type=password],#form_login input[type=email]{border:1px solid #ffffff;max-width: 368px;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;margin-right: 8px;font-size: 12px;color:#103E57;margin-bottom: 38px;width: 100%;}
 #form_login input[type=text].error,#form_login input[type=password].error,#form_login input[type=email].error{border:1px solid #ff0000 !important;}
-#form_login input[type=submit]{display: inline-block;vertical-align: middle;width: 118px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 1px;}
+#form_login input[type=submit]{display: inline-block;vertical-align: middle;padding:0 15px;min-width: 100px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 2px;}
 #form_login input[type=submit]:hover{opacity: 0.9;}
+#form_login input[type=submit]:disabled{opacity: 0.5;cursor: default;}
 .txt_recordar{width:100%;max-width:368px;text-align: right;margin-top:-20px;}
 .txt_recordar a{font-size: 14px;}
 .errores{font-size:15px;color:red;padding-top:35px;padding-bottom:35px;}
@@ -351,8 +354,9 @@ PÁGINA DE REGISTRO
 #form_registro label span{color:#FF6B47;}
 #form_registro input[type=text],#form_registro input[type=email],#form_registro input[type=password]{border:1px solid #ffffff;max-width: 368px;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;font-size: 12px;color:#103E57;margin-bottom: 38px;width: 100%;position: relative;}
 #form_registro input[type=text].error,#form_registro input[type=email].error,#form_registro input[type=password].error{border:1px solid #ff0000 !important;}
-#form_registro input[type=submit]{display: inline-block;vertical-align: middle;width: 118px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 1px;}
+#form_registro input[type=submit]{display: inline-block;vertical-align: middle;padding:0 15px;min-width: 100px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 2px;}
 #form_registro input[type=submit]:hover{opacity: 0.9;}
+#form_registro input[type=submit]:disabled{opacity: 0.5;cursor: default;}
 #form_registro .half-group{float:left;width: 50%;position: relative;box-sizing: border-box;padding-right: 16px;}
 #form_registro .half-group:after{content:'';display:block;height:2px;background:rgba(148,227,223,0.5);width: calc(100% - 16px);position: absolute;bottom:36px;}
 #form_registro .half-group.no-line:after{display: none;}
@@ -397,8 +401,9 @@ PÁGINA DE PERFIL
 .block_perfil form input[type=text],.block_perfil form input[type=email],.block_perfil form input[type=password]{border:1px solid #ffffff;max-width: 368px;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;font-size: 12px;color:#103E57;margin-bottom: 38px;width: 100%;position: relative;}
 .block_perfil form input[type=text]:disabled,.block_perfil form input[type=email]:disabled,.block_perfil form input[type=password]:disabled{border:1px solid #ffffff;max-width: 368px;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;font-size: 12px;color:#103E57;margin-bottom: 38px;width: 100%;position: relative;background:#ffffff;opacity:0.5;}
 .block_perfil form input[type=text].error,.block_perfil form input[type=email].error,.block_perfil form input[type=password].error{border:1px solid #ff0000 !important;}
-.block_perfil form input[type=submit]{display: inline-block;vertical-align: middle;width: 118px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 1px;}
+.block_perfil form input[type=submit]{display: inline-block;vertical-align: middle;padding:0 15px;min-width: 100px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 2px;}
 .block_perfil form input[type=submit]:hover{opacity: 0.9;}
+.block_perfil form input[type=submit]:disabled{opacity: 0.5;cursor: default;}
 .block_perfil form .half-group{float:left;width: 50%;position: relative;box-sizing: border-box;padding-right: 16px;}
 .block_perfil form .half-group:after{content:'';display:block;height:2px;background:rgba(148,227,223,0.5);width: calc(100% - 16px);position: absolute;bottom:36px;}
 .block_perfil form .half-group.no-line:after{display: none;}
@@ -446,8 +451,9 @@ PÁGINA DE CONTACTO
 #form_contacto label{color:#103E57;font-size: 12px;text-transform: uppercase;letter-spacing: 1px;font-family: 'source_sans_prosemibold', Helvetica, sans-serif;}
 #form_contacto input[type=text],#form_contacto input[type=email]{border:1px solid #ffffff;max-width: 368px;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;font-size: 12px;color:#103E57;margin-bottom: 38px;width: 100%;position: relative;}
 #form_contacto input[type=text].error,#form_contacto input[type=email].error{border:1px solid #ff0000 !important;}
-#form_contacto input[type=submit]{display: inline-block;vertical-align: middle;width: 118px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 1px;}
+#form_contacto input[type=submit]{display: inline-block;vertical-align: middle;padding:0 15px;min-width: 100px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 2px;}
 #form_contacto input[type=submit]:hover{opacity: 0.9;}
+#form_contacto input[type=submit]:disabled{opacity: 0.5;cursor: default;}
 #form_contacto .half-group{float:left;width: 50%;position: relative;box-sizing: border-box;padding-right: 16px;}
 #form_contacto .half-group:after{content:'';display:block;height:2px;background:rgba(148,227,223,0.5);width: calc(100% - 16px);position: absolute;bottom:36px;}
 #form_contacto .select-row:after{content:'';display:block;height:2px;background:rgba(148,227,223,0.5);width: 100%;position: absolute;bottom:-42px;}
@@ -502,8 +508,9 @@ PÁGINA DE NEWSLETTER
 #form_newsletter label{display: none;}
 #form_newsletter input[type=text],#form_home input[type=email]{border:1px solid #ffffff;width: 238px;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;margin-right: 8px;font-size: 12px;color:#103E57;}
 #form_newsletter input[type=text].error,#form_home input[type=email].error{border:1px solid #ff0000;}
-#form_newsletter input[type=submit]{display: inline-block;vertical-align: middle;width: 118px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 30px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 1px;margin-top: 16px;}
+#form_newsletter input[type=submit]{display: inline-block;vertical-align: middle;padding:0 15px;min-width: 100px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 30px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 2px;margin-top: 16px;}
 #form_newsletter input[type=submit]:hover{opacity: 0.9;}
+#form_newsletter input[type=submit]:disabled{opacity: 0.5;cursor: default;}
 
 /*****************************
 PÁGINA SINGLE RECURSO
@@ -896,7 +903,7 @@ MEDIA QUERIES
 	.cover_primaria p{right: 32px;}
 
 	.block_nosotros .left_nosotros{padding-left:32px;}
-	
+
 	.box-img-header{right: -30px;}
 
 }
@@ -950,7 +957,7 @@ MEDIA QUERIES
 	.colum_logo_footer{width:33%;}
 
 	.block_nosotros .right_nosotros img{margin-top: -30%;}
-	
+
 	.btn_acceso{right:24px;}
 	.menu_header{right:161;}
 
@@ -1106,10 +1113,10 @@ MEDIA QUERIES
 	.block_nosotros .left_nosotros{padding-left:16px;width: 100%;padding-right: 16px;}
 	.block_nosotros .left_nosotros p{width: 100%}
 	.block_nosotros .right_nosotros{display: none;}
-	
+
 	.opc_nivel{overflow:hidden;max-width: 100%;float: inherit;width: 100%;}
     .opc_nivel .box_n_infantil{float:inherit !important;}
-	
+
 	.box-img-header{display:none;}
 	.menu_header{right:21px;}
 	.btn_acceso{top: 124px;border: none;width: auto;right: 21px;height: auto;line-height: 24px;}
@@ -1117,13 +1124,13 @@ MEDIA QUERIES
 	.btn_acceso:hover:before{content:'';display: block;height: 3px;background:#FF6B47;width: 100%;position: absolute;bottom: -3px;}
 	.btn_registrate.home{font-size:12px;height:40px;line-height:40px;}
 	.menu_header li:last-child a:after{display: block;}
-	
+
 	/*
 	.menu_header li{display:block;text-align: right;}
 	.menu_header li a{padding-bottom:8px;}
 	.menu_header li a:after{display:block;content: '';width: 10px;height: 2px;background:#103E57;position: absolute;right:-8px;margin-top: 6px;}
 	*/
-	
+
 	/*
 	.menu_header{position:absolute;right:169px;top:23px;padding:0;margin: 0;z-index: 10;}
 .menu_header li{display: inline-block;}
@@ -1150,12 +1157,12 @@ MEDIA QUERIES
 	.cover_primaria h3{font-size:60px;left: 16px;}
 	.cover_primaria p{font-size:16px;left: 16px;bottom:36px;}
 	.block_nosotros{padding-bottom:50px;}
-	
+
 	/*#header h1{width: 256px;height: 87px;background-size: 216px;left:0;right:0;margin: 0 auto;bottom: auto;top:118px;}*/
     .logo_interior{width:200px !important;height: 27px !important;background-size:200px !important;}
 	#header h1{left:10px;}
 	#header h2{left:10px;}
-	
+
 	#form_contacto .half-group{float:inherit;width: 100%;}
 	#form_contacto .half-group{padding-left:0px !important;padding-right:0px !important}
 	#form_contacto input[type="text"], #form_contacto input[type="email"]{max-width:100%;}
