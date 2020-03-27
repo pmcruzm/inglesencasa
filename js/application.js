@@ -56,7 +56,7 @@ jQuery(document).on('ready',function(){
 		if (jQuery('.pdf_recurso').is(":visible") ) {
 			calc_iframe_height('pdf');
 		}else{
-			calc_iframe_height('interactivo');	
+			calc_iframe_height('interactivo');
 		}
 	}
 
@@ -237,9 +237,9 @@ jQuery(document).on('ready',function(){
 	});
 
 	//Cuando pulsamos sobre un recurso
-	jQuery(document).on('click','a.box_recurso',function(event){
+	jQuery(document).on('click','a.box_recurso[data-type]',function(event){
 		event.preventDefault();
-		load_recurso( jQuery(this).data('modal') || jQuery(this).attr('href') );
+		load_recurso( jQuery(this).data('modal') || jQuery(this).attr('href'), jQuery(this).data('version'));
 	});
 
 
@@ -287,7 +287,7 @@ jQuery(document).on('ready',function(){
 			if (jQuery('.pdf_recurso').is(":visible") ) {
 				calc_iframe_height('pdf');
 			}else{
-				calc_iframe_height('interactivo');	
+				calc_iframe_height('interactivo');
 			}
 		}
 
@@ -300,9 +300,8 @@ jQuery(document).on('ready',function(){
 FUNCIONES JAVASCRIPT
 **************************/
 
-function load_recurso(url){
-
-	var Parameters = 'q='+Math.random();
+function load_recurso(url, version){
+	var Parameters = 'v='+(version ? version : 1);
 	jQuery.ajax({
 		url: url,
 		type: 'GET',
