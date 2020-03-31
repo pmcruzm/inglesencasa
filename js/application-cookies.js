@@ -1,13 +1,15 @@
-var ACEPTA_COOKIES_NAME  = 'cambridge-inglesencasa-acepta-cookies';
-
 jQuery(document).on('ready',function(){
 
+	var app_id = jQuery('meta[property="app-id"]').attr('content');
+	var ga_id = jQuery('meta[property="google-analytics-id"]').attr('content');
+	var cookie_consent_name = app_id + '-cookies';
+
 	//Miramos si la cookie de aceptación está creada
-	if(jQuery.cookie(ACEPTA_COOKIES_NAME) == 'acepta'){
+	if(jQuery.cookie(cookie_consent_name) == 'acepta'){
 		//Ocultamos info cookies
 		jQuery('.block-cookies').hide();
 		//Inicializamos GoogleAnalytics
-		initGoogleAnalytics();
+		initGoogleAnalytics(ga_id);
 	}else{
 		jQuery('.block-cookies').show();
 	}
@@ -21,25 +23,25 @@ jQuery(document).on('ready',function(){
 	//Aceptar cookies en el cuadro
 	jQuery(document).on('click','.btn-accept',function(e){
 		e.preventDefault();
-		jQuery.cookie(ACEPTA_COOKIES_NAME, 'acepta', { expires: 365 * 10 ,path: '/' });
+		jQuery.cookie(cookie_consent_name, 'acepta', { expires: 365 * 10 ,path: '/' });
 		jQuery('.block-cookies').fadeOut(300);
 		//Inicializamos GoogleAnalytics
-		initGoogleAnalytics();
+		initGoogleAnalytics(ga_id);
 	});
-
 
 });
 
 
-function initGoogleAnalytics() {
+function initGoogleAnalytics(ga_id) {
 
-	var GA_ID = jQuery('meta[property="google-analytics-id"]').attr('content');
+	var s = document.createElement("script");
+		s.type = "text/javascript";
+		s.src = "https://www.googletagmanager.com/gtag/js?id=" + ga_id;
+		s.setAttribute('async','');
+		jQuery("head").append(s);
 
-	if(GA_ID && GA_ID != '') {
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', GA_ID);
-	}
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', ga_id);
 }
