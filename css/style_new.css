@@ -713,7 +713,7 @@ PROPIEDADES FOOTER
 .colum_footer_acceso .btn_acceso{position:relative !important;}
 
 
-.logo_footer{display:block;text-indent:-99999px;background:url(../svg/CUP_Logo.svg) center center no-repeat;height:47px;width:179px;background-size:179px;/*margin-left:30px;*/}
+.logo_footer{display:block;text-indent:-99999px;background:url('../img/cup_logo_neg.png') center center no-repeat;height:47px;width:179px;background-size:179px;/*margin-left:30px;*/}
 
 .inf_footer{clear:both;padding-top:85px;}
 .inf_footer p{padding-top:16px;padding-bottom:16px;color:#393939;font-size:12px;line-height:31px;}
