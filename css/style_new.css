@@ -743,15 +743,13 @@ PROPIEDADES FOOTER
 /**********************************
 PROPIEDADES DE CUSTOM CHECKBOX BUTTON
 **********************************/
-#foo:checked::before,
-input[type="checkbox"] {
+.checkbox input[type="checkbox"] {
     position:absolute;
     clip: rect(0,0,0,0);
     clip: rect(0 0 0 0);
 }
 
-#foo:checked,
-input[type="checkbox"] + label::before {
+.checkbox input[type="checkbox"] + label::before {
     content:'';
     cursor:pointer;
     display:inline-block;
@@ -766,36 +764,12 @@ input[type="checkbox"] + label::before {
 	margin-right:10px;
 }
 
-/*Pendiente*/
-#foo:checked,
-input[type="checkbox"].error + label::before {
-    content:'';
-    cursor:pointer;
-    display:inline-block;
-    width:16px;
-    height:16px;
-    background:url(../img/checkbox@2X.png) no-repeat;
+.checkbox input[type="checkbox"].error + label::before {
     background-position:0px -32px;
-    margin-left:-30px;
-    background-size:16px;
-	position:relative;
-	top:3px;
-	margin-right:10px;
 }
 
-input[type="checkbox"]:checked + label::before {
-    content:'';
-    cursor:pointer;
-    display:inline-block;
-    width:16px;
-    height:16px;
-    background:url(../img/checkbox@2X.png) no-repeat;
+.checkbox input[type="checkbox"]:checked + label::before {
     background-position:0px 0px;
-    margin-left:-30px;
-    background-size:16px;
-	position:relative;
-	top:3px;
-	margin-right:10px;
 }
 
 
