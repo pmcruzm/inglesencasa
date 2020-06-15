@@ -308,6 +308,13 @@ function load_recurso(url, version){
 		dataType: 'html',
 		data: Parameters,
 		success: function(data){
+
+			// if( typeof ga === 'function' ) {
+			// 	ga('send', 'event', 'outbound', 'click', code, {
+			// 		'transport': 'beacon'
+			// 	});
+			// }
+
 	 		jQuery('.resource-content').html(data);
 	 		var tipo = jQuery('.resource-content .content_recurso').data('type');
 			//Mostramos el lightbox

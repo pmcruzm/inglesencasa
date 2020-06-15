@@ -303,6 +303,19 @@ jQuery(document).on('ready',function(){
 
 	});
 
+
+	jQuery('.course-student-school-stage select').on('change', function(){
+		var f = jQuery(this).closest('form');
+		jQuery.ajax({
+			type : f.attr('method'),
+			url : f.attr('action'),
+			data : f.serialize(),
+			success: function (data) {
+				// console.log(data)
+			}
+		});
+	});
+
 });
 
 
