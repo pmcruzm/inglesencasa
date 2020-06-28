@@ -145,11 +145,17 @@ PROPIEDADES HOME
 
 
 .body_recurso{height:306px;background-position:center center;background-repeat:no-repeat;background-size:cover;position:relative;border-radius:4px;}
-.over_recurso_img{height:306px;width:100%;position:absolute;border-radius:4px;top:0px;left:0px;z-index:5;opacity:0.9;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;}
+.over_recurso_img{height:306px;width:100%;position:absolute;border-radius:4px;top:0px;left:0px;z-index:5;opacity:0.9;}
 .content_recurso{height:306px;width:100%;position:absolute;border-radius:4px;top:0px;left:0px;z-index:10;text-align: left;}
 .box_recurso.over .over_recurso_img{opacity:0;}
 
-.over_recurso_all{height:368px;width:100%;height:368px;position:absolute;border-radius:4px;top:0px;left:0px;z-index:15;opacity:0;-moz-transition: all 0.15s linear;-o-transition: all 0.15s linear;transition: all 0.15s linear;display:table;}
+.contenedor-recursos-curso {min-height: 450px;}
+.contenedor-recursos-curso .box_recurso {height:238px;}
+.contenedor-recursos-curso .body_recurso,
+.contenedor-recursos-curso .content_recurso,
+.contenedor-recursos-curso .over_recurso_img {height:206px;}
+
+.over_recurso_all{height:368px;width:100%;position:absolute;border-radius:4px;top:0px;left:0px;z-index:15;opacity:0;-moz-transition: all 0.15s linear;-o-transition: all 0.15s linear;transition: all 0.15s linear;display:table;}
 .over_recurso_all>div{display:table-cell;width:100%;height:368px;vertical-align:middle;position:relative;}
 .color_over{position:absolute;width:100%;height:368px;top:0;left:0;opacity:0.8;border-radius:4px;}
 .over_recurso_all p{color:#ffffff;font-size:16px;text-align:center !important;vertical-align:middle;text-align:center;}
@@ -1012,19 +1018,17 @@ MEDIA QUERIES
 
 	/*.carrusel-destacados .box_recurso{width:197px;height: 267px;margin-right: 37px;}*/
 
-	.contenedor-recursos .content_recurso,.contenedor-recursos .body_recurso,.contenedor-recursos .over_recurso_img,.contenedor-recursos-curso .content_recurso{height: 235px;}
+	.contenedor-recursos .box_recurso {height: 177px;max-width:140px;padding:8px;}
+	.contenedor-recursos .content_recurso,
+	.contenedor-recursos .body_recurso,
+	.contenedor-recursos .over_recurso_img{height: 161px;}
 
-	.contenedor-recursos .box_recurso,.contenedor-recursos-curso .box_recurso{max-width:140px;height: 177px;padding:8px;}
 
-	.contenedor-recursos .content_recurso,.contenedor-recursos-curso .content_recurso,.contenedor-recursos .body_recurso,.contenedor-recursos .over_recurso_img{height: 161px;}
-
-	.contenedor-recursos .info_recurso h4,.contenedor-recursos-curso .info_recurso h4,.contenedor-recursos-curso .info_recurso h4{font-size:8px;}
-	.contenedor-recursos .info_recurso h5,.contenedor-recursos-curso .info_recurso h5,.contenedor-recursos-curso .info_recurso h5{font-size:12px;line-height: 16px;}
-	.contenedor-recursos .info_recurso,.contenedor-recursos-curso .info_recurso,.contenedor-recursos-curso .info_recurso{padding:8px;}
-	.contenedor-recursos .cat_recurso,.contenedor-recursos-curso .cat_recurso,.contenedor-recursos-curso .cat_recurso{font-size:8px;left: 8px;top:4px;}
-	.contenedor-recursos .type_recurso,.contenedor-recursos-curso .type_recurso,.contenedor-recursos-curso .type_recurso{right:8px;top:8px;}
-
-	.contenedor-recursos .type_recurso,.contenedor-recursos-curso .type_recurso{width: 16px;height: 16px;background-size:80px; }
+	.contenedor-recursos .info_recurso h4,.contenedor-recursos-curso .info_recurso h4 {font-size:8px;}
+	.contenedor-recursos .info_recurso h5,.contenedor-recursos-curso .info_recurso h5 {font-size:12px;line-height: 16px;}
+	.contenedor-recursos .info_recurso, .contenedor-recursos-curso .info_recurso {padding:8px;}
+	.contenedor-recursos .cat_recurso,.contenedor-recursos-curso .cat_recurso {font-size:8px;left: 8px;top:4px;}
+	.contenedor-recursos .type_recurso,.contenedor-recursos-curso .type_recurso {right:8px;top:8px;width: 16px;height: 16px;background-size:80px;}
 
 	.contenedor-recursos .type_recurso.audio,.contenedor-recursos-curso .type_recurso.audio{background-position: 0px 0px;}
 	.contenedor-recursos .type_recurso.pdf,.contenedor-recursos-curso .type_recurso.pdf{background-position: 16px 0px;}
@@ -1039,6 +1043,12 @@ MEDIA QUERIES
 	.contenedor-recursos .w_recurso .type_recurso.interactivo{background-position: 64px 0px;}
 
 
+	.contenedor-recursos-curso .box_recurso {height: 116px;max-width:140px;padding:8px;}
+	.contenedor-recursos-curso .content_recurso,
+	.contenedor-recursos-curso .body_recurso,
+	.contenedor-recursos-curso .over_recurso_img{height: 100px;}
+	.contenedor-recursos-curso .info_recurso {position: static;}
+	.contenedor-recursos-curso .type_recurso {position: absolute; top: auto; bottom: 10px; right: 10px;}
 
 	.contenedor-recursos,.contenedor-recursos-curso{padding-left:8px;padding-right:8px;padding-top: 98px;}
 
