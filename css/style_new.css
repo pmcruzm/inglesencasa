@@ -192,7 +192,7 @@ PROPIEDADES HOME
 /***** NUEVOS ******/
 
 .box_nuevos{box-sizing:border-box;border: 32px solid #ffffff;position: relative;border-bottom:0;margin-bottom:16px;}
-.contenedor-recursos,.contenedor-recursos-curso{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);padding-top: 98px;overflow: hidden;box-sizing: border-box;padding-left: 24px;padding-right: 24px;position: relative;min-height: 350px;}
+.contenedor-recursos,.contenedor-recursos-curso{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);padding-top: 60px;overflow: hidden;box-sizing: border-box;padding-left: 24px;padding-right: 24px;position: relative;min-height: 350px;}
 .contenedor-recursos .container,.contenedor-recursos-curso .container{/*width: calc(100% + 30px);max-width:1208px*/}
 .box_nuevos h3{font-family:'peace_sansregular', Helvetica, sans-serif;font-size: 40px;color:#FF6B47;line-height: 48px;padding-bottom: 16px;}
 .contenedor-recursos .item,.contenedor-recursos-curso .item{width: 25%;float: left;margin-bottom: 30px;text-align: center;}
@@ -303,7 +303,7 @@ PROPIEDADES HOME
 
 
 
-.contenedor-recursos-curso{padding-bottom:68px;}
+.contenedor-recursos-curso{padding-bottom:40px;}
 .contenedor-recursos-curso .box_recurso.over .over_recurso_img{opacity:1 !important;}
 .contenedor-recursos-curso .box_recurso.over .info_recurso h4{opacity:1 !important;}
 .contenedor-recursos-curso .box_recurso.over .info_recurso h5{opacity:1 !important;}
@@ -1050,7 +1050,7 @@ MEDIA QUERIES
 	.contenedor-recursos-curso .info_recurso {position: static;}
 	.contenedor-recursos-curso .type_recurso {position: absolute; top: auto; bottom: 10px; right: 10px;}
 
-	.contenedor-recursos,.contenedor-recursos-curso{padding-left:8px;padding-right:8px;padding-top: 98px;}
+	.contenedor-recursos,.contenedor-recursos-curso{padding-left:8px;padding-right:8px;padding-top: 50px;}
 
 	.banner_recursos p{font-size:16px;line-height: 22px;}
 	.row-h-form{display:block;margin-bottom: 16px;}
