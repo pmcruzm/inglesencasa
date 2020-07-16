@@ -128,7 +128,7 @@ PROPIEDADES HOME
 
 .box_recurso.privado{padding: 0px;box-shadow:none;background: none;}
 .box_recurso.privado .body_recurso{border-radius: 0px;}
-.box_recurso.privado .body_recurso img{max-width: 100%;box-shadow: 20px 30px 50px 0 rgba(110,181,173,0.50);position: absolute;bottom: 0;}
+.box_recurso.privado .body_recurso img{max-width: 100%;max-height: 320px;box-shadow: 20px 30px 50px 0 rgba(110,181,173,0.50);position:absolute; bottom:0; left:0; right:0; margin:0 auto;}
 .titel_rec_privado{text-align: center;color:#103E57;font-size: 14px;padding-top:10px;font-family: 'museosanscyrl', Helvetica, sans-serif;}
 
 /*.slick-slide .box_recurso{float:left;}*/
@@ -338,9 +338,9 @@ PÁGINA DE LOGIN
 .txt_login p{font-size: 18px !important;line-height: 26px !important;}
 .txt_login .btn_registrate{margin-left:0px;margin-top: 20px;}
 .box-login-form{}
-#form_login{}
+#form_login{max-width:368px;}
 #form_login label{display: none;}
-#form_login input[type=text],#form_login input[type=password],#form_login input[type=email]{border:1px solid #ffffff;max-width: 368px;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;margin-right: 8px;font-size: 12px;color:#103E57;margin-bottom: 38px;width: 100%;}
+#form_login input[type=text],#form_login input[type=password],#form_login input[type=email]{border:1px solid #ffffff;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;margin-right: 8px;font-size: 12px;color:#103E57;margin-bottom: 38px;width: 100%;}
 #form_login input[type=text].error,#form_login input[type=password].error,#form_login input[type=email].error{border:1px solid #ff0000 !important;}
 #form_login input[type=submit]{display: inline-block;vertical-align: middle;padding:0 15px;min-width: 100px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 2px;}
 #form_login input[type=submit]:hover{opacity: 0.9;}
@@ -359,7 +359,7 @@ PÁGINA DE REGISTRO
 #form_registro .form-group{position: relative;}
 #form_registro label{color:#103E57;font-size: 12px;text-transform: uppercase;letter-spacing: 1px;font-family: 'source_sans_prosemibold', Helvetica, sans-serif;}
 #form_registro label span{color:#FF6B47;}
-#form_registro input[type=text],#form_registro input[type=email],#form_registro input[type=password]{border:1px solid #ffffff;max-width: 368px;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;font-size: 12px;color:#103E57;margin-bottom: 38px;width: 100%;position: relative;}
+#form_registro input[type=text],#form_registro input[type=email],#form_registro input[type=password]{border:1px solid #ffffff;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;font-size: 12px;color:#103E57;margin-bottom: 38px;width: 100%;position: relative;}
 #form_registro input[type=text].error,#form_registro input[type=email].error,#form_registro input[type=password].error{border:1px solid #ff0000 !important;}
 #form_registro input[type=submit]{display: inline-block;vertical-align: middle;padding:0 15px;min-width: 100px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 2px;}
 #form_registro input[type=submit]:hover{opacity: 0.9;}
@@ -405,8 +405,8 @@ PÁGINA DE PERFIL
 .block_perfil form .form-group{position: relative;}
 .block_perfil form label{color:#103E57;font-size: 12px;text-transform: uppercase;letter-spacing: 1px;font-family: 'source_sans_prosemibold', Helvetica, sans-serif;}
 .block_perfil form label span{color:#FF6B47;}
-.block_perfil form input[type=text],.block_perfil form input[type=email],.block_perfil form input[type=password]{border:1px solid #ffffff;max-width: 368px;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;font-size: 12px;color:#103E57;margin-bottom: 38px;width: 100%;position: relative;}
-.block_perfil form input[type=text]:disabled,.block_perfil form input[type=email]:disabled,.block_perfil form input[type=password]:disabled{border:1px solid #ffffff;max-width: 368px;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;font-size: 12px;color:#103E57;margin-bottom: 38px;width: 100%;position: relative;background:#ffffff;opacity:0.5;}
+.block_perfil form input[type=text],.block_perfil form input[type=email],.block_perfil form input[type=password]{border:1px solid #ffffff;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;font-size: 12px;color:#103E57;margin-bottom: 38px;width: 100%;position: relative;}
+.block_perfil form input[type=text]:disabled,.block_perfil form input[type=email]:disabled,.block_perfil form input[type=password]:disabled{border:1px solid #ffffff;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;font-size: 12px;color:#103E57;margin-bottom: 38px;width: 100%;position: relative;background:#ffffff;opacity:0.5;}
 .block_perfil form input[type=text].error,.block_perfil form input[type=email].error,.block_perfil form input[type=password].error{border:1px solid #ff0000 !important;}
 .block_perfil form input[type=submit]{display: inline-block;vertical-align: middle;padding:0 15px;min-width: 100px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 2px;}
 .block_perfil form input[type=submit]:hover{opacity: 0.9;}
@@ -447,6 +447,11 @@ PÁGINA DE PERFIL
 
 #header.privada:after{position:absolute;width:100%;height:440px;content:'';display:block;background: url("../img/trama_iconos_cabecera@2X.png") bottom left no-repeat;top:0;left:0;background-size: cover;}
 
+.block_perfil.wysiwyg p{margin-bottom: 1.3em;}
+.block_perfil.wysiwyg ol{list-style:decimal; padding-left:3em;}
+.block_perfil.wysiwyg ol li{margin-bottom:2em;}
+.block_perfil.wysiwyg .btn{display: inline-block;padding:0 15px;height: 30px;line-height: 30px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 2px;text-transform:uppercase;margin: 8px;}
+.block_perfil.wysiwyg .btn:hover{opacity: 0.9;}
 
 /*****************************
 PÁGINA DE CONTACTO
@@ -456,7 +461,7 @@ PÁGINA DE CONTACTO
 .block_contacto h4{color:#103E57;font-size:22px;line-height:32px;margin-bottom: 32px;}
 #form_contacto{}
 #form_contacto label{color:#103E57;font-size: 12px;text-transform: uppercase;letter-spacing: 1px;font-family: 'source_sans_prosemibold', Helvetica, sans-serif;}
-#form_contacto input[type=text],#form_contacto input[type=email]{border:1px solid #ffffff;max-width: 368px;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;font-size: 12px;color:#103E57;margin-bottom: 38px;width: 100%;position: relative;}
+#form_contacto input[type=text],#form_contacto input[type=email]{border:1px solid #ffffff;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;font-size: 12px;color:#103E57;margin-bottom: 38px;width: 100%;position: relative;}
 #form_contacto input[type=text].error,#form_contacto input[type=email].error{border:1px solid #ff0000 !important;}
 #form_contacto input[type=submit]{display: inline-block;vertical-align: middle;padding:0 15px;min-width: 100px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 2px;}
 #form_contacto input[type=submit]:hover{opacity: 0.9;}
@@ -489,6 +494,11 @@ PÁGINA DE CONTACTO
 .multi-checkbox .checkbox {float:left;padding-bottom:16px;color:#4A4A4A;font-size:16px;padding-left:30px;box-sizing:border-box;position:relative;}
 
 
+
+.block_perfil form .row input[type=text],
+.block_perfil form .row input[type=email],
+.block_perfil form .row input[type=password] {margin-bottom: 0;}
+.block_perfil form .row > div {margin-bottom: 20px;}
 /*****************************
 PÁGINA DE NOSOTROS
 ******************************/
