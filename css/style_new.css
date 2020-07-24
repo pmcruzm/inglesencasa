@@ -331,121 +331,32 @@ PÁGINA DE SEARCH
 .block_search .box_submit_s{top:10px;}
 
 /*****************************
-PÁGINA DE LOGIN
+FORMULARIOS
 ******************************/
-.txt_login{}
-.txt_login h5{font-size: 18px !important;line-height: 26px !important;font-family:'source_sans_prosemibold', Helvetica, sans-serif;color: #103E57;}
-.txt_login p{font-size: 18px !important;line-height: 26px !important;}
-.txt_login .btn_registrate{margin-left:0px;margin-top: 20px;}
-.box-login-form{}
-#form_login{max-width:368px;}
-#form_login label{display: none;}
-#form_login input[type=text],#form_login input[type=password],#form_login input[type=email]{border:1px solid #ffffff;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;margin-right: 8px;font-size: 12px;color:#103E57;margin-bottom: 38px;width: 100%;}
-#form_login input[type=text].error,#form_login input[type=password].error,#form_login input[type=email].error{border:1px solid #ff0000 !important;}
-#form_login input[type=submit]{display: inline-block;vertical-align: middle;padding:0 15px;min-width: 100px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 2px;}
-#form_login input[type=submit]:hover{opacity: 0.9;}
-#form_login input[type=submit]:disabled{opacity: 0.5;cursor: default;}
-.txt_recordar{width:100%;max-width:368px;text-align: right;margin-top:-20px;}
-.txt_recordar a{font-size: 14px;}
-.errores{font-size:15px;color:red;padding-top:35px;padding-bottom:35px;}
 
-/*****************************
-PÁGINA DE REGISTRO
-******************************/
-.block_registro{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);position:relative;padding-top:77px;min-height: 700px;padding-bottom: 77px;}
-.block_registro .container{max-width: 768px; width: 90%;}
+.form-type{}
+.form-type .form-group {position: relative;}
+.form-type .row > div {margin-bottom: 20px;}
+.form-type .submit-row{margin-top:32px;}
+.form-type .txt_recordar{display: block; text-align: right; padding-top: 10px; clear: both;}
+.form-type .txt_recordar a{font-size: 14px;color:#103E57;text-decoration: underline;}
+.form-type .errores{font-size:15px;color:red;padding-top:35px;padding-bottom:35px;}
 
-#form_registro{}
-#form_registro .form-group{position: relative;}
-#form_registro label{color:#103E57;font-size: 12px;text-transform: uppercase;letter-spacing: 1px;font-family: 'source_sans_prosemibold', Helvetica, sans-serif;}
-#form_registro label span{color:#FF6B47;}
-#form_registro input[type=text],#form_registro input[type=email],#form_registro input[type=password]{border:1px solid #ffffff;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;font-size: 12px;color:#103E57;margin-bottom: 38px;width: 100%;position: relative;}
-#form_registro input[type=text].error,#form_registro input[type=email].error,#form_registro input[type=password].error{border:1px solid #ff0000 !important;}
-#form_registro input[type=submit]{display: inline-block;vertical-align: middle;padding:0 15px;min-width: 100px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 2px;}
-#form_registro input[type=submit]:hover{opacity: 0.9;}
-#form_registro input[type=submit]:disabled{opacity: 0.5;cursor: default;}
-#form_registro .half-group{float:left;width: 50%;position: relative;box-sizing: border-box;padding-right: 16px;}
-#form_registro .half-group:after{content:'';display:block;height:2px;background:rgba(148,227,223,0.5);width: calc(100% - 16px);position: absolute;bottom:36px;}
-#form_registro .half-group.no-line:after{display: none;}
-#form_registro .select-row:after{content:'';display:block;height:2px;background:rgba(148,227,223,0.5);width: 100%;position: absolute;bottom:-42px;}
-#form_registro .textarea-row:after{content:'';display:block;height:2px;background:rgba(148,227,223,0.5);width:100%;position: absolute;bottom:0px;}
-#form_registro textarea{width:100% ;border: none;-webkit-appearance: none;height: 160px;}
-#form_registro .submit-row{margin-top:32px;}
-#form_registro .captcha-row{margin-top:32px;}
-#form_registro .select-row{margin-bottom:42px;width: 100%;position: relative;}
-.cover-half .half-group:nth-child(even) {padding-right:0px !important;padding-left:16px;}
-
-.select-row a{display: inline-block;float:right;color:#103E57;text-decoration: underline;font-size: 14px;line-height: 32px;margin-top: 16px;}
-
-.box_tooltip{position: absolute;right: -16px;top:40px;}
-.box_tooltip .icon{width:16px;height:16px;display: block;background:url(../svg/Info.svg) center center no-repeat;}
-.pop_tooltip{width: 275px;background:#FF6B47;color:#ffffff;padding: 8px;border-radius: 8px;font-size: 14px;line-height: 21px;position: absolute;left:-140px;bottom:34px;text-align: center;display: none;}
-.pop_tooltip:after{content:'';display: block;background: url(../img/Point@2X.png) center bottom no-repeat;height:6px;background-size: 12px;width: 100%;position:absolute;bottom:-6px;left:2px;}
-
-.date-row{margin-bottom: 38px;}
-.date-row p{color:#103E57;font-size: 12px;text-transform: uppercase;letter-spacing: 1px;font-family: 'source_sans_prosemibold', Helvetica, sans-serif;}
-.date-row p span{color:#FF6B47;}
-.cover_dates{overflow:hidden;}
-.row_day,.row_month,.row_year{float:left;box-sizing: border-box;}
-.row_day,.row_year{width:25%;}
-.row_month{width:50%;padding-left:8px;padding-right: 8px;}
-.row_day select,.row_month select,.row_year select{height: 40px;box-sizing: border-box;background: #ffffff;border: none;background: #ffffff;color:#B0B0B1;font-size: 14px;font-size:14px;border:none;-webkit-appearance:none;cursor:pointer;width: 100%;text-align: center;}
-
-#form_registro .row_day:after,#form_registro .row_year:after{content:'';display:block;height:2px;background:rgba(148,227,223,0.5);width: calc(25% - 4px);position: absolute;bottom:-2px;}
-#form_registro .row_month:after{content:'';display:block;height:2px;background:rgba(148,227,223,0.5);width: calc(50% - 24px);position: absolute;bottom:-2px;}
-
-
-/*****************************
-PÁGINA DE PERFIL
-******************************/
-.block_perfil{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);position:relative;padding-top:53px;padding-bottom: 63px;}
-.block_perfil .container{max-width: 768px; width: 90%;}
-
-.block_perfil form{}
-.block_perfil form .form-group{position: relative;}
-.block_perfil form label{color:#103E57;font-size: 12px;text-transform: uppercase;letter-spacing: 1px;font-family: 'source_sans_prosemibold', Helvetica, sans-serif;}
-.block_perfil form label span{color:#FF6B47;}
-.block_perfil form input[type=text],.block_perfil form input[type=email],.block_perfil form input[type=password]{border:1px solid #ffffff;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;font-size: 12px;color:#103E57;margin-bottom: 38px;width: 100%;position: relative;}
-.block_perfil form input[type=text]:disabled,.block_perfil form input[type=email]:disabled,.block_perfil form input[type=password]:disabled{border:1px solid #ffffff;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;font-size: 12px;color:#103E57;margin-bottom: 38px;width: 100%;position: relative;background:#ffffff;opacity:0.5;}
-.block_perfil form input[type=text].error,.block_perfil form input[type=email].error,.block_perfil form input[type=password].error{border:1px solid #ff0000 !important;}
-.block_perfil form input[type=submit]{display: inline-block;vertical-align: middle;padding:0 15px;min-width: 100px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 2px;}
-.block_perfil form input[type=submit]:hover{opacity: 0.9;}
-.block_perfil form input[type=submit]:disabled{opacity: 0.5;cursor: default;}
-.block_perfil form .half-group{float:left;width: 50%;position: relative;box-sizing: border-box;padding-right: 16px;}
-.block_perfil form .half-group:after{content:'';display:block;height:2px;background:rgba(148,227,223,0.5);width: calc(100% - 16px);position: absolute;bottom:36px;}
-.block_perfil form .half-group.no-line:after{display: none;}
-.block_perfil form .select-row:after{content:'';display:block;height:2px;background:rgba(148,227,223,0.5);width: 100%;position: absolute;bottom:-42px;}
-.block_perfil form .textarea-row:after{content:'';display:block;height:2px;background:rgba(148,227,223,0.5);width:100%;position: absolute;bottom:0px;}
-.block_perfil form .submit-row{margin-top:32px;}
-.block_perfil form .captcha-row{margin-top:32px;}
-.block_perfil form .select-row{margin-bottom:42px;width: 100%;position: relative;}
-.cover-half .half-group:nth-child(even) {padding-right:0px !important;padding-left:16px;}
-
-.row_day select:disabled,.row_month select:disabled,.row_year select:disabled{height: 40px;box-sizing: border-box;background: #ffffff;border: none;background: #ffffff;color:#B0B0B1;font-size: 14px;font-size:14px;border:none;-webkit-appearance:none;cursor:pointer;width: 100%;text-align: center;opacity:0.5;}
-
-.block_perfil form .row_day:after,.block_perfil form .row_year:after{content:'';display:block;height:2px;background:rgba(148,227,223,0.5);width: calc(25% - 4px);position: absolute;bottom:-2px;}
-.block_perfil form .row_month:after{content:'';display:block;height:2px;background:rgba(148,227,223,0.5);width: calc(50% - 24px);position: absolute;bottom:-2px;}
-.block_perfil.box-code-book form .submit-row,.block_perfil.box-change-password form .submit-row,.block_perfil.box-delete-cuenta form .submit-row{margin-top:0px;}
-.block_perfil.box-code-book form input[type="submit"]{width:166px;}
-.top-perfil{margin-top:52px;}
-.block_perfil.box-change-password form input[type="submit"]{width:198px;}
-.block_perfil.box-delete-cuenta{}
-.block_perfil.box-delete-cuenta .cover-half{overflow: hidden}
-.block_perfil.box-delete-cuenta .half-group{float:left;width: 50%;position: relative;box-sizing: border-box;padding-right: 36px;}
-.block_perfil.box-delete-cuenta form input[type="submit"]{width:198px;}
-.block_perfil.box-delete-cuenta p{color:#0B2A3B;font-size:18px;line-height: 26px;}
-
-.header_perfil{height:48px;position: absolute; left: 194px;width: 310px;z-index: 1;}
-.header_perfil h1{display: block;background: url(../svg/inglesencasa_horizontal.svg) top left no-repeat !important;width: 311px !important;height: 36px !important;text-indent: -99999px !important;position: absolute !important;left: 0px;background-size:311px !important;bottom: 0px !important;}
-
-.info_perfil{position:absolute;bottom:32px;}
-.info_perfil .tipo_p{color:#103E57;font-size: 16px;line-height: 49px;font-weight: bold;}
-.info_perfil .name_p{color:#103E57;font-size: 40px;line-height: 49px;font-family: 'peace_sansregular', Helvetica, sans-serif;}
-
-#header.perfil-h {height: 272px;}
-#header.perfil-h  .container{height: 272px;}
-
-#header.privada:after{position:absolute;width:100%;height:440px;content:'';display:block;background: url("../img/trama_iconos_cabecera@2X.png") bottom left no-repeat;top:0;left:0;background-size: cover;}
+.form-type label{color:#103E57;font-size: 12px;text-transform: uppercase;letter-spacing: 1px;font-family: 'source_sans_prosemibold', Helvetica, sans-serif;}
+.form-type label span{color:#FF6B47;}
+.form-type input[type=text],
+.form-type input[type=email],
+.form-type input[type=password]{border:1px solid #ffffff;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;font-size: 12px;color:#103E57;width: 100%;position: relative;}
+.form-type input[type=text]:disabled,
+.form-type input[type=email]:disabled,
+.form-type input[type=password]:disabled{border:1px solid #ffffff;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;font-size: 12px;color:#103E57;margin-bottom: 38px;width: 100%;position: relative;background:#ffffff;opacity:0.5;}
+.form-type input[type=text].error,
+.form-type input[type=email].error,
+.form-type input[type=password].error{border:1px solid #ff0000 !important;}
+.form-type input[type=submit]{display: inline-block;vertical-align: middle;padding:0 15px;min-width: 100px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 2px;}
+.form-type input[type=submit]:hover{opacity: 0.9;}
+.form-type input[type=submit]:disabled{opacity: 0.5;cursor: default;}
+.form-type textarea{width:100% ;border: none;-webkit-appearance: none;min-height: 80px; padding:10px; box-sizing: border-box;}
 
 .block_perfil.wysiwyg p{margin-bottom: 1.3em;}
 .block_perfil.wysiwyg ol{list-style:decimal; padding-left:3em;}
@@ -453,58 +364,85 @@ PÁGINA DE PERFIL
 .block_perfil.wysiwyg .btn{display: inline-block;padding:0 15px;height: 30px;line-height: 30px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 2px;text-transform:uppercase;margin: 8px;}
 .block_perfil.wysiwyg .btn:hover{opacity: 0.9;}
 
+.bg-select{background:#103E57 url(../svg/arrow_down.svg) 95% 50% no-repeat;display:block;width:100%;float:left;overflow:hidden;height:40px;background-size: 22px;}
+.bg-select > select{background:none;color:#ffffff;width:110%;height:40px;line-height:40px;padding-right:17%;box-sizing:border-box;font-size:14px;border:none;-webkit-appearance:none;cursor:pointer;padding-left:10px;}
+.bg-select > select:disabled{background: #ffffff;color:#B0B0B1;opacity:0.4;}
+.bg-select > select.right-t{text-align:right;}
+.bg-select > select option{text-align:left;background:#103E57;}
+.bg-select > select.right-t option{text-align:right;}
+.bg-select.error{background-color:#ff0000;}
+.bg-select.error> select{}
+.bg-select.error > select option{background:#ff0000;}
+
+.box_tooltip{position: absolute; right: 23px; top:38px;}
+.box_tooltip .icon{width:16px;height:16px;display: block;background:url(../svg/Info.svg) center center no-repeat;}
+.pop_tooltip{width: 275px;background:#FF6B47;color:#ffffff;padding: 8px;border-radius: 8px;font-size: 14px;line-height: 21px;position: absolute;left:-140px;bottom:34px;text-align: center;display: none;}
+.pop_tooltip:after{content:'';display: block;background: url(../img/Point@2X.png) center bottom no-repeat;height:6px;background-size: 12px;width: 100%;position:absolute;bottom:-6px;left:2px;}
+
+.cover_dates{overflow:hidden;}
+.row_day,
+.row_month,
+.row_year{float:left;box-sizing: border-box;}
+.row_day,
+.row_year{width:25%;}
+.row_month{width:50%;padding-left:8px;padding-right: 8px;}
+
+
+/*****************************
+PÁGINA DE LOGIN
+******************************/
+.txt_login{}
+.txt_login h5{font-size: 18px !important;line-height: 26px !important;font-family:'source_sans_prosemibold', Helvetica, sans-serif;color: #103E57;}
+.txt_login p{font-size: 18px !important;line-height: 26px !important;}
+
+#form_login{max-width:368px;}
+#form_login .form-group {margin-bottom: 38px;}
+#form_login label{display: none;}
+
+
+/*****************************
+PÁGINA DE REGISTRO
+******************************/
+.block_registro{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);position:relative;padding-top:77px;min-height: 700px;padding-bottom: 77px;}
+.block_registro .container{max-width: 768px; width: 90%;}
+
+
+/*****************************
+PÁGINA DE PERFIL
+******************************/
+.block_perfil{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);position:relative;padding-top:53px;padding-bottom: 63px;}
+.block_perfil .container{max-width: 768px; width: 90%;}
+.block_perfil h4{color:#103E57;font-size:22px;line-height:32px;margin-bottom: 32px;}
+.block_perfil p.info{color:#0B2A3B;font-size:18px;line-height: 26px;}
+
+.header_perfil{height:48px;position: absolute; left: 194px;width: 310px;z-index: 1;}
+.header_perfil h1{display: block;background: url(../svg/inglesencasa_horizontal.svg) top left no-repeat !important;width: 311px !important;height: 36px !important;text-indent: -99999px !important;position: absolute !important;left: 0px;background-size:311px !important;bottom: 0px !important;}
+
+.info_perfil{position:absolute;bottom:32px;}
+.info_perfil .tipo_p{color:#103E57;font-size: 16px;line-height: 49px;font-weight: bold;}
+.info_perfil .name_p{color:#103E57;font-size: 40px;line-height: 49px;font-family: 'peace_sansregular', Helvetica, sans-serif;}
+.info_perfil a{color:#FF6B47; text-decoration:none;}
+.info_perfil a:hover{color:#FF6B47; text-decoration:underline;}
+
+#header.perfil-h {height: 272px;}
+#header.perfil-h  .container{height: 272px;}
+
+#header.privada:after{position:absolute;width:100%;height:440px;content:'';display:block;background: url("../img/trama_iconos_cabecera@2X.png") bottom left no-repeat;top:0;left:0;background-size: cover;}
+
 /*****************************
 PÁGINA DE CONTACTO
 ******************************/
 .block_contacto{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);position:relative;padding-top:77px;min-height: 700px;padding-bottom: 77px;}
 .block_contacto .container{max-width: 768px;width: 90%;}
 .block_contacto h4{color:#103E57;font-size:22px;line-height:32px;margin-bottom: 32px;}
-#form_contacto{}
-#form_contacto label{color:#103E57;font-size: 12px;text-transform: uppercase;letter-spacing: 1px;font-family: 'source_sans_prosemibold', Helvetica, sans-serif;}
-#form_contacto input[type=text],#form_contacto input[type=email]{border:1px solid #ffffff;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;font-size: 12px;color:#103E57;margin-bottom: 38px;width: 100%;position: relative;}
-#form_contacto input[type=text].error,#form_contacto input[type=email].error{border:1px solid #ff0000 !important;}
-#form_contacto input[type=submit]{display: inline-block;vertical-align: middle;padding:0 15px;min-width: 100px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 2px;}
-#form_contacto input[type=submit]:hover{opacity: 0.9;}
-#form_contacto input[type=submit]:disabled{opacity: 0.5;cursor: default;}
-#form_contacto .half-group{float:left;width: 50%;position: relative;box-sizing: border-box;padding-right: 16px;}
-#form_contacto .half-group:after{content:'';display:block;height:2px;background:rgba(148,227,223,0.5);width: calc(100% - 16px);position: absolute;bottom:36px;}
-#form_contacto .select-row:after{content:'';display:block;height:2px;background:rgba(148,227,223,0.5);width: 100%;position: absolute;bottom:-42px;}
-#form_contacto .textarea-row:after{content:'';display:block;height:2px;background:rgba(148,227,223,0.5);width:100%;position: absolute;bottom:0px;}
-#form_contacto textarea{width:100% ;border: none;-webkit-appearance: none;height: 160px;}
-#form_contacto .submit-row{margin-top:32px;}
-#form_contacto .captcha-row{margin-top:32px;}
-#form_contacto .select-row{margin-bottom:42px;width: calc(50% - 16px);position: relative;}
-#form_contacto .textarea-row{position:relative;}
-.cover-half .half-group:nth-child(even) {padding-right:0px !important;padding-left:16px;}
 
-.bg-select{background:#103E57 url(../svg/arrow_down.svg) 95% 50% no-repeat;display:block;width:100%;float:left;overflow:hidden;height:40px;background-size: 25px;}
-.bg-select > select{background:none;color:#ffffff;width:110%;height:40px;line-height:40px;padding-right:17%;box-sizing:border-box;font-size:14px;border:none;-webkit-appearance:none;cursor:pointer;padding-left:10px;}
-.bg-select > select.right-t{text-align:right;}
-.bg-select > select option{text-align:left;background:#103E57;}
-.bg-select > select.right-t option{text-align:right;}
-
-.bg-select.error{background-color:#ff0000;}
-.bg-select.error> select{}
-.bg-select.error > select option{background:#ff0000;}
-
-
-.form-group>.checkbox{margin-bottom: 18px;padding-left: 30px;color:#103E57;padding-left:30px;box-sizing:border-box;position:relative;font-size:14px;}
-.form-group>.checkbox a{color:#103E57;text-decoration:underline;}
-.multi-checkbox{overflow:hidden;padding-bottom:54px;}
-.multi-checkbox .checkbox {float:left;padding-bottom:16px;color:#4A4A4A;font-size:16px;padding-left:30px;box-sizing:border-box;position:relative;}
-
-
-
-.block_perfil form .row input[type=text],
-.block_perfil form .row input[type=email],
-.block_perfil form .row input[type=password] {margin-bottom: 0;}
-.block_perfil form .row > div {margin-bottom: 20px;}
 /*****************************
 PÁGINA DE NOSOTROS
 ******************************/
-.block_nosotros{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);position:relative;padding-top:77px;min-height: 700px;}
+.block_nosotros{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);position:relative;padding-top:77px;}
 .block_nosotros .container{}
-.block_nosotros .left_nosotros,.block_nosotros .right_nosotros{width: 50%;float: left;box-sizing: border-box;}
+.block_nosotros .left_nosotros,
+.block_nosotros .right_nosotros{width: 50%;float: left;box-sizing: border-box;}
 .block_nosotros .right_nosotros{text-align: center;}
 .block_nosotros .right_nosotros img{max-width: 100%;position: relative;margin-top: -25%;}
 
@@ -523,11 +461,6 @@ PÁGINA DE NEWSLETTER
 .block_newsletter_page .row-h-form{display:block;margin-bottom: 16px;}
 #form_newsletter{margin-top: 54px;}
 #form_newsletter label{display: none;}
-#form_newsletter input[type=text],#form_home input[type=email]{border:1px solid #ffffff;width: 238px;height: 40px;line-height: 40px;box-sizing:border-box;padding-left: 10px;padding-right: 10px;margin-right: 8px;font-size: 12px;color:#103E57;}
-#form_newsletter input[type=text].error,#form_home input[type=email].error{border:1px solid #ff0000;}
-#form_newsletter input[type=submit]{display: inline-block;vertical-align: middle;padding:0 15px;min-width: 100px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 30px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 2px;margin-top: 16px;}
-#form_newsletter input[type=submit]:hover{opacity: 0.9;}
-#form_newsletter input[type=submit]:disabled{opacity: 0.5;cursor: default;}
 
 /*****************************
 PÁGINA SINGLE RECURSO
@@ -759,6 +692,14 @@ PROPIEDADES FOOTER
 /**********************************
 PROPIEDADES DE CUSTOM CHECKBOX BUTTON
 **********************************/
+.checkbox {
+    padding-left: 25px;
+    position: relative;
+	color: #103E57;
+    font-size: 14px;
+	font-family: 'source_sans_proregular', Helvetica, sans-serif;
+}
+
 .checkbox input[type="checkbox"] {
     position:absolute;
     clip: rect(0,0,0,0);
@@ -773,10 +714,10 @@ PROPIEDADES DE CUSTOM CHECKBOX BUTTON
     height:16px;
     background:url(../img/checkbox@2X.png) no-repeat;
     background-position:0px -16px;
-    margin-left:-30px;
     background-size:16px;
-	position:relative;
+	position:absolute;
 	top:3px;
+	left:0;
 	margin-right:10px;
 }
 
@@ -787,6 +728,8 @@ PROPIEDADES DE CUSTOM CHECKBOX BUTTON
 .checkbox input[type="checkbox"]:checked + label::before {
     background-position:0px 0px;
 }
+
+.checkbox a {color:#103E57;text-decoration:underline;}
 
 
 /*****************************
@@ -1160,12 +1103,6 @@ MEDIA QUERIES
     .logo_interior{width:200px !important;height: 27px !important;background-size:200px !important;}
 	#header h1{left:10px;}
 	#header h2{left:10px;}
-
-	#form_contacto .half-group{float:inherit;width: 100%;}
-	#form_contacto .half-group{padding-left:0px !important;padding-right:0px !important}
-	#form_contacto input[type="text"], #form_contacto input[type="email"]{max-width:100%;}
-	#form_contacto .select-row{width:100%;}
-	#form_contacto .half-group:after{width:100%}
 }
 
 

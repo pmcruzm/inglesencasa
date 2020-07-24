@@ -37,41 +37,25 @@ jQuery(document).on('ready',function($){
 		}
 	});
 
-	//Detectar cambios en checkbox
-	jQuery(document).on('change','form input[type=checkbox]',function(event){
-		event.preventDefault();
-			if(jQuery(this).hasClass('error')){
-				jQuery(this).parents('.form-group').find('input[type=checkbox]').removeClass('error');
-			}
-	});
-
 	//Detectar cambios en select registro fecha
-	jQuery(document).on('change','form .date-row select',function(event){
+	var birthSelects = jQuery('[name="birth_day"],[name="birth_month"],[name="birth_year"]', 'form')
+	jQuery(document).on('change', birthSelects, function(event){
 		event.preventDefault();
-		var d_fecha=jQuery("#birth_day").val();
-		var m_fecha=jQuery("#birth_month").val();
-		var y_fecha=jQuery("#birth_year").val();
-		//Comprobar bisiestos y meses de 30 y 31 días
-		//Pendiente
+		var form = jQuery(event.target).closest('form');
+		var d_fecha=birthSelects.filter('[name="birth_day"]').val();
+		var m_fecha=birthSelects.filter('[name="birth_month"]').val();
+		var y_fecha=birthSelects.filter('[name="birth_year"]').val();
 		if(d_fecha!="" && m_fecha!="" && y_fecha!="" ){
 			//Comprobamos si es menor de 14 años
-			var today_date = new Date();
 			var final_date = new Date(y_fecha+"-"+m_fecha+"-"+d_fecha);
-			var aux = moment.duration(today_date - final_date).years();
-			var isUnder14;
-			if(aux<14){
-				isUnder14 = true;
-			}else{
-				isUnder14 = false;
-			}
-			jQuery('#form_registro label[data-text]').each(function(){
-				var labelKey = isUnder14 ? 'text14' : 'text';
-				jQuery(this).text( jQuery(this).data(labelKey) );
+			var isUnderConsent = getAge(final_date) < 14;
+
+			jQuery('label[data-label-underage]', form).each(function(){
+				var me = jQuery(this);
+				me.text( me.data(isUnderConsent ? 'label-underage' : 'label') );
 			});
 		}
-
 	});
-
 
 	//Validación de formularios de contacto
 	jQuery('form[data-validate="true"]').on('submit', function(event){
