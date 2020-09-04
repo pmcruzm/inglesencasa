@@ -500,15 +500,21 @@ PÁGINA PRIMARIA
 /*****************************
 PÁGINA LIBRO
 ******************************/
-.cover_pag_book{height: 400px;position: absolute;top:98px;;width: 100%;box-shadow: 20px 30px 50px 0 rgba(110,181,173,0.50);background-size:cover;box-sizing: border-box;width: calc(100% - 64px);left:0;right:0;margin: 0 auto;}
-.cover_pag_book .container{height: 400px !important;}
-.cover_pag_book h3{font-family:'peace_sansregular', Helvetica, sans-serif;font-size: 80px;line-height: 100px; color:#ffffff;position: absolute;left: 0px;bottom: 38px;z-index: 51;}
+.cover_pag_book{height: 200px;position: absolute;top:98px;;width: 100%;box-shadow: 20px 30px 50px 0 rgba(110,181,173,0.50);background-size:cover;box-sizing: border-box;width: calc(100% - 64px);left:0;right:0;margin: 0 auto;}
+.cover_pag_book h3{font-family:'peace_sansregular', Helvetica, sans-serif;font-size: 60px;line-height: 1.15em; color:#ffffff;position: absolute;left: 0px;bottom: 20px;z-index: 51;}
 .cover_pag_book p{font-size: 24px;color:#ffffff;line-height: 16px;position: absolute;right:0px;bottom: 56px;font-family:'source_sans_prosemibold', Helvetica, sans-serif;z-index: 51;}
 .cover_pag_book:before{/*background: linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.5) 100%);*/width: 100%;height: 100%;z-index: 50;position: absolute;content:'';-webkit-transition: all 0.15s linear;-moz-transition: all 0.15s linear;-o-transition: all 0.15s linear;transition: all 0.15s linear;background: url(../img/iconos_cabecera.png) center center no-repeat;background-size: cover;}
 .box_destacado.inside_pag{margin-top: 108px;border-top: 0;}
 
 .img_book{max-width:100%;width: 268px;position: absolute;right:0px;bottom:-40px;z-index: 51;}
 
+body.course #header {height: 240px;}
+body.course #header .container {height:200px}
+
+@media screen and (max-width: 1200px) {
+	body.course #header .cover_pag_book h3 {left: 15px;}
+	.cover_pag_book h3{font-size: 48px;position: absolute;left: 0px;bottom: 20px;}
+}
 
 /*****************************
 LIGHTBOX RECURSOS
