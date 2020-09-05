@@ -508,12 +508,16 @@ PÁGINA LIBRO
 
 .img_book{max-width:100%;width: 268px;position: absolute;right:0px;bottom:-40px;z-index: 51;}
 
-body.course #header {height: 240px;}
-body.course #header .container {height:200px}
+body.course #header {height: 200px;}
+body.course #header .cover_pag_book {height: 180px;}
+body.course #header .container {height:180px}
 
 @media screen and (max-width: 1200px) {
-	body.course #header .cover_pag_book h3 {left: 15px;}
+	body.course #header .cover_pag_book h3 {left: 15px;right: 15px;}
 	.cover_pag_book h3{font-size: 48px;position: absolute;left: 0px;bottom: 20px;}
+}
+@media screen and (max-width: 767px) {
+	body.course #header .cover_pag_book {width: calc(100% - 20px);}
 }
 
 /*****************************
