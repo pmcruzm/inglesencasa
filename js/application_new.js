@@ -194,12 +194,12 @@ jQuery(document).on('ready',function(){
 	});
 
 	//Tooltip de registro
-	jQuery(document).on("mouseenter",".box_tooltip .icon", function(e) {
+	jQuery(document).on("mouseenter","[data-toggle-tooltip]", function(e) {
 		e.preventDefault();
-		jQuery(this).parent().find('.pop_tooltip').fadeIn(400);
-	}).on("mouseleave",".box_tooltip .icon", function(e) {
+		jQuery(this).find('.tooltip').stop().fadeIn(100);
+	}).on("mouseleave","[data-toggle-tooltip]", function(e) {
 		e.preventDefault();
-		jQuery(this).parent().find('.pop_tooltip').fadeOut(400);
+		jQuery(this).find('.tooltip').stop().fadeOut(100);
 	});
 
 

@@ -67,6 +67,7 @@ PROPIEDADES GENERALES
 body{margin:0;padding:0;font-family:'source_sans_proregular', Helvetica, sans-serif;font-size: 1em;line-height: 1.5em;}
 .container{display:block;width:100%;margin:0 auto;position:relative;max-width:1200px;margin:0 auto;position:relative;}
 #wrapper{overflow:hidden;}
+.text-center {text-align:center;}
 
 /*****************************
 PROPIEDADES HEADER
@@ -78,10 +79,9 @@ PROPIEDADES HEADER
 
 #header h1{display: block;width: 363px;height: 139px;background: url(../svg/inglesencasa_vertical.svg) top left no-repeat;text-indent: -99999px;position: absolute;/*left: 10px;*/bottom: 165px;z-index: 1;}
 html[lang="pt"] #header h1{background-image: url(../svg/inglesencasa_vertical_pt.svg);}
-#header h2{font-size: 30px;color:#103E57;max-width: 475px;position: absolute;/*left: 10px;*/bottom: 78px;line-height: 36px;z-index: 1;}
-#header h2 span{font-weight: bold;font-style:italic;}
 #header h1 a {display: block; position: absolute; width: 100%; height: 100%;}
-#header h2.titel_2{max-width:430px;}
+#header p.claim{font-size: 30px;color:#103E57;max-width: 430px;position: absolute;/*left: 10px;*/bottom: 78px;line-height: 36px;z-index: 1;}
+#header p.claim span{font-weight: bold;font-style:italic;}
 
 .menu_header{position:absolute;right:169px;top:23px;padding:0;margin: 0;z-index: 10;}
 .menu_header li{display: inline-block;}
@@ -113,6 +113,20 @@ html[lang="pt"] #header h1{background-image: url(../svg/inglesencasa_vertical_pt
 .box-img-header img{max-width: 100%;}
 
 
+
+.modal{display:none;background:rgba(0,0,0,0.5);position:fixed;top:0;width:100%;z-index:80;height:1000px;}
+.modal .modal-inner{width:480px;box-sizing:border-box;border:8px solid #ffffff;background-color:#70d6d1;padding:50px;position:absolute;top:110px;left:0;right:0;margin:0 auto;}
+.modal .modal-inner h3{color:#ffffff;font-size:40px;font-family:'sofia-pro-black', Helvetica, sans-serif;line-height:40px;margin-bottom:40px;}
+.modal .modal-inner p{color:#2e2e2e;font-size:16px;margin-bottom:20px;}
+.modal .modal-inner a{text-decoration:underline;color:#ffffff;}
+.modal .modal-inner b,.modal .modal-inner strong{font-weight:bold;}
+.modal .modal-inner .buttons > * {margin-top:10px;}
+.modal .modal-inner .btn-primary{display: inline-block;vertical-align: middle;padding:0 15px;min-width: 100px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 2px;text-decoration:none;}
+.modal .modal-inner .btn-primary:hover{opacity: 0.9;}
+.modal .modal-inner .btn-primary:disabled{opacity: 0.5;cursor: default;}
+
+.close-modal{position:absolute;top:10px;right:10px;width:21px;height:21px;background:url(../img/close-modal.png) top left no-repeat;background-size:21px;text-indent:-99999px;}
+
 /*****************************
 PROPIEDADES HOME
 ******************************/
@@ -120,9 +134,9 @@ PROPIEDADES HOME
 
 /***** DESTACADOS ******/
 
+.section-title {font-family:'peace_sansregular', Helvetica, sans-serif;font-size: 40px;font-weight: 400;color:#FF6B47;line-height: 48px;padding-bottom: 16px;}
 .box_destacado{box-sizing:border-box;border: 32px solid #ffffff;margin-top: 32px;box-sizing: border-box;}
 .carrusel_recursos{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);box-sizing: border-box;padding-left: 24px;padding-right: 24px;}
-.box_destacado h3{font-family:'peace_sansregular', Helvetica, sans-serif;font-size: 40px;color:#FF6B47;line-height: 48px;padding-bottom: 16px;}
 .carrusel-destacados{box-sizing: border-box;}
 .carrusel-destacados .slick-list{padding-top:96px;padding-bottom: 96px;overflow: inherit;}
 .box_recurso{height:338px;display:block;max-width:268px;box-sizing:border-box;padding:15px;background:#ffffff;margin-right:30px;-webkit-transition: all 0.15s linear;-moz-transition: all 0.15s linear;-o-transition: all 0.15s linear;transition: all 0.15s linear;box-shadow: 20px 30px 50px 0 rgba(110,181,173,0.50);width: 95%;margin: 0 auto;}
@@ -339,9 +353,12 @@ FORMULARIOS
 .form-type .form-group {position: relative;}
 .form-type .row > div {margin-bottom: 20px;}
 .form-type .submit-row{margin-top:32px;}
-.form-type .txt_recordar{display: block; text-align: right; padding-top: 10px; clear: both;}
-.form-type .txt_recordar a{font-size: 14px;color:#103E57;text-decoration: underline;}
+.form-type .txt_recordar {display: block; text-align: right; padding-top: 10px; clear: both; font-size: 14px;color:#103E57;}
+.form-type .txt_recordar a{color:#103E57;text-decoration: underline;}
+.form-type .txt_legal {display: block; text-align: justify; padding: 10px 0; clear: both; font-size: 12px;line-height: 140%;color:#103E57;}
+.form-type .txt_legal a{color:#103E57;text-decoration: underline;}
 .form-type .errores{font-size:15px;color:red;margin:35px 0;}
+.form-type .errores a {color:red; text-decoration:underline;}
 
 .form-type label{color:#103E57;font-size: 12px;text-transform: uppercase;letter-spacing: 1px;font-family: 'source_sans_prosemibold', Helvetica, sans-serif;}
 .form-type label span{color:#FF6B47;}
@@ -375,10 +392,10 @@ FORMULARIOS
 .bg-select.error> select{}
 .bg-select.error > select option{background:#ff0000;}
 
-.box_tooltip{position: absolute; right: 23px; top:38px;}
-.box_tooltip .icon{width:16px;height:16px;display: block;background:url(../svg/Info.svg) center center no-repeat;}
-.pop_tooltip{width: 275px;background:#FF6B47;color:#ffffff;padding: 8px;border-radius: 8px;font-size: 14px;line-height: 21px;position: absolute;left:-140px;bottom:34px;text-align: center;display: none;}
-.pop_tooltip:after{content:'';display: block;background: url(../img/Point@2X.png) center bottom no-repeat;height:6px;background-size: 12px;width: 100%;position:absolute;bottom:-6px;left:2px;}
+.icon-info{width:16px; height:16px; display:inline-block; position: relative; background:url(../svg/Info.svg) center center no-repeat;}
+.box_tooltip{position: absolute; right: 23px; top:36px;}
+.tooltip{width: 260px;background:#FF6B47;color:#ffffff;padding: 8px;border-radius: 8px;font-size: 14px;line-height: 21px;position: absolute;z-index: 1;left:-132px;bottom:26px;text-align: center;display: none;}
+.tooltip:after{content:'';display: block;background: url(../img/Point@2X.png) center bottom no-repeat;height:6px;background-size: 12px;width: 100%;position:absolute;bottom:-6px;left:2px;}
 
 .cover_dates{overflow:hidden;}
 .row_day,
@@ -442,10 +459,12 @@ PÁGINA LEGAL
 ******************************/
 .block_full{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);position:relative;min-height: 700px;padding:23px 23px 70px 23px;}
 .block_full .container{color:#103E57;font-size:16px;line-height:24px;}
-.block_full h4{color:#103E57;font-size:22px;line-height:32px;margin: 32px 0 16px; }
+.block_full h3{color:#103E57;font-size:22px;line-height:140%;margin: 48px 0 16px; font-weight: bold;}
+.block_full h4{color:#103E57;font-size:18px;line-height:140%;margin: 24px 0 12px; font-weight: bold;}
+.block_full h5{color:#103E57;font-size:16px;line-height:140%;margin: 16px 0 8px; font-weight: bold;}
 .block_full p{margin-bottom: 16px;}
 .block_full ul{margin-bottom: 16px; padding-left:32px; list-style: disc;}
-.block_full p a{text-decoration:underline;color:#103E57;}
+.block_full a{text-decoration:underline;color:#103E57;}
 .block_full strong,.block_full b{font-family:'source_sans_prosemibold', Helvetica, sans-serif;}
 
 /*****************************
@@ -512,7 +531,7 @@ PÁGINA PRIMARIA
 PÁGINA LIBRO
 ******************************/
 .cover_pag_book{height: 200px;position: absolute;top:98px;;width: 100%;box-shadow: 20px 30px 50px 0 rgba(110,181,173,0.50);background-size:cover;box-sizing: border-box;width: calc(100% - 64px);left:0;right:0;margin: 0 auto;}
-.cover_pag_book h3{font-family:'peace_sansregular', Helvetica, sans-serif;font-size: 60px;line-height: 1.15em; color:#ffffff;position: absolute;left: 0px;bottom: 20px;z-index: 51;}
+.cover_pag_book .course-title{font-family:'peace_sansregular', Helvetica, sans-serif;font-size: 60px;line-height: 1.15em; color:#ffffff;position: absolute;left: 0px;bottom: 20px;z-index: 51;}
 .cover_pag_book p{font-size: 24px;color:#ffffff;line-height: 16px;position: absolute;right:0px;bottom: 56px;font-family:'source_sans_prosemibold', Helvetica, sans-serif;z-index: 51;}
 .cover_pag_book:before{/*background: linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.5) 100%);*/width: 100%;height: 100%;z-index: 50;position: absolute;content:'';-webkit-transition: all 0.15s linear;-moz-transition: all 0.15s linear;-o-transition: all 0.15s linear;transition: all 0.15s linear;background: url(../img/iconos_cabecera.png) center center no-repeat;background-size: cover;}
 .box_destacado.inside_pag{margin-top: 108px;border-top: 0;}
@@ -524,8 +543,8 @@ body.course #header .cover_pag_book {height: 180px;}
 body.course #header .container {height:180px}
 
 @media screen and (max-width: 1200px) {
-	body.course #header .cover_pag_book h3 {left: 15px;right: 15px;}
-	.cover_pag_book h3{font-size: 48px;position: absolute;left: 0px;bottom: 20px;}
+	body.course #header .cover_pag_book .course-title {left: 15px;right: 15px;}
+	.cover_pag_book .course-title{font-size: 48px;position: absolute;left: 0px;bottom: 20px;}
 }
 @media screen and (max-width: 767px) {
 	body.course #header .cover_pag_book {width: calc(100% - 20px);}
@@ -633,7 +652,7 @@ PROPIEDADES COOKIES
 
 .block-cookies{background:rgba(255,84,39,0.95);position:fixed;bottom:0;width:100%;padding-top:20px;padding-bottom:20px;z-index:300;display:none;}
 .block-cookies .container{position:relative;max-width:1024px;}
-.block-cookies h2{color:#ffffff;width:80%;margin:0 auto;text-align:center;margin-bottom:20px;font-family:'sofia-pro-black', Helvetica, sans-serif;}
+.block-cookies p.block-title{color:#ffffff;width:80%;margin:0 auto;text-align:center;margin-bottom:20px;font-family:'sofia-pro-black', Helvetica, sans-serif;}
 .block-cookies p{color:#ffffff;width:70%;margin:0 auto;text-align:center;}
 .block-cookies p a{color:#ffffff;text-decoration:none;font-family:'sofia-pro-black', Helvetica, sans-serif;text-decoration:underline;}
 .close_c{position:absolute;right:0;top:0;display:inline-block;color:#ffffff;}
@@ -674,10 +693,12 @@ PROPIEDADES FOOTER
 .footer {padding:30px 32px 30px 32px;}
 
 .footer h3{color:#9B9B9B;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 13px;margin-bottom:16px;letter-spacing: 2px;}
-.footer ul a{color: #2E2E2E;font-size: 14px;line-height: 31px;font-family:'source_sans_prosemibold', Helvetica, sans-serif;}
-.footer ul a:hover{opacity:0.9;}
+.footer ul li{margin-bottom:5px;}
+.footer ul a{color: #2E2E2E;font-size: 14px;font-family:'source_sans_prosemibold', Helvetica, sans-serif;}
+.footer ul a:hover{opacity:0.9;text-decoration:underline;}
 .footer p{color:#2E2E2E;font-size: 12px;text-align: center;}
 .footer p a{color:#2E2E2E;}
+.footer p a:hover{text-decoration:underline;}
 .footer p a:before{content:'|';display: inline-block;margin-left:5px;margin-right: 5px;}
 
 .logo_footer{display:inline-block;text-indent:-99999px;background:url('../img/cup_logo_neg.png') center center no-repeat;height:47px;width:179px;background-size:179px;/*margin-left:30px;*/}

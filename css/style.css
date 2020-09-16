@@ -78,9 +78,11 @@ PROPIEDADES HEADER
 
 #header h1{display: block;width: 363px;height: 139px;background: url(../svg/inglesencasa_vertical.svg) top left no-repeat;text-indent: -99999px;position: absolute;/*left: 10px;*/bottom: 165px;}
 html[lang="pt"] #header h1{background-image: url(../svg/inglesencasa_vertical_pt.svg);}
+#header h1 a {display: block; position: absolute; width: 100%; height: 100%;}
 #header h2{font-size: 30px;color:#103E57;max-width: 475px;position: absolute;/*left: 10px;*/bottom: 78px;line-height: 36px;}
 #header h2 span{font-weight: bold;font-style:italic;}
-#header h1 a {display: block; position: absolute; width: 100%; height: 100%;}
+#header p.claim{font-size: 30px;color:#103E57;max-width: 430px;position: absolute;/*left: 10px;*/bottom: 78px;line-height: 36px;z-index: 1;}
+#header p.claim span{font-weight: bold;font-style:italic;}
 
 .menu_header{position:absolute;right:21px;top:19px;padding:0;margin: 0;z-index: 10;}
 .menu_header li{display: inline-block;}
@@ -109,6 +111,7 @@ PROPIEDADES HOME
 
 /***** DESTACADOS ******/
 
+.section-title {font-family:'peace_sansregular', Helvetica, sans-serif;font-size: 40px;font-weight: 400;color:#FF6B47;line-height: 48px;padding-bottom: 16px;}
 .box_destacado{box-sizing:border-box;border: 32px solid #ffffff;margin-top: 32px;box-sizing: border-box;}
 .carrusel_recursos{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);box-sizing: border-box;padding-left: 24px;padding-right: 24px;}
 .box_destacado h3{font-family:'peace_sansregular', Helvetica, sans-serif;font-size: 40px;color:#FF6B47;line-height: 48px;padding-bottom: 16px;}
@@ -456,7 +459,7 @@ PROPIEDADES COOKIES
 
 .block-cookies{background:rgba(255,84,39,0.95);position:fixed;bottom:0;width:100%;padding-top:20px;padding-bottom:20px;z-index:300;display:none;}
 .block-cookies .container{position:relative;max-width:1024px;}
-.block-cookies h2{color:#ffffff;width:80%;margin:0 auto;text-align:center;margin-bottom:20px;font-family:'sofia-pro-black', Helvetica, sans-serif;}
+.block-cookies p.block-title{color:#ffffff;width:80%;margin:0 auto;text-align:center;margin-bottom:20px;font-family:'sofia-pro-black', Helvetica, sans-serif;}
 .block-cookies p{color:#ffffff;width:70%;margin:0 auto;text-align:center;}
 .block-cookies p a{color:#ffffff;text-decoration:none;font-family:'sofia-pro-black', Helvetica, sans-serif;text-decoration:underline;}
 .close_c{position:absolute;right:0;top:0;display:inline-block;color:#ffffff;}
