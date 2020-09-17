@@ -457,7 +457,7 @@ PÁGINA DE CONTACTO
 /*****************************
 PÁGINA LEGAL
 ******************************/
-.block_full{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);position:relative;min-height: 700px;padding:23px 23px 70px 23px;}
+.block_full{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);position:relative;min-height: 500px;padding:30px 30px 70px 30px;}
 .block_full .container{color:#103E57;font-size:16px;line-height:24px;}
 .block_full h3{color:#103E57;font-size:22px;line-height:140%;margin: 48px 0 16px; font-weight: bold;}
 .block_full h4{color:#103E57;font-size:18px;line-height:140%;margin: 24px 0 12px; font-weight: bold;}
