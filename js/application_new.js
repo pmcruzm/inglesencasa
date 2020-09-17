@@ -180,6 +180,13 @@ jQuery(document).on('ready',function(){
 		}
 	});
 
+	jQuery('#header').on("click","[data-toggle-menu]", function(e) {
+		e.preventDefault();
+		jQuery(e.target).toggleClass('active')
+						.closest('#header')
+						.toggleClass('show-menu');
+	})
+
 	//Over menú
 	jQuery(document).on("mouseenter",".menu_header a", function(e) {
 		e.preventDefault();
@@ -306,7 +313,7 @@ jQuery(document).on('ready',function(){
 
 	jQuery('.course-student-school-stage select').on('change', function(){
 		var f = jQuery(this).closest('form');
-		console.log(this)
+		// console.log(this)
 		jQuery.ajax({
 			type : f.attr('method'),
 			url : f.attr('action'),
