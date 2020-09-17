@@ -466,6 +466,7 @@ PÁGINA LEGAL
 .block_full ul{margin-bottom: 16px; padding-left:32px; list-style: disc;}
 .block_full a{text-decoration:underline;color:#103E57;}
 .block_full strong,.block_full b{font-family:'source_sans_prosemibold', Helvetica, sans-serif;}
+.block_full em,.block_full i{font-style:italic;}
 
 /*****************************
 PÁGINA DE NOSOTROS
