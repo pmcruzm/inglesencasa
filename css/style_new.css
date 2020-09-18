@@ -361,7 +361,7 @@ FORMULARIOS
 .form-type{}
 .form-type .form-group {position: relative;}
 .form-type .row > div {margin-bottom: 20px;}
-.form-type .submit-row{margin-top:32px;}
+.form-type .submit-row{margin-top:20px;}
 .form-type .txt_recordar {display: block; text-align: right; padding-top: 10px; clear: both; font-size: 14px;color:#103E57;}
 .form-type .txt_recordar a{color:#103E57;text-decoration: underline;}
 .form-type .txt_legal {display: block; text-align: justify; padding: 10px 0; clear: both; font-size: 12px;line-height: 140%;color:#103E57;}
