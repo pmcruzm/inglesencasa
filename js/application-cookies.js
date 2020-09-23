@@ -17,7 +17,7 @@ jQuery(document).on('ready',function(){
 
 	jQuery(document).on('click','.btn-accept',function(e){
 		e.preventDefault();
-		jQuery.cookie(cookie_consent_name, 'acepta', { expires: 365 * 10 ,path: '/' });
+		jQuery.cookie(cookie_consent_name, 'acepta', {expires: 365, path: '/' });
 		jQuery('.block-cookies').fadeOut(300);
 		initAnalytics();
 	});
