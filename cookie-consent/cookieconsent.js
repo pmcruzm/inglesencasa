@@ -1603,8 +1603,6 @@ function (_Filter) {
           for (var _iterator = scriptTags[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
             var scriptTag = _step.value;
 
-            console.log(blacklist);
-
             if (blacklist.indexOf(scriptTag.dataset.consent) < 0) {
               var newtag = document.createElement('script');
               var parentNode = scriptTag.parentNode;
@@ -3091,7 +3089,7 @@ function () {
     key: "setConfiguration",
     value: function setConfiguration(configObject) {
       // The user overrides the default config
-      console.log(window.CookieConsent.config, configObject, _objectSpread({}, window.CookieConsent.config, configObject));
+      // console.log(window.CookieConsent.config, configObject, _objectSpread({}, window.CookieConsent.config, configObject));
       this.mergeDeep(window.CookieConsent.config, configObject); //loMerge(window.CookieConsent.config, configObject);
       // The cookie overrides the default and user config
 
