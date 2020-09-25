@@ -334,12 +334,15 @@ PROPIEDADES HOME
 .contenedor-recursos-curso .box_recurso.over .info_recurso{opacity:1 !important;}
 .contenedor-recursos-curso .box_recurso.over .type_recurso{opacity:1 !important;}
 .contenedor-recursos-curso .info_recurso h5{color:#ffffff;}
-.contenedor-recursos-curso .type_recurso{position:relative;display: block;width: 30px;height: 30px;right:0px;top:-10px;background-size:150px;}
+.contenedor-recursos-curso .type_recurso{position:relative;display: block;width: 30px;height: 30px;right:0px;top:-10px;background-image: url(../svg/sprite_icon-recursos_cec.svg);background-size:240px;}
 .contenedor-recursos-curso .type_recurso.audio{background-position: 0px 60px;}
-.contenedor-recursos-curso .type_recurso.pdf{background-position: 30px 60px;}
-.contenedor-recursos-curso .type_recurso.imagen{background-position: 60px 60px;}
-.contenedor-recursos-curso .type_recurso.video{background-position: 90px 60px;}
-.contenedor-recursos-curso .type_recurso.interactivo{background-position: 120px 60px;}
+.contenedor-recursos-curso .type_recurso.interactivo{background-position: -30px 60px;}
+.contenedor-recursos-curso .type_recurso.video{background-position: -60px 60px;}
+.contenedor-recursos-curso .type_recurso.imagen{background-position: -90px 60px;}
+.contenedor-recursos-curso .type_recurso.pdf{background-position: -120px 60px;}
+.contenedor-recursos-curso .type_recurso.word{background-position: -150px 60px;}
+.contenedor-recursos-curso .type_recurso.excel{background-position: -180px 60px;}
+.contenedor-recursos-curso .type_recurso.link{background-position: -210px 60px;}
 
 /*****************************
 PÁGINA DE SEARCH
