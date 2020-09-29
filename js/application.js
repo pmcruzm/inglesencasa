@@ -180,17 +180,20 @@ jQuery(document).on('ready',function(){
 		}
 	});
 
-	//Over menú
-	jQuery(document).on("mouseenter",".menu_header a", function(e) {
+	jQuery('#header').on("click","[data-toggle-menu]", function(e) {
 		e.preventDefault();
-		if(device!='yes'){
-			jQuery(this).addClass('over');
-		}
-	}).on("mouseleave",".menu_header a", function(e) {
+		jQuery(e.target).toggleClass('active')
+						.closest('#header')
+						.toggleClass('show-menu');
+	})
+
+	//Tooltip de registro
+	jQuery(document).on("mouseenter","[data-toggle-tooltip]", function(e) {
 		e.preventDefault();
-		if(device!='yes'){
-			jQuery(this).removeClass('over');
-		}
+		jQuery(this).find('.tooltip').stop().fadeIn(100);
+	}).on("mouseleave","[data-toggle-tooltip]", function(e) {
+		e.preventDefault();
+		jQuery(this).find('.tooltip').stop().fadeOut(100);
 	});
 
 
@@ -272,6 +275,7 @@ jQuery(document).on('ready',function(){
 	});*/
 
 
+
 	//Evento para capturar el resize de la ventana
 	jQuery( window ).resize(function() {
 		h_win=jQuery(window).height();
@@ -293,6 +297,20 @@ jQuery(document).on('ready',function(){
 
 	});
 
+
+	jQuery('.course-student-school-stage select').on('change', function(){
+		var f = jQuery(this).closest('form');
+		// console.log(this)
+		jQuery.ajax({
+			type : f.attr('method'),
+			url : f.attr('action'),
+			data : f.serialize(),
+			success: function (data) {
+				// console.log(data)
+			}
+		});
+	});
+
 });
 
 
@@ -308,13 +326,6 @@ function load_recurso(url, version){
 		dataType: 'html',
 		data: Parameters,
 		success: function(data){
-
-			// if( typeof ga === 'function' ) {
-			// 	ga('send', 'event', 'outbound', 'click', code, {
-			// 		'transport': 'beacon'
-			// 	});
-			// }
-
 	 		jQuery('.resource-content').html(data);
 	 		var tipo = jQuery('.resource-content .content_recurso').data('type');
 			//Mostramos el lightbox
@@ -547,3 +558,39 @@ function doOnOrientationChange()
 		break;
 	}
   }
+
+function fallbackCopyTextToClipboard(text) {
+  var textArea = document.createElement("textarea");
+  textArea.value = text;
+
+  // Avoid scrolling to bottom
+  textArea.style.top = "0";
+  textArea.style.left = "0";
+  textArea.style.position = "fixed";
+
+  document.body.appendChild(textArea);
+  textArea.focus();
+  textArea.select();
+
+  try {
+    var successful = document.execCommand('copy');
+    var msg = successful ? 'successful' : 'unsuccessful';
+    console.log('Fallback: Copying text command was ' + msg);
+  } catch (err) {
+    console.error('Fallback: Oops, unable to copy', err);
+  }
+
+  document.body.removeChild(textArea);
+}
+
+function copyTextToClipboard(text) {
+  if (!navigator.clipboard) {
+    fallbackCopyTextToClipboard(text);
+    return;
+  }
+  navigator.clipboard.writeText(text).then(function() {
+    console.log('Async: Copying to clipboard was successful!');
+  }, function(err) {
+    console.error('Async: Could not copy text: ', err);
+  });
+}
