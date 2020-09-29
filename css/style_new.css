@@ -85,7 +85,7 @@ html[lang="pt"] #header h1{background-image: url(../svg/inglesencasa_vertical_pt
 
 .menu_header{position:absolute;right:169px;top:23px;padding:0;margin: 0;z-index: 10;}
 .menu_header li{display: inline-block;}
-.menu_header li a{display: inline-block;color:#103E57;font-family: 'museosanscyrl', Helvetica, sans-serif;font-size: 12px;position: relative;letter-spacing: 1px;}
+.menu_header li a{display: inline-block;color:#103E57;font-family: 'museosanscyrl', Helvetica, sans-serif;font-size: 12px;position: relative;letter-spacing: 1px;text-transform:uppercase;}
 .menu_header li a:after{content:'|';display: inline-block;margin-left: 20px;margin-right: 20px;}
 .menu_header li a.over:before{content:'';display: block;height: 3px;background:#FF6B47;width: calc(100% - 42px);position: absolute;bottom: -3px;}
 .menu_header li.active a:before{content:'';display: block;height: 3px;background:#FF6B47;width: calc(100% - 42px);position: absolute;bottom: -3px;}
@@ -96,7 +96,7 @@ html[lang="pt"] #header h1{background-image: url(../svg/inglesencasa_vertical_pt
 .btn_action {display: inline-block;color:#103E57;font-family: 'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 2px;border:2px solid #103E57;border-radius: 20px;height: 36px;min-width: 50px;padding-left: 10px;padding-right: 10px;line-height: 36px;text-align: center;z-index: 50;}
 .btn_action:hover,.btn_action.active{color:#ffffff;background:#103E57;}
 
-#header .nav-main{position:absolute;right:32px;top:16px;z-index: 1;}
+#header .nav-main{position:absolute;right:32px;top:16px;z-index: 1; text-transform:uppercase;}
 #header .nav-main > .btn_action{margin:0 0 0 5px;}
 
 @media screen and (min-width: 767px) {
@@ -130,7 +130,7 @@ html[lang="pt"] #header h1{background-image: url(../svg/inglesencasa_vertical_pt
 .modal .modal-inner a{text-decoration:underline;color:#ffffff;}
 .modal .modal-inner b,.modal .modal-inner strong{font-weight:bold;}
 .modal .modal-inner .buttons > * {margin-top:10px;}
-.modal .modal-inner .btn-primary{display: inline-block;vertical-align: middle;padding:0 15px;min-width: 100px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 2px;text-decoration:none;}
+.modal .modal-inner .btn-primary{display: inline-block;vertical-align: middle;padding:0 15px;min-width: 100px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 2px;text-decoration:none;text-transform:uppercase;}
 .modal .modal-inner .btn-primary:hover{opacity: 0.9;}
 .modal .modal-inner .btn-primary:disabled{opacity: 0.5;cursor: default;}
 
@@ -226,7 +226,7 @@ PROPIEDADES HOME
 .banner_recursos p{font-size: 22px;line-height: 32px;color:#103E57;display: inline-block;}
 .banner_recursos div{display: inline-block;}
 .banner_recursos strong{font-family:'source_sans_prosemibold', Helvetica, sans-serif;}
-.btn_registrate,.more_recursos,.btn_more_r{display: inline-block;vertical-align: middle;width: 159px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 12px;border-radius: 30px;cursor: pointer;transition: all 0.2s linear;font-family:'museosanscyrl', Helvetica, sans-serif;letter-spacing: 1px;}
+.btn_registrate,.more_recursos,.btn_more_r{display: inline-block;vertical-align: middle;width: 159px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 12px;border-radius: 30px;cursor: pointer;transition: all 0.2s linear;font-family:'museosanscyrl', Helvetica, sans-serif;letter-spacing: 1px;text-transform:uppercase;}
 .btn_registrate:hover,.more_recursos:hover,.btn_more_r:hover{opacity: 0.9;}
 .box_more_r{text-align: center;padding-bottom: 100px;padding-top: 66px;clear: both;}
 .box_more_r h4{font-size: 22px;line-height: 32px;color:#103E57;display: none;width: 95%;max-width: 636px;margin: 0 auto;}
@@ -383,7 +383,7 @@ FORMULARIOS
 .form-type input[type=text].error,
 .form-type input[type=email].error,
 .form-type input[type=password].error{border:1px solid #ff0000 !important;}
-.form-type input[type=submit]{display: inline-block;vertical-align: middle;padding:0 15px;min-width: 100px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 2px;}
+.form-type input[type=submit]{display: inline-block;vertical-align: middle;padding:0 15px;min-width: 100px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 2px;text-transform:uppercase;}
 .form-type input[type=submit]:hover{opacity: 0.9;}
 .form-type input[type=submit]:disabled{opacity: 0.5;cursor: default;}
 .form-type textarea{width:100% ;border: none;-webkit-appearance: none;min-height: 80px; padding:10px; box-sizing: border-box;box-shadow: 0px 2px 1px 0px rgba(148,227,223,0.5);}
