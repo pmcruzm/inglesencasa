@@ -120,7 +120,7 @@ html[lang="pt"] #header h1{background-image: url(../svg/inglesencasa_vertical_pt
 .ficha_gen .n_recursos{font-size:16px;color:#ffffff;position: absolute;left: 32px;bottom: 44px;z-index: 51; }
 
 .box-img-header{position: absolute;right: -70px;top:123px;width: 50%;z-index: 50;}
-.box-img-header.home{top:auto !important;bottom: -99px;}
+.box-img-header.home{top:auto !important;bottom: -120px;width: 60%;}
 .box-img-header img{max-width: 100%;}
 
 
