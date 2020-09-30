@@ -17,7 +17,7 @@ jQuery(window).on('load',function(){
 
 });
 
-jQuery(document).on('ready',function(){
+jQuery(document).on('ready',function($){
 	//console.log('validation');
 
 	//Eliminar marco de error cuando se hace click sobre un input con error
@@ -37,20 +37,37 @@ jQuery(document).on('ready',function(){
 		}
 	});
 
-	//Detectar cambios en checkbox
-	jQuery(document).on('change','form input[type=checkbox]',function(event){
+	//Detectar cambios en select registro fecha
+	var birthSelects = jQuery('[name="birth_day"],[name="birth_month"],[name="birth_year"]', 'form')
+	jQuery(document).on('change', birthSelects, function(event){
 		event.preventDefault();
-			if(jQuery(this).hasClass('error')){
-				jQuery(this).parents('.form-group').find('input[type=checkbox]').removeClass('error');
-			}
-	});
+		var form = jQuery(event.target).closest('form');
+		var d_fecha=birthSelects.filter('[name="birth_day"]').val();
+		var m_fecha=birthSelects.filter('[name="birth_month"]').val();
+		var y_fecha=birthSelects.filter('[name="birth_year"]').val();
+		if(d_fecha!="" && m_fecha!="" && y_fecha!="" ){
+			//Comprobamos si es menor de 14 años
+			var final_date = new Date(y_fecha+"-"+m_fecha+"-"+d_fecha);
+			var isUnderConsent = getAge(final_date) < 14;
 
+			jQuery('label[data-label-underage]', form).each(function(){
+				var me = jQuery(this);
+				me.text( me.data(isUnderConsent ? 'label-underage' : 'label') );
+			});
+		}
+	});
 
 	//Validación de formularios de contacto
 	jQuery('form[data-validate="true"]').on('submit', function(event){
-		if( ! validateForm.validate(event) ) {
+
+		var form = jQuery(event.target);
+
+		if( validateForm.validate(event) ) {
+			jQuery('input[type="submit"]', form).prop("disabled", true);
+		} else {
 			event.preventDefault();
 		}
+
 	});
 
 });
@@ -132,7 +149,7 @@ var validateForm = {
 	checkField: function(i,e) {
 
 		var elem   = jQuery(e);
-		var params = elem.data('validation-rule').split('|');
+		var params = elem.data('validation-rule').split(':');
 		var rule   = params.shift();
 		var error  = false;
 
