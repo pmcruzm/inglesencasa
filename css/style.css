@@ -447,19 +447,16 @@ PÁGINA DE PERFIL
 .block_perfil h4{color:#103E57;font-size:22px;line-height:32px;margin-bottom: 32px;}
 .block_perfil p.info{color:#0B2A3B;font-size:18px;line-height: 26px;}
 
-.header_perfil{height:48px;position: absolute; left: 194px;width: 310px;z-index: 1;}
-.header_perfil h1{display: block;background: url(../svg/inglesencasa_horizontal.svg) top left no-repeat !important;width: 311px !important;height: 36px !important;text-indent: -99999px !important;position: absolute !important;left: 0px;background-size:311px !important;bottom: 0px !important;}
-
 .info_perfil{position:absolute;bottom:32px;}
 .info_perfil .tipo_p{color:#103E57;font-size: 16px;line-height: 49px;font-weight: bold;}
 .info_perfil .name_p{color:#103E57;font-size: 40px;line-height: 49px;font-family: 'peace_sansregular', Helvetica, sans-serif;}
 .info_perfil a{color:#FF6B47; text-decoration:none;}
 .info_perfil a:hover{color:#FF6B47; text-decoration:underline;}
 
-#header.perfil-h {height: 272px;}
-#header.perfil-h  .container{height: 272px;}
+#header.perfil-h{height: 250px;}
+#header.perfil-h .container{height: 250px;}
 
-#header.privada:after{position:absolute;width:100%;height:440px;content:'';display:block;background: url("../img/trama_iconos_cabecera@2X.png") bottom left no-repeat;top:0;left:0;background-size: cover;}
+#header.dashboard:after{position:absolute;width:100%;height:440px;content:'';display:block;background: url("../img/trama_iconos_cabecera@2X.png") bottom left no-repeat;top:0;left:0;background-size: cover;}
 
 /*****************************
 PÁGINA DE CONTACTO
@@ -531,8 +528,9 @@ PÁGINA INFANTIL
 .cover_infantil:before{background: linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.5) 100%);width: 100%;height: 100%;z-index: 50;position: absolute;content:'';-webkit-transition: all 0.15s linear;-moz-transition: all 0.15s linear;-o-transition: all 0.15s linear;transition: all 0.15s linear;}
 .cover_infantil p{font-size: 24px;color:#ffffff;line-height: 16px;position: absolute;right:0px;bottom: 56px;font-family:'source_sans_prosemibold', Helvetica, sans-serif;z-index: 51;}
 .box_destacado.inside_pag{margin-top: 108px;border-top: 0;}
-.logo_interior{width:311px !important;height: 36px !important;position: absolute;top: 13px !important;left:193px !important;bottom: auto !important;background: url(../svg/inglesencasa_horizontal.svg) top left no-repeat !important;background-size:311px !important;}
-html[lang="pt"] .logo_interior{background-image: url(../svg/inglesencasa_horizontal_pt.svg);}
+.logo_interior{width:311px !important;height: 36px !important;position: absolute;top: 13px !important;left:193px !important;bottom: auto !important;background-position: top left; background-repeat: no-repeat;background-size:311px !important;}
+html[lang="es"] .logo_interior{background-image: url(../svg/inglesencasa_horizontal.svg) !important;}
+html[lang="pt"] .logo_interior{background-image: url(../svg/inglesencasa_horizontal_pt.svg) !important;}
 
 /*****************************
 PÁGINA PRIMARIA
@@ -561,7 +559,7 @@ body.course #header .cover_pag_book {height: 180px;}
 body.course #header .container {height:180px}
 
 @media screen and (max-width: 1200px) {
-	body.course #header .cover_pag_book .course-title {left: 15px;right: 15px; max-width: 100%;}
+	body.course #header .cover_pag_book .course-title {left: 15px;right: 15px; max-width: 100%; font-size:38px; line-height: 130%;}
 	.cover_pag_book .course-title{font-size: 48px;position: absolute;left: 0px;bottom: 20px;}
 }
 @media screen and (max-width: 767px) {
