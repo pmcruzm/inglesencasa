@@ -458,6 +458,13 @@ PÁGINA DE PERFIL
 
 #header.dashboard:after{position:absolute;width:100%;height:440px;content:'';display:block;background: url("../img/trama_iconos_cabecera@2X.png") bottom left no-repeat;top:0;left:0;background-size: cover;}
 
+.notice {font-size:18px; text-align:center; padding:80px 0;}
+.notice a{color: #103E57; text-decoration: underline;}
+.notice a:hover{text-decoration: none;}
+.notice b,.notice strong{font-weight: bold;}
+.notice i,.notice em{font-style: italic;}
+
+
 /*****************************
 PÁGINA DE CONTACTO
 ******************************/
@@ -492,10 +499,11 @@ PÁGINA DE NOSOTROS
 .block_nosotros .right_nosotros{text-align: center;}
 .block_nosotros .right_nosotros img{max-width: 100%;position: relative;margin-top: -25%;}
 
-.block_nosotros h4{color:#103E57;font-size:22px;line-height:32px;width:90%;margin-bottom: 32px;}
-.block_nosotros p{color:#103E57;font-size:16px;line-height:24px;width:90%;margin-bottom: 16px;}
+.block_nosotros h4{color:#103E57;font-size:22px;line-height:32px;margin-bottom: 32px;}
+.block_nosotros p{color:#103E57;font-size:16px;line-height:24px;margin-bottom: 16px;}
 .block_nosotros p a{text-decoration:underline;color:#103E57;}
-.block_nosotros p strong{font-family:'source_sans_prosemibold', Helvetica, sans-serif;}
+.block_nosotros strong,
+.block_nosotros b{font-family:'source_sans_prosemibold', Helvetica, sans-serif;}
 
 /*****************************
 PÁGINA DE NEWSLETTER
@@ -719,8 +727,8 @@ PROPIEDADES FOOTER
 
 .logo_footer{display:inline-block;text-indent:-99999px;background:url('../img/cup_logo_neg.png') center center no-repeat;height:47px;width:179px;background-size:179px;/*margin-left:30px;*/}
 
-.rrss_footer{margin:0; padding:0;}
-.rrss_footer li{display: inline-block;margin-right: 10px;}
+.rrss_footer{margin:0; padding:0; font-size:0;}
+.rrss_footer li{display: inline-block;margin-right: 10px;margin-bottom: 10px;}
 .rrss_footer li:last-child{margin-right: 0;}
 .rrss_footer a{display: inline-block;width: 36px;height: 36px;text-indent:-99999px;background-image: url(../svg/sprite_rrss.svg);background-repeat: none;}
 .rrss_footer a.ico-fb{background-position: 0px 0px;}
