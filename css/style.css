@@ -729,19 +729,24 @@ PROPIEDADES FOOTER
 .logo_footer{display:inline-block;text-indent:-99999px;background:url('../img/cup_logo_neg.png') center center no-repeat;height:47px;width:179px;background-size:179px;/*margin-left:30px;*/}
 
 .rrss_footer{margin:0; padding:0; font-size:0;}
-.rrss_footer li{display: inline-block;margin-right: 10px;margin-bottom: 10px;}
+.rrss_footer li{display: inline-block;margin-right: 10px;margin-bottom: 10px !important;}
 .rrss_footer li:last-child{margin-right: 0;}
-.rrss_footer a{display: inline-block;width: 36px;height: 36px;text-indent:-99999px;background-image: url(../svg/sprite_rrss.svg);background-repeat: none;}
-.rrss_footer a.ico-fb{background-position: 0px 0px;}
-.rrss_footer a.ico-tw{background-position: -36px 0px;}
+.rrss_footer a{display: inline-block;width: 36px;height: 36px;text-indent:-99999px;background-image: url('../svg/sprite_rrss.svg?v=1');background-repeat: none;}
+.rrss_footer a.ico-fb {background-position: 0px 0px;}
+.rrss_footer a.ico-tw {background-position: -36px 0px;}
 .rrss_footer a.ico-inst{background-position: -72px 0px;}
-.rrss_footer a.ico-yt{background-position: -108px 0px;}
+.rrss_footer a.ico-yt {background-position: -108px 0px;}
+.rrss_footer a.ico-rss{background-position: -144px 0px;}
+.rrss_footer a.ico-pin{background-position: -180px 0px;}
+.rrss_footer a.ico-lin{background-position: -216px 0px;}
 
-.rrss_footer a.ico-fb:hover{background-position: 0px -36px;}
-.rrss_footer a.ico-tw:hover{background-position: -36px -36px;}
+.rrss_footer a.ico-fb:hover {background-position: 0px -36px;}
+.rrss_footer a.ico-tw:hover {background-position: -36px -36px;}
 .rrss_footer a.ico-inst:hover{background-position: -72px -36px;}
-.rrss_footer a.ico-yt:hover{background-position: -108px -36px;}
-
+.rrss_footer a.ico-yt:hover {background-position: -108px -36px;}
+.rrss_footer a.ico-rss:hover{background-position: -144px -36px;}
+.rrss_footer a.ico-pin:hover{background-position: -180px -36px;}
+.rrss_footer a.ico-lin:hover{background-position: -216px -36px;}
 
 /**********************************
 PROPIEDADES DE CUSTOM CHECKBOX BUTTON
