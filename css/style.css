@@ -68,6 +68,9 @@ body{margin:0;padding:0;font-family:'source_sans_proregular', Helvetica, sans-se
 .container{display:block;width:100%;margin:0 auto;position:relative;max-width:1200px;margin:0 auto;position:relative;}
 #wrapper{overflow:hidden;}
 .text-center {text-align:center;}
+.font-weight-bold {font-weight: bolder!important;}
+.font-italic {font-style: italic!important;}
+
 
 /*****************************
 PROPIEDADES HEADER
@@ -384,7 +387,8 @@ FORMULARIOS
 .form-type input[type=password]:disabled{background-color:white;opacity:0.5;}
 .form-type input[type=text].error,
 .form-type input[type=email].error,
-.form-type input[type=password].error{border:1px solid #ff0000 !important;}
+.form-type input[type=password].error,
+.form-type textarea.error{border:1px solid #ff0000 !important;}
 .form-type input[type=submit]{display: inline-block;vertical-align: middle;padding:0 15px;min-width: 100px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 2px;text-transform:uppercase;}
 .form-type input[type=submit]:hover{opacity: 0.9;}
 .form-type input[type=submit]:disabled{opacity: 0.5;cursor: default;}
@@ -505,6 +509,8 @@ PÁGINA DE NOSOTROS
 .block_nosotros p a{text-decoration:underline;color:#103E57;}
 .block_nosotros strong,
 .block_nosotros b{font-family:'source_sans_prosemibold', Helvetica, sans-serif;}
+.block_nosotros em,
+.block_nosotros i{font-style:italic;}
 
 /*****************************
 PÁGINA DE NEWSLETTER
