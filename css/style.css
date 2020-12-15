@@ -392,7 +392,7 @@ FORMULARIOS
 .form-type input[type=submit]{display: inline-block;vertical-align: middle;padding:0 15px;min-width: 100px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 2px;text-transform:uppercase;}
 .form-type input[type=submit]:hover{opacity: 0.9;}
 .form-type input[type=submit]:disabled{opacity: 0.5;cursor: default;}
-.form-type textarea{width:100% ;border: none;-webkit-appearance: none;min-height: 80px; padding:10px; box-sizing: border-box;box-shadow: 0px 2px 1px 0px rgba(148,227,223,0.5);}
+.form-type textarea{width:100% ;border: none;-webkit-appearance: none;min-height: 80px; padding:10px; border: 1px solid #ffffff; box-sizing: border-box;box-shadow: 0px 2px 1px 0px rgba(148,227,223,0.5);}
 
 .block_perfil.wysiwyg p{margin-bottom: 1.3em;}
 .block_perfil.wysiwyg ol{list-style:decimal; padding-left:3em;}
@@ -446,7 +446,7 @@ PÁGINA DE REGISTRO
 /*****************************
 PÁGINA DE PERFIL
 ******************************/
-.block_perfil{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);position:relative;padding-top:53px;padding-bottom: 63px;}
+.block_perfil{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);position:relative;padding-top:50px;padding-bottom: 50px;}
 .block_perfil .container{max-width: 768px; width: 90%;}
 .block_perfil h4{color:#103E57;font-size:22px;line-height:32px;margin-bottom: 32px;}
 .block_perfil p.info{color:#0B2A3B;font-size:18px;line-height: 26px;}
