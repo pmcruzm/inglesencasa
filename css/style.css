@@ -375,6 +375,7 @@ FORMULARIOS
 .form-type .txt_legal {display: block; text-align: justify; padding: 10px 0; clear: both; font-size: 12px;line-height: 140%;color:#103E57;}
 .form-type .txt_legal a{color:#103E57;text-decoration: underline;}
 .form-type .errores{font-size:15px;color:red;margin:35px 0;}
+.form-type .errores p {margin:0;}
 .form-type .errores a {color:red; text-decoration:underline;}
 
 .form-type label{color:#103E57;font-size: 12px;text-transform: uppercase;letter-spacing: 1px;font-family: 'source_sans_prosemibold', Helvetica, sans-serif;}
@@ -450,6 +451,13 @@ PÁGINA DE PERFIL
 .block_perfil .container{max-width: 768px; width: 90%;}
 .block_perfil h4{color:#103E57;font-size:22px;line-height:32px;margin-bottom: 32px;}
 .block_perfil p.info{color:#0B2A3B;font-size:18px;line-height: 26px;}
+.block_perfil p{margin-bottom:1em;}
+.block_perfil a{color:#FF6B47; text-decoration:underline;}
+.block_perfil a:hover{color:#FF6B47; text-decoration:none;}
+.block_perfil strong,
+.block_perfil b{font-family:'source_sans_prosemibold', Helvetica, sans-serif;}
+.block_perfil em,
+.block_perfil i{font-style:italic;}
 
 .info_perfil{position:absolute;bottom:32px;}
 .info_perfil .tipo_p{color:#103E57;font-size: 16px;line-height: 49px;font-weight: bold;}
@@ -488,8 +496,10 @@ PÁGINA LEGAL
 .block_full ul{margin-bottom: 16px; padding-left:32px; list-style: disc;}
 .block_full a{text-decoration:underline;color:#103E57;}
 .block_full a:hover{text-decoration:none;}
-.block_full strong,.block_full b{font-family:'source_sans_prosemibold', Helvetica, sans-serif;}
-.block_full em,.block_full i{font-style:italic;}
+.block_full strong,
+.block_full b{font-family:'source_sans_prosemibold', Helvetica, sans-serif;}
+.block_full em,
+.block_full i{font-style:italic;}
 .block_full table{width:100%;border-collapse: collapse; margin:16px 0;}
 .block_full table th {padding:6px 10px; text-align:left; border: 1px solid black; color:white; background-color:black;}
 .block_full table td {padding:6px 10px; text-align:left; border: 1px solid black; }
