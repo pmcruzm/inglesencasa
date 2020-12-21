@@ -87,10 +87,10 @@ html[lang="pt"] #header h1{background-image: url(../svg/inglesencasa_vertical_pt
 #header p.claim span{font-weight: bold;font-style:italic;}
 
 
-.nav-main{position:absolute;right:32px;top:16px;z-index: 2; text-transform:uppercase;}
+.nav-main{position:absolute;right:32px;top:15px;z-index: 2; text-transform:uppercase;}
 .nav-main > .btn_action{margin:0 0 0 5px;}
 
-.menu_header{padding:0;margin: 0 20px 0 0;z-index: 51; display: inline-block;}
+.menu_header{padding:0; margin: 0 20px; z-index: 51; display: inline-block;}
 .menu_header li{display: inline-block;font-family: 'museosanscyrl', Helvetica, sans-serif;font-size: 12px;text-transform:uppercase;letter-spacing: 1px;}
 .menu_header li:after{content:'|';display: inline-block;margin-left: 20px;margin-right: 20px;}
 .menu_header li:last-child:after{display:none;}
@@ -98,7 +98,7 @@ html[lang="pt"] #header h1{background-image: url(../svg/inglesencasa_vertical_pt
 .menu_header li a:hover{border-color:#FF6B47;}
 .menu_header li.active a{border-color:#FF6B47;}
 
-.btn_action {display: inline-block;color:#103E57;font-family: 'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 2px;border:2px solid #103E57;border-radius: 20px;height: 36px;min-width: 50px;padding-left: 10px;padding-right: 10px;line-height: 36px;text-align: center;z-index: 50;}
+.btn_action {display: inline-block;color:#103E57;font-family: 'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 2px;border:2px solid #103E57;border-radius: 20px;height: 34px;min-width: 50px;padding-left: 10px;padding-right: 10px;line-height: 34px;text-align: center;z-index: 50;}
 .btn_action:hover,.btn_action.active{color:#ffffff;background:#103E57;}
 
 @media screen and (min-width: 767px) {
@@ -884,7 +884,7 @@ MEDIA QUERIES
 	.block_filters{padding-right: 88px;}
 	.search_filter a{right:32px;}
 	.over_buscador{right:32px;}
-	#header h1{width: 363px;height: 139px;background-size: 363px;left: 48px;}
+	#header h1{width: 363px;height: 139px;left: 48px;}
     #header h2,
     #header p.claim{max-width:348px;left:48px;}
 	.ficha_gen{width: 248px;height: 340px;}
