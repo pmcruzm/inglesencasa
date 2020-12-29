@@ -107,7 +107,7 @@ html[lang="pt"] #header h1{background-image: url(../svg/inglesencasa_vertical_pt
 
 @media screen and (max-width: 767px) {
 	.show-menu .menu_header {display:block !important;}
-	.menu_header {display: none;position:absolute;right:16px;top:60px; margin:0;}
+	.menu_header {display: none;position:absolute;right:16px;top:60px; margin:0;min-width: 120px;}
 	.menu_header li{display:block;text-align: right;}
 	.menu_header li:after{display:none;}
 	.menu_header li a{padding-bottom:0;margin-bottom:10px;}
