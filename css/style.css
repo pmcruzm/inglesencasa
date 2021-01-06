@@ -70,7 +70,15 @@ body{margin:0;padding:0;font-family:'source_sans_proregular', Helvetica, sans-se
 .text-center {text-align:center;}
 .font-weight-bold {font-weight: bolder!important;}
 .font-italic {font-style: italic!important;}
+.bg-white {background-color:white;}
 
+.gutter-10 {margin-right: -10px;margin-left: -10px;}
+.gutter-10 .col, .gutter-10 [class*="col-"] {padding-right: 10px;padding-left: 10px;}
+
+.gutter-5 {margin-right: -5px;margin-left: -5px;}
+.gutter-5 .col, .gutter-5 [class*="col-"] {padding-right: 5px;padding-left: 5px;}
+
+.small, small {font-size: .875em;}
 
 /*****************************
 PROPIEDADES HEADER
@@ -98,7 +106,7 @@ html[lang="pt"] #header h1{background-image: url(../svg/inglesencasa_vertical_pt
 .menu_header li a:hover{border-color:#FF6B47;}
 .menu_header li.active a{border-color:#FF6B47;}
 
-.btn_action {display: inline-block;color:#103E57;font-family: 'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 2px;border:2px solid #103E57;border-radius: 20px;height: 34px;min-width: 50px;padding-left: 10px;padding-right: 10px;line-height: 34px;text-align: center;z-index: 50;}
+.btn_action {display: inline-block;color:#103E57;font-family: 'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 1px;border:2px solid #103E57;border-radius: 20px;height: 34px;min-width: 50px;padding-left: 10px;padding-right: 10px;line-height: 34px;text-align: center;z-index: 50; text-decoration: none !important;}
 .btn_action:hover,.btn_action.active{color:#ffffff;background:#103E57;}
 
 @media screen and (min-width: 767px) {
@@ -148,7 +156,8 @@ PROPIEDADES HOME
 
 /***** DESTACADOS ******/
 
-.section-title {font-family:'peace_sansregular', Helvetica, sans-serif;font-size: 40px;font-weight: 400;color:#FF6B47;line-height: 48px;padding-bottom: 16px;}
+.section-title {font-family:'peace_sansregular', Helvetica, sans-serif;font-size: 34px;font-weight: 400;color:#FF6B47;line-height: 1.3em;padding-bottom: 16px;}
+h3.section-title {font-size: 30px;}
 .box_destacado{box-sizing:border-box;border: 32px solid #ffffff;margin-top: 32px;box-sizing: border-box;}
 .carrusel_recursos{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);box-sizing: border-box;padding-left: 24px;padding-right: 24px;}
 .carrusel-destacados{box-sizing: border-box;}
@@ -378,7 +387,7 @@ FORMULARIOS
 .form-type .errores p {margin:0;}
 .form-type .errores a {color:red; text-decoration:underline;}
 
-.form-type label{color:#103E57;font-size: 12px;text-transform: uppercase;letter-spacing: 1px;font-family: 'source_sans_prosemibold', Helvetica, sans-serif;}
+.form-type label{color:#103E57;font-size: 12px;text-transform: uppercase;letter-spacing: 1px;font-family: 'museosanscyrl', Helvetica, sans-serif;}
 .form-type label span{color:#FF6B47;}
 .form-type input[type=text],
 .form-type input[type=email],
@@ -390,7 +399,7 @@ FORMULARIOS
 .form-type input[type=email].error,
 .form-type input[type=password].error,
 .form-type textarea.error{border:1px solid #ff0000 !important;}
-.form-type input[type=submit]{display: inline-block;vertical-align: middle;padding:0 15px;min-width: 100px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 2px;text-transform:uppercase;}
+.form-type input[type=submit]{display: inline-block;vertical-align: middle;padding:0 15px;min-width: 100px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 1px;text-transform:uppercase;}
 .form-type input[type=submit]:hover{opacity: 0.9;}
 .form-type input[type=submit]:disabled{opacity: 0.5;cursor: default;}
 .form-type textarea{width:100% ;border: none;-webkit-appearance: none;min-height: 80px; padding:10px; border: 1px solid #ffffff; box-sizing: border-box;box-shadow: 0px 2px 1px 0px rgba(148,227,223,0.5);}
@@ -398,7 +407,7 @@ FORMULARIOS
 .block_perfil.wysiwyg p{margin-bottom: 1.3em;}
 .block_perfil.wysiwyg ol{list-style:decimal; padding-left:3em;}
 .block_perfil.wysiwyg ol li{margin-bottom:2em;}
-.block_perfil.wysiwyg .btn{display: inline-block;padding:0 15px;height: 30px;line-height: 30px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 2px;text-transform:uppercase;margin: 8px;}
+.block_perfil.wysiwyg .btn{display: inline-block;padding:0 15px;height: 30px;line-height: 30px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 1px;text-transform:uppercase;margin: 8px;}
 .block_perfil.wysiwyg .btn:hover{opacity: 0.9;}
 
 .bg-select{background:#103E57 url(../svg/arrow_down.svg) 95% 50% no-repeat;display:block;width:100%;float:left;overflow:hidden;height:40px;background-size: 22px;box-shadow: 0px 2px 1px 0px rgba(148,227,223,0.5);}
@@ -449,7 +458,8 @@ PÁGINA DE PERFIL
 ******************************/
 .block_perfil{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);position:relative;padding-top:50px;padding-bottom: 50px;}
 .block_perfil .container{max-width: 768px; width: 90%;}
-.block_perfil h4{color:#103E57;font-size:22px;line-height:32px;margin-bottom: 32px;}
+.block_perfil h4{color:#103E57;font-size:22px;line-height:1.3em;margin-bottom: 32px;}
+.block_perfil h5{color:#103E57;font-size:17px;line-height:1.3em;margin-bottom: .5em;letter-spacing: .5px; font-weight:600;}
 .block_perfil p.info{color:#0B2A3B;font-size:18px;line-height: 26px;}
 .block_perfil p{margin-bottom:1em;}
 .block_perfil a{color:#FF6B47; text-decoration:underline;}

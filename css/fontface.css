@@ -13,7 +13,6 @@ FUENTES CAMBRIDGE UNIVERSITY
          url('../fonts/museosanscyrl_3-webfont.svg#webfontregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -25,7 +24,6 @@ FUENTES CAMBRIDGE UNIVERSITY
          url('../fonts/peace_sans_webfont-webfont.svg#peace_sansregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -37,9 +35,7 @@ FUENTES CAMBRIDGE UNIVERSITY
          url('../fonts/aleo-italic-webfont.svg#aleoitalic') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
-
 
 @font-face {
     font-family: 'sofia-pro-regular';
@@ -50,11 +46,7 @@ FUENTES CAMBRIDGE UNIVERSITY
          url('../fonts/sofia-pro-regular-webfont.svg#latobold') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'sofia-pro-black';
@@ -65,7 +57,6 @@ FUENTES CAMBRIDGE UNIVERSITY
          url('../fonts/sofia-pro-black-webfont.svg#latoregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -78,11 +69,7 @@ FUENTES CAMBRIDGE UNIVERSITY
          url('../fonts/montserrat-regular-webfont.svg#montserratregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'montserratsemibold';
@@ -94,7 +81,6 @@ FUENTES CAMBRIDGE UNIVERSITY
          url('../fonts/montserrat-semibold-webfont.svg#montserratsemibold') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -107,11 +93,7 @@ FUENTES CAMBRIDGE UNIVERSITY
          url('../fonts/montserrat-bold-webfont.svg#montserratbold') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'source_sans_proitalic';
@@ -123,11 +105,7 @@ FUENTES CAMBRIDGE UNIVERSITY
          url('../fonts/sourcesanspro-italic-webfont.svg#source_sans_proitalic') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'source_sans_proregular';
@@ -139,11 +117,7 @@ FUENTES CAMBRIDGE UNIVERSITY
          url('../fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'source_sans_prosemibold';
@@ -155,9 +129,7 @@ FUENTES CAMBRIDGE UNIVERSITY
          url('../fonts/sourcesanspro-semibold-webfont.svg#source_sans_prosemibold') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
-
 
 @font-face {
 	font-family: 'icomoon';
