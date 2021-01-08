@@ -79,6 +79,7 @@ body{margin:0;padding:0;font-family:'source_sans_proregular', Helvetica, sans-se
 .gutter-5 .col, .gutter-5 [class*="col-"] {padding-right: 5px;padding-left: 5px;}
 
 .small, small {font-size: .875em;}
+.img-fluid {max-width: 100%;height: auto;}
 
 /*****************************
 PROPIEDADES HEADER
@@ -1035,7 +1036,7 @@ MEDIA QUERIES
     #header p.claim{font-size:18px;line-height: 22px;}
 /*	.logo_h{width: 130px;height: 38px;background-size: 130px;}*/
 	.contenedor-recursos .item,.contenedor-recursos-curso .item{width:33.3333%;}
-	.box_destacado h3,.box_nuevos h3{font-size:24px;line-height: 24px;}
+	.box_destacado h3,.box_nuevos h3{font-size:26px;line-height: 24px;}
 	.carrusel-destacados .slick-list{padding-top: 48px;padding-left: 8px;padding-bottom: 48px;padding-right: 8px;}
 	.box_nuevos > .container, .box_destacado > .container{padding-left:0;}
 	.block_filters{top:auto;bottom: 15px;}
