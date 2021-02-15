@@ -465,7 +465,7 @@ PÁGINA DE PERFIL
 .block_perfil h4{color:#103E57;font-size:22px;line-height:1.3em;margin-bottom: 32px;}
 .block_perfil h5{color:#103E57;font-size:17px;line-height:1.3em;margin-bottom: .5em;letter-spacing: .5px; font-weight:600;}
 .block_perfil p.info{color:#0B2A3B;font-size:18px;line-height: 26px;}
-.block_perfil p{margin-bottom:1em;}
+.block_perfil p{line-height: 150%;margin-bottom:1em;}
 .block_perfil a{color:#FF6B47; text-decoration:underline;}
 .block_perfil a:hover{color:#FF6B47; text-decoration:none;}
 .block_perfil strong,
