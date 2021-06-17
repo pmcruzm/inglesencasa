@@ -38,8 +38,8 @@ jQuery(document).on('ready',function($){
 	});
 
 	//Detectar cambios en select registro fecha
-	var birthSelects = jQuery('[name="birth_day"],[name="birth_month"],[name="birth_year"]', 'form')
-	jQuery(document).on('change', birthSelects, function(event){
+	var birthSelects = jQuery('[name="birth_day"],[name="birth_month"],[name="birth_year"]', 'form');
+	birthSelects.on('change', function(event){
 		event.preventDefault();
 		var form = jQuery(event.target).closest('form');
 		var d_fecha=birthSelects.filter('[name="birth_day"]').val();
@@ -49,25 +49,23 @@ jQuery(document).on('ready',function($){
 			//Comprobamos si es menor de 14 años
 			var final_date = new Date(y_fecha+"-"+m_fecha+"-"+d_fecha);
 			var isUnderConsent = getAge(final_date) < 14;
-
-			jQuery('label[data-label-underage]', form).each(function(){
+			form.find('[data-underage="true"]').toggle(isUnderConsent);
+			// #DEPRECATED
+			form.find('label[data-label-underage]').each(function(){
 				var me = jQuery(this);
 				me.text( me.data(isUnderConsent ? 'label-underage' : 'label') );
 			});
 		}
-	});
+	}).trigger('change');
 
 	//Validación de formularios de contacto
 	jQuery('form[data-validate="true"]').on('submit', function(event){
-
 		var form = jQuery(event.target);
-
 		if( validateForm.validate(event) ) {
-			jQuery('input[type="submit"]', form).prop("disabled", true);
+			form.find('input[type="submit"]').prop("disabled", true);
 		} else {
 			event.preventDefault();
 		}
-
 	});
 
 });
