@@ -311,6 +311,16 @@ jQuery(document).on('ready',function(){
 		});
 	});
 
+
+    jQuery.fn.closeModal = function() {
+   		jQuery('.modal').stop().fadeOut(150);
+    };
+
+    jQuery('.modal').on("click",".close-modal", function(e) {
+        e.preventDefault();
+        jQuery(this).closeModal();
+    });
+
 });
 
 
