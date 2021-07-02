@@ -146,6 +146,7 @@ html[lang="pt"] #header h1{background-image: url(../svg/inglesencasa_vertical_pt
 .modal .modal-inner p{color:#2e2e2e;font-size:16px;margin-bottom:20px;}
 .modal .modal-inner a{text-decoration:underline;color:#ffffff;}
 .modal .modal-inner b,.modal .modal-inner strong{font-weight:bold;}
+.modal .modal-content > *:last-child{margin-bottom:0;}
 .modal .modal-inner .buttons > * {margin-top:10px;}
 .modal .modal-inner .btn-primary{display: inline-block;vertical-align: middle;padding:0 15px;min-width: 100px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'museosanscyrl', Helvetica, sans-serif;font-size: 12px;letter-spacing: 2px;text-decoration:none;text-transform:uppercase;}
 .modal .modal-inner .btn-primary:hover{opacity: 0.9;}
