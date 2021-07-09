@@ -350,7 +350,7 @@ h3.section-title {font-size: 30px;}
 
 .contenedor-recursos-curso {min-height: auto; padding-top:40px; padding-bottom:00px;}
 .contenedor-recursos-curso .item {position: relative; margin-bottom:0;width: 20%;}
-.contenedor-recursos-curso .recurso {margin: 0 15px 40px; display:block; position: relative; box-sizing: border-box; padding-bottom:80%; color:#FF6B47; background-color:white; box-shadow: 20px 30px 50px 0 rgb(110 181 173 / 50%);}
+.contenedor-recursos-curso .recurso {margin: 0 15px 40px; display:block; position: relative; box-sizing: border-box; padding-bottom:80%; color:#FF6B47; background-color:white; box-shadow: 20px 30px 50px 0 rgba(110,181,173,0.4);}
 .contenedor-recursos-curso .recurso:hover {background-color: #f1f1f1; transition: all 0.2s ease-in-out;}
 .contenedor-recursos-curso h5 {position: absolute; top: 60%; width:100%; box-sizing: border-box; padding: 0 20px; line-height: 130%;}
 .contenedor-recursos-curso .icon{position:absolute; top: 50%; left:50%; transform: scale(2.5) translate(-20%, -50%); display: block;margin:0 auto;width: 30px;height: 30px;background-color:#FF6B47;mask-image: url(../svg/sprite_icon-recursos_cec.svg); mask-size:240px; -webkit-mask-image: url(../svg/sprite_icon-recursos_cec.svg); -webkit-mask-size:240px; text-indent: -9999px;}
