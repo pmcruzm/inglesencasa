@@ -167,13 +167,22 @@ h3.section-title {font-size: 30px;}
 .carrusel_recursos{background: linear-gradient(45deg, #94E3DF 0%, #FDFFE0 100%);box-sizing: border-box;padding-left: 24px;padding-right: 24px;}
 .carrusel-destacados{box-sizing: border-box;}
 .carrusel-destacados .slick-list{padding-top:96px;padding-bottom: 96px;overflow: inherit;}
-.box_recurso{height:338px;display:block;max-width:268px;box-sizing:border-box;padding:15px;background:#ffffff;margin-right:30px;-webkit-transition: all 0.15s linear;-moz-transition: all 0.15s linear;-o-transition: all 0.15s linear;transition: all 0.15s linear;box-shadow: 20px 30px 50px 0 rgba(110,181,173,0.50);width: 95%;margin: 0 auto;}
+.box_recurso{position:relative; height:338px;display:block;max-width:268px;box-sizing:border-box;padding:15px;background:#ffffff;margin-right:30px;-webkit-transition: all 0.15s linear;-moz-transition: all 0.15s linear;-o-transition: all 0.15s linear;transition: all 0.15s linear;box-shadow: 20px 30px 50px 0 rgba(110,181,173,0.50);width: 95%;margin: 0 auto;}
 .box_recurso.over{}
 
 .box_recurso.privado{padding: 0px;box-shadow:none;background: none;}
 .box_recurso.privado .body_recurso{border-radius: 0px;}
 .box_recurso.privado .body_recurso img{max-width: 100%;max-height: 320px;box-shadow: 20px 30px 50px 0 rgba(110,181,173,0.50);position:absolute; bottom:0; left:0; right:0; margin:0 auto;}
 .titel_rec_privado{text-align: center;color:#103E57;font-size: 14px;padding-top:10px;font-family: 'museosanscyrl', Helvetica, sans-serif;}
+
+
+.box_recurso.digital_book {overflow:hidden; padding:8px; height:322px; }
+.box_recurso.digital_book:hover {opacity:.85;}
+.box_recurso.digital_book .ribbon {transform: rotate(-52deg); position: absolute; bottom: 0; right: -74px; width: 200px; height:100px; text-align: center; background-color: rgba(255,255,255,0.8); color: #444;}
+.box_recurso.digital_book .icon {display:block; width:95px; height:95px; background-position:center; background-repeat: no-repeat; background-size: contain; position:absolute; bottom:-6px; right: 1px; }
+.box_recurso.digital_book .icon-enhanced {background-image: url(../svg/icons/icon_enhaced-book.svg);}
+.box_recurso.digital_book .icon-interactive {background-image: url(../svg/icons/icon_interactive-book.svg);}
+.box_recurso.digital_book .icon-practice {background-image: url(../svg/icons/icon-practice-book.svg);}
 
 /*.slick-slide .box_recurso{float:left;}*/
 
@@ -344,15 +353,15 @@ h3.section-title {font-size: 30px;}
 .contenedor-recursos-curso .recurso {margin: 0 15px 40px; display:block; position: relative; box-sizing: border-box; padding-bottom:80%; color:#FF6B47; background-color:white; box-shadow: 20px 30px 50px 0 rgb(110 181 173 / 50%);}
 .contenedor-recursos-curso .recurso:hover {background-color: #f1f1f1; transition: all 0.2s ease-in-out;}
 .contenedor-recursos-curso h5 {position: absolute; top: 60%; width:100%; box-sizing: border-box; padding: 0 20px; line-height: 130%;}
-.contenedor-recursos-curso .icon{position:absolute; top: 50%; left:50%; transform: scale(2.5) translate(-20%, -50%); display: block;margin:0 auto;width: 30px;height: 30px;background-color:#FF6B47;-webkit-mask-image: url(../svg/sprite_icon-recursos_cec.svg); -webkit-mask-size:240px; text-indent: -9999px;}
-.contenedor-recursos-curso .icon.audio{-webkit-mask-position: 0px 60px;}
-.contenedor-recursos-curso .icon.interactivo{-webkit-mask-position: -30px 60px;}
-.contenedor-recursos-curso .icon.video{-webkit-mask-position: -60px 60px;}
-.contenedor-recursos-curso .icon.imagen{-webkit-mask-position: -90px 60px;}
-.contenedor-recursos-curso .icon.pdf{-webkit-mask-position: -120px 60px;}
-.contenedor-recursos-curso .icon.word{-webkit-mask-position: -150px 60px;}
-.contenedor-recursos-curso .icon.excel{-webkit-mask-position: -180px 60px;}
-.contenedor-recursos-curso .icon.link{-webkit-mask-position: -210px 60px;}
+.contenedor-recursos-curso .icon{position:absolute; top: 50%; left:50%; transform: scale(2.5) translate(-20%, -50%); display: block;margin:0 auto;width: 30px;height: 30px;background-color:#FF6B47;mask-image: url(../svg/sprite_icon-recursos_cec.svg); mask-size:240px; -webkit-mask-image: url(../svg/sprite_icon-recursos_cec.svg); -webkit-mask-size:240px; text-indent: -9999px;}
+.contenedor-recursos-curso .icon.audio{mask-position: 0px 60px;-webkit-mask-position: 0px 60px;}
+.contenedor-recursos-curso .icon.interactivo{mask-position: -30px 60px;-webkit-mask-position: -30px 60px;}
+.contenedor-recursos-curso .icon.video{mask-position: -60px 60px;-webkit-mask-position: -60px 60px;}
+.contenedor-recursos-curso .icon.imagen{mask-position: -90px 60px;-webkit-mask-position: -90px 60px;}
+.contenedor-recursos-curso .icon.pdf{mask-position: -120px 60px;-webkit-mask-position: -120px 60px;}
+.contenedor-recursos-curso .icon.word{mask-position: -150px 60px;-webkit-mask-position: -150px 60px;}
+.contenedor-recursos-curso .icon.excel{mask-position: -180px 60px;-webkit-mask-position: -180px 60px;}
+.contenedor-recursos-curso .icon.link{mask-position: -210px 60px;-webkit-mask-position: -210px 60px;}
 
 
 @media screen and (max-width: 1140px) {
