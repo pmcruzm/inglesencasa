@@ -321,6 +321,8 @@ jQuery(document).on('ready',function(){
         jQuery(this).closeModal();
     });
 
+    jQuery('.mfp').magnificPopup();
+
 });
 
 
