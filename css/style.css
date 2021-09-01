@@ -66,7 +66,7 @@ PROPIEDADES GENERALES
 ******************************/
 body{margin:0;padding:0;font-family:'source_sans_proregular', Helvetica, sans-serif;font-size: 1em;line-height: 1.5em;}
 .container{display:block;width:100%;margin:0 auto;position:relative;max-width:1200px;margin:0 auto;position:relative;}
-#wrapper{overflow:hidden;}
+#wrapper{overflow:hidden;position: relative;}
 .text-center {text-align:center;}
 .font-weight-bold {font-weight: bolder!important;}
 .font-italic {font-style: italic!important;}
