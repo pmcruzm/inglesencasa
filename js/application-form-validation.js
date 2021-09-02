@@ -146,41 +146,53 @@ var validateForm = {
 
 	checkField: function(i,e) {
 
-		var elem   = jQuery(e);
-		var params = elem.data('validation-rule').split(':');
-		var rule   = params.shift();
-		var error  = false;
+		var elem = jQuery(e);
 
-		//console.log('RULE:',rule);
+		var rules = elem.data('validation-rule').split('|');
 
-		if( 'email' == rule ) {error = ! this.ruleIsEmail(elem);}
-		if( 'repeat' == rule ) {error = ! this.ruleRepeat(elem, params[0]);}
-		if( 'checkbox' == rule ) {error = ! this.ruleCheckbox(elem);}
-		if( 'recaptcha' == rule ) {error = ! this.ruleValidRecaptcha(elem);}
-		if( 'not-empty' == rule ) {error = ! this.ruleValidNotEmpty(elem);}
-		if( 'zip' == rule ) {error = ! this.ruleValidZip(elem);}
-		if( 'select-option' == rule ) {error = ! this.ruleValidSelectOption(elem);}
-		if( 'multi-checkbox' == rule ) {error = ! this.ruleMultiCheckbox(elem);}
-		if( 'min' == rule ) {error = ! this.ruleMinimumChars(elem, parseInt(params[0]));}
-		if( 'screenshot' == rule ) {error = ! this.ruleValidScreenshot(elem, params);}
-		if( 'birth-date' == rule ) {error = ! this.ruleValidBirthDate(elem, params);}
+		for (var i = 0; i < rules.length; i++) {
+
+			var params = rules[i].split(':');
+			var rule   = params.shift();
+			var error  = false;
+
+			// console.log(elem.attr('name'), 'RULE', rules[i])
+
+			if( 'email' == rule ) {error = ! this.ruleIsEmail(elem);}
+			if( 'repeat' == rule ) {error = ! this.ruleRepeat(elem, params[0]);}
+			if( 'different' == rule ) {error = ! this.ruleDifferent(elem, params[0]);}
+			if( 'checkbox' == rule ) {error = ! this.ruleCheckbox(elem);}
+			if( 'recaptcha' == rule ) {error = ! this.ruleValidRecaptcha(elem);}
+			if( 'not-empty' == rule ) {error = ! this.ruleValidNotEmpty(elem);}
+			if( 'zip' == rule ) {error = ! this.ruleValidZip(elem);}
+			if( 'select-option' == rule ) {error = ! this.ruleValidSelectOption(elem);}
+			if( 'multi-checkbox' == rule ) {error = ! this.ruleMultiCheckbox(elem);}
+			if( 'min' == rule ) {error = ! this.ruleMinimumChars(elem, parseInt(params[0]));}
+			if( 'screenshot' == rule ) {error = ! this.ruleValidScreenshot(elem, params);}
+			if( 'birth-date' == rule ) {error = ! this.ruleValidBirthDate(elem, params);}
 
 
-		if( error ) {
-			if(rule == 'select-option') {
-				elem.parent().addClass('error');
-			} else if (rule == 'multi-checkbox') {
-				elem.find('input[type="checkbox"]').addClass('error');
-			} else {
-				elem.addClass('error');
-			}
+			if( error ) {
+				if(rule == 'select-option') {
+					elem.parent().addClass('error');
+				} else if (rule == 'multi-checkbox') {
+					elem.find('input[type="checkbox"]').addClass('error');
+				} else {
+					elem.addClass('error');
+				}
 
-			this.hasErrors = true;
+				this.hasErrors = true;
 
-			if( elem.data('error-msg') ) {
-				this.errors.push( elem.data('error-msg') );
+				if( rule == 'different' && elem.data('error-different-msg')) {
+					this.errors.push( elem.data('error-different-msg') );
+				} else if(elem.data('error-msg')) {
+					this.errors.push( elem.data('error-msg') );
+				}
+
+				break;
 			}
 		}
+
 	},
 
 	showErrors: function() {
@@ -201,6 +213,10 @@ var validateForm = {
 
 	ruleRepeat: function(e, repeatSelector) {
 		return e.val() === jQuery(repeatSelector, this.form).val();
+	},
+
+	ruleDifferent: function(e, otherSelector) {
+		return e.val() !== jQuery(otherSelector, this.form).val();
 	},
 
 	ruleCheckbox: function(e) {
