@@ -565,9 +565,11 @@ PÁGINA AYUDA
 .nav-help-tabs img {position:relative;}
 
 
-.manuals .video {position:relative; display:block;}
+.manuals .video {position:relative; display:block; border:1px solid #103E57; border-radius:3px; overflow:hidden; transition:all 0.1s linear;}
+.manuals .video:hover {opacity: .8; position:relative;}
 .manuals .video:before {content:" "; position:absolute; top:50%; left:50%; transform: translate(-50%,-50%); width:60px; height:60px; background: url('../svg/icon_play-arrow.svg') center/contain no-repeat; opacity: 0.9;}
-.manuals .video:hover:before {opacity: 1;}
+
+.manuals .thumb-coming-soon {border:1px solid white; border-radius:3px; overflow:hidden;}
 
 .mfp-iframe-holder .mfp-content {max-width:1200px;}
 
