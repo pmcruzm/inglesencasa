@@ -598,6 +598,11 @@ PÁGINA AYUDA
 .faqs .important {color: #FF6B47;}
 .faqs .important strong {text-decoration:underline;}
 
+.cicon {display:inline-block; width:48px; height:32px; background-position:center; background-repeat: no-repeat; background-size: 54px; vertical-align: bottom;}
+.cicon-enhanced {background-image: url(../svg/icons/icon_enhaced-book.svg);}
+.cicon-interactive {background-image: url(../svg/icons/icon_interactive-book.svg);}
+.cicon-practice {background-image: url(../svg/icons/icon-practice-book.svg);}
+
 
 
 /*****************************
