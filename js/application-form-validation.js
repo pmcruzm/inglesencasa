@@ -232,7 +232,8 @@ var validateForm = {
 	},
 
 	ruleValidZip: function(e) {
-		return e.val().length == 5;
+		var zipLength = e.attr('maxlength') || 5;
+		return e.val().length == zipLength;
 	},
 
 	ruleValidSelectOption: function(e) {
