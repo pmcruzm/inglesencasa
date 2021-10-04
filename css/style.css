@@ -180,7 +180,7 @@ h3.section-title {font-size: 30px;}
 
 .box_digitalbook {position:relative; display:inline-block; padding: 6px; overflow: hidden; background:#ffffff; box-shadow: 20px 30px 50px 0 rgba(110,181,173,0.50); transition: all 0.2s ease-in-out;}
 .box_digitalbook:hover {opacity:.85;}
-.box_digitalbook .digitalbook_cover {max-height: 320px;  border-radius: 6px;}
+.box_digitalbook .digitalbook_cover {width: auto; max-width: 100%; max-height: 320px; border-radius: 6px;}
 .box_digitalbook .ribbon {display:block; transform: rotate(-52deg); position: absolute; bottom: 0; right: -95px; width: 230px; height:110px; text-align: center; display: inline-block; background: rgba(255,255,255,0.7); color: #444;}
 .box_digitalbook .icon {display:block; width:95px; height:95px; background-position:center; background-repeat: no-repeat; background-size: contain; position:absolute; bottom:-6px; right: 1px; }
 .box_digitalbook .icon-enhanced {background-image: url(../svg/icons/icon_enhaced-book.svg);}
@@ -197,8 +197,7 @@ h3.section-title {font-size: 30px;}
 }
 
 
-
-
+body.course .carrusel_recursos .slick-track {display: flex; align-items: flex-end;}
 /*.slick-slide .box_recurso{float:left;}*/
 
 /*.carrusel-destacados .box_recurso{width:248px;margin-right: 30px;}*/
@@ -456,6 +455,7 @@ FORMULARIOS
 .box_tooltip{position: absolute; right: 23px; top:36px;}
 .tooltip{width: 260px;background:#FF6B47;color:#ffffff;padding: 8px;border-radius: 8px;font-size: 14px;line-height: 21px;position: absolute;z-index: 1;left:-132px;bottom:26px;text-align: center;display: none;}
 .tooltip:after{content:'';display: block;background: url(../img/Point@2X.png) center bottom no-repeat;height:6px;background-size: 12px;width: 100%;position:absolute;bottom:-6px;left:2px;}
+.tooltip > *:last-child {margin-bottom:0;}
 
 .cover_dates{overflow:hidden;}
 .row_day,
