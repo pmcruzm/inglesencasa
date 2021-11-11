@@ -338,10 +338,10 @@ jQuery(document).on('ready',function(){
         var field  = button.next();
         if (field.is('[type="password"]')) {
             field.attr('type','text');
-            button.removeClass('icon-show-pasword-off').addClass('icon-show-pasword-on');
+            button.removeClass('icon-show-pasword-on').addClass('icon-show-pasword-off');
         } else {
             field.attr('type','password');
-            button.removeClass('icon-show-pasword-on').addClass('icon-show-pasword-off');
+            button.removeClass('icon-show-pasword-off').addClass('icon-show-pasword-on');
         }
 	});
 
