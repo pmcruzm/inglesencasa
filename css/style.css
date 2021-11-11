@@ -478,6 +478,9 @@ PÁGINA DE LOGIN
 #form_login{max-width:368px;}
 #form_login .form-group {margin-bottom: 38px;}
 #form_login label{display: none;}
+.toggle-password-visibility {display: block; width:25px; height:40px; border:0; cursor:pointer; position:absolute; right:10px; z-index: 1;}
+.toggle-password-visibility.icon-show-pasword-on {background: center no-repeat url('../svg/icon-eye-on.svg');}
+.toggle-password-visibility.icon-show-pasword-off {background: center no-repeat url('../svg/icon-eye-off.svg');}
 
 
 /*****************************
