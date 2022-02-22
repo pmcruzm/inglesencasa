@@ -107,7 +107,7 @@ html[lang="pt"] #header h1{background-image: url(../svg/inglesencasa_vertical_pt
 .menu_header li a:hover{border-color:#FF6B47;}
 .menu_header li.active a{border-color:#FF6B47;}
 
-.btn_action {display: inline-block;color:#103E57;font-family: 'montserratbold', Helvetica, sans-serif;font-size: 12px;letter-spacing: 1px;border:2px solid #103E57;border-radius: 20px;height: 34px;min-width: 50px;padding-left: 15px;padding-right: 15px;line-height: 34px;text-align: center;z-index: 50; text-decoration: none !important;}
+.btn_action {display: inline-block;color:#103E57;font-family: 'montserratbold', Helvetica, sans-serif;font-size: 12px;letter-spacing: 1px;border:2px solid #103E57;border-radius: 20px;height: 34px;min-width: 50px;padding-left: 20px;padding-right: 20px;line-height: 34px;text-align: center;z-index: 50; text-decoration: none !important;}
 .btn_action:hover,.btn_action.active{color:#ffffff;background:#103E57;}
 
 .btn_action.btn_w_md {min-width:130px;}
@@ -432,7 +432,7 @@ FORMULARIOS
 .form-type input[type=email].error,
 .form-type input[type=password].error,
 .form-type textarea.error{border:1px solid #ff0000 !important;}
-.form-type input[type=submit]{display: inline-block;vertical-align: middle;padding:0 15px;min-width: 100px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'montserratbold', Helvetica, sans-serif;font-size: 12px;letter-spacing: 1px;text-transform:uppercase;}
+.form-type input[type=submit]{display: inline-block;vertical-align: middle;padding:0 20px;min-width: 100px;height: 40px;line-height: 40px;text-align: center;color:#ffffff;background:#103E57;font-size: 14px;border-radius: 20px;cursor: pointer;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;border: none;-webkit-appearance: none;font-family:'montserratbold', Helvetica, sans-serif;font-size: 12px;letter-spacing: 1px;text-transform:uppercase;}
 .form-type input[type=submit]:hover{opacity: 0.9;}
 .form-type input[type=submit]:disabled{opacity: 0.5;cursor: default;}
 .form-type textarea{width:100% ;border: none;-webkit-appearance: none;min-height: 80px; padding:10px; border: 1px solid #ffffff; box-sizing: border-box;box-shadow: 0px 2px 1px 0px rgba(148,227,223,0.5);}
